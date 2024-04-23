@@ -1,0 +1,46 @@
+/* Stilar för huvudområdena */
+#searchIngredientsBox, #chosenIngredientsBox {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Stilar för h3 element som fungerar som rubriker för lådorna */
+#searchIngredientsBox h3, #chosenIngredientsBox h3 {
+    color: #333;
+    padding: 8px;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+
+/* Stilar för sökfältet */
+#searchIngredientsBox input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0; /* Ta bort rundade hörn om de finns */
+}
+
+/* Basstilar för knappar */
+#searchIngredientsBox button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0; /* Lägg till lite utrymme mellan knapparna */
+    box-sizing: border-box;
+    border: none;
+    background-color: #f6f6f6; /* Ljusgrå bakgrund likt dropdown-innehåll */
+    text-align: left; /* Vänsterjustera texten i knapparna */
+    cursor: pointer;
+}
+
+/* Stilar för knappar när muspekaren är över dem */
+#searchIngredientsBox button:hover {
+    background-color: #ddd; /* Mörkare grå bakgrund för hover-effekt */
+}
+
+/* Stilar för knapparna när de har flyttats till den valda lådan */
+#chosenIngredientsBox button {
+    /* Här kan du lägga till särskilda stilar om du vill att knapparna i den valda lådan ska se annorlunda ut */
+}

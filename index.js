@@ -1,0 +1,2 @@
+renderIngredientBox("wrapper");
+/* renderChosenIngredientsBox("wrapper"); */
