@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "",
+        "ingredients": ["tomat", "pasta"],
+        "like": [ 4, 7 ],
+        "rating": [
+            {
+                "user_id": 7,
+                "rating": 10
+            }
+        ],
+        "image": ""
+
+    }
+]
