@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* h2 font-family: bigpixelShadow; */
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    background-color: lightcoral;
+    height: 100vh;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 100px 0 100px 0;   /*   MAIN HAR MARGIN   ->  vitt space  */
+}
+
+#sort {
+    background-color: lightblue;
+    height: 750px;
+ 
+    display: flex;
+    flex-direction: column;
+}
+
+#matched_recepies {
+    background-color: lightgreen;
+    height: 750px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#all_recepies {
+    background-color: aquamarine;
+    height: 750px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    height: 400px;
+    background-color: lightskyblue;
+
+    display: flex;
+    flex-direction: column;
+}
