@@ -5,9 +5,8 @@ function render_wrapper_DOM () {
     const wrapper = document.querySelector("body");
     
     wrapper.innerHTML = `
-        <header>
-            <nav> </nav>
-        </header>
+        
+        <header id="head">
 
         <main>
             <section id="sort"> </section>
@@ -23,7 +22,7 @@ function render_wrapper_DOM () {
 
     // nycklar som kan läggas till i index.js
     return {
-        header: document.querySelector("header"),
+        header: document.querySelector("#head"),
         sort: document.querySelector("#sort"),
         matchedRecepies: document.querySelector("#matched_recepies"),
         allRecepies: document.querySelector("#all_recepies"),
@@ -38,8 +37,25 @@ function render_wrapper_DOM () {
 
 // Header funktion
 
-function render_header () {
+function render_header (header) {
 
+    header.innerHTML = `
+
+        <nav class="nav_meny"> </nav>
+
+        <img src="./media/img/omslag1.png">
+        
+        <div> TEXT SLOGAN  </div>
+        
+        <div class="img_bottom">
+
+            <img src="./media/thumbnails/amerikanskapannkakor.jpg">
+            <img src="./media/thumbnails/frallor.jpg">
+            <img src="./media/thumbnails/ramen.png">
+            <img src="./media/thumbnails/flaaderdryck.png">
+
+        </div>
+    `;
 
 
 }

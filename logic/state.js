@@ -1,6 +1,8 @@
 
 function render_App() {
 
-    render_wrapper_DOM ();
+    // Startsidan
+    render_wrapper_DOM (); // startsidans wrapper anrop
+    render_header(head); // header anrop
 
 }

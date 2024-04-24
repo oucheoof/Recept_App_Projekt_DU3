@@ -6,13 +6,54 @@ body {
 
 /* h2 font-family: bigpixelShadow; */
 
+
+
+/*    HEADER och NAV   */
 header {
     display: flex;
     flex-direction: column;
+    z-index: 99;
 
-    background-color: lightcoral;
-    height: 100vh;
 }
+
+header nav {
+   
+}
+
+.landingpicture {
+    background-image: url(./media/img/omslag1.png);
+
+}
+
+
+header img:first-of-type {
+    height: 350px;
+    object-fit: cover;
+    
+}
+
+header div:nth-of-type(1) {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+
+header .img_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header .img_bottom img {
+    height: 359px;
+}
+
+
+
+
+
+/*    MAIN    */
 
 
 main {
