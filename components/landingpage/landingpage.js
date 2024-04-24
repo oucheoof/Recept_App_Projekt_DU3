@@ -49,6 +49,7 @@ function render_header (header) {
         </nav>
         
         <img src="./media/img/omslag1.png">
+        <h1> Kitsch </h1>
         
         <div> TEXT SLOGAN  </div>
         

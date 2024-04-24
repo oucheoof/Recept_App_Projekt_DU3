@@ -9,7 +9,6 @@ body {
 
 
 
-
 /*    HEADER och NAV   */
 header {
     display: flex;
@@ -54,14 +53,27 @@ header {
     background-position: center;
 }
 
-.landingpicture {
+.landing_picture {
     background-image: url(./media/img/omslag1.png);
 }
 
 
 header img:first-of-type {
+    position: relative;
     height: 350px;
     object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-color: white;
+    margin:0;
+    padding: 1.1% 4.5%;
+    top: 15%;
+    left: 33%;
+    font-size: 75px;
+    font-family:  bigpixelShadow;
 }
 
 header div:nth-of-type(1) {
