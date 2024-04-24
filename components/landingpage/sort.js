@@ -29,7 +29,7 @@ function renderIngredientBox(parentID) { // Parent är <main>
     chosenIngredientsBox.appendChild(h3Chosen);
 
     // Ingredienser
-    const ingredients = ["tomat", "pasta", "mjölk", "grädde"]; // Detta måste bytas ut beroende på vad vi har i API
+    const ingredients = ["tomat", "pasta", "mjölk", "grädde", "spenat"]; // Detta måste bytas ut beroende på vad vi har i API
 
     ingredients.forEach(ingredient => { // För varje ingrediens vi har i vår array
         const button = document.createElement('button'); // ska vi göra detta
@@ -63,7 +63,6 @@ function renderIngredientBox(parentID) { // Parent är <main>
                     ingredients.splice(index, 1); // Uppdaterar ingrediensarrayen
                 }
                 chosenIngredientsBox.appendChild(button); // Flyttar knappen
-                button.disabled = true; // Inaktiverar knappen efter att den är vald
             });
             searchIngredientsBox.appendChild(button);
         });
