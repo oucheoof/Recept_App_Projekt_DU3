@@ -8,28 +8,60 @@ body {
 
 
 
+
+
 /*    HEADER och NAV   */
 header {
     display: flex;
     flex-direction: column;
-    z-index: 99;
-
+    position: relative;
 }
 
-header nav {
-   
+.nav_meny {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px; 
+
+    height: 70px;
+    z-index: 99;
+}
+
+.logo {
+    z-index: 99;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 85px;    
+
+    background-image: url(/media/img/logo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.user_logo {
+    z-index: 99;
+    position: absolute;
+    right: 10px;
+    width: 65px; 
+    height: 70px;
+
+    background-image: url(/media/img/usericon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .landingpicture {
     background-image: url(./media/img/omslag1.png);
-
 }
 
 
 header img:first-of-type {
     height: 350px;
     object-fit: cover;
-    
 }
 
 header div:nth-of-type(1) {
@@ -46,7 +78,7 @@ header .img_bottom {
 }
 
 header .img_bottom img {
-    height: 359px;
+    height: 356px;
 }
 
 

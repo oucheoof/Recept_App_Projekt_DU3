@@ -37,12 +37,17 @@ function render_wrapper_DOM () {
 
 // Header funktion
 
+// Header funktion
+
 function render_header (header) {
 
     header.innerHTML = `
 
-        <nav class="nav_meny"> </nav>
-
+        <nav class="nav_meny"> 
+            <div class="logo"></div>
+            <div class="user_logo"></div>
+        </nav>
+        
         <img src="./media/img/omslag1.png">
         
         <div> TEXT SLOGAN  </div>
