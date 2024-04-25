@@ -6,7 +6,7 @@ function render_wrapper_DOM () {
     
     wrapper.innerHTML = `
         
-        <header id="head">
+        <header id="head"> </header>
 
         <main>
             <section id="sort"> </section>
@@ -60,8 +60,41 @@ function render_header (header) {
         </div>
     `;
 
-
+    render_navigation(header); // Anropar på navigation funktion
+    
 }
 
 
-// Nav funktion?
+// Nav funktion
+function render_navigation(parent){  
+    // parent är header i startsidan
+
+    const nav = document.createElement("nav");
+    nav.classList.add = "nav_meny"; 
+
+    // länk för logo
+    const linkLogo = document.createElement("a");
+    linkLogo.href = "../index.html";
+
+    // logo appendar till <a>
+    const logo = document.createElement("div");
+    logo.classList.add("logo");
+    linkLogo.appendChild(logo);
+
+    // länk för USER-logo
+    const linkUserLogo = document.createElement("a");
+    linkUserLogo.href = "../index.html";  // ÄNDRA SENARE när användarsidan är klar
+  
+    // USERlogo appendar till <a>
+    const userLogo = document.createElement("div");
+    userLogo.classList.add("user_logo");
+    linkUserLogo.appendChild(userLogo);
+
+    // lägger till barn i nav
+    nav.appendChild(linkLogo);
+    nav.appendChild(linkUserLogo);
+
+    // lägger till i parent
+    parent.appendChild(nav);
+
+}
