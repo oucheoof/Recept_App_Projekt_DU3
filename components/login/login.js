@@ -22,11 +22,8 @@ function renderLoginForm(){
     DOM.innerHTML = `
     <h2>KITSCH</h2>
     <form id="loginForm">
-    <label for="username">Användarnamn:</label>
-    <input type="text" id="username" name="username">
-    
-    <label for="password">Lösenord:</label>
-    <input type="password" id="password" name="password">
+    <input type="text" id="username" name="username" placeholder="Användarnamn">
+    <input type="password" id="password" name="password" placeholder="Lösenord">
     
     <button type="submit">Logga in</button>
     </form>`
@@ -41,17 +38,11 @@ function renderRegisterForm(){
     DOM.innerHTML = `
     <h2>KITSCH</h2>
     <form id="RegisterForm">
-        <label for="username">Email:</label>
-        <input type="text" id="email" name="email">
 
-        <label for="username">Användarnamn:</label>
-        <input type="text" id="username" name="username">
-
-        <label for="password">Lösenord:</label>
-        <input type="password" id="password" name="password">
-        
-        <label for="password">Upprepa lösenord:</label>
-        <input type="password" id="rptpassword" name="rptpassword">
+        <input type="text" id="email" name="email" placeholder="Email">
+        <input type="text" id="username" name="username" placeholder="Användarnamn">
+        <input type="password" id="password" name="password" placeholder="Lösenord">
+        <input type="password" id="rptpassword" name="rptpassword" placeholder="Upprepa lösenord">
         
         <button type="submit">Registrera konto</button>
      </form>`
