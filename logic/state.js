@@ -1,0 +1,4 @@
+function renderApp(){
+
+    renderLogRegContainer('wrapper');
+}
