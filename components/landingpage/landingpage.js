@@ -39,11 +39,6 @@ function render_wrapper_DOM () {
 function render_header (header) {
 
     header.innerHTML = `
-
-        <nav class="nav_meny"> 
-            <a href="../index.html"> <div class="logo"></div> </a>
-            <div class="user_logo"></div>
-        </nav>
         
         <img src="./media/img/omslag1.png">
         <h1> Kitsch </h1>
