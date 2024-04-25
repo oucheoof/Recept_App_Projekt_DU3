@@ -1,4 +1,4 @@
-// wrapper funktion
+// Wrapper funktion
 
 function render_wrapper_DOM () {
 
@@ -34,9 +34,6 @@ function render_wrapper_DOM () {
 }
 
 
-
-// Header funktion
-
 // Header funktion
 
 function render_header (header) {
@@ -44,7 +41,7 @@ function render_header (header) {
     header.innerHTML = `
 
         <nav class="nav_meny"> 
-            <div class="logo"></div>
+            <a href="../index.html"> <div class="logo"></div> </a>
             <div class="user_logo"></div>
         </nav>
         
@@ -67,4 +64,4 @@ function render_header (header) {
 }
 
 
-// nav funktion?
+// Nav funktion?
