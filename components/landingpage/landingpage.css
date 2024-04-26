@@ -23,7 +23,9 @@ main {
 }
 
 #sort {
-    background-color: lightblue;
+    background-color: cornsilk;
+    background-image: url(../../media/img/logo1.png);
+    background-size: cover;
     height: 750px;
  
     display: flex;

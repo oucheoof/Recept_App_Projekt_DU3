@@ -13,7 +13,7 @@
     }
 
     $method = $_SERVER["REQUEST_METHOD"];
-    $allowedMethods = ["GET", "POST", "DELETE"];
+    $allowedMethods = ["GET", "POST", "DELETE"]; //POST OCH DELETE SENARE
 
     if (!in_array($method, $allowedMethods)) {
         $error = ["Error" => "Method is invalid"];

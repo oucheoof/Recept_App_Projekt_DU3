@@ -14,7 +14,7 @@
 
 
     $method = $_SERVER["REQUEST_METHOD"];
-    $allowedMethods = ["GET", "PATCH",];
+    $allowedMethods = ["GET", "PATCH"];
 
     if (!in_array($method, $allowedMethods)) {
         $error = ["Error" => "Method is invalid"];
