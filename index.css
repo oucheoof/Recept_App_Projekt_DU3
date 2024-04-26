@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+/*   font face  */
+
+@font-face {
+    font-family: bigpixelShadow;
+    src: url(fonts/Big\ Pixel\ Shadow\ demo.otf);
+}

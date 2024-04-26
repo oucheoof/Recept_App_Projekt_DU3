@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* h2 font-family: bigpixelShadow; */
+
+
+
+
+/*    HEADER och NAV   */
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nav_meny {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px; 
+
+    height: 70px;
+    z-index: 99;
+}
+
+.logo {
+    z-index: 99;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 1px;
+    width: 85px;   
+    cursor: pointer;  
+
+    background-image: url(/media/img/logo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.user_logo {
+    z-index: 99;
+    position: absolute;
+    bottom: 700px; 
+    right: 10px;
+    width: 20px; 
+    height: 20px;
+    cursor: pointer; 
+
+    background-image: url(/media/img/usericon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landing_picture {
+    background-image: url(./media/img/omslag1.png);
+}
+
+
+header img:first-of-type {
+    position: relative;
+    height: 350px;
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-color: white;
+    margin:0;
+    padding: 1.1% 4.5%;
+    top: 15%;
+    left: 33%;
+    font-size: 75px;
+    font-family:  bigpixelShadow;
+}
+
+header div:nth-of-type(1) {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+
+header .img_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header .img_bottom img {
+    height: 356px;
+}
+
+
+
+
+
+/*    MAIN    */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 100px 0 100px 0;   /*   MAIN HAR MARGIN   ->  vitt space  */
+}
+
+#sort {
+    background-color: lightblue;
+    height: 750px;
+ 
+    display: flex;
+    flex-direction: column;
+}
+
+#matched_recepies {
+    background-color: lightgreen;
+    height: 750px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#all_recepies {
+    background-color: aquamarine;
+    height: 750px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    height: 400px;
+    background-color: lightskyblue;
+
+    display: flex;
+    flex-direction: column;
+}
