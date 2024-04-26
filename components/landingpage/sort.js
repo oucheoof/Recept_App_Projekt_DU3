@@ -34,29 +34,22 @@ function renderIngredientBox(parentID) { // Parent är <section id = "sort">
     userIngredientSearch.addEventListener("keyup", filterIngredients);  // Lägger till en event listener för keyup
     searchIngredientsBox.appendChild(userIngredientSearch);
 
-    // Box 2
-    let chosenIngredientsBox = document.createElement("div");
-    chosenIngredientsBox.id = "chosenIngredientsBox";
-    boxesDiv.appendChild(chosenIngredientsBox);
-
-    // Skapa h3 för Box 2
-    let h3Chosen = document.createElement('h3');
-    h3Chosen.textContent = 'Dina ingredienser';
-    chosenIngredientsBox.appendChild(h3Chosen);
-
     //div för buttons
     let divForButtons = document.createElement("div");
     divForButtons.id = "divForButtons";
     searchIngredientsBox.appendChild(divForButtons);
+
+    renderChosenIngredientsBox();
     
 
     // Ingredienser
-    const ingredients = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
- // Detta måste bytas ut beroende på vad vi har i API
+    let ingredients = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
 
-    ingredients.forEach(ingredient => { // För varje ingrediens vi har i vår array,
-        const button = document.createElement('button'); // ska vi göra detta
+    //Gör knappar för varje ingrediens
+    ingredients.forEach(ingredient => {
+        const button = document.createElement('button'); 
         button.textContent = ingredient;
+        button.id = ingredient;
         button.addEventListener("click", function() {
             console.log('Du klickade på: ' + ingredient);
 
@@ -64,14 +57,15 @@ function renderIngredientBox(parentID) { // Parent är <section id = "sort">
             const index = ingredients.indexOf(ingredient);
             if (index > -1) {
                 ingredients.splice(index, 1);
-                console.log(ingredients);
+                /* console.log(ingredients); */
             }
 
-            // Flytta knappen till den valda ingrediensboxen
-            chosenIngredientsBox.appendChild(button);
+            divForButtons.querySelector('#' + ingredient).remove();
+            addIngredientToChosen(ingredient);
         });
+        //Skapar knapparna
         divForButtons.appendChild(button);
-    });  // Avslutar forEach
+    }); 
 
     // Funktion för att uppdatera ingrediensknapparna baserat på filtrering
     function updateIngredientButtons(filteredIngredients) {

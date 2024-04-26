@@ -70,7 +70,7 @@ h2{
     margin-bottom: 0px;
 }
 
-#divForButtons{
+#divForButtons, #divForChosenButtons{
     overflow-y: auto;
     max-height: 400px;
 }
