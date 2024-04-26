@@ -1,0 +1,38 @@
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../media/foodpicture.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#logRegContainer{
+    display: inline-block;
+    background-color: white;
+    padding: 50px;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    align-self: center;
+
+}
+
+button{
+   background-color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
