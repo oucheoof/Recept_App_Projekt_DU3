@@ -14,6 +14,9 @@ function renderLogRegContainer(parentID) {
     document.getElementById(parentID).append(DOM);
 }
 
+
+
+
 function renderLoginForm(){
     console.log('renderlogin');
     DOM = document.getElementById('logRegContainer');

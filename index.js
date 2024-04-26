@@ -1,4 +1,10 @@
 //const wrapper_containers = render_wrapper_DOM ()
 
-render_App();
+
+
+// if (!token in local storage){
+    // renderLogReg()
+ //}else{
+    
+    render_App();
 
