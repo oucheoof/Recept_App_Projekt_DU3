@@ -2,7 +2,7 @@
 
 function render_wrapper_DOM () {
 
-    const wrapper = document.getElementById('wrapper');
+    const wrapper = document.querySelector("body");
     wrapper.innerHTML = `
         
         <header id="head"> </header>

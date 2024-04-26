@@ -8,5 +8,6 @@ function render_App() {
 }
 
 function renderLogReg(){
+    
     renderLogRegContainer('wrapper');
 }
