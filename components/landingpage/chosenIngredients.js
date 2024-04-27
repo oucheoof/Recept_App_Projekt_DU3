@@ -1,4 +1,4 @@
-function renderChosenIngredientsBox(){
+function renderBox2(){
     // Box 2
     let chosenIngredientsBox = document.createElement("div");
     chosenIngredientsBox.id = "chosenIngredientsBox";
@@ -32,11 +32,24 @@ function addIngredientToChosen(ingredient){
 
     button.addEventListener("click", function(){
         removeChosenIngredient(ingredient);
-        
+
+        //Hårdkodat...
+        ingredients.push(ingredient);
+        const button = document.createElement('button'); 
+        button.textContent = ingredient;
+        button.id = ingredient
+        divForButtons.appendChild(button);
     })
 }
 
-function removeChosenIngredient(ingredient){
-    arrayChosenIngredients.splice(ingredient);
-    divForChosenButtons.querySelector('#' + ingredient).remove();
+function removeChosenIngredient(ingredient) {
+    let index = arrayChosenIngredients.indexOf(ingredient); // Get index
+    if (index !== -1) {
+        arrayChosenIngredients.splice(index, 1);  // Use index for splice
+    }
+    let elementToRemove = divForChosenButtons.querySelector('#' + ingredient);
+    if (elementToRemove) {
+        elementToRemove.remove(); // Check if element exists before removing
+    }
+    console.log(arrayChosenIngredients);
 }

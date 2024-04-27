@@ -1,4 +1,6 @@
-function renderIngredientBox(parentID) { // Parent är <section id = "sort">
+    let ingredients = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
+
+function renderBox1(parentID) { // Parent är <section id = "sort">
     let mainWrapper = document.getElementById(parentID);
 
     // div for h2
@@ -39,34 +41,8 @@ function renderIngredientBox(parentID) { // Parent är <section id = "sort">
     divForButtons.id = "divForButtons";
     searchIngredientsBox.appendChild(divForButtons);
 
-    renderChosenIngredientsBox();
-    
-
-    // Ingredienser
-    let ingredients = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
-
-    //Gör knappar för varje ingrediens
-    ingredients.forEach(ingredient => {
-        const button = document.createElement('button'); 
-        button.textContent = ingredient;
-        button.id = ingredient;
-        button.addEventListener("click", function() {
-            console.log('Du klickade på: ' + ingredient);
-
-            // Ta bort ingrediensen från arrayen
-            const index = ingredients.indexOf(ingredient);
-            if (index > -1) {
-                ingredients.splice(index, 1);
-                /* console.log(ingredients); */
-            }
-
-            divForButtons.querySelector('#' + ingredient).remove();
-            addIngredientToChosen(ingredient);
-        });
-        //Skapar knapparna
-        divForButtons.appendChild(button);
-    }); 
-
+    renderBox2(); //render
+    createButtons();
     // Funktion för att uppdatera ingrediensknapparna baserat på filtrering
     function updateIngredientButtons(filteredIngredients) {
         searchIngredientsBox.querySelectorAll('button').forEach(button => button.remove()); // Tömmer nuvarande knappar
@@ -93,3 +69,43 @@ function renderIngredientBox(parentID) { // Parent är <section id = "sort">
         updateIngredientButtons(filteredIngredients);
     }  // Avslutar filterIngredients
 }  
+
+function createButtons() {
+    // Clear existing buttons to prevent duplicates
+    while (divForButtons.firstChild) {
+        divForButtons.removeChild(divForButtons.firstChild);
+    }
+
+    // Create and append buttons for each ingredient
+    ingredients.forEach(ingredient => {
+        const button = document.createElement('button');
+        button.textContent = ingredient;
+        button.id = ingredient;
+
+        // Attach event listener to handle click
+        button.addEventListener("click", () => handleButtonClick(ingredient));
+        
+        // Append the button to the DOM
+        divForButtons.appendChild(button);
+    });
+}
+
+function handleButtonClick(ingredient) {
+    console.log('Du klickade på: ' + ingredient);
+
+    // Remove the ingredient from the array
+    const index = ingredients.indexOf(ingredient);
+    if (index > -1) {
+        ingredients.splice(index, 1);
+        console.log(ingredients);
+    }
+
+    // Remove the button from the DOM
+    const buttonToRemove = divForButtons.querySelector('#' + ingredient);
+    if (buttonToRemove) {
+        buttonToRemove.remove();
+    }
+
+    // Add the ingredient to the chosen list
+    addIngredientToChosen(ingredient);
+}
