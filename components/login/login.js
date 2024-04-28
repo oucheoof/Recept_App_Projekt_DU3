@@ -37,6 +37,7 @@ function renderLoginForm(){
         const username = DOM.querySelector('#username').value;
         const password = DOM.querySelector('#password').value;
 
+        console.log(username, password);
         const registerRequest = new Request('./api/login.php',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -79,15 +80,21 @@ function renderRegisterForm(){
     parentDOM.querySelector( '.register').onclick = async( e ) => {
         e.preventDefault();
 
-        const name = parentDOM.querySelector( '#username').value;
+        const username = parentDOM.querySelector( '#username').value;
+        const email = parentDOM.querySelector( '#email').value;
         const password = parentDOM.querySelector( '#password').value;
+        const rptpassword = parentDOM.querySelector( '#rptpassword').value;
+
+        console.log(username, email, password, rptpassword);
 
         const registerRequest = new Request( './api/users.php', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 username: username,
-                password: password
+                email: email,
+                password: password,
+                rptpassword: rptpassword
             }),
         });
 
