@@ -6,4 +6,14 @@
         echo $json_encoded_data;
         exit(); 
     }
+
+    function requestContainsAllKeys($array){
+        foreach($array as $value){
+            if(!isset($value) || $value === null || $value === ""){
+                return false;
+            }
+        }
+
+        return true;
+    }
 ?>
