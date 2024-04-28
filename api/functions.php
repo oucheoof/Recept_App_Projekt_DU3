@@ -7,7 +7,9 @@
         exit(); 
     }
 
+    //checkar ifall alla nycklar i arrayen är satta och innehåller värden
     function requestContainsAllKeys($array){
+        
         foreach($array as $value){
             if(!isset($value) || $value === null || $value === ""){
                 return false;
