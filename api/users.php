@@ -19,14 +19,12 @@ if ($contentType != "application/json") {
     $error = ["Error" => "Invalid Content-Type, only JSON is allowed."];
     sendJSON($error, 400);
 }
+$requestData = getRequestData();
 
 $usersDB = 'database/users.json';
-$users = [];
 
 $usersJSON = file_get_contents($usersDB);
 $users = json_decode($usersJSON, true);
-
-$requestJSON = file_get_contents('php://input')
 
 
 
@@ -38,22 +36,21 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
         sendJSON($error, 400);
     }
     
+    $newUser = [];
+    foreach($requiredKeys as $key){
+        $newUser[$key] = $requestData[$key];
+    }
+
     $highestID = 0;
-    
     foreach ($users as $user) {
         if ($user["id"] > $highestID) {
             $highestID = $user["id"];
         }
     }
-    
     $nextID = $highestID + 1;
-    
-    $addedUser = [];
-    $addedUser["id"] = $nextID;
+    $newUser["id"] = $nextID;
 
-    foreach($requiredKeys as $key){
-        $addedUser[$key] = 
-    }
+
 
 
 }
