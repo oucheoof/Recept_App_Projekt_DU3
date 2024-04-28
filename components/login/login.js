@@ -58,6 +58,7 @@ function renderLoginForm(){
 }
 
 
+
 function renderRegisterForm(){
     console.log('renderRegister');
     DOM = document.getElementById('logRegContainer');
@@ -99,5 +100,6 @@ function renderRegisterForm(){
 
         console.log( data);
 
-    } 
+        } 
+    }
 }
