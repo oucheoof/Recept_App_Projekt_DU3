@@ -18,4 +18,10 @@
 
         return true;
     }
+
+    // omvandlar datan från the request
+    function getRequestData(){
+        $json = file_get_contents('php://input');
+        return json_decode($json, true);
+    }
 ?>
