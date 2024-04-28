@@ -41,6 +41,9 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
         $newUser[$key] = $requestData[$key];
     }
 
+    $username = $requestData['username'];
+    
+
     $highestID = 0;
     foreach ($users as $user) {
         if ($user["id"] > $highestID) {
@@ -51,7 +54,11 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
     $newUser["id"] = $nextID;
 
 
-
+    //kollar om det upprepade lösenordet är samma
+    if($requestData['password'] !== $requestData['rptpassword']){
+        $error = ["Error" => "Passwords do not match"];
+        sendJSON($error,400);
+    }
 
 }
 
