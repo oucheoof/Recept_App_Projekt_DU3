@@ -1,6 +1,34 @@
+<!-- 
+ users.php är för att:
+    registrera nya användare genom metoden 'POST'
+    radera användare genom metoden 'DELETE'
+-->
+
 <?php
 
-require_once("functions.php");
+require_once('functions.php');
+
+$requestMethod = $_SERVER['REQUEST_METHOD'];
+
+if($requestMethod !== 'POST' && $requestMethod !== 'DELETE'){
+    $error = ["Error" => "Invalid request method"];
+    sendJSON($error, 405);
+}
+
+if ($requestMethod == 'POST'){ //registrera en ny användare
+    $requiredKeys = ['username', 'email', 'password', 'rptpassword'];
+    $
+
+}
+
+
+
+
+
+
+
+
+
 
 $highestID = 0;
 
