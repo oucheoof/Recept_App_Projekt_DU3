@@ -35,14 +35,20 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
         $error = ["Error" => "Bad request: Missing key(s)."];
         sendJSON($error, 400);
     }
+    //kollar om det redan finns användare (med samma namn)
+    $username = $requestData['username'];
+    
+    //kollar om det upprepade lösenordet är samma
+    if($requestData['password'] !== $requestData['rptpassword']){
+        $error = ["Error" => "Passwords do not match"];
+        sendJSON($error,400);
+    }
     
     $newUser = [];
     foreach($requiredKeys as $key){
         $newUser[$key] = $requestData[$key];
     }
 
-    $username = $requestData['username'];
-    
 
     $highestID = 0;
     foreach ($users as $user) {
@@ -54,11 +60,6 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
     $newUser["id"] = $nextID;
 
 
-    //kollar om det upprepade lösenordet är samma
-    if($requestData['password'] !== $requestData['rptpassword']){
-        $error = ["Error" => "Passwords do not match"];
-        sendJSON($error,400);
-    }
 
 }
 
