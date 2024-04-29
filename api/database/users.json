@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "amanda",
+        "username": "amanda",
         "email": "amanda.cai@email.com",
         "password":"panda"
 
