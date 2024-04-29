@@ -17,13 +17,13 @@ function renderBox2(){
 
 }
 
-let arrayChosenIngredients = [];
+let ingredientsBox2 = [];
 
 //Flyttar vidare ingredienser till box 2
-function addIngredientToChosen(ingredient){
+function addIngredientToBox2(ingredient){
     
-    arrayChosenIngredients.push(ingredient);
-    console.log(arrayChosenIngredients);
+    ingredientsBox2.push(ingredient);
+    console.log(ingredientsBox2);
 
     const button = document.createElement('button'); 
     button.textContent = ingredient;
@@ -31,25 +31,36 @@ function addIngredientToChosen(ingredient){
     divForChosenButtons.appendChild(button);
 
     button.addEventListener("click", function(){
-        removeChosenIngredient(ingredient);
+        removeChosenIngredientBox2(ingredient);
 
-        //Hårdkodat...
-        ingredients.push(ingredient);
+        ingredientsBox1.push(ingredient); //Lägger tillbaka till Box 1 ingredientsBox1 array
         const button = document.createElement('button'); 
         button.textContent = ingredient;
         button.id = ingredient
+
+
+        button.addEventListener("click", () => handleButtonClickBox1(ingredient));
+
+        
+
         divForButtons.appendChild(button);
     })
+            button.addEventListener("mouseover", function(){
+            button.textContent = `${ingredient}         ❌` //Fixa sen https://boxicons.com/?query=x
+        })
+        button.addEventListener("mouseout", function(){
+            button.textContent = `${ingredient}`
+        })
 }
 
-function removeChosenIngredient(ingredient) {
-    let index = arrayChosenIngredients.indexOf(ingredient); // Get index
+function removeChosenIngredientBox2(ingredient) {
+    let index = ingredientsBox2.indexOf(ingredient); // Get index
     if (index !== -1) {
-        arrayChosenIngredients.splice(index, 1);  // Use index for splice
+        ingredientsBox2.splice(index, 1);  // Use index for splice
     }
     let elementToRemove = divForChosenButtons.querySelector('#' + ingredient);
     if (elementToRemove) {
         elementToRemove.remove(); // Check if element exists before removing
     }
-    console.log(arrayChosenIngredients);
+    console.log(ingredientsBox2);
 }

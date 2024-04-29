@@ -13,7 +13,7 @@
     }
 
     $method = $_SERVER["REQUEST_METHOD"];
-    $allowedMethods = ["GET", "POST", "DELETE"]; //POST OCH DELETE SENARE
+    $allowedMethods = ["GET"]; 
 
     if (!in_array($method, $allowedMethods)) {
         $error = ["Error" => "Method is invalid"];
@@ -27,7 +27,7 @@
         sendJSON($ingredients);
     }
 
-    if ($method == "POST") { //Hur ska post (filtreringen) fungera med de 2 boxarna?
+/*     if ($method == "POST") { //Hur ska post (filtreringen) fungera med de 2 boxarna?
 
         $ingredients = ["tomat", "pasta", "mjölk", "grädde"];
 
@@ -95,4 +95,4 @@
         sendJSON($error, 404);
     }
 
-?>
+?> */

@@ -1,4 +1,4 @@
-    let ingredients = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
+    let ingredientsBox1 = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
 
 function renderBox1(parentID) { // Parent är <section id = "sort">
     let mainWrapper = document.getElementById(parentID);
@@ -42,7 +42,7 @@ function renderBox1(parentID) { // Parent är <section id = "sort">
     searchIngredientsBox.appendChild(divForButtons);
 
     renderBox2(); //render
-    createButtons();
+    createIngredientBtnsBox1();
     // Funktion för att uppdatera ingrediensknapparna baserat på filtrering
     function updateIngredientButtons(filteredIngredients) {
         searchIngredientsBox.querySelectorAll('button').forEach(button => button.remove()); // Tömmer nuvarande knappar
@@ -51,9 +51,9 @@ function renderBox1(parentID) { // Parent är <section id = "sort">
             const button = document.createElement('button');
             button.textContent = ingredient;
             button.addEventListener("click", function() {
-                const index = ingredients.indexOf(ingredient);
+                const index = ingredientsBox1.indexOf(ingredient);
                 if (index > -1) {
-                    ingredients.splice(index, 1); // Uppdaterar ingrediensarrayen
+                    ingredientsBox1.splice(index, 1); // Uppdaterar ingrediensarrayen
                 }
                 chosenIngredientsBox.appendChild(button); // Flyttar knappen
             });
@@ -64,40 +64,39 @@ function renderBox1(parentID) { // Parent är <section id = "sort">
     // Filtreringsfunktion baserad på användarens input
     function filterIngredients() {
         let filterValue = userIngredientSearch.value.toUpperCase();
-        let filteredIngredients = ingredients.filter(ingredient => 
+        let filteredIngredients = ingredientsBox1.filter(ingredient => 
             ingredient.toUpperCase().indexOf(filterValue) > -1);
         updateIngredientButtons(filteredIngredients);
     }  // Avslutar filterIngredients
 }  
 
-function createButtons() {
-    // Clear existing buttons to prevent duplicates
-    while (divForButtons.firstChild) {
-        divForButtons.removeChild(divForButtons.firstChild);
-    }
+function createIngredientBtnsBox1() {
 
     // Create and append buttons for each ingredient
-    ingredients.forEach(ingredient => {
+    ingredientsBox1.forEach(ingredient => {
         const button = document.createElement('button');
         button.textContent = ingredient;
         button.id = ingredient;
 
         // Attach event listener to handle click
-        button.addEventListener("click", () => handleButtonClick(ingredient));
+        button.addEventListener("click", () => handleButtonClickBox1(ingredient));
         
+        /* sortRecipesArray(ingredientsBox2); */ //Här kallas Michelles funktion
+
+
         // Append the button to the DOM
         divForButtons.appendChild(button);
     });
 }
 
-function handleButtonClick(ingredient) {
+function handleButtonClickBox1(ingredient) {
     console.log('Du klickade på: ' + ingredient);
 
     // Remove the ingredient from the array
-    const index = ingredients.indexOf(ingredient);
+    const index = ingredientsBox1.indexOf(ingredient);
     if (index > -1) {
-        ingredients.splice(index, 1);
-        console.log(ingredients);
+        ingredientsBox1.splice(index, 1);
+        console.log(ingredientsBox1);
     }
 
     // Remove the button from the DOM
@@ -107,5 +106,5 @@ function handleButtonClick(ingredient) {
     }
 
     // Add the ingredient to the chosen list
-    addIngredientToChosen(ingredient);
+    addIngredientToBox2(ingredient);
 }
