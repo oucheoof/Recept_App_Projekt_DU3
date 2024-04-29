@@ -24,4 +24,17 @@
         $json = file_get_contents('php://input');
         return json_decode($json, true);
     }
+
+    function getDatabase($filename){
+        
+    $databaseContents = file_get_contents(`${$filename}.json`);
+    $databaseData = json_decode($databaseContents, true);
+    
+    if (is_array($databaseData) == false) {
+       $error = ["Error" => "Internal server error, invalid database"];
+       sendJSON($error, 500);
+    }
+
+    return $databaseData;
+    }
 ?>

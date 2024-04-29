@@ -37,11 +37,12 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
     }
     //kollar om det redan finns användare (med samma namn)
     $username = $requestData['username'];
+
     
     //kollar om det upprepade lösenordet är samma
     if($requestData['password'] !== $requestData['rptpassword']){
         $error = ["Error" => "Passwords do not match"];
-        sendJSON($error,400);
+        sendJSON($error, 400);
     }
     
     $newUser = [];
