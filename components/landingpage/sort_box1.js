@@ -1,4 +1,5 @@
-    let ingredientsBox1 = STATE.get("ingredients");
+    let ingredientsBox1 = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
+
 function renderBox1(parentID) { // Parent är <section id = "sort">
     let mainWrapper = document.getElementById(parentID);
     
