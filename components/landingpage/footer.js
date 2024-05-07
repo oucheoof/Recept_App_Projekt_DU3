@@ -2,8 +2,6 @@ function renderFooter(){
     //parents
     aboutUsDiv = document.querySelector("#aboutUs");
     infoDiv = document.querySelector("#info");
-
-    
     
     aboutUsH2 = document.createElement("h2");
     aboutUsH2.id = "aboutUsH2";
@@ -11,32 +9,54 @@ function renderFooter(){
     aboutUsDiv.appendChild(aboutUsH2);
 
     aboutUsImage = document.createElement("img")
-    aboutUsImage.src = "../../media/img/omslag1.png"
     aboutUsImage.textContent = "aboutUsImage";
+    aboutUsImage.id = "aboutUsImage";
     aboutUsDiv.appendChild(aboutUsImage);
-    
-    contactUsH3 = document.createElement("h3")
-    contactUsH3.id = "contactUsH3.id"
-    contactUsH3.textContent = "KONTAKTA OSS"
-    aboutUsDiv.appendChild(contactUsH3);
+
+        big3Div = document.createElement("div")
+    big3Div.id = "big3Div";
+    aboutUsDiv.appendChild(big3Div)
+
+
+    contactHeadersDiv = document.createElement("div")
+    contactHeadersDiv.id = "contactHeadersDiv";
+    big3Div.appendChild(contactHeadersDiv);
+
+    contactUsHeader = document.createElement("p")
+    contactUsHeader.id = "contactUsP"
+    contactUsHeader.textContent = "KONTAKTA OSS"
+    contactHeadersDiv.appendChild(contactUsHeader);
+
+    contactUsDiv = document.createElement("div");
+    contactUsDiv.id = "contactUsDiv";
+    big3Div.appendChild(contactUsDiv);
+
 
     contactUsP = document.createElement("p");
     contactUsP.textContent = "Mon - Fri - 10 AM to 8 PM \r\nMon - Fri - 10 AM to 8 PM";
-    contactUsP.id = "contactUsP";
-    aboutUsDiv.appendChild(contactUsP);
+    contactUsDiv.id = "contactUsDiv";
+    contactHeadersDiv.appendChild(contactUsP);
 
     contactUsP2 = document.createElement("p");
     contactUsP2.textContent = "123-456-7890 \r\nemail@.se";
     contactUsP2.id = "contactUsP2";
-    aboutUsDiv.appendChild(contactUsP2);
+    contactUsDiv.appendChild(contactUsP2);
 
-    followUsH2 = document.createElement("h2");
-    followUsH2.id = "followUsH2";
-    followUsH2.textContent = "Följ oss";
-    aboutUsDiv.appendChild(followUsH2);
+    followUsDiv = document.createElement("div");
+    followUsDiv.id = "followUsDiv";
+    big3Div.appendChild(followUsDiv);
+
+    followUsP = document.createElement("p");
+    followUsP.id = "followUsP";
+    followUsP.textContent = "Följ oss";
+    followUsDiv.appendChild(followUsP);
+
+
 
     infoDiv = document.querySelector("#info")
     infoDivImg = document.createElement("img");
-    infoDivImg.src = "../../media/img/omslag1.png"
+    infoDivImg.id = "infoDivImg"
     aboutUsDiv.appendChild(infoDivImg);
+
+
 }   
