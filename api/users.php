@@ -53,6 +53,7 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
         sendJSON($error, 400);
     }
     
+    //ger användaren ett id
     $newUser = [];
     $highestID = 0;
     foreach ($users as $user) {
@@ -86,7 +87,7 @@ if ($requestMethod == 'DELETE'){ //radera en användare
         sendJSON($error, 400);
     }
     
-    $users = $usersDB;
+    //hittar användaren i andvändar-databasen
     foreach ($users as $user) {
         if (isset($user['username'], $user['password'])) {
             $username = $user['username'];
@@ -96,17 +97,19 @@ if ($requestMethod == 'DELETE'){ //radera en användare
             $userToken = sha1("$username$password");
 
             if ($requestToken == $userToken) {
-                return $user;
+                $deletedUser = $user;
+                break;
             }
         }
     }
 
-    if(!isset($user)){
+    if(!isset($deletedUser)){
         $error = ["Error" => "Bad request: Invalid token."];
         sendJSON($error, 400);
     }
 
-    $deletedUser = deleteUser($user);
+    $index = array_search($deletedUser,$users);
+    array_splice($users, $index, 1);
     // unset($newUser["password"],$newUser["rptpassword"]);
     sendJSON($deletedUser, 200);
     
