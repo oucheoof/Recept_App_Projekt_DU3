@@ -1,0 +1,56 @@
+
+/*   CSS styling för wrapper av sorterad/filtrerade recept  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#sorted_recipes_DOM {
+    margin: 4%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+    border: 1px solid black;
+
+    height: 190vh;
+    overflow: scroll;
+}
+
+h2 {
+    margin-top: 4%;
+    text-align: center;
+    font-family: bigpixelShadow;
+    font-size: 40px;
+}
+
+/*   CSS styling för enskilt recept  */
+
+#recipe_container {
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90vw; /*   FEL HÄR ÄNDRA  */
+}
+
+.container_recipe {
+    margin: 3%;
+    border: 1px solid black; 
+}
+
+.recipe_image {
+    width: 100%;
+    height: 22vw;
+    cursor: pointer;
+}
+
+.recipe_name {
+
+    font-family: bigpixelShadow;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
