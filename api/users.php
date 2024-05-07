@@ -20,7 +20,6 @@ if ($contentType != "application/json") {
     sendJSON($error, 400);
 }
 $requestData = getRequestData();
-
 $usersDB = 'database/users.json';
 
 $usersJSON = file_get_contents($usersDB);
@@ -73,6 +72,44 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
     file_put_contents($usersDB, $usersJSON);
     sendJSON($newUser, 201);
 
+}
+
+if ($requestMethod == 'DELETE'){ //radera en användare
+
+    if(empty($requestData)){
+        $error = ["Error" => "Bad request: Empty request."];
+        sendJSON($error, 400);
+    }
+
+    if(isset($requestData["token"]) == false){
+        $error = ["Error" => "Bad request: Missing token."];
+        sendJSON($error, 400);
+    }
+    
+    $users = $usersDB;
+    foreach ($users as $user) {
+        if (isset($user['username'], $user['password'])) {
+            $username = $user['username'];
+            $password = $user['password'];
+
+            $requestToken = $requestData['token'];
+            $userToken = sha1("$username$password");
+
+            if ($requestToken == $userToken) {
+                return $user;
+            }
+        }
+    }
+
+    if(!isset($user)){
+        $error = ["Error" => "Bad request: Invalid token."];
+        sendJSON($error, 400);
+    }
+
+    $deletedUser = deleteUser($user);
+    // unset($newUser["password"],$newUser["rptpassword"]);
+    sendJSON($deletedUser, 200);
+    
 }
 
 
