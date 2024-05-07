@@ -48,13 +48,9 @@ const _state = {
             rating: [{ "user_id": 7, "rating": 10 }],
             image: "./media/thumbnails/kottbullar.jpg"
         },
-    ]
-};
+    ],
 
-
-const STATE = {
- 
-    get
+    ingredients:["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"]
 
 };
 
