@@ -111,16 +111,10 @@ if ($requestMethod == 'DELETE'){ //radera en användare
     $index = array_search($deletedUser,$users);
     array_splice($users, $index, 1);
     // unset($newUser["password"],$newUser["rptpassword"]);
+    $usersJSON = json_encode($users, JSON_PRETTY_PRINT);
+    file_put_contents($usersDB, $usersJSON);
     sendJSON($deletedUser, 200);
     
 }
-
-
-
-
-
-
-
-
 
 ?>
