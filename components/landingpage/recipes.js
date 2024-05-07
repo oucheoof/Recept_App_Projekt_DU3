@@ -37,36 +37,28 @@ sortRecipesArray( sortedRecipes );
 
 // sorterar recept
 // vilka recept som ska visas utifrån sortering 
-function sortRecipesArray( chosenIngredients ) {
-
-    // loopa recepten -> har recepten just den ingrediensen?  jämföra 
-    // hämta alla recept som finns
-
-    const recipesArray = STATE.get('recipes');
-
+function sortRecipesArray(chosenIngredients) {
+    const recipesArray = STATE.get('recipes'); // Hämtar alla recept
     const matchedRecipes = [];
 
     for (let i = 0; i < recipesArray.length; i++) {
-
         const recipeIngredients = recipesArray[i].ingredients;
 
-        // Kontrollerar om alla valda ingredienser finns i receptet -> blir true eller false?
-        const allIngredientsFound = chosenIngredients.every(ingredient =>
+        // Kontrollerar om någon av de valda ingredienserna finns i receptet
+        const anyIngredientFound = chosenIngredients.some(ingredient =>
             recipeIngredients.includes(ingredient)
         );
 
-        if ( allIngredientsFound ) {
-            matchedRecipes.push( recipesArray[i] );
+        // Om någon ingrediens hittas, lägg till receptet i resultatlistan
+        if (anyIngredientFound) {
+            matchedRecipes.push(recipesArray[i]);
         }
 
-        console.log(matchedRecipes);
-        
-        console.log(allIngredientsFound);
     }
 
-    return matchedRecipes;
-
+    return matchedRecipes; // Returnerar en lista av matchade recept
 }
+
 
 
 
