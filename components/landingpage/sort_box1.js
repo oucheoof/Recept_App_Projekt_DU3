@@ -2,7 +2,7 @@
 
 function renderBox1(parentID) { // Parent är <section id = "sort">
     let mainWrapper = document.getElementById(parentID);
-
+    
     // div for h2
     let sortTitleDiv = document.createElement("div");
     sortTitleDiv.id = "sortTitleDiv";

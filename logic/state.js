@@ -63,6 +63,8 @@ const STATE = {
 
 
 function render_App() {
+
+
     
     //const response = await fetch ('./api/database/recepies.json');
     //const data = await response.json();
@@ -79,6 +81,9 @@ function render_App() {
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
+    renderFooter();
+    
+    renderBox1("sort");
     
     render_sorted_recipes_DOM(matched_recepies); // anropar på container för alla sorterade/filtrerade recept 
     //render_instance_recipe();
