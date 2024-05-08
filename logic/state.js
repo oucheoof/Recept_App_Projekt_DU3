@@ -28,16 +28,16 @@ const _state = {
         },
         {
             id: 3,
-            name: "Stekt ris",
-            ingredients: ["jasminris", "morot", "röd paprika", "sockerärtor", "vitlöksklyftor", "matolja", "chilli flakes", "ägg"],
+            name: "Fläderdryck",
+            ingredients: ["fläderblomsklasar", "citron", "vatten", "socker", "citronsyra", "natriumbensoat"],
 
-            renderIngredients: "Jasminris 3 dl\nMorot 1\nRöd paprika 1\nSockerärter 150 g\nVitlöksklyftor 3\nMatolja 2 msk\nChili flakes 1 tsk\nÄgg 2",
+            renderIngredients: "Fläderblomsklasar 35 - 40\nCitroner 3\nVatten 1½ liter\nStrösocker 1½ liter\nCitronsyra 50 g\nNatriumbensoat ev. 2 krm",
 
-            howTo: "1. Koka riset enligt anvisning på förpackningen.\n2. Skala och skär tunna stavar av moroten. Strimla paprika och sockerärter. 3. Skala och finhacka vitlöken.\n4. Bryn smöret till dressingen under omrörning. Häll över i en värmetålig skål och rör ner övriga ingredienser.\n5. Hetta upp matoljan i en rymlig stekpanna. Stek alla grönsaker med vitlök och chili flakes på hög värme 2–3 min.\n6. Tillsätt riset och knäck ner äggen. Stek under omrörning tills äggen stelnat. Blanda ner dressingen.\n7. Toppa stekt ris med koriander och rostad lök. Servera direkt. ",
+            howTo: "1. Skölj blomklasarna i ljummet vatten, låt rinna av. Ta bort grova skaft, de kan göra saften besk.\n2. Tvätta citronerna noga i ljummet vatten. Skär citronerna i skivor.\n3. Varva blomklasar och citronskivor i en stor bunke.\n4. Koka upp vatten och socker. Rör om tills sockret löst upp sig. Blanda ner citronsyran och natriumbensoat . Häll den heta sockerlagen i bunken.\n5. Låt svalna i rumstemperatur. Täck sedan över bunken och låt stå i kylskåp 2-3 dygn.\n6. Sila saften genom silduk. Häll flädersaften på rena flaskor, fyll ända upp och sätt på skruvkork.\n7. Förvara flädersaften svalt. Späd till nskad smak med med kallt vatten, gärna kolsyrat! Fyll på med isbitar och ev citronskivor. ",
 
             like: [4, 7],
             rating: [{ "user_id": 7, "rating": 10 }],
-            image: "./media/thumbnails/stektris.jpg"
+            image: "./media/thumbnails/flaaderdryck.png"
         },
         {
             id: 4,
@@ -80,16 +80,16 @@ const _state = {
         },
         {
             id: 7,
-            name: "Fläderdryck",
-            ingredients: ["fläderblomsklasar", "citron", "vatten", "socker", "citronsyra", "natriumbensoat"],
+            name: "Stekt ris",
+            ingredients: ["jasminris", "morot", "röd paprika", "sockerärtor", "vitlöksklyftor", "matolja", "chilli flakes", "ägg"],
 
-            renderIngredients: "Fläderblomsklasar 35 - 40\nCitroner 3\nVatten 1½ liter\nStrösocker 1½ liter\nCitronsyra 50 g\nNatriumbensoat ev. 2 krm",
+            renderIngredients: "Jasminris 3 dl\nMorot 1\nRöd paprika 1\nSockerärter 150 g\nVitlöksklyftor 3\nMatolja 2 msk\nChili flakes 1 tsk\nÄgg 2",
 
-            howTo: "1. Skölj blomklasarna i ljummet vatten, låt rinna av. Ta bort grova skaft, de kan göra saften besk.\n2. Tvätta citronerna noga i ljummet vatten. Skär citronerna i skivor.\n3. Varva blomklasar och citronskivor i en stor bunke.\n4. Koka upp vatten och socker. Rör om tills sockret löst upp sig. Blanda ner citronsyran och natriumbensoat . Häll den heta sockerlagen i bunken.\n5. Låt svalna i rumstemperatur. Täck sedan över bunken och låt stå i kylskåp 2-3 dygn.\n6. Sila saften genom silduk. Häll flädersaften på rena flaskor, fyll ända upp och sätt på skruvkork.\n7. Förvara flädersaften svalt. Späd till nskad smak med med kallt vatten, gärna kolsyrat! Fyll på med isbitar och ev citronskivor. ",
+            howTo: "1. Koka riset enligt anvisning på förpackningen.\n2. Skala och skär tunna stavar av moroten. Strimla paprika och sockerärter. 3. Skala och finhacka vitlöken.\n4. Bryn smöret till dressingen under omrörning. Häll över i en värmetålig skål och rör ner övriga ingredienser.\n5. Hetta upp matoljan i en rymlig stekpanna. Stek alla grönsaker med vitlök och chili flakes på hög värme 2–3 min.\n6. Tillsätt riset och knäck ner äggen. Stek under omrörning tills äggen stelnat. Blanda ner dressingen.\n7. Toppa stekt ris med koriander och rostad lök. Servera direkt. ",
 
             like: [4, 7],
             rating: [{ "user_id": 7, "rating": 10 }],
-            image: "./media/thumbnails/flaaderdryck.png"
+            image: "./media/thumbnails/stektris.jpg"
         },
         {
             id: 8,
