@@ -89,7 +89,7 @@ const _state = {
 
             like: [4, 7],
             rating: [{ "user_id": 7, "rating": 10 }],
-            image: "./media/thumbnails/flaaderdryck.jpg"
+            image: "./media/thumbnails/flaaderdryck.png"
         },
         {
             id: 8,
@@ -128,7 +128,7 @@ const _state = {
 
             like: [4, 7],
             rating: [{ "user_id": 7, "rating": 10 }],
-            image: "./media/thumbnails/ramen.jpg"
+            image: "./media/thumbnails/ramen.png"
         },
         {
             id: 11,
