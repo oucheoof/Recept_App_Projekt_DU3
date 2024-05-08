@@ -41,7 +41,6 @@ function render_instance_recipe (instance_data) {
     const container_recipe = document.createElement("div");
     container_recipe.classList.add("container_recipe"); // Lägger till en CSS-klass
 
-
     // Alla receptdetaljer i .recipe_container:
 
     // Recept bild
@@ -49,8 +48,11 @@ function render_instance_recipe (instance_data) {
     const recipe_img = document.createElement('img');
     recipe_img.classList.add("recipe_image");
     recipe_img.src = instance_data.image;
-
     container_recipe.appendChild(recipe_img); 
+
+    recipe_img.addEventListener("click", () => [
+        
+    ])
 
 
     // Recept titel

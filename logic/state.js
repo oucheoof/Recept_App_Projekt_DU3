@@ -71,7 +71,6 @@ function render_App() {
     //const data = await response.json();
     
     //_state.recipes = data.artists;
-    console.log(_state);
 
    /*
     let recipeRequest = new Request(`./api/database/recepies.php`);
@@ -83,6 +82,9 @@ function render_App() {
     render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
     render_sorted_recipes_DOM("matched_recepies"); // anropar på container för alla sorterade/filtrerade recept 
+    update_sorted_recipes(ingredientsBox2);
+
+    renderPopup();
     
     renderBox1("sort");
     renderFooter();
