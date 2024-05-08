@@ -13,7 +13,7 @@ function renderFooter(){
     aboutUsImage.id = "aboutUsImage";
     aboutUsDiv.appendChild(aboutUsImage);
 
-        big3Div = document.createElement("div")
+    big3Div = document.createElement("div")
     big3Div.id = "big3Div";
     aboutUsDiv.appendChild(big3Div)
 

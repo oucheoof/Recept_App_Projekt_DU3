@@ -1,4 +1,4 @@
-    let ingredientsBox1 = ["tomat", "potatis", "lök", "vitlök", "morot", "paprika", "basilika", "oregano", "kyckling", "nötkött", "fläskkött", "ägg", "mjöl", "mjölk", "grädde", "ost", "smör", "olivolja", "ris", "pasta"];
+    let ingredientsBox1 = ["tomat", "potatis", "pasta"];
 
 function renderBox1(parentID) { // Parent är <section id = "sort">
     let mainWrapper = document.getElementById(parentID);
@@ -96,8 +96,12 @@ function handleButtonClickBox1(ingredient) {
     const index = ingredientsBox1.indexOf(ingredient);
     if (index > -1) {
         ingredientsBox1.splice(index, 1);
-        console.log(ingredientsBox1);
+        
     }
+
+    addIngredientToBox2(ingredient);
+    
+    update_sorted_recipes(ingredientsBox2);
 
     // Remove the button from the DOM
     const buttonToRemove = divForButtons.querySelector('#' + ingredient);
@@ -106,5 +110,4 @@ function handleButtonClickBox1(ingredient) {
     }
 
     // Add the ingredient to the chosen list
-    addIngredientToBox2(ingredient);
 }

@@ -38,6 +38,9 @@ function addIngredientToBox2(ingredient){
         button.textContent = ingredient;
         button.id = ingredient
 
+                update_sorted_recipes(ingredientsBox2);
+
+
 
         button.addEventListener("click", () => handleButtonClickBox1(ingredient));
 

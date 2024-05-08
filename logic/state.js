@@ -81,11 +81,11 @@ function render_App() {
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
-    renderFooter();
+    render_sorted_recipes_DOM("matched_recepies"); // anropar på container för alla sorterade/filtrerade recept 
     
     renderBox1("sort");
+    renderFooter();
     
-    render_sorted_recipes_DOM(matched_recepies); // anropar på container för alla sorterade/filtrerade recept 
     //render_instance_recipe();
 
 
