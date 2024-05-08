@@ -4,6 +4,7 @@ const _state = {
             id: 1,
             name: "Köttbullar",
             ingredients: ["tomat", "pasta"],
+            howTo: "",
             like: [4, 7],
             rating: [{ "user_id": 7, "rating": 10 }],
             image: "./media/thumbnails/kottbullar.jpg"
