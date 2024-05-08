@@ -1,0 +1,37 @@
+#contactUsP, #contactUsP2{
+    white-space: pre;
+}
+#aboutUsImage{
+    background-image: url(../../media/img/logo1.png);
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+}
+a
+#infoDivImg{
+    background-image: url(../../media/img/forky.png);
+    background-size: cover;
+    height: 500px;
+    width: 100px;
+}
+
+#contactUsDiv{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#big3Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 900px;
+}
+
+/* #contactHeadersDiv{
+    display: flex;
+    flex-direction: row;
+    
+} */
