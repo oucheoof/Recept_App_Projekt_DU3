@@ -549,7 +549,7 @@ const _state = {
         },
         {
             id: 39,
-            name:,
+            name: "Ramen Miso",
             ingredients:[
                 "burkar majskorn",
                 "smör",
@@ -624,6 +624,20 @@ const _state = {
     ]
 };
 
+//Skapar en array med alla ingredienser från state
+function uniqueIngredients() {
+    const uniqueSet = new Set(); 
+
+    _state.recipes.forEach(recipe => {
+        recipe.ingredients.forEach(ingredient => {
+            uniqueSet.add(ingredient);  
+        });
+    });
+
+    return Array.from(uniqueSet);
+}
+const uniqueIngredientsArray = uniqueIngredients(); // Call the function and store its return value in a variable
+console.log(uniqueIngredientsArray); // Now you can use this variable to access the array of unique ingredients
 
 const STATE = {
  
