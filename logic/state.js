@@ -169,12 +169,166 @@ const _state = {
             rating: [{ "user_id": 7, "rating": 10 }],
             image: "./media/thumbnails/pasta_carbonara.jpg"
         },
-
-
-
-
-
-
+        {
+            id: 14,
+            name: "Kärleksmums",
+            ingredients: ["tomat", "pasta"],
+            renderIngredients: "smör 200 g\n standardmjölk 2 dl\n standardmjölk 2 dl\nÄgg 4\nStrösocker 4 dl\nVetemjöl 4 dl\nBakpulver 2½ tsk\nVaniljsocker 2 tsk\nKakao 1½ dl\nSalt 2 krm",
+            howTo: "Sätt ugnen på 175°.\nSmörj och bröa en form med hög kant, 25x35 cm eller lägg i ett bakplåtspapper.\nSmält smöret, häll i mjölken och låt svalna.\nVispa ägg och socker riktigt pösigt med elvisp. Det tar ca 5 min.\nBlanda mjöl, vaniljsocker, kakao, bakpulver och salt. Sikta ner i smeten genom en sil. Tillsätt smör och mjölk och blanda allt till en jämn smet. Häll smeten i formen.\nGrädda i mitten av ugnen ca 25 min. Känn efter med en trästicka så kakan är helt genomgräddad. Låt kakan svalna",
+            like: [4, 7],
+            rating: [{ "user_id": 7, "rating": 10 }],
+            image: "./media/thumbnails/karleksmums.jpg"
+        },
+        {
+            id: 15,
+            name: "Chokladbollar",
+            ingredients: ["svenskt smör", "strösocker", "kakao", "vaniljsocker", "vatten", "havregryn"],
+            renderIngredients: "smör 100 g\nströsocker 1½ dl\nkakao ½ dl\nvaniljsocker 1 tsk\nvatten 2 msk\nhavregryn 5 dl",
+            howTo: "Rör ihop smör och socker. Tillsätt kakao, vaniljsocker och vatten. Blanda i havregryn. Forma smeten till bollar och rulla i strössel eller kokosflingor. Förvara i kylen.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/chokladbollar.jpg"
+        },
+        {
+            id: 16,
+            name: "Picklad rödlök",
+            ingredients: ["ättiksprit", "strösocker", "vatten", "rödlökar"],
+            renderIngredients: "ättiksprit 12% 1 dl\nströsocker 2 dl\nvatten 3 dl\nrödlökar 2 st",
+            howTo: "Koka upp ättika, socker och vatten, låt svalna något. Skala och skiva löken tunt och lägg i en glasburk. Häll på den ljumna lagen och låt stå tills den kallnat. Löken är sedan klar att serveras men håller ytterligare 1-2 veckor i kyl.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/picklad_rodlok.jpg"
+        },
+        {
+            id: 17,
+            name: "Grekisk sallad",
+            ingredients: ["rödlök", "gurka", "tomater", "fetaost", "färsk oregano", "Kalamataoliver", "olivolja", "rödvinsvinäger", "svartpeppar"],
+            renderIngredients: "rödlök 1 st\n gurka 1 st\ntomater 4 st\nfetaost 150 g\nfärsk oregano ½ kruka\nKalamataoliver 1½ dl\nolivolja ½ dl\nrödvinsvinäger 1 msk\nsvartpeppar 1 krm",
+            howTo: "Skala och skiva löken. Skär gurka och tomater i bitar. Bryt osten i bitar. Plocka bladen från oreganon. Rör ihop olja och vinäger till en dressing. Varva lök, gurka, tomat, oliver och ost på tallrikar. Ringla över dressingen. Strö över oregano och svartpeppar.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/grekisk_sallad.jpg"
+        },
+        {
+            id: 18,
+            name: "Kokt potatis",
+            ingredients: ["potatis", "vatten", "salt", "svenskt smör", "flingsalt", "färsk persilja"],
+            renderIngredients: "potatis 900 g\nvatten tillräckligt för att täcka potatisen\nsalt 2 tsk\nsvenskt smör 2 msk\nflingsalt 1 tsk\nfärsk persilja 2 msk (valfritt)",
+            howTo: "Tvätta eller skala potatisen och lägg i en kastrull. Täck med kallt vatten och salta. Koka under lock tills potatisen är genomkokt, ca 20 minuter. Häll av vattnet och låt potatisen ånga av. Servera med smör, flingsalt och hackad persilja.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/kokt_potatis.jpg"
+        },
+        {
+            id: 19,
+            name: "Stuvad spenat",
+            ingredients: ["fryst spenat", "svenskt smör", "vetemjöl", "standardmjölk", "salt", "svartpeppar"],
+            renderIngredients: "fryst spenat 450 g\nsvenskt smör 3 msk\nvetemjöl 3 msk\nstandardmjölk 4 dl\nsalt ½ tsk\nsvartpeppar 1 krm",
+            howTo: "Smält smöret i en kastrull, vispa ner mjölet. Späd med mjölken och låt koka ihop. Krama ur spenaten och rör ner i såsen. Smaka av med salt och peppar.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/stuvad_spenat.jpg"
+        },
+        {
+            id: 20,
+            name: "Enkel kycklinggryta",
+            ingredients: ["kycklingbröstfilé", "smör-&rapsolja", "svartpeppar", "soja", "hönsbuljong", "vetemjöl", "matlagningsgrädde"],
+            renderIngredients: "kycklingbröstfilé 450 g\nsmör-&rapsolja 1 msk\nsvartpeppar 1 krm\nsoja ½ msk\nhönsbuljong 1 tärning\nvetemjöl 1 msk\nmatlagningsgrädde 5 dl",
+            howTo: "Skär kycklingen i strimlor, krydda med peppar och bryn i smör-&rapsolja. Tillsätt soja, buljongtärning och grädde. Vispa vetemjölet i lite vatten och rör ner i grytan. Låt allt koka ca 5 min. Servera med ris och sallad.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/enkel_kycklinggryta.jpg"
+        },
+        {
+            id: 21,
+            name: "Smoothie med hallon",
+            ingredients: ["frysta hallon", "vaniljyoghurt", "standardmjölk"],
+            renderIngredients: "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmjölk 1 dl",
+            howTo: "Lägg hallon, yoghurt och mjölk i en mixer eller skål om du använder stavmixer. Mixa till en jämn smoothie. Servera direkt.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/smoothie_med_hallon.jpg"
+        },
+        {
+            id: 21,
+            name: "Smoothie med hallon",
+            ingredients: ["frysta hallon", "vaniljyoghurt", "standardmjölk"],
+            renderIngredients: "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmjölk 1 dl",
+            howTo: "Lägg hallon, yoghurt och mjölk i en mixer eller skål om du använder stavmixer. Mixa till en jämn smoothie. Servera direkt.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/smoothie_med_hallon.jpg"
+        },
+        {
+            id: 21,
+            name: "Smoothie med hallon",
+            ingredients: ["frysta hallon", "vaniljyoghurt", "standardmjölk"],
+            renderIngredients: "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmjölk 1 dl",
+            howTo: "Lägg hallon, yoghurt och mjölk i en mixer eller skål om du använder stavmixer. Mixa till en jämn smoothie. Servera direkt.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/smoothie_med_hallon.jpg"
+        },
+        {
+            id: 22,
+            name: "Kålsoppa",
+            ingredients: ["potatis", "gul lök", "vitlöksklyftor", "smör-&rapsolja", "grönsaksbuljong", "vispgrädde", "färsk grönkål", "Ädel Creme", "kantareller", "salt", "svartpeppar"],
+            renderIngredients: "potatis 500 g\ngul lök 1 st\nvitlöksklyftor 2 st\nsmör-&rapsolja 3 msk\ngrönsaksbuljong 9 dl\nvispgrädde 3 dl\nfärsk grönkål 200 g\nÄdel Creme 170 g\nkantareller 150 g\nsalt och svartpeppar",
+            howTo: "Fräs hackad lök och vitlök i olja, tillsätt buljong och grädde och koka. Lägg i grönkål och Ädel Creme, koka vidare. Mixa soppan lite grovt, stek svamp och toppa soppan med den.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/kalsoppa.jpg"
+        },
+        {
+            id: 23,
+            name: "Tryffelpasta med Gruyère",
+            ingredients: ["linguine pasta", "vitlöksklyftor", "smör", "vitt vin", "vispgrädde", "tryffelolja", "salt", "svartpeppar", "Gruyère ost"],
+            renderIngredients: "linguine pasta 4 portioner\nvitlöksklyftor 3 st\nsmör 25 g\nvitt vin 1 dl\nvispgrädde 3 dl\ntryffelolja 2 tsk\nsalt och svartpeppar\nGruyère ost 150 g",
+            howTo: "Koka pastan al dente och spara lite av kokvattnet. Fräs vitlöken i smör, tillsätt vin och grädde och låt sjuda. Krydda med tryffelolja, salt och peppar. Blanda pastan med såsen och toppa med finriven Gruyère.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/tryffelpasta_med_gruyere.jpg"
+        },
+        {
+            id: 24,
+            name: "Ayran",
+            ingredients: ["yoghurt naturell", "vatten", "salt", "färsk mynta"],
+            renderIngredients: "yoghurt naturell 5 dl\nvatten 5 dl\nsalt 1-2 tsk\nfärsk mynta (valfritt)",
+            howTo: "Vispa eller skaka ihop yoghurt och vatten tills det blir skummigt. Smaka av med salt och ställ i kylen för att bli riktigt kall. Servera iskall ayran i glas, eventuellt garnerad med färsk mynta.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/ayran.jpg"
+        },
+        {
+            id: 25,
+            name: "Pastasallad med ost och kronärtskocka",
+            ingredients: ["orecchiette pasta", "Castello White tryffel vitmögelost", "rödlök", "röd paprika", "kronärtskockshjärtan i olja", "hackad färsk basilika, salvia och oregano", "dijonsenap", "rödvinsvinäger", "salt", "svartpeppar"],
+            renderIngredients: "orecchiette pasta 300 g\nCastello White tryffel vitmögelost 150 g\nrödlök 1 st\nröd paprika 1 st\nkronärtskockshjärtan i olja 300 g\nhackad färsk basilika, salvia och oregano 1 dl\ndijonsenap 1 tsk\nrödvinsvinäger 2 tsk\nsalt 1 krm\nsvartpeppar 1 krm",
+            howTo: "Koka pasta enligt anvisning. Blanda skuren ost, hackad lök, paprika och kronärtskockshjärtan med örter. Kombinera senap, vinäger och oljan från kronärtskockorna, salta och peppra, och blanda med pastan.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/pastasallad_med_ost_och_kronartsskocka.jpg"
+        },
+        {
+            id: 26,
+            name: "Banankaka",
+            ingredients: ["smör", "standardmjölk", "ägg", "strösocker", "mogna bananer", "malen kanel", "vetemjöl", "bakpulver"],
+            renderIngredients: "smör 75 g\nstandardmjölk ½ dl\nägg 2 st\nströsocker 2 dl\nmogna bananer 2 st\nmalen kanel 1 tsk\nvetemjöl 3 dl\nbakpulver 1 tsk",
+            howTo: "Sätt ugnen på 175°. Smörj och bröa en avlång form. Smält smöret och blanda med mjölken. Vispa ägg och socker pösigt och rör ner mosade bananer, kanel, mjöl och bakpulver. Blanda snabbt ihop med mjölkblandningen och häll i formen. Grädda i 55-60 min.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/banankaka.jpg"
+        },
+        {
+            id: 27,
+            name: "Fattiga Riddare",
+            ingredients: ["ägg", "mjölk", "strösocker", "vaniljsocker", "kanel", "vitt bröd", "smör"],
+            renderIngredients: "ägg 2 st\nmjölk 3 dl\nströsocker 3 msk\nvaniljsocker 2 tsk\nkanel 1 tsk\nvitt bröd 8 skivor\nsmör",
+            howTo: "Vispa samman ägg, mjölk, socker, vaniljsocker och kanel. Doppa brödskivorna i blandningen. Stek dem gyllenbruna i smör. Servera med sylt eller socker.",
+            like: [],
+            rating: [],
+            image: "./media/thumbnails/fattiga_riddare.jpg"
+        },
         {
             id: 28,
             name: "Halloumigryta med ris",
