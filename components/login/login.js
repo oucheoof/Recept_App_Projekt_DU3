@@ -14,6 +14,9 @@ function renderLogRegContainer(parentID) {
     document.getElementById(parentID).append(DOM);
 }
 
+
+
+
 function renderLoginForm(){
     console.log('renderlogin');
     DOM = document.getElementById('logRegContainer');
@@ -25,9 +28,36 @@ function renderLoginForm(){
     <input type="text" id="username" name="username" placeholder="Användarnamn">
     <input type="password" id="password" name="password" placeholder="Lösenord">
     
-    <button type="submit">Logga in</button>
+    <button class="login">Logga in</button>
     </form>`
+
+    DOM.querySelector('.login').onclick = async(e) => {
+        e.preventDefault();
+
+        const username = DOM.querySelector('#username').value;
+        const password = DOM.querySelector('#password').value;
+
+        console.log(username, password);
+        const registerRequest = new Request('./api/login.php',{
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                username: username,
+                password: password
+        }),
+    });
+
+    const data = await fetcher( registerRequest);
+
+    if( data.error ) {
+        window.alert( `${data.error}`)
+    }
+
+    localStorage.setItem( 'token', data.token);
+    location.reload();
+
 }
+
 
 
 function renderRegisterForm(){
@@ -44,6 +74,39 @@ function renderRegisterForm(){
         <input type="password" id="password" name="password" placeholder="Lösenord">
         <input type="password" id="rptpassword" name="rptpassword" placeholder="Upprepa lösenord">
         
-        <button type="submit">Registrera konto</button>
+        <button class="register">Registrera konto</button>
      </form>`
+
+    parentDOM.querySelector( '.register').onclick = async( e ) => {
+        e.preventDefault();
+
+        const username = parentDOM.querySelector( '#username').value;
+        const email = parentDOM.querySelector( '#email').value;
+        const password = parentDOM.querySelector( '#password').value;
+        const rptpassword = parentDOM.querySelector( '#rptpassword').value;
+
+        console.log(username, email, password, rptpassword);
+
+        const registerRequest = new Request( './api/users.php', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                username: username,
+                email: email,
+                password: password,
+                rptpassword: rptpassword
+            }),
+        });
+
+
+        const data = await fetcher( registerRequest);
+
+        if( !data.error ) {
+            window.alert( `successful registration ${data.name}`)
+        }
+
+        console.log( data);
+
+        } 
+    }
 }

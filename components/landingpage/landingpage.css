@@ -68,7 +68,7 @@ header img:first-of-type {
     object-fit: cover;
 }
 
-h1 {
+h1 .title {
     position: absolute;
     /*background-color: rgba(0, 0, 0, 0.4);*/
     background-color: white;

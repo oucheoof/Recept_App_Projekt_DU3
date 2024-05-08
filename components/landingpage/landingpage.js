@@ -3,7 +3,6 @@
 function render_wrapper_DOM () {
 
     const wrapper = document.querySelector("body");
-    
     wrapper.innerHTML = `
         
         <header id="head"> </header>
@@ -41,7 +40,7 @@ function render_header (header) {
     header.innerHTML = `
         
         <img src="./media/img/omslag1.png">
-        <h1> Kitsch </h1>
+        <h1 class="title"> Kitsch </h1>
         
         <div> TEXT SLOGAN  </div>
         
