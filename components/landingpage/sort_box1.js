@@ -50,12 +50,14 @@ function renderBox1(parentID) { // Parent är <section id = "sort">
         filteredIngredients.forEach(ingredient => {
             const button = document.createElement('button');
             button.textContent = ingredient;
+            button.id = ingredient;
             button.addEventListener("click", function() {
                 const index = ingredientsBox1.indexOf(ingredient);
                 if (index > -1) {
                     ingredientsBox1.splice(index, 1); // Uppdaterar ingrediensarrayen
+                    handleButtonClickBox1(ingredient);// ska skapa en knapp i box2
                 }
-                chosenIngredientsBox.appendChild(button); // Flyttar knappen
+
             });
             divForButtons.appendChild(button);
         });
@@ -80,9 +82,6 @@ function createIngredientBtnsBox1() {
 
         // Attach event listener to handle click
         button.addEventListener("click", () => handleButtonClickBox1(ingredient));
-        
-        /* sortRecipesArray(ingredientsBox2); */ //Här kallas Michelles funktion
-
 
         // Append the button to the DOM
         divForButtons.appendChild(button);
@@ -90,24 +89,22 @@ function createIngredientBtnsBox1() {
 }
 
 function handleButtonClickBox1(ingredient) {
-    console.log('Du klickade på: ' + ingredient);
-
-    // Remove the ingredient from the array
-    const index = ingredientsBox1.indexOf(ingredient);
-    if (index > -1) {
-        ingredientsBox1.splice(index, 1);
-        
-    }
-
-    addIngredientToBox2(ingredient);
-    
-    update_sorted_recipes(ingredientsBox2);
 
     // Remove the button from the DOM
     const buttonToRemove = divForButtons.querySelector('#' + ingredient);
     if (buttonToRemove) {
         buttonToRemove.remove();
     }
+    // Remove the ingredient from the array
+    const index = ingredientsBox1.indexOf(ingredient);
+    if (index > -1) {
+        ingredientsBox1.splice(index, 1);
+    }
+
+    addIngredientToBox2(ingredient);
+    
+    update_sorted_recipes(ingredientsBox2);
+
 
     // Add the ingredient to the chosen list
 }

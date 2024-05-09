@@ -23,7 +23,6 @@ let ingredientsBox2 = [];
 function addIngredientToBox2(ingredient){
     
     ingredientsBox2.push(ingredient);
-    console.log(ingredientsBox2);
 
     const button = document.createElement('button'); 
     button.textContent = ingredient;
@@ -65,5 +64,4 @@ function removeChosenIngredientBox2(ingredient) {
     if (elementToRemove) {
         elementToRemove.remove(); // Check if element exists before removing
     }
-    console.log(ingredientsBox2);
 }
