@@ -20,7 +20,7 @@ function updatePopup(recipe_instance){
     let exitImg = document.createElement('img');
     exitImg.id = "exitImg";
     exitImg.src = "./media/img/exit.svg"
-    dialogDOM.appendChild(exitImg);
+    popupWrapper.appendChild(exitImg);
 
     //Tömmer modal vid esc
     document.addEventListener('keyup', function(event) {
@@ -36,28 +36,28 @@ function updatePopup(recipe_instance){
 
     let headerImg = document.createElement("img")
     headerImg.id = "headerImg";
-    headerImg.src = "";
-    dialogDOM.appendChild(headerImg);
+    headerImg.src = "./media/img/popupHeader.jpg";
+    popupWrapper.appendChild(headerImg);
 
     let popupImg = document.createElement("img");
     popupImg.id = "popupImg";
-    popupImg.src = "";
-    dialogDOM.appendChild(popupImg);
+    popupImg.src = recipe_instance.image;
+    popupWrapper.appendChild(popupImg);
 
     let popUpTitle = document.createElement("h2");
     popUpTitle.id = "popUpTitle";
     popUpTitle.textContent = recipe_instance.name;
-    dialogDOM.appendChild(popUpTitle);
+    popupWrapper.appendChild(popUpTitle);
 
     let ingredietListDOM = document.createElement("p")
     ingredietListDOM.id = "ingredietListDOM";
     ingredietListDOM.textContent = recipe_instance.renderIngredients;
-    dialogDOM.appendChild(ingredietListDOM)
+    popupWrapper.appendChild(ingredietListDOM)
 
     let howToDOM = document.createElement("p")
     howToDOM.id = "howToDOM";
     howToDOM.textContent = recipe_instance.howTo;
-    dialogDOM.appendChild(howToDOM)
+    popupWrapper.appendChild(howToDOM)
 
     dialogDOM.showModal();
     

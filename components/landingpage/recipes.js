@@ -52,10 +52,7 @@ function sortRecipesArray(chosenIngredients) {
         // Om någon ingrediens hittas, lägg till receptet i resultatlistan
         if (anyIngredientFound) {
             matchedRecipes.push(recipesArray[i]);
-        }
-
-        console.log(matchedRecipes);
-        
+        }        
     }
 
     return matchedRecipes; // Returnerar en lista av matchade recept
@@ -74,7 +71,6 @@ function update_sorted_recipes( ingredientsArray ) {
     container.innerHTML = ``;
 
     const filteredRecipes = sortRecipesArray(ingredientsArray); 
-    console.log('filter', filteredRecipes);
     // loopar genom recept databas
     for (let recipe of filteredRecipes) { // loopar igenom den sorterade/ filtrerade arrayen och renderar varje recept
         render_instance_recipe(recipe); // anropar render_instance_recipe (finns här nedan med två argument)
@@ -168,7 +164,6 @@ function render_instance_recipe (instance_data) {
 
     // för filtrerade recepten
     let recipe_container = document.getElementById("sorted_recipes_DOM");
-    console.log(recipe_container);
 
     recipe_container.append(container_recipe);
 
@@ -176,7 +171,6 @@ function render_instance_recipe (instance_data) {
     /*
     // för alla recepten:
     let all_recipes_container = document.getElementById("all_recipes_container");
-    console.log(all_recipe_container);
 
     all_recipes_container.append(container_recipe);*/
 
@@ -203,7 +197,6 @@ function render_ALL_recipes_DOM( parent ) { // matched_recepies är parent
 
     const recipesAllArray = STATE.get('recipes');
     
-    //console.log(STATE.get('recipes'));
 
     for ( let i = 0; i < recipesAllArray.length; i++) {
         
@@ -286,7 +279,6 @@ function render_ALL_instance_recipe(instance_data) {
     // förändrade detta!
    // för alla recepten :
     let recipes_all_container = document.getElementById("all_recipes_DOM");
-    console.log(recipes_all_container);
 
     recipes_all_container.append(container_recipe);
 
