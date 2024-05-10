@@ -120,7 +120,7 @@ const _state = {
         {
             id: 10,
             name: "Ramen",
-            ingredients: ["vitlöksklyftor", "färsk ingefära", "smör", "fläskfärs", "Chillipasta", "sake", "ägg", "nudlar", "pakchoi", "böngroddar", "salladslökar", "ost"],
+            ingredients: ["vitlöksklyftor", "färsk ingefära", "smör", "fläskfärs", "chillipasta", "sake", "ägg", "nudlar", "pakchoi", "böngroddar", "salladslökar", "ost"],
 
             renderIngredients: "Vitlöksklyftor 4\nFärsk ingefära 25 g\nSmör 1 msk\nFläskfärs 200 g\nBön och chilipasta 3 msk\nSake 4 msk\nÄgg 2\nNudlar, snabbnudlar 4 förp\npakchoi 1\nBöngroddar 4 dl\nSalladslökar 2\nOst 4 skivor ",
             
