@@ -6,5 +6,5 @@ body {
 
 @font-face {
     font-family: bigpixelShadow;
-    src: url(big_pixel_shadow_demo.otf);
+    src: url(./fonts/big_pixel_shadow_demo.otf);
 }

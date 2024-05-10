@@ -1,31 +1,28 @@
 /* To do fixa scroll */
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(../../fonts/big_pixel_demo.otf);
-}
-
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+  
 h2{
-    font-family: myFirstFont;
+    font-family: bigpixelShadow;
 }
 
-#sortTitleDiv{
+h3 {
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 10px 0px;
+}
+
+#sortTitleDiv {
     display: flex;
     flex-direction: column; /* Changed from row to column */
     align-items: center; /* Centers all children horizontally */
 }
 
-#boxesDiv{
+#boxesDiv {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
-    margin-top: 100px;
+    margin-top: 60px;
     
 }
 
@@ -33,9 +30,11 @@ h2{
     display: flex;
     background-color: white;
 
-    width: 300px;
-    height: 400px;
-    padding: 0px 20px 0px 20px;
+    width: 500px;
+    height: 500px;
+    padding: 30px 20px 20px 20px;
+    border: 1px solid rgb(159, 205, 177);
+
 /*     border-radius: 10px;
  */
     flex-direction: column;
@@ -44,10 +43,11 @@ h2{
 #searchIngredientsBox input {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 20px 0;
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 0; 
+
 }
 
 /* Basstilar för knappar */
@@ -60,6 +60,7 @@ h2{
     background-color: white; /* Ljusgrå bakgrund likt dropdown-innehåll */
     text-align: left; /* Vänsterjustera texten i knapparna */
     cursor: pointer;
+    font-size: 16px;
 }
 
 #searchIngredientsBox button:hover {

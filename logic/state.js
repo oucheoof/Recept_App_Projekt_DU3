@@ -621,8 +621,10 @@ const _state = {
             rating: [{ "user_id": 7, "rating": 10 }],
             image: "./media/thumbnails/kycklincurry.jpg"
         },
-    ]
-};
+        {
+            id: 7,
+            name: "Stekt ris",
+            ingredients: ["jasminris", "morot", "röd paprika", "sockerärtor", "vitlöksklyftor", "matolja", "chilli flakes", "ägg"],
 
 //Skapar en array med alla ingredienser från state men den fungerar inte som den ska när man lägger tillbaka 
 function uniqueIngredients() {
@@ -668,7 +670,9 @@ function render_App() {
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
-    render_sorted_recipes_DOM("matched_recepies"); // anropar på container för alla sorterade/filtrerade recept 
+    render_sorted_recipes_DOM(matched_recipes); // anropar på container för alla sorterade/filtrerade recept 
+    render_ALL_recipes_DOM(recipes_all)
+
     update_sorted_recipes(ingredientsBox2);
 
     
