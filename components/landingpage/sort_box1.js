@@ -1,4 +1,4 @@
-    let ingredientsBox1 = uniqueIngredientsArray;
+    let ingredientsBox1 = STATE.get("ingredients");
 
 function renderBox1(parentID) { // Parent är <section id = "sort">
     let mainWrapper = document.getElementById(parentID);

@@ -601,22 +601,12 @@ const _state = {
             rating: [{ "user_id": 7, "rating": 10 }],
             image: "./media/thumbnails/kycklingcurry.jpg"
         },
-    ]
+    ],
+    ingredients: [ "vetemjöl", "bakpulver", "strösocker", "salt", "yoghurt", "ägg", "smör", "lövbiff", "champinjoner", "svartpeppar", "purjolök", "vitlöksklyftor", "crèmefraiche", "matlagningsgrädde", "dijonsenap", "sambaloelek", "hönsbuljong", "fläderblomsklasar", "citron", "vatten", "socker", "citronsyra", "natriumbensoat", "basilika", "pinjenötter", "pasta", "vitlöksklyfta", "svecia", "kvarg", "köttfärs", "ströbröd", "standarmjölk", "lök", "smör & rapsolja", "torskfilé", "dill", "cornflakes", "potatis", "jasminris", "morot", "paprika", "sockerärtor", "matolja", "chilliflakes", "jäst", "flytande honung", "solrosfrön", "sesamfrön", "flingsalt", "standardmjölk", "ingefära", "fläskfärs", "chillipasta", "sake", "nudlar", "pakchoi", "böngroddar", "salladslökar", "ost", "grekiskyoghurt", "banan", "hallon", "vaniljpulver", "havregryn", "draktfrukt", "mango", "grönsaksbuljong", "peppar", "persilja", "fläsk", "vispgrädde", "äggulor", "tomat", "smör", "kakao", "vaniljsocker", "ättiksprit", "rödlökar", "rödlök", "gurka", "tomater", "fetaost", "oregano", "Kalamataoliver", "olivolja", "rödvinsvinäger", "persilja", "spenat", "kycklingbröstfilé", "rapsolja", "soja", "vaniljyoghurt", "lök", "grönkål", "Ädelostkräm", "kantareller", "pasta", "vin", "tryffelolja", "yoghurt", "mynta", "vitmögelost", "kronärtskockshjärtan", "basilika", "oregano", "bananer", "malen kanel", "mjölk", "kanel", "bröd", "ris", "blomkål", "halloumi", "olja", "curry", "kokosmjölk", "krossadetomater", "rostadlök", "bakpotatisar", "majs", "tonfisk", "matlagningsyoghurt", "vitlöksklyftor", "kapris", "sushiris", "noriark", "lax", "salladslök", "majonnäs", "sesamfrö", "chiliflakes", "citronskal", "kapris", "makrillfilé", "spaghetti", "persilja", "laxfilé", "selleristjälkar", "zucchini", "råris", "tomatpuré", "chilipulver", "örter", "grönsaksbuljongtärning", "oliver", "valnötter", "parmesan", "paprika", "kyckling", "jordnötssmör", "sweetchilisås", "soja", "tofu", "morötter", "avokador", "böngroddar", "koriander", "rispapper", "lime", "laxfilé", "teriyakimarinad", "tahini", "sesamfrön", "mirin", "citronjuice", "rapsolja", "spenat", "rödkål", "svamp", "tofu", "majsstärkelse", "noriark", "majskorn", "snabbnudlar", "misopasta", "ingefära", "sesamfrön", "babyspenat", "salladslök", "jasminris", "ryggbiff", "broccoli", "ostronsås", "oxfond", "balsamico", "sesamolja", "bambuskott", "ris", "gullök", "kycklingfilé", "hönsbuljong", "honung", "matyoghurt" ]
+
 };
 
-//Skapar en array med alla ingredienser från state men den fungerar inte som den ska när man lägger tillbaka 
-function uniqueIngredients() {
-    const uniqueSet = new Set(); 
 
-    _state.recipes.forEach(recipe => {
-        recipe.ingredients.forEach(ingredient => {
-            uniqueSet.add(ingredient);  
-        });
-    });
-
-    return Array.from(uniqueSet);
-}
-const uniqueIngredientsArray = uniqueIngredients(); 
  
 
 const STATE = {
@@ -651,7 +641,7 @@ render_wrapper_DOM (); // startsidans wrapper anrop
     render_sorted_recipes_DOM(matched_recipes); // anropar på container för alla sorterade/filtrerade recept
     render_ALL_recipes_DOM(recipes_all)
     update_sorted_recipes(ingredientsBox2);
-    renderpopUp();
+    renderPopup();
     renderBox1("sort");
     renderFooter();
 

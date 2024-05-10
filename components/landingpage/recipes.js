@@ -25,7 +25,7 @@ function render_sorted_recipes_DOM(parent) { // matched_recepies är parent
         
         // anrop med parent och instance datan -> datan i recipes
         render_instance_recipe(recipesArray[i]);
-    }  
+    }
      
 
 }
@@ -100,6 +100,8 @@ function render_instance_recipe (instance_data) {
     // container för ensklid recept
     const container_recipe = document.createElement("div");
     container_recipe.classList.add("container_recipe"); // Lägger till en CSS-klass
+    container_recipe.id = instance_data.name;
+    
 
 
     // Alla receptdetaljer i .recipe_container:
@@ -110,7 +112,7 @@ function render_instance_recipe (instance_data) {
     recipe_img.src = instance_data.image;
     container_recipe.appendChild(recipe_img); 
 
-    recipe_img.addEventListener("click", () => updatePopup())
+    recipe_img.addEventListener("click", () => updatePopup(instance_data))
 
 
     // Recept titel
@@ -128,7 +130,7 @@ function render_instance_recipe (instance_data) {
 
     // LIKE knapp
     const like_btn = document.createElement('button'); 
-    like_btn.id = 'like_btn';
+    like_btn.classList.add ('like_btn');
     like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';  
 
     // lägger till en eventlyssnare för att hantera LIKEknapp
@@ -220,17 +222,16 @@ function render_ALL_instance_recipe(instance_data) {
     // container för ensklid recept
     const container_recipe = document.createElement("div");
     container_recipe.classList.add("container_recipe"); // Lägger till en CSS-klass
-
-
+    container_recipe.id = instance_data.name;
     // Alla receptdetaljer i .recipe_container:
 
     // Recept bild
     const recipe_img = document.createElement('img');
     recipe_img.classList.add("recipe_image");
     recipe_img.src = instance_data.image;
-
     container_recipe.appendChild(recipe_img); 
 
+    recipe_img.addEventListener("click", () => updatePopup(instance_data))
 
     // Recept titel
     const recipe_name = document.createElement('div');
