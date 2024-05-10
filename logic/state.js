@@ -133,7 +133,7 @@ const _state = {
         {
             id: 11,
             name: "Smoothie Bowl",
-            ingredients: ["grekisk yoghurt", "banan", "hallon", "vaniljpulver", "havregryn", "draktfrukt", "mango"],
+            ingredients: ["grekiskyoghurt", "banan", "hallon", "vaniljpulver", "havregryn", "draktfrukt", "mango"],
 
             renderIngredients: "grekiskyoghurt 3 dl\nBanan 1\nFrysta hallon 2 dl\nVaniljpulver 2 krm\nHavregryn ½ dl\nDrakfrukt 1\nMango ½\nHallon 1 dl ",
 
@@ -202,7 +202,7 @@ const _state = {
         {
             id: 17,
             name: "Grekisk sallad",
-            ingredients: ["rödlök", "gurka", "tomater", "fetaost", "oregano", "Kalamataoliver", "olivolja", "rödvinsvinäger", "svartpeppar"],
+            ingredients: ["rödlök", "gurka", "tomater", "fetaost", "oregano", "kalamataoliver", "olivolja", "rödvinsvinäger", "svartpeppar"],
             renderIngredients: "rödlök 1 st\n gurka 1 st\ntomater 4 st\nfetaost 150 g\noregano ½ kruka\nKalamataoliver 1½ dl\nolivolja ½ dl\nrödvinsvinäger 1 msk\nsvartpeppar 1 krm",
             howTo: "Skala och skiva löken. Skär gurka och tomater i bitar. Bryt osten i bitar. Plocka bladen från oreganon. Rör ihop olja och vinäger till en dressing. Varva lök, gurka, tomat, oliver och ost på tallrikar. Ringla över dressingen. Strö över oregano och svartpeppar.",
             like: [],
@@ -347,7 +347,7 @@ const _state = {
                 "sushiris",
                 "salt",
                 "noriark",
-                "lax",
+                "laxfile",
                 "salladslök",
                 "majonnäs",
                 "sesamfrö"
@@ -404,7 +404,7 @@ const _state = {
                 "selleristjälkar",
                 "zucchini",
                 "olivolja",
-                "råris",
+                "ris",
                 "tomatpuré",
                 "chilipulver",
                 "örter",
@@ -446,7 +446,7 @@ const _state = {
                 "smör",
                 "vitlöksklyftor",
                 "citronskal",
-                "finparmesan",
+                "parmesan",
                 "salt",
                 "svartpeppar"
             ],
@@ -602,7 +602,7 @@ const _state = {
             image: "./media/thumbnails/kycklingcurry.jpg"
         },
     ],
-    ingredients: [ "vetemjöl", "bakpulver", "strösocker", "salt", "yoghurt", "ägg", "smör", "lövbiff", "champinjoner", "svartpeppar", "purjolök", "vitlöksklyftor", "crèmefraiche", "matlagningsgrädde", "dijonsenap", "sambaloelek", "hönsbuljong", "fläderblomsklasar", "citron", "vatten", "socker", "citronsyra", "natriumbensoat", "basilika", "pinjenötter", "pasta", "vitlöksklyfta", "svecia", "kvarg", "köttfärs", "ströbröd", "standarmjölk", "lök", "smör & rapsolja", "torskfilé", "dill", "cornflakes", "potatis", "jasminris", "morot", "paprika", "sockerärtor", "matolja", "chilliflakes", "jäst", "flytande honung", "solrosfrön", "sesamfrön", "flingsalt", "standardmjölk", "ingefära", "fläskfärs", "chillipasta", "sake", "nudlar", "pakchoi", "böngroddar", "salladslökar", "ost", "grekiskyoghurt", "banan", "hallon", "vaniljpulver", "havregryn", "draktfrukt", "mango", "grönsaksbuljong", "peppar", "persilja", "fläsk", "vispgrädde", "äggulor", "tomat", "smör", "kakao", "vaniljsocker", "ättiksprit", "rödlökar", "rödlök", "gurka", "tomater", "fetaost", "oregano", "Kalamataoliver", "olivolja", "rödvinsvinäger", "persilja", "spenat", "kycklingbröstfilé", "rapsolja", "soja", "vaniljyoghurt", "lök", "grönkål", "Ädelostkräm", "kantareller", "pasta", "vin", "tryffelolja", "yoghurt", "mynta", "vitmögelost", "kronärtskockshjärtan", "basilika", "oregano", "bananer", "malen kanel", "mjölk", "kanel", "bröd", "ris", "blomkål", "halloumi", "olja", "curry", "kokosmjölk", "krossadetomater", "rostadlök", "bakpotatisar", "majs", "tonfisk", "matlagningsyoghurt", "vitlöksklyftor", "kapris", "sushiris", "noriark", "lax", "salladslök", "majonnäs", "sesamfrö", "chiliflakes", "citronskal", "kapris", "makrillfilé", "spaghetti", "persilja", "laxfilé", "selleristjälkar", "zucchini", "råris", "tomatpuré", "chilipulver", "örter", "grönsaksbuljongtärning", "oliver", "valnötter", "parmesan", "paprika", "kyckling", "jordnötssmör", "sweetchilisås", "soja", "tofu", "morötter", "avokador", "böngroddar", "koriander", "rispapper", "lime", "laxfilé", "teriyakimarinad", "tahini", "sesamfrön", "mirin", "citronjuice", "rapsolja", "spenat", "rödkål", "svamp", "tofu", "majsstärkelse", "noriark", "majskorn", "snabbnudlar", "misopasta", "ingefära", "sesamfrön", "babyspenat", "salladslök", "jasminris", "ryggbiff", "broccoli", "ostronsås", "oxfond", "balsamico", "sesamolja", "bambuskott", "ris", "gullök", "kycklingfilé", "hönsbuljong", "honung", "matyoghurt" ]
+    ingredients: [ "vetemjöl", "bakpulver", "strösocker", "salt", "yoghurt", "ägg", "smör", "lövbiff", "champinjoner", "svartpeppar", "purjolök", "vitlöksklyftor", "crèmefraiche", "matlagningsgrädde", "dijonsenap", "sambaloelek", "hönsbuljong", "fläderblomsklasar", "citron", "vatten", "socker", "citronsyra", "natriumbensoat", "basilika", "pinjenötter", "pasta", "vitlöksklyfta", "svecia", "kvarg", "köttfärs", "ströbröd", "standarmjölk", "lök", "smör", "torskfilé", "dill", "cornflakes", "potatis", "jasminris", "morot", "paprika", "sockerärtor", "matolja", "chilliflakes", "jäst", "honung", "solrosfrön", "sesamfrön", "flingsalt", "standardmjölk", "ingefära", "fläskfärs", "chillipasta", "sake", "nudlar", "pakchoi", "böngroddar", "salladslökar", "ost", "grekiskyoghurt", "banan", "hallon", "vaniljpulver", "havregryn", "draktfrukt", "mango", "grönsaksbuljong", "peppar", "persilja", "fläsk", "vispgrädde", "äggulor", "tomat", "smör", "kakao", "vaniljsocker", "ättiksprit", "rödlökar", "rödlök", "gurka", "tomater", "fetaost", "oregano", "kalamataoliver", "olivolja", "rödvinsvinäger", "persilja", "spenat", "kycklingbröstfilé", "rapsolja", "soja", "vaniljyoghurt", "lök", "grönkål", "Ädelostkräm", "kantareller", "pasta", "vin", "tryffelolja", "yoghurt", "mynta", "vitmögelost", "kronärtskockshjärtan", "basilika", "oregano", "bananer", "kanel", "mjölk", "kanel", "bröd", "ris", "blomkål", "halloumi", "olja", "curry", "kokosmjölk", "krossadetomater", "rostadlök", "bakpotatisar", "majs", "tonfisk", "matlagningsyoghurt", "vitlöksklyftor", "kapris", "sushiris", "noriark", "salladslök", "majonnäs", "sesamfrö", "chiliflakes", "citronskal", "kapris", "makrillfilé", "spaghetti", "persilja", "selleristjälkar", "zucchini", "tomatpuré", "chilipulver", "örter", "grönsaksbuljongtärning", "oliver", "valnötter", "parmesan", "paprika", "kyckling", "jordnötssmör", "sweetchilisås", "soja", "tofu", "morötter", "avokador", "böngroddar", "koriander", "rispapper", "lime", "laxfilé", "teriyakimarinad", "tahini", "sesamfrön", "mirin", "citronjuice", "rapsolja", "spenat", "rödkål", "svamp", "tofu", "majsstärkelse", "noriark", "majskorn", "snabbnudlar", "misopasta", "ingefära", "sesamfrön", "babyspenat", "salladslök", "jasminris", "ryggbiff", "broccoli", "ostronsås", "oxfond", "balsamico", "sesamolja", "bambuskott", "ris", "gullök", "kycklingfilé", "hönsbuljong", "honung", "matyoghurt" ]
 
 };
 
