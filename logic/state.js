@@ -250,26 +250,6 @@ const _state = {
             image: "./media/thumbnails/smoothie_med_hallon.jpg"
         },
         {
-            id: 21,
-            name: "Smoothie med hallon",
-            ingredients: ["frysta hallon", "vaniljyoghurt", "standardmjölk"],
-            renderIngredients: "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmjölk 1 dl",
-            howTo: "Lägg hallon, yoghurt och mjölk i en mixer eller skål om du använder stavmixer. Mixa till en jämn smoothie. Servera direkt.",
-            like: [],
-            rating: [],
-            image: "./media/thumbnails/smoothie_med_hallon.jpg"
-        },
-        {
-            id: 21,
-            name: "Smoothie med hallon",
-            ingredients: ["frysta hallon", "vaniljyoghurt", "standardmjölk"],
-            renderIngredients: "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmjölk 1 dl",
-            howTo: "Lägg hallon, yoghurt och mjölk i en mixer eller skål om du använder stavmixer. Mixa till en jämn smoothie. Servera direkt.",
-            like: [],
-            rating: [],
-            image: "./media/thumbnails/smoothie_med_hallon.jpg"
-        },
-        {
             id: 22,
             name: "Kålsoppa",
             ingredients: ["potatis", "gul lök", "vitlöksklyftor", "smör-&rapsolja", "grönsaksbuljong", "vispgrädde", "färsk grönkål", "Ädel Creme", "kantareller", "salt", "svartpeppar"],
@@ -619,12 +599,10 @@ const _state = {
             howTo:"Koka riset enligt anvisningen på förpackningen.\nSkala lök och morötter, strimla löken och skiva morötterna. Dela, kärna ur och strimla paprikan.\nStrimla kycklingen. Stek den i oljan i en gryta tillsammans med curry och lök ca 3 min.\nTillsätt morötter, paprika, kokosmjölk och buljong. Låt sjuda under lock ca 10 minuter. Smaka av med honung, salt och peppar.\nTill servering: Servera kycklingcurryn med ris och en klick yoghurt.",
             like: [4, 7],
             rating: [{ "user_id": 7, "rating": 10 }],
-            image: "./media/thumbnails/kycklincurry.jpg"
+            image: "./media/thumbnails/kycklingcurry.jpg"
         },
-        {
-            id: 7,
-            name: "Stekt ris",
-            ingredients: ["jasminris", "morot", "röd paprika", "sockerärtor", "vitlöksklyftor", "matolja", "chilli flakes", "ägg"],
+    ]
+};
 
 //Skapar en array med alla ingredienser från state men den fungerar inte som den ska när man lägger tillbaka 
 function uniqueIngredients() {
@@ -668,19 +646,14 @@ function render_App() {
 */
 
     // Startsidan
-    render_wrapper_DOM (); // startsidans wrapper anrop
+render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
-    render_sorted_recipes_DOM(matched_recipes); // anropar på container för alla sorterade/filtrerade recept 
+    render_sorted_recipes_DOM(matched_recipes); // anropar på container för alla sorterade/filtrerade recept
     render_ALL_recipes_DOM(recipes_all)
-
     update_sorted_recipes(ingredientsBox2);
-
-    
+    renderpopUp();
     renderBox1("sort");
     renderFooter();
-    renderpopUp();
-    
-    //render_instance_recipe();
 
 
 }
