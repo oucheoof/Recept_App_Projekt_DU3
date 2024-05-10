@@ -49,9 +49,7 @@ function render_instance_recipe (instance_data) {
     recipe_img.src = instance_data.image;
     container_recipe.appendChild(recipe_img); 
 
-    recipe_img.addEventListener("click", () => [
-        
-    ])
+    recipe_img.addEventListener("click", () => updatePopup())
 
 
     // Recept titel

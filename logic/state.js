@@ -637,7 +637,7 @@ function uniqueIngredients() {
     return Array.from(uniqueSet);
 }
 const uniqueIngredientsArray = uniqueIngredients(); 
-console.log(uniqueIngredientsArray); 
+ 
 
 const STATE = {
  
@@ -671,10 +671,10 @@ function render_App() {
     render_sorted_recipes_DOM("matched_recepies"); // anropar på container för alla sorterade/filtrerade recept 
     update_sorted_recipes(ingredientsBox2);
 
-    renderPopup();
     
     renderBox1("sort");
     renderFooter();
+    renderpopUp();
     
     //render_instance_recipe();
 
