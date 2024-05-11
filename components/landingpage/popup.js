@@ -4,9 +4,6 @@ function renderPopup() {
     dialogDOM.id = "dialogDOM";
     wrapper.appendChild(dialogDOM);
 
-    // Prevent scrolling when the modal is opened
-    document.body.style.overflow = 'hidden';
-
     return dialogDOM;
 }
 
