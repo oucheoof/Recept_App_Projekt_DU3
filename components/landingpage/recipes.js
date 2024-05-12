@@ -4,9 +4,11 @@ function render_sorted_recipes_DOM(parent) { // matched_recepies är parent
     matched_recipes_title.innerText = "Recept som matchar";
     parent.appendChild(matched_recipes_title);
 
+    // hämta längd på matchrecipes 
     const number_recipes_matched = document.createElement('p');
-    number_recipes_matched.innerText = ".. recept matchade din sökning! Yummi!";
+    number_recipes_matched.innerText = "${matchedRecipes} recept matchade din sökning! Yummi!";
     parent.appendChild(number_recipes_matched);
+
 
     // funktionen renderar containern till griden som alla recept ska vara i 
     const container = document.createElement("div");
