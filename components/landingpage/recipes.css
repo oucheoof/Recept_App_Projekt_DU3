@@ -76,6 +76,17 @@ p {
 }
 
 
+/*  like knapp  */
+
+.like_btn {
+    background-color: white;
+    border: 1px solid rgb(103, 103, 103);
+    height: 35px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+
 
 /*   CSS styling för wrapper ALLA recept  */
 

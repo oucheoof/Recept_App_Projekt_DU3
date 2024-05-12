@@ -248,7 +248,7 @@ function render_ALL_instance_recipe(instance_data) {
 
     // LIKE knapp
     const like_btn = document.createElement('button'); 
-    like_btn.id = 'like_btn';
+    like_btn.classList.add ('like_btn');
     like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';  
 
     // lägger till en eventlyssnare för att hantera LIKEknapp
