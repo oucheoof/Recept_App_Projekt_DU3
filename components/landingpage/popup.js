@@ -1,5 +1,4 @@
-function renderPopup(){
-    //dom och append
+function renderPopup() {
     const wrapper = document.querySelector("body");
     let dialogDOM = document.createElement("dialog");
     dialogDOM.id = "dialogDOM";
@@ -8,33 +7,34 @@ function renderPopup(){
     return dialogDOM;
 }
 
-function updatePopup(recipe_instance){
-    //Fyller och öppnas
-    //MDN dialoge element
-    //.showModal() method and closed using the .close() method.
-
+function updatePopup(recipe_instance) {
     let popupWrapper = document.createElement("div");
     popupWrapper.id = "popupWrapper";
     dialogDOM.appendChild(popupWrapper);
 
     let exitImg = document.createElement('img');
     exitImg.id = "exitImg";
-    exitImg.src = "./media/img/exit.svg"
+    exitImg.src = "./media/img/exit.svg";
     popupWrapper.appendChild(exitImg);
 
-    //Tömmer modal vid esc
+    // Close modal on Escape key
     document.addEventListener('keyup', function(event) {
         if (event.key === "Escape") {
-            dialogDOM.innerHTML = "";
+            closeAndClearModal();
         }
     });
-    //Tömmer modal vid click på exit button
-    exitImg.addEventListener("click", () => {
-        dialogDOM.close();
-        dialogDOM.innerHTML = "";
-    }) 
 
-    let headerImg = document.createElement("img")
+    // Close modal on exit button click
+    exitImg.addEventListener("click", closeAndClearModal);
+
+    // Close modal when clicking outside the modal content
+    dialogDOM.addEventListener("click", function(event) {
+        if (event.target === dialogDOM) {
+            closeAndClearModal();
+        }
+    });
+
+    let headerImg = document.createElement("img");
     headerImg.id = "headerImg";
     headerImg.src = "./media/img/popupHeader.jpg";
     popupWrapper.appendChild(headerImg);
@@ -49,16 +49,21 @@ function updatePopup(recipe_instance){
     popUpTitle.textContent = recipe_instance.name;
     popupWrapper.appendChild(popUpTitle);
 
-    let ingredietListDOM = document.createElement("p")
+    let ingredietListDOM = document.createElement("p");
     ingredietListDOM.id = "ingredietListDOM";
     ingredietListDOM.textContent = recipe_instance.renderIngredients;
-    popupWrapper.appendChild(ingredietListDOM)
+    popupWrapper.appendChild(ingredietListDOM);
 
-    let howToDOM = document.createElement("p")
+    let howToDOM = document.createElement("p");
     howToDOM.id = "howToDOM";
     howToDOM.textContent = recipe_instance.howTo;
-    popupWrapper.appendChild(howToDOM)
+    popupWrapper.appendChild(howToDOM);
 
     dialogDOM.showModal();
-    
+}
+
+// Function to close the modal and clear its content
+function closeAndClearModal() {
+    dialogDOM.close();
+    dialogDOM.innerHTML = "";
 }
