@@ -18,6 +18,8 @@ if ($contentType != "application/json") {
     $error = ["Error" => "Invalid Content-Type, only JSON is allowed."];
     sendJSON($error, 400);
 }
+
+//hämtar data
 $requestData = getRequestData();
 $usersDB = 'database/users.json';
 
@@ -37,6 +39,7 @@ if ($requestMethod == 'POST'){
     $password = $requestData["password"];
     $userExists = false;
 
+    //loop som kollar om användarnamnet matchar en användare som finns
     foreach($users as $user){
         if ( $user['username'] === $username) {
             $userExists = true;
