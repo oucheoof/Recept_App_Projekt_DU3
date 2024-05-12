@@ -6,5 +6,5 @@
    // renderLogReg();
  //}else{
     
-    // renderApp();
-render_App();
+    renderApp();
+

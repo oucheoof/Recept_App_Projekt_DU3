@@ -607,19 +607,6 @@ const _state = {
 };
 
 
- 
-
-const STATE = {
- 
-    get
-
-};
-
-
-
-
-
-
 const STATE = {
     Get,
     Post,
