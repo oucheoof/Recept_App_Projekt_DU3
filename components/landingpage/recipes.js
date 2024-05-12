@@ -6,7 +6,7 @@ function render_sorted_recipes_DOM(parent) { // matched_recepies är parent
 
     // hämta längd på matchrecipes 
     const number_recipes_matched = document.createElement('p');
-    number_recipes_matched.innerText = "${matchedRecipes} recept matchade din sökning! Yummi!";
+    number_recipes_matched.id = "number_recipes_matched";
     parent.appendChild(number_recipes_matched);
 
 
@@ -73,6 +73,12 @@ function update_sorted_recipes( ingredientsArray ) {
     container.innerHTML = ``;
 
     const filteredRecipes = sortRecipesArray(ingredientsArray); 
+
+
+    // Uppdaterar text med antalet matchade recept
+    const numRecipesMatchedElement = document.getElementById("number_recipes_matched");
+    numRecipesMatchedElement.innerText = `${filteredRecipes.length} recept matchade din sökning! Yummi!`;
+
     // loopar genom recept databas
     for (let recipe of filteredRecipes) { // loopar igenom den sorterade/ filtrerade arrayen och renderar varje recept
         render_instance_recipe(recipe); // anropar render_instance_recipe (finns här nedan med två argument)
