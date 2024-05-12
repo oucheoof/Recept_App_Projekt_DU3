@@ -1,6 +1,6 @@
 /* Dialog element */
 dialog {
-    width: 95vw; 
+    width: 90.5vw; 
     /*max-width: 1500px;  Maximum width of the dialog */
     border: none; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /
@@ -12,6 +12,10 @@ dialog {
     z-index: 1000; 
 
     overflow: auto;
+}
+
+dialog:focus {
+    outline: none; /* Tar bort den blåa border när dialog är aktiv */
 }
 
 /*  wrapper i dialog */
