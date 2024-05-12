@@ -40,7 +40,7 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
         $error = ["Error" => "Bad request: This user already exists."];
         sendJSON($error, 400);
     }
-    //kollar om det finns ett snabela i emailen
+    //kollar om det finns ett snabel a i emailen
     $email = $requestData['email'];
     if(strpos($email, '@') === false){
         $error = ["Error" => "Bad request: Not an email adress, missing '@'."];
