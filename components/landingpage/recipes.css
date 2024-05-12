@@ -1,0 +1,110 @@
+
+/*   CSS styling för wrapper av sorterad/filtrerade recept  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 4%;
+    text-align: center;
+    font-family: bigpixelShadow;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-top: 2%;
+}
+
+/*  förälder till container_recipe */
+#sorted_recipes_DOM {
+    margin: 4% 4% 0% 4%;
+    /*gap: 5px;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    height: auto;
+    /*overflow: auto;*/
+}
+
+
+
+/*   CSS styling för enskilt recept i div  */
+
+
+/*  Container div för enskilt recept  */
+.container_recipe  {
+    margin: 7px 30px;
+    height: 400px;
+    /*border: 1px solid rgb(157, 219, 156);*/
+    transition: transform 0.3s ease;
+    overflow: hidden;
+
+}
+
+
+.container_recipe:hover  {
+    transform: scale(1.1);
+}
+
+/*  varje RECEPT bild  */
+.recipe_image {
+
+    border-radius: 2%;
+
+    width: 100%;
+    height: 18.6vw;
+    cursor: pointer;
+    /*transition: transform 0.3s ease;*/
+}
+
+/*
+.recipe_image:hover {
+    transform: scale(1.1);
+}*/
+
+.recipe_name {
+    font-family: bigpixelShadow;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+
+/*  like knapp  */
+
+.like_btn {
+    background-color: white;
+    border: 1px solid rgb(103, 103, 103);
+    height: 35px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+
+
+/*   CSS styling för wrapper ALLA recept  */
+
+
+h4 {
+    margin-top: 4%;
+    text-align: center;
+    font-family: bigpixelShadow;
+    font-size: 40px;
+}
+
+
+#all_recipes_DOM {
+    margin: 4% 4% 0% 4%; 
+    /*gap: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 160vh;
+    overflow: auto;
+
+}

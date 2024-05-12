@@ -4,13 +4,14 @@ function render_wrapper_DOM () {
 
     const wrapper = document.querySelector("body");
     wrapper.innerHTML = `
-        
-        <header id="head"> </header>
+        <header id="head">
+           
+        </header>
 
         <main>
             <section id="sort"> </section>
-            <section id="matched_recepies"> </section>
-            <section id="all_recepies"> </section>
+            <section id="matched_recipes"></section>
+            <section id="recipes_all"> </section>
         </main>
 
         <footer>
@@ -19,18 +20,22 @@ function render_wrapper_DOM () {
         </footer>
     `;
 
-    // nycklar som kan läggas till i index.js
+    // nycklar som kan läggas till i renderApp state.js
+    // förändrade NYCKLAR OCH ID  i innerHTML
     return {
         header: document.querySelector("#head"),
         sort: document.querySelector("#sort"),
-        matchedRecepies: document.querySelector("#matched_recepies"),
-        allRecepies: document.querySelector("#all_recepies"),
+
+        matchedRecipes: document.querySelector("#matched_recipes"),
+        
+        recipes_all: document.querySelector("#recipes_all"),
         
         aboutUs: document.querySelector("#aboutUs"),
         info: document.querySelector("#info"),
     }
 
 }
+
 
 
 // Header funktion

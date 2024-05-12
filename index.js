@@ -3,7 +3,8 @@
 
 
 // if (!token in local storage){
-    renderLogReg();
+   // renderLogReg();
  //}else{
     
     // renderApp();
+render_App();
