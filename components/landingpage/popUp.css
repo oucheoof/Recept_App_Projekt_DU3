@@ -3,7 +3,7 @@ dialog {
     width: 90.5vw; 
     /*max-width: 1500px;  Maximum width of the dialog */
     border: none; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     background: #ffffff; 
     position: fixed;
     top: 50%;
@@ -26,6 +26,7 @@ dialog:focus {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+
    
 }
 
@@ -55,6 +56,7 @@ dialog:focus {
     margin-bottom: 0;
     display: flex; 
     flex-direction: row;
+    width: 1000px;
     
     /*margin-top: -12%*/
 }
@@ -64,11 +66,14 @@ dialog:focus {
 #popupImg {
   
     height: 400px;
-    /*position: relative; */
+     
     z-index: 1;
     top: -150px;
 
+    /*bottom: 100px;*/
+
     position: relative;
+
     border-radius: 10px;
 }
 
