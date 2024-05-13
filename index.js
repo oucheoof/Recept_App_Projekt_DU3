@@ -2,8 +2,9 @@
 
 
 
-// if (!token in local storage){
+if (!token in local storage){
     renderLogReg();
- //}else{
-    
-    // renderApp();
+}
+else{
+    renderApp();
+}

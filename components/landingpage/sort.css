@@ -1,46 +1,78 @@
-/* Stilar för huvudområdena */
-#searchIngredientsBox, #chosenIngredientsBox {
-    border: 1px solid #ddd;
-    padding: 5px;
-    margin-bottom: 10px;
+/* To do fixa scroll */
+  
+h2{
+    font-family: bigpixelShadow;
 }
 
-/* Stilar för h3 element som fungerar som rubriker för lådorna */
-#searchIngredientsBox h3, #chosenIngredientsBox h3 {
-    color: #333;
-    padding: 8px;
-    margin: 0;
-    background-color: #f6f6f6;
+h3 {
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 10px 0px;
 }
 
-/* Stilar för sökfältet */
+#sortTitleDiv {
+    display: flex;
+    flex-direction: column; /* Changed from row to column */
+    align-items: center; /* Centers all children horizontally */
+}
+
+#boxesDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 60px;
+    
+}
+
+#searchIngredientsBox, #chosenIngredientsBox{
+    display: flex;
+    background-color: white;
+
+    width: 500px;
+    height: 500px;
+    padding: 30px 20px 20px 20px;
+    border: 1px solid rgb(159, 205, 177);
+
+/*     border-radius: 10px;
+ */
+    flex-direction: column;
+}
+
 #searchIngredientsBox input {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 20px 0;
     box-sizing: border-box;
     border: 1px solid #ddd;
-    border-radius: 0; /* Ta bort rundade hörn om de finns */
+    border-radius: 0; 
+
 }
 
 /* Basstilar för knappar */
-#searchIngredientsBox button {
+#searchIngredientsBox button, #chosenIngredientsBox button {
     width: 100%;
     padding: 10px;
-    margin: 5px 0; /* Lägg till lite utrymme mellan knapparna */
+    margin: 0px 0; /* Lägg till lite utrymme mellan knapparna */
     box-sizing: border-box;
     border: none;
-    background-color: #f6f6f6; /* Ljusgrå bakgrund likt dropdown-innehåll */
+    background-color: white; /* Ljusgrå bakgrund likt dropdown-innehåll */
     text-align: left; /* Vänsterjustera texten i knapparna */
     cursor: pointer;
+    font-size: 16px;
 }
 
-/* Stilar för knappar när muspekaren är över dem */
 #searchIngredientsBox button:hover {
     background-color: #ddd; /* Mörkare grå bakgrund för hover-effekt */
+    content: "";
 }
 
-/* Stilar för knapparna när de har flyttats till den valda lådan */
-#chosenIngredientsBox button {
-    /* Här kan du lägga till särskilda stilar om du vill att knapparna i den valda lådan ska se annorlunda ut */
+#ingredientSearchInput{
+    margin-bottom: 0px;
+}
+
+#divForButtons, #divForChosenButtons{
+    overflow-y: auto;
+    max-height: 400px;
 }
