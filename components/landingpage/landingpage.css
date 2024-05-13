@@ -4,8 +4,6 @@ body {
     flex-direction: column;
 }
 
-/* h2 font-family: bigpixelShadow; */
-
 
 /*    HEADER och NAV   */
 header {
@@ -65,7 +63,7 @@ header img:first-of-type {
     object-fit: cover;
 }
 
-h1 .title {
+h1{
     position: absolute;
     /*background-color: rgba(0, 0, 0, 0.4);*/
     background-color: white;
@@ -74,7 +72,7 @@ h1 .title {
     top: 15%;
     left: 33%;
     font-size: 75px;
-    font-family:  bigpixelShadow;
+    font-family: bigpixelShadow;
 }
 
 header div:nth-of-type(1) {
