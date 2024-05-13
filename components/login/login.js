@@ -38,10 +38,13 @@ async function renderLoginForm(){
         const password = DOM.querySelector('#password').value;
 
         console.log(username, password);
-        const registerRequest = new Request('./api/login.php',{
+        const registerRequest = new Request('../api/login.php',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({ username, password })
+            body: JSON.stringify({
+                username: username, 
+                password: password 
+            }),
         });
 
         const data = await fetcher( registerRequest);

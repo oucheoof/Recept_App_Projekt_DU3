@@ -1,19 +1,7 @@
-async function fetcher(rqst){
+async function fetcher(rqst){ 
+    let response = await fetch(rqst); 
 
-    try{
-        const response = await fetch(rqst);
+    let data = await response.json() 
 
-        if(!response.ok){
-            console.log("!response.ok")
-            return
-        }
-
-        const data = await response.json(); 
-        return data;
-
-    }catch(error){
-
-        console.log("womp womp");
-        console.log(error);
-    }
+    return data; 
 }
