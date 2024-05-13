@@ -89,7 +89,7 @@ async function renderRegisterForm(){
 
         console.log(username, email, password, rptpassword);
 
-        const registerRequest = new Request( './api/users.php', {
+        const registerRequest = new Request( '../api/users.php', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
