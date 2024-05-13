@@ -8,7 +8,7 @@ function render_wrapper_DOM () {
            
         </header>
 
-        <main>
+        <main id="content">
             <section id="sort"> </section>
             <section id="matched_recipes"></section>
             <section id="recipes_all"> </section>

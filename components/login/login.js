@@ -41,20 +41,19 @@ async function renderLoginForm(){
         const registerRequest = new Request('./api/login.php',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                username: username,
-                password: password
-        }),
-    });
+            body: JSON.stringify({ username, password })
+        });
 
-    const data = await fetcher( registerRequest);
+        const data = await fetcher( registerRequest);
+            console.log(data);
+            if (data.error) {
+                window.alert(data.error);
+            } else {
+                localStorage.setItem('token', data.token);
+                location.reload();
+            }
+    };
 
-    if( data.error ) {
-        window.alert( `${data.error}`)
-    }
-
-    localStorage.setItem( 'token', data.token);
-    location.reload();
 
 }
 
@@ -108,5 +107,4 @@ async function renderRegisterForm(){
         console.log( data);
 
         } 
-    }
 }

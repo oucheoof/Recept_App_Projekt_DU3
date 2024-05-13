@@ -603,17 +603,16 @@ const _state = {
         },
     ],
     ingredients: [ "vetemjöl", "bakpulver", "strösocker", "salt", "yoghurt", "ägg", "smör", "lövbiff", "champinjoner", "svartpeppar", "purjolök", "vitlöksklyftor", "crèmefraiche", "matlagningsgrädde", "dijonsenap", "sambaloelek", "hönsbuljong", "fläderblomsklasar", "citron", "vatten", "socker", "citronsyra", "natriumbensoat", "basilika", "pinjenötter", "pasta", "vitlöksklyfta", "svecia", "kvarg", "köttfärs", "ströbröd", "standarmjölk", "lök", "smör", "torskfilé", "dill", "cornflakes", "potatis", "jasminris", "morot", "paprika", "sockerärtor", "matolja", "chilliflakes", "jäst", "honung", "solrosfrön", "sesamfrön", "flingsalt", "standardmjölk", "ingefära", "fläskfärs", "chillipasta", "sake", "nudlar", "pakchoi", "böngroddar", "salladslökar", "ost", "grekiskyoghurt", "banan", "hallon", "vaniljpulver", "havregryn", "draktfrukt", "mango", "grönsaksbuljong", "peppar", "persilja", "fläsk", "vispgrädde", "äggulor", "tomat", "smör", "kakao", "vaniljsocker", "ättiksprit", "rödlökar", "rödlök", "gurka", "tomater", "fetaost", "oregano", "kalamataoliver", "olivolja", "rödvinsvinäger", "persilja", "spenat", "kycklingbröstfilé", "rapsolja", "soja", "vaniljyoghurt", "lök", "grönkål", "Ädelostkräm", "kantareller", "pasta", "vin", "tryffelolja", "yoghurt", "mynta", "vitmögelost", "kronärtskockshjärtan", "basilika", "oregano", "bananer", "kanel", "mjölk", "kanel", "bröd", "ris", "blomkål", "halloumi", "olja", "curry", "kokosmjölk", "krossadetomater", "rostadlök", "bakpotatisar", "majs", "tonfisk", "matlagningsyoghurt", "vitlöksklyftor", "kapris", "sushiris", "noriark", "salladslök", "majonnäs", "sesamfrö", "chiliflakes", "citronskal", "kapris", "makrillfilé", "spaghetti", "persilja", "selleristjälkar", "zucchini", "tomatpuré", "chilipulver", "örter", "grönsaksbuljongtärning", "oliver", "valnötter", "parmesan", "paprika", "kyckling", "jordnötssmör", "sweetchilisås", "soja", "tofu", "morötter", "avokador", "böngroddar", "koriander", "rispapper", "lime", "laxfilé", "teriyakimarinad", "tahini", "sesamfrön", "mirin", "citronjuice", "rapsolja", "spenat", "rödkål", "svamp", "tofu", "majsstärkelse", "noriark", "majskorn", "snabbnudlar", "misopasta", "ingefära", "sesamfrön", "babyspenat", "salladslök", "jasminris", "ryggbiff", "broccoli", "ostronsås", "oxfond", "balsamico", "sesamolja", "bambuskott", "ris", "gullök", "kycklingfilé", "hönsbuljong", "honung", "matyoghurt" ]
-
 };
 
-const token = ""
+const token = "4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35";
 
 
 
 const STATE = {
     get,
-/*     Post,
-    Patch,
+    Post,
+/*     Patch,
     Delete, */
     
     // token: () => {return '4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35';},
@@ -622,6 +621,10 @@ const STATE = {
     /* renderLogin */
 }
 
+
+function renderLogReg(){
+    renderLogRegContainer('wrapper');  
+}
 // async function Get(entity){
 //     let entityArray = _state[entity];
 //     let entityClone = JSON.parse(JSON.stringify(entityArray));
@@ -651,7 +654,7 @@ function renderApp() {
 */
 
     // Startsidan
-render_wrapper_DOM (); // startsidans wrapper anrop
+    render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
     render_sorted_recipes_DOM(matched_recipes); // anropar på container för alla sorterade/filtrerade recept
     render_ALL_recipes_DOM(recipes_all)
@@ -670,12 +673,11 @@ function get(entity) {
 
     // klonar
     return JSON.parse(JSON.stringify( _state[ entity ]));
-
-    renderIngredientBox("wrapper");
 /* renderChosenIngredientsBox("wrapper"); */ 
 }
 
-function renderLogReg(){
-    
-    renderLogRegContainer('wrapper');
+async function Post(){
+    let entityArray = _state[entity];
+    const data = await fetcher( rqst);
+    entityArray.push(data);
 }
