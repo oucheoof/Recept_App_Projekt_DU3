@@ -606,7 +606,7 @@ const _state = {
 
 };
 
-
+// const token = "4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35"
 
 
 
@@ -616,7 +616,7 @@ const STATE = {
     Patch,
     Delete, */
     
-    // token: () => {return 'ec24b88c7f3f7a3d488f29d59f70baba7f86414e';},
+    // token: () => {return '4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35';},
 
     renderApp,
     /* renderLogin */

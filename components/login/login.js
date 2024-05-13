@@ -17,7 +17,7 @@ function renderLogRegContainer(parentID) {
 
 
 
-function renderLoginForm(){
+async function renderLoginForm(){
     console.log('renderlogin');
     DOM = document.getElementById('logRegContainer');
     
@@ -60,7 +60,7 @@ function renderLoginForm(){
 
 
 
-function renderRegisterForm(){
+async function renderRegisterForm(){
     console.log('renderRegister');
     DOM = document.getElementById('logRegContainer');
     
