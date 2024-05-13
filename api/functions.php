@@ -25,7 +25,9 @@
         return json_decode($json, true);
     }
 
-    function getDatabase($filename){
+    
+
+/*     function getDatabase($filename){
         
     $databaseContents = file_get_contents(`${$filename}.json`);
     $databaseData = json_decode($databaseContents, true);
@@ -36,7 +38,7 @@
     }
 
     return $databaseData;
-    }
+    } */
 
 
 ?>

@@ -58,7 +58,7 @@ if ($requestMethod == 'POST'){
     }
 
     $token = ["token" => sha1("$username$password")];
-    sendJSON(200, $token);
+    sendJSON($token, 200);
 
 }
 
