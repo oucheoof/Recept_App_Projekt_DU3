@@ -28,18 +28,23 @@ function updatePopup(recipe_instance){
     exitImg.src = "./media/img/exit.svg"
     popupWrapper.appendChild(exitImg);
 
-    //Tömmer modal vid esc
+    // Close modal on Escape key
     document.addEventListener('keyup', function(event) {
         if (event.key === "Escape") {
-            dialogDOM.innerHTML = "";
+            closeAndClearModal();
         }
     });
 
-    //Tömmer modal vid click på exit button
-    exitImg.addEventListener("click", () => {
-        dialogDOM.close();
-        dialogDOM.innerHTML = "";
-    }) 
+    // Close modal on exit button click
+    exitImg.addEventListener("click", closeAndClearModal);
+
+    // Close modal when clicking outside the modal content
+    dialogDOM.addEventListener("click", function(event) {
+        if (event.target === dialogDOM) {
+            closeAndClearModal();
+        }
+    });
+
 
     let headerImg = document.createElement("img")
     headerImg.id = "headerImg";
@@ -106,5 +111,11 @@ function updatePopup(recipe_instance){
 
 
     dialogDOM.showModal();
+
+    // Function to close the modal and clear its content
+    function closeAndClearModal() {
+        dialogDOM.close();
+        dialogDOM.innerHTML = "";
+    }
     
 }
