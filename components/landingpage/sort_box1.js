@@ -1,6 +1,8 @@
-    let ingredientsBox1 = STATE.get("ingredients");
+// let ingredientsBox1 = STATE.get("ingredients"); --> Denna kan inte vara global.
 
 function renderBox1(parentID) { // Parent är <section id = "sort">
+    let ingredientsBox1 = STATE.get("ingredients");
+
     let mainWrapper = document.getElementById(parentID);
     
     // div for h2
@@ -73,6 +75,7 @@ function renderBox1(parentID) { // Parent är <section id = "sort">
 }  
 
 function createIngredientBtnsBox1() {
+    let ingredientsBox1 = STATE.get("ingredients"); 
 
     // Create and append buttons for each ingredient
     ingredientsBox1.forEach(ingredient => {
@@ -89,6 +92,7 @@ function createIngredientBtnsBox1() {
 }
 
 function handleButtonClickBox1(ingredient) {
+    let ingredientsBox1 = STATE.get("ingredients");
 
     // Remove the button from the DOM
     const buttonToRemove = divForButtons.querySelector('#' + ingredient);

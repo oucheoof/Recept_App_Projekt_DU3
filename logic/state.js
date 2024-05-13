@@ -34,7 +34,7 @@ function renderLogReg(){
 
 // async function Delete(entity){}
 
-function renderApp() {
+async function renderApp() {
 
 
     
@@ -48,6 +48,21 @@ function renderApp() {
     const recipeData = await fetch_function (recipeRequest);
     _state.recipes = recipeData;
 */
+
+    /*
+        Hämtar alla recipes och ingredients och skapar 
+        entity nycklar i state som kan hämtas av komponenterna
+    */
+
+    let recipeRequest = new Request(`./api/recipes.php`);
+    const recipeData = await fetcher(recipeRequest);
+    _state.recipes = recipeData.recipes;
+
+    let ingredientsRequest = new Request(`./api/ingredients.php`);
+    const ingredientsData = await fetcher(ingredientsRequest);
+    _state.ingredients = ingredientsData.ingredients;
+
+
 
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop
