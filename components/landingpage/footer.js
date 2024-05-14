@@ -33,8 +33,8 @@ function renderFooter(){
 
 
     contactUsP = document.createElement("p");
-    contactUsP.textContent = "Mon - Fri - 10 AM to 8 PM \r\nMon - Fri - 10 AM to 8 PM";
-    contactUsDiv.id = "contactUsDiv";
+    contactUsP.textContent = "Mon - Fri - 10 AM to 8 PM \r\nSat - Sun - 12 AM to 10 PM";
+    contactUsP.id = "contactUsP";
     contactHeadersDiv.appendChild(contactUsP);
 
     contactUsP2 = document.createElement("p");
@@ -53,10 +53,10 @@ function renderFooter(){
 
 
 
-    infoDiv = document.querySelector("#info")
-    infoDivImg = document.createElement("img");
+    // infoDiv = document.querySelector("#info")
+    infoDivImg = document.createElement("div");
     infoDivImg.id = "infoDivImg"
-    aboutUsDiv.appendChild(infoDivImg);
+    big3Div.appendChild(infoDivImg);
 
 
 }   

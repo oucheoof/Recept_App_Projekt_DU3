@@ -23,7 +23,7 @@ async function renderLoginForm(){
     
     DOM.innerHTML = null;
     DOM.innerHTML = `
-    <h2>Kitsch</h2>
+    <h2 id="loginTitle">Kitsch</h2>
     <form id="loginForm">
     <input type="text" id="username" name="username" placeholder="Användarnamn">
     <input type="password" id="password" name="password" placeholder="Lösenord">

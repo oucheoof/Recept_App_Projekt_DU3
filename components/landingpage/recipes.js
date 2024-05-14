@@ -1,6 +1,7 @@
 function render_sorted_recipes_DOM(parent) { // matched_recepies är parent
 
     const matched_recipes_title = document.createElement("h2");
+    matched_recipes_title.id = "matched_recipes_title";
     matched_recipes_title.innerText = "Recept som matchar";
     parent.appendChild(matched_recipes_title);
 
