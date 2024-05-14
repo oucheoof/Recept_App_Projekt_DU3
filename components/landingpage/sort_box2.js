@@ -20,8 +20,8 @@ function renderBox2(){
 let ingredientsBox2 = [];
 
 //Flyttar vidare ingredienser till box 2
-function addIngredientToBox2(ingredient){
-    
+function addIngredientToBox2(ingredient, ingredientsBox1){
+
     ingredientsBox2.push(ingredient);
 
     const button = document.createElement('button'); 

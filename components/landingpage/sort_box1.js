@@ -105,7 +105,7 @@ function handleButtonClickBox1(ingredient) {
         ingredientsBox1.splice(index, 1);
     }
 
-    addIngredientToBox2(ingredient);
+    addIngredientToBox2(ingredient, ingredientsBox1);
     
     update_sorted_recipes(ingredientsBox2);
 
