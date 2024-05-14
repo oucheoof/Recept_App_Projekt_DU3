@@ -1,6 +1,6 @@
 /* Dialog element */
 dialog {
-    width: 90.5vw; 
+    width: 88vw; 
     /*max-width: 1500px;  Maximum width of the dialog */
     border: none; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
@@ -16,6 +16,10 @@ dialog {
 
 dialog:focus {
     outline: none; /* Tar bort den blåa border när dialog är aktiv */
+}
+
+#dialogDOM::backdrop {
+    background-color: #333333ac;
 }
 
 /*  wrapper i dialog */
