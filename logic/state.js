@@ -62,7 +62,9 @@ async function renderApp() {
     const ingredientsData = await fetcher(ingredientsRequest);
     _state.ingredients = ingredientsData.ingredients;
 
-    // new Request för user
+    let userRequest = new Request(`./api/users.php`);
+    const userData = await fetcher(userRequest);
+    _state.users = userData.users;
 
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop

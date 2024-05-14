@@ -141,6 +141,15 @@ function render_instance_recipe (instance_data) {
     // lägger till en eventlyssnare för att hantera LIKEknapp
     like_btn.addEventListener('click', function() {
 
+            const likeRequest = new Request('../api/login.php',{
+            method: 'PATCH',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                user_id: , 
+                recipe_id: instance_data.id
+            }),
+        });
+
         // Togglar favorite status
         instance_data.favorite = !instance_data.favorite;
 

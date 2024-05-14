@@ -119,4 +119,14 @@ if ($requestMethod == 'DELETE'){ //radera en användare
     
 }
 
+if($requestMethod == "GET"){
+
+    $token = $_GET['token'];
+
+    //filegetcontents path:
+    //sedan parsa från json till kod
+    //loopa igenom alla användare for each
+    //if sats, om sha1 == $token
+    //skickar användaren som stämmer (sendJSON)
+}
 ?>
