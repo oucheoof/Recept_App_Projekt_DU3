@@ -82,7 +82,8 @@ function render_navigation(parent){
 
     // länk för USER-logo
     const linkUserLogo = document.createElement("a");
-    linkUserLogo.href = "../index.html";  // ÄNDRA SENARE när användarsidan är klar
+    linkUserLogo.href = "../userpage.html";  // ÄNDRA SENARE när användarsidan är klar
+    
   
     // USERlogo appendar till <a>
     const userLogo = document.createElement("div");
