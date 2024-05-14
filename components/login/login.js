@@ -3,7 +3,7 @@ function renderLogRegContainer(parentID) {
     DOM.id = 'logRegContainer';
 
     DOM.innerHTML = `
-    <h1>Kitch</h1>
+    <h1>Kitsch</h1>
     <div id='buttons'>
         <button type="button" onclick="renderLoginForm()">Logga in</button>
         <button type="button" onclick="renderRegisterForm()">Skapa konto</button>
@@ -23,7 +23,7 @@ async function renderLoginForm(){
     
     DOM.innerHTML = null;
     DOM.innerHTML = `
-    <h2>Kitch</h2>
+    <h2>Kitsch</h2>
     <form id="loginForm">
     <input type="text" id="username" name="username" placeholder="Användarnamn">
     <input type="password" id="password" name="password" placeholder="Lösenord">
@@ -68,7 +68,7 @@ async function renderRegisterForm(){
     
     DOM.innerHTML = null;
     DOM.innerHTML = `
-    <h2>KITSCH</h2>
+    <h2>Kitsch</h2>
     <form id="RegisterForm">
 
         <input type="text" id="email" name="email" placeholder="Email">
