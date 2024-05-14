@@ -178,7 +178,49 @@ function render_instance_recipe (instance_data) {
 
     });
 
+
+    // TEST 2 med LIKE btn 
+
+    /*
+    like_btn.addEventListener('click', async function() {
+        
+        const userId = getUserId(); // getUserId() behöver skapas för att hämta användarens ID?? 
+
+        const recipeId = instance_data.id;
+    
+        const likeRequest = new Request('../api/like.php', {
+
+            method: 'PATCH', 
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                user_id: userId,
+                recipe_id: recipeId
+            }),
+        });
+    
+        try {
+            const response = await fetcher(likeRequest); // fetcher för att skicka förfrågan
+
+            // Om like sparades, uppdatera knappens text 
+            if (response.ok) {
+
+                instance_data.like.push(userId); // lägger till user-ID i "like" arrayen för specifika recept
+
+                like_btn.innerText = 'Unlike';
+                like_btn.classList.add('favorited');
+
+            } else {
+                console.error(response); // ev. felmeddelanden
+            }
+
+        } catch (error) {
+
+            console.error(error);
+        }
+    }); */
+
     container_recipe.appendChild(like_btn);
+
 
     // för filtrerade recepten
     let recipe_container = document.getElementById("sorted_recipes_DOM");
