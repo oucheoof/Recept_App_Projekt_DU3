@@ -1,3 +1,4 @@
+
 function renderUserHeader(parentID){
     const userHeader = document.createElement('header');
 
@@ -54,3 +55,5 @@ async function renderSavedRecipesContainer(parentID){
     //foreach render instance, all liked
     
 }
+
+renderUserpageContainer();
