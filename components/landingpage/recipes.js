@@ -131,7 +131,7 @@ function render_instance_recipe (instance_data) {
 
     // rank
 
-    const currentUser = STATE.get( 'user');
+    const currentUser = STATE.get('user');
     // instance_data.likes.includes( currentUser.id) 
     // LIKE knapp
     const like_btn = document.createElement('button'); 
