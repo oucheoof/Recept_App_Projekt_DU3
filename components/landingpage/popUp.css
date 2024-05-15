@@ -18,6 +18,10 @@ dialog:focus {
     outline: none; /* Tar bort den blåa border när dialog är aktiv */
 }
 
+dialog::backdrop {
+    background-color: rgba(61, 59, 59, 0.729);
+}
+
 /*  wrapper i dialog */
 #popupWrapper {
     border: none;
