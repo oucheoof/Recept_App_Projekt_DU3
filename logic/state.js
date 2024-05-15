@@ -1,7 +1,7 @@
 const _state = {
 };
 
-const token = "4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35";
+// const token = "4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35";
 
 
 
@@ -11,7 +11,7 @@ const STATE = {
 /*     Patch,
     Delete, */
     
-    // token: () => {return '4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35';},
+    token: () => localStorage.getItem( 'token'),
 
     renderApp,
     /* renderLogin */
