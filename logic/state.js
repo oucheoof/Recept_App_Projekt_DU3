@@ -11,7 +11,7 @@ const STATE = {
 /*     Patch,
     Delete, */
     
-    token: () => localStorage.getItem( 'token'),
+    token: () => sessionStorage.getItem( 'token'),
 
     renderApp,
     /* renderLogin */

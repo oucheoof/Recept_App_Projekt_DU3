@@ -70,7 +70,7 @@ function renderUserHeader(parentID){
     logoutButton.addEventListener('click', () => {
        let ok = confirm('Jag vill logga ut');
        if(ok){
-           localStorage.removeItem('token');
+           sessionStorage.removeItem('token');
            renderLogReg();
            //location.reload();
            console.log('utloggad')

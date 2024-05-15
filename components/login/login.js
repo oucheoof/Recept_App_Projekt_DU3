@@ -52,7 +52,7 @@ async function renderLoginForm(){
             if (data.error) {
                 window.alert(data.error);
             } else {
-                localStorage.setItem('token', data.token);
+                sessionStorage.setItem('token', data.token);
                 location.reload();
             }
     };

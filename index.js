@@ -4,7 +4,7 @@
     renderApp || render logReg baserat på om localstorage är set
 */
 
-if( !localStorage.getItem('token')) {
+if( !sessionStorage.getItem('token')) {
     renderLogReg();
 } else {
     renderApp()
