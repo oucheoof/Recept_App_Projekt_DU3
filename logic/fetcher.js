@@ -1,7 +1,20 @@
 async function fetcher(rqst){ 
-    let response = await fetch(rqst); 
+    
+    try{
+        const response = await fetch(rqst);
 
-    let data = await response.json() 
+        if(!response.ok){
+            console.log("!response.ok")
+            console.log("Response not OK:", response.status, response.statusText);
+            return
+        }
 
-    return data; 
+        const data = await response.json(); 
+        return data;
+
+    }catch(error){
+
+        console.log("womp womp");
+        console.log(error);
+    }
 }
