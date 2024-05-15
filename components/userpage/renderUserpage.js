@@ -56,4 +56,3 @@ async function renderSavedRecipesContainer(parentID){
     
 }
 
-renderUserpageContainer();
