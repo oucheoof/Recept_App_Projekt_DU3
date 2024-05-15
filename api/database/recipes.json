@@ -3,342 +3,671 @@
         {
             "id": 1,
             "name": "Amerikanska Pannkakor",
-            "ingredients": ["vetemjöl", "bakpulver", "strösocker", "salt", "yoghurt", "ägg", "smör"],
-
-            "renderIngredients": "Vetemjöl 3 dl\nBakpulver 2 tsk\nStrösocker 1 msk\nSalt ½ tsk\nMild yoghurt naturell, filmjölk eller mjölk 3½ dl\nÄgg 1\nSmör ",
-
-            "howTo": "1. Blanda de torra ingredienserna i en bunke.\n2. Rör ner yoghurt, äggula och rapsolja. Vispa till en slät smet.\n3. Vispa äggvitan till ett hårt skum och vänd ner i smeten.\n4. Hetta upp lite rapsolja i en stekpanna. Stek små pannkakor på låg medelvärme i omgångar. När det bildas bubblor på ovansidan är det dags att vända. 5. Servera amerikanska pannkakor med lönnsirap och bär. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/amerikanskapannkakor.jpg"
+            "ingredients": [
+                "vetemj\u00f6l",
+                "bakpulver",
+                "str\u00f6socker",
+                "salt",
+                "yoghurt",
+                "\u00e4gg",
+                "sm\u00f6r"
+            ],
+            "renderIngredients": "Vetemj\u00f6l 3 dl\nBakpulver 2 tsk\nStr\u00f6socker 1 msk\nSalt \u00bd tsk\nMild yoghurt naturell, filmj\u00f6lk eller mj\u00f6lk 3\u00bd dl\n\u00c4gg 1\nSm\u00f6r ",
+            "howTo": "1. Blanda de torra ingredienserna i en bunke.\n2. R\u00f6r ner yoghurt, \u00e4ggula och rapsolja. Vispa till en sl\u00e4t smet.\n3. Vispa \u00e4ggvitan till ett h\u00e5rt skum och v\u00e4nd ner i smeten.\n4. Hetta upp lite rapsolja i en stekpanna. Stek sm\u00e5 pannkakor p\u00e5 l\u00e5g medelv\u00e4rme i omg\u00e5ngar. N\u00e4r det bildas bubblor p\u00e5 ovansidan \u00e4r det dags att v\u00e4nda. 5. Servera amerikanska pannkakor med l\u00f6nnsirap och b\u00e4r. ",
+            "like": [
+                4,
+                7,
+                3
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/amerikanskapannkakor.jpg"
         },
         {
             "id": 2,
-            "name": "Lövbiffspasta",
-            "ingredients": ["lövbiff", "champinjoner", "salt", "svartpeppar", "purjolök", "vitlöksklyftor", "smör", "crèmefraiche", "matlagningsgrädde", "dijonsenap", "sambaloelek", "hönsbuljong"],
-
-            "renderIngredients": "Lövbiff ca 400 g\nSalt och svartpeppar\nChampinjoner 250 g\nPurjolök 1/2\nSmör\nVitlöksklyftor, finrivna 2\ncrèmefraiche 2 dl\nMatlagningsgrädde 2½ dl\nDijonsenap 1 msk\nsambaloelek 1 msk\nHönsbuljong ",
-
-            "howTo": "1. Sätt på vatten till pastakoket.\n2. Strimla lövbiffen grovt. Salta och peppra. Ställ åt sidan medan resten förbereds.\n3. Skär svampen i klyftor. Skölj och skiva purjolöken grovt. Fräs svampen i en stekpanna tills vätskan kokat in. Tillsätt en klick smör, purjolök och vitlök. Fräs 2–3 min. Rör ner crèmefraiche, grädde, senap, sambaloelek och smulad buljong. Låt koka ihop 2–3 min. Ställ åt sidan.\n 4. Koka pastan enligt anvisning på förpackningen. Spara 1 dl av pastavattnet.\n5. Hetta upp en stekpanna med smör. Stek lövbiffen hastigt i omgångar.\n6.Blanda ner i såsen tillsammans med pastan. Rör ev ner det sparade pastavattenet till önskad konsistens.Toppa med smulad ost och timjan. Servera direkt. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/lovbiffspasta.jpg"
+            "name": "L\u00f6vbiffspasta",
+            "ingredients": [
+                "l\u00f6vbiff",
+                "champinjoner",
+                "salt",
+                "svartpeppar",
+                "purjol\u00f6k",
+                "vitl\u00f6ksklyftor",
+                "sm\u00f6r",
+                "cr\u00e8mefraiche",
+                "matlagningsgr\u00e4dde",
+                "dijonsenap",
+                "sambaloelek",
+                "h\u00f6nsbuljong"
+            ],
+            "renderIngredients": "L\u00f6vbiff ca 400 g\nSalt och svartpeppar\nChampinjoner 250 g\nPurjol\u00f6k 1\/2\nSm\u00f6r\nVitl\u00f6ksklyftor, finrivna 2\ncr\u00e8mefraiche 2 dl\nMatlagningsgr\u00e4dde 2\u00bd dl\nDijonsenap 1 msk\nsambaloelek 1 msk\nH\u00f6nsbuljong ",
+            "howTo": "1. S\u00e4tt p\u00e5 vatten till pastakoket.\n2. Strimla l\u00f6vbiffen grovt. Salta och peppra. St\u00e4ll \u00e5t sidan medan resten f\u00f6rbereds.\n3. Sk\u00e4r svampen i klyftor. Sk\u00f6lj och skiva purjol\u00f6ken grovt. Fr\u00e4s svampen i en stekpanna tills v\u00e4tskan kokat in. Tills\u00e4tt en klick sm\u00f6r, purjol\u00f6k och vitl\u00f6k. Fr\u00e4s 2\u20133 min. R\u00f6r ner cr\u00e8mefraiche, gr\u00e4dde, senap, sambaloelek och smulad buljong. L\u00e5t koka ihop 2\u20133 min. St\u00e4ll \u00e5t sidan.\n 4. Koka pastan enligt anvisning p\u00e5 f\u00f6rpackningen. Spara 1 dl av pastavattnet.\n5. Hetta upp en stekpanna med sm\u00f6r. Stek l\u00f6vbiffen hastigt i omg\u00e5ngar.\n6.Blanda ner i s\u00e5sen tillsammans med pastan. R\u00f6r ev ner det sparade pastavattenet till \u00f6nskad konsistens.Toppa med smulad ost och timjan. Servera direkt. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/lovbiffspasta.jpg"
         },
         {
             "id": 3,
-            "name": "Fläderdryck",
-            "ingredients": ["fläderblomsklasar", "citron", "vatten", "socker", "citronsyra", "natriumbensoat"],
-
-            "renderIngredients": "Fläderblomsklasar 35 - 40\nCitroner 3\nVatten 1½ liter\nStrösocker 1½ liter\nCitronsyra 50 g\nNatriumbensoat ev. 2 krm",
-
-            "howTo": "1. Skölj blomklasarna i ljummet vatten, låt rinna av. Ta bort grova skaft, de kan göra saften besk.\n2. Tvätta citronerna noga i ljummet vatten. Skär citronerna i skivor.\n3. Varva blomklasar och citronskivor i en stor bunke.\n4. Koka upp vatten och socker. Rör om tills sockret löst upp sig. Blanda ner citronsyran och natriumbensoat . Häll den heta sockerlagen i bunken.\n5. Låt svalna i rumstemperatur. Täck sedan över bunken och låt stå i kylskåp 2-3 dygn.\n6. Sila saften genom silduk. Häll flädersaften på rena flaskor, fyll ända upp och sätt på skruvkork.\n7. Förvara flädersaften svalt. Späd till nskad smak med med kallt vatten, gärna kolsyrat! Fyll på med isbitar och ev citronskivor. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/flaaderdryck.png"
+            "name": "Fl\u00e4derdryck",
+            "ingredients": [
+                "fl\u00e4derblomsklasar",
+                "citron",
+                "vatten",
+                "socker",
+                "citronsyra",
+                "natriumbensoat"
+            ],
+            "renderIngredients": "Fl\u00e4derblomsklasar 35 - 40\nCitroner 3\nVatten 1\u00bd liter\nStr\u00f6socker 1\u00bd liter\nCitronsyra 50 g\nNatriumbensoat ev. 2 krm",
+            "howTo": "1. Sk\u00f6lj blomklasarna i ljummet vatten, l\u00e5t rinna av. Ta bort grova skaft, de kan g\u00f6ra saften besk.\n2. Tv\u00e4tta citronerna noga i ljummet vatten. Sk\u00e4r citronerna i skivor.\n3. Varva blomklasar och citronskivor i en stor bunke.\n4. Koka upp vatten och socker. R\u00f6r om tills sockret l\u00f6st upp sig. Blanda ner citronsyran och natriumbensoat . H\u00e4ll den heta sockerlagen i bunken.\n5. L\u00e5t svalna i rumstemperatur. T\u00e4ck sedan \u00f6ver bunken och l\u00e5t st\u00e5 i kylsk\u00e5p 2-3 dygn.\n6. Sila saften genom silduk. H\u00e4ll fl\u00e4dersaften p\u00e5 rena flaskor, fyll \u00e4nda upp och s\u00e4tt p\u00e5 skruvkork.\n7. F\u00f6rvara fl\u00e4dersaften svalt. Sp\u00e4d till nskad smak med med kallt vatten, g\u00e4rna kolsyrat! Fyll p\u00e5 med isbitar och ev citronskivor. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/flaaderdryck.png"
         },
         {
             "id": 4,
-            "name": "Spagetti med krämig pesto",
-            "ingredients": ["basilika", "pinjenötter", "pasta", "vitlöksklyfta", "svecia", "kvarg", "salt", "svartpeppar"],
-
-            "renderIngredients": "Pasta\nbasilika 2 krukor\nPinjenötter 50 g\nVitlöksklyfta 1\nsvecia 100 g\nKvarg 250 g\nSalt\nSvartpeppar ",
-
-            "howTo": "1. Bryt av basilikabladen. Mixa ingredienserna till peston väl. Spar lite ost, pinjenötter och basilika till servering.Smaka av med salt och peppar.\n2. Koka spaghettin enligt anvisning på förpackningen. Blanda spaghetti och pesto. Toppa med extra basilika och ost. Servera genast.",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/spagetti_pesto.jpg"
+            "name": "Spagetti med kr\u00e4mig pesto",
+            "ingredients": [
+                "basilika",
+                "pinjen\u00f6tter",
+                "pasta",
+                "vitl\u00f6ksklyfta",
+                "svecia",
+                "kvarg",
+                "salt",
+                "svartpeppar"
+            ],
+            "renderIngredients": "Pasta\nbasilika 2 krukor\nPinjen\u00f6tter 50 g\nVitl\u00f6ksklyfta 1\nsvecia 100 g\nKvarg 250 g\nSalt\nSvartpeppar ",
+            "howTo": "1. Bryt av basilikabladen. Mixa ingredienserna till peston v\u00e4l. Spar lite ost, pinjen\u00f6tter och basilika till servering.Smaka av med salt och peppar.\n2. Koka spaghettin enligt anvisning p\u00e5 f\u00f6rpackningen. Blanda spaghetti och pesto. Toppa med extra basilika och ost. Servera genast.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/spagetti_pesto.jpg"
         },
         {
             "id": 5,
-            "name": "Köttbullar",
-            "ingredients": ["köttfärs", "ströbröd", "standarmjölk", "lök", "ägg", "salt", "svartpeppar", "smör"],
-
-            "renderIngredients": "Köttfärs 500 g\nStröbröd ½ dl\nStandardmjölk 1 dl\nFinhackad lök 2 msk\nÄgg 1\nSalt 1 tsk\nSvartpeppar 1 krm\nSmör & rapsolja 2 msk ",
-
-            "howTo": "1. Blanda ströbröd och mjölk. Låt svälla 10 min.\n2. Lägg i färs, lök, ägg, salt och peppar. Rör till en jämn smet.\n3. Forma smeten till jämna köttbullar. Stek dem i rapsolja på medelvärme ca 5 min. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/kottbullar.jpg"
+            "name": "K\u00f6ttbullar",
+            "ingredients": [
+                "k\u00f6ttf\u00e4rs",
+                "str\u00f6br\u00f6d",
+                "standarmj\u00f6lk",
+                "l\u00f6k",
+                "\u00e4gg",
+                "salt",
+                "svartpeppar",
+                "sm\u00f6r"
+            ],
+            "renderIngredients": "K\u00f6ttf\u00e4rs 500 g\nStr\u00f6br\u00f6d \u00bd dl\nStandardmj\u00f6lk 1 dl\nFinhackad l\u00f6k 2 msk\n\u00c4gg 1\nSalt 1 tsk\nSvartpeppar 1 krm\nSm\u00f6r & rapsolja 2 msk ",
+            "howTo": "1. Blanda str\u00f6br\u00f6d och mj\u00f6lk. L\u00e5t sv\u00e4lla 10 min.\n2. L\u00e4gg i f\u00e4rs, l\u00f6k, \u00e4gg, salt och peppar. R\u00f6r till en j\u00e4mn smet.\n3. Forma smeten till j\u00e4mna k\u00f6ttbullar. Stek dem i rapsolja p\u00e5 medelv\u00e4rme ca 5 min. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/kottbullar.jpg"
         },
         {
             "id": 6,
             "name": "Cornflakes Fisk",
-            "ingredients": ["torskfilé", "vatten", "salt", "smör", "vitlöksklyfta", "citron", "dill", "ströbröd", "salt", "cornflakes", "potatis"],
-
-            "renderIngredients": "Torskfilé 600 g\nVatten 1 liter\nSalt ½ dl\nSmör 75 g\nVitlöksklyfta 1\nCitron, finrivet skal och saft 1 st\nDill 2 msk\nStröbröd ½ dl\nSalt 2 krm\nCornflakes 2 dl\nPotatis 900 g ",
-            
-            "howTo": "1. Värm ugnen till 200°.\n2. Skär fisken i portionsbitar. Vispa ihop vatten och salt i en bunke. Lägg ner fisken i vattnet och låt ligga minst 10 min.\n3. Blanda alla ingredienser till gräddfilssåsen i en skål. Ställ kallt till servering.\n4. Rör ihop smör med finriven vitlök, citron, dill och ströbröd. Smaka av med salt.\n5. Torka av fisken med hushållspapper. Lägg den i en smord ugnsform och klicka smöret över fisken. Strö över lätt krossad cornflakes.\n6. Tillaga i mitten av ugnen ca 20 min.\n7. Skala och koka potatisen mjuk i saltat vatten.\n8. Servera cornflakesfisken med gräddfilssås, kokt potatis och grönsallad. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/cornflakesfisk.jpg"
+            "ingredients": [
+                "torskfil\u00e9",
+                "vatten",
+                "salt",
+                "sm\u00f6r",
+                "vitl\u00f6ksklyfta",
+                "citron",
+                "dill",
+                "str\u00f6br\u00f6d",
+                "salt",
+                "cornflakes",
+                "potatis"
+            ],
+            "renderIngredients": "Torskfil\u00e9 600 g\nVatten 1 liter\nSalt \u00bd dl\nSm\u00f6r 75 g\nVitl\u00f6ksklyfta 1\nCitron, finrivet skal och saft 1 st\nDill 2 msk\nStr\u00f6br\u00f6d \u00bd dl\nSalt 2 krm\nCornflakes 2 dl\nPotatis 900 g ",
+            "howTo": "1. V\u00e4rm ugnen till 200\u00b0.\n2. Sk\u00e4r fisken i portionsbitar. Vispa ihop vatten och salt i en bunke. L\u00e4gg ner fisken i vattnet och l\u00e5t ligga minst 10 min.\n3. Blanda alla ingredienser till gr\u00e4ddfilss\u00e5sen i en sk\u00e5l. St\u00e4ll kallt till servering.\n4. R\u00f6r ihop sm\u00f6r med finriven vitl\u00f6k, citron, dill och str\u00f6br\u00f6d. Smaka av med salt.\n5. Torka av fisken med hush\u00e5llspapper. L\u00e4gg den i en smord ugnsform och klicka sm\u00f6ret \u00f6ver fisken. Str\u00f6 \u00f6ver l\u00e4tt krossad cornflakes.\n6. Tillaga i mitten av ugnen ca 20 min.\n7. Skala och koka potatisen mjuk i saltat vatten.\n8. Servera cornflakesfisken med gr\u00e4ddfilss\u00e5s, kokt potatis och gr\u00f6nsallad. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/cornflakesfisk.jpg"
         },
         {
             "id": 7,
             "name": "Stekt ris",
-            "ingredients": ["jasminris", "morot", "paprika", "sockerärtor", "vitlöksklyftor", "matolja", "chilliflakes", "ägg"],
-
-            "renderIngredients": "Jasminris 3 dl\nMorot 1\npaprika 1\nSockerärter 150 g\nVitlöksklyftor 3\nMatolja 2 msk\nChili flakes 1 tsk\nÄgg 2",
-
-            "howTo": "1. Koka riset enligt anvisning på förpackningen.\n2. Skala och skär tunna stavar av moroten. Strimla paprika och sockerärter. 3. Skala och finhacka vitlöken.\n4. Bryn smöret till dressingen under omrörning. Häll över i en värmetålig skål och rör ner övriga ingredienser.\n5. Hetta upp matoljan i en rymlig stekpanna. Stek alla grönsaker med vitlök och chili flakes på hög värme 2–3 min.\n6. Tillsätt riset och knäck ner äggen. Stek under omrörning tills äggen stelnat. Blanda ner dressingen.\n7. Toppa stekt ris med koriander och rostadlök. Servera direkt. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/stektris.jpg"
+            "ingredients": [
+                "jasminris",
+                "morot",
+                "paprika",
+                "socker\u00e4rtor",
+                "vitl\u00f6ksklyftor",
+                "matolja",
+                "chilliflakes",
+                "\u00e4gg"
+            ],
+            "renderIngredients": "Jasminris 3 dl\nMorot 1\npaprika 1\nSocker\u00e4rter 150 g\nVitl\u00f6ksklyftor 3\nMatolja 2 msk\nChili flakes 1 tsk\n\u00c4gg 2",
+            "howTo": "1. Koka riset enligt anvisning p\u00e5 f\u00f6rpackningen.\n2. Skala och sk\u00e4r tunna stavar av moroten. Strimla paprika och socker\u00e4rter. 3. Skala och finhacka vitl\u00f6ken.\n4. Bryn sm\u00f6ret till dressingen under omr\u00f6rning. H\u00e4ll \u00f6ver i en v\u00e4rmet\u00e5lig sk\u00e5l och r\u00f6r ner \u00f6vriga ingredienser.\n5. Hetta upp matoljan i en rymlig stekpanna. Stek alla gr\u00f6nsaker med vitl\u00f6k och chili flakes p\u00e5 h\u00f6g v\u00e4rme 2\u20133 min.\n6. Tills\u00e4tt riset och kn\u00e4ck ner \u00e4ggen. Stek under omr\u00f6rning tills \u00e4ggen stelnat. Blanda ner dressingen.\n7. Toppa stekt ris med koriander och rostadl\u00f6k. Servera direkt. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/stektris.jpg"
         },
         {
             "id": 8,
             "name": "Frallor",
-            "ingredients": ["jäst", "vatten", "kvarg", "honung", "salt", "vetemjöl", "solrosfrön", "sesamfrön", "flingsalt"],
-
-            "renderIngredients": "Jäst 25 g\nVatten 4 dl\nKvarg 1 dl\nFlytande honung 1 msk\nSalt 1 tsk\nVetemjöl 10 dl\nSolrosfrön 2 dl\nsesamfrön½ dl\nFlingsalt ",
-
-            "howTo": "1. Smula jästen i en bunke.\n2. Rör ut jästen med lite av vattnet. Rör ner resterande vatten, kesella, honung och salt.\n3. Arbeta in mjölet med en trägaffel. Täck bunken med plastfolie och ställ in i kylskåpet över natten.\n4. Nästa dag:\n5. Värm ugnen till 225°.\n6. Stjälp ut degen på mjölad arbetsbänk. Forma degen försiktigt till en rulle och dela i ca 12 bitar. Lägg på en plåt med bakplåtspapper och toppa bullarna med frön och lite flingsalt.\n7. Grädda mitt i ugnen 12-15 min.\n8. Servera de kalljästa frallorna direkt. Frys in de som blir över!",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/frallor.jpg"
+            "ingredients": [
+                "j\u00e4st",
+                "vatten",
+                "kvarg",
+                "honung",
+                "salt",
+                "vetemj\u00f6l",
+                "solrosfr\u00f6n",
+                "sesamfr\u00f6n",
+                "flingsalt"
+            ],
+            "renderIngredients": "J\u00e4st 25 g\nVatten 4 dl\nKvarg 1 dl\nFlytande honung 1 msk\nSalt 1 tsk\nVetemj\u00f6l 10 dl\nSolrosfr\u00f6n 2 dl\nsesamfr\u00f6n\u00bd dl\nFlingsalt ",
+            "howTo": "1. Smula j\u00e4sten i en bunke.\n2. R\u00f6r ut j\u00e4sten med lite av vattnet. R\u00f6r ner resterande vatten, kesella, honung och salt.\n3. Arbeta in mj\u00f6let med en tr\u00e4gaffel. T\u00e4ck bunken med plastfolie och st\u00e4ll in i kylsk\u00e5pet \u00f6ver natten.\n4. N\u00e4sta dag:\n5. V\u00e4rm ugnen till 225\u00b0.\n6. Stj\u00e4lp ut degen p\u00e5 mj\u00f6lad arbetsb\u00e4nk. Forma degen f\u00f6rsiktigt till en rulle och dela i ca 12 bitar. L\u00e4gg p\u00e5 en pl\u00e5t med bakpl\u00e5tspapper och toppa bullarna med fr\u00f6n och lite flingsalt.\n7. Gr\u00e4dda mitt i ugnen 12-15 min.\n8. Servera de kallj\u00e4sta frallorna direkt. Frys in de som blir \u00f6ver!",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/frallor.jpg"
         },
         {
             "id": 9,
             "name": "Pannkakor",
-            "ingredients": ["vetemjöl", "standardmjölk", "ägg", "salt", "smör"],
-
-            "renderIngredients": "Vetemjöl 3 dl\nStandardmjölk 6 dl\nÄgg 3\nSalt ½ tsk\nSmör 2 msk ",
-
-            "howTo": "1. Vispa ut mjölet i hälften av mjölken till en slät smet. Vispa i resterande mjölk, ägg och salt.\n2. Låt smeten svälla ca 10 min.\n3. Smält smör i en stekpanna och häll ner i smeten. Grädda tunna pannkakor. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/pannkakor.jpg"
+            "ingredients": [
+                "vetemj\u00f6l",
+                "standardmj\u00f6lk",
+                "\u00e4gg",
+                "salt",
+                "sm\u00f6r"
+            ],
+            "renderIngredients": "Vetemj\u00f6l 3 dl\nStandardmj\u00f6lk 6 dl\n\u00c4gg 3\nSalt \u00bd tsk\nSm\u00f6r 2 msk ",
+            "howTo": "1. Vispa ut mj\u00f6let i h\u00e4lften av mj\u00f6lken till en sl\u00e4t smet. Vispa i resterande mj\u00f6lk, \u00e4gg och salt.\n2. L\u00e5t smeten sv\u00e4lla ca 10 min.\n3. Sm\u00e4lt sm\u00f6r i en stekpanna och h\u00e4ll ner i smeten. Gr\u00e4dda tunna pannkakor. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/pannkakor.jpg"
         },
         {
             "id": 10,
             "name": "Ramen",
-            "ingredients": ["vitlöksklyftor", "färsk ingefära", "smör", "fläskfärs", "chillipasta", "sake", "ägg", "nudlar", "pakchoi", "böngroddar", "salladslökar", "ost"],
-
-            "renderIngredients": "Vitlöksklyftor 4\nFärsk ingefära 25 g\nSmör 1 msk\nFläskfärs 200 g\nBön och chilipasta 3 msk\nSake 4 msk\nÄgg 2\nNudlar, snabbnudlar 4 förp\npakchoi 1\nBöngroddar 4 dl\nSalladslökar 2\nOst 4 skivor ",
-            
-            "howTo": "1. Skala och finhacka vitlök och ingefära.\n2. Hetta upp smör i en stekpanna. Fräs vitlök och ingefära på medelvärme i ca 30 sek.\n3. Tillsätt färs och bryn tills den fått fin färg.\n4. Tillsätt doubanjiang och fräs ytterligare 1 min. Rör ner shaoxingvin och låt koka in. Smaka av med salt och svartpeppar. Ställ åt sidan.\n5. Koka upp vatten och koka äggen i exakt 6 min och 45 sek. Häll av och kyl ner äggen. Skala och halvera äggen. Ställ åt sidan.\n6. Koka upp vatten i en kastrull, Plocka bladen från pakchoi. Koka först pakchoi i 30 sek. Plocka upp med hålslev. Gör sedan likadant med groddarna. Plocka upp med hålslev. Ställ åt sidan.\n7. Koka nudlar al dente utan kryddpåse. Skölj nudlarna i kallt vatten för att få bort stärkelse, doppa dem sedan i hett vatten igen precis innan servering.\n8. Strimla salladslöken.\n9. Koka upp vatten, mjölk och kycklingbuljong. Låt sjuda tills buljongen lösts upp. Tillsätt smör.\n10. SLURP!",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/ramen.png"
+            "ingredients": [
+                "vitl\u00f6ksklyftor",
+                "f\u00e4rsk ingef\u00e4ra",
+                "sm\u00f6r",
+                "fl\u00e4skf\u00e4rs",
+                "chillipasta",
+                "sake",
+                "\u00e4gg",
+                "nudlar",
+                "pakchoi",
+                "b\u00f6ngroddar",
+                "salladsl\u00f6kar",
+                "ost"
+            ],
+            "renderIngredients": "Vitl\u00f6ksklyftor 4\nF\u00e4rsk ingef\u00e4ra 25 g\nSm\u00f6r 1 msk\nFl\u00e4skf\u00e4rs 200 g\nB\u00f6n och chilipasta 3 msk\nSake 4 msk\n\u00c4gg 2\nNudlar, snabbnudlar 4 f\u00f6rp\npakchoi 1\nB\u00f6ngroddar 4 dl\nSalladsl\u00f6kar 2\nOst 4 skivor ",
+            "howTo": "1. Skala och finhacka vitl\u00f6k och ingef\u00e4ra.\n2. Hetta upp sm\u00f6r i en stekpanna. Fr\u00e4s vitl\u00f6k och ingef\u00e4ra p\u00e5 medelv\u00e4rme i ca 30 sek.\n3. Tills\u00e4tt f\u00e4rs och bryn tills den f\u00e5tt fin f\u00e4rg.\n4. Tills\u00e4tt doubanjiang och fr\u00e4s ytterligare 1 min. R\u00f6r ner shaoxingvin och l\u00e5t koka in. Smaka av med salt och svartpeppar. St\u00e4ll \u00e5t sidan.\n5. Koka upp vatten och koka \u00e4ggen i exakt 6 min och 45 sek. H\u00e4ll av och kyl ner \u00e4ggen. Skala och halvera \u00e4ggen. St\u00e4ll \u00e5t sidan.\n6. Koka upp vatten i en kastrull, Plocka bladen fr\u00e5n pakchoi. Koka f\u00f6rst pakchoi i 30 sek. Plocka upp med h\u00e5lslev. G\u00f6r sedan likadant med groddarna. Plocka upp med h\u00e5lslev. St\u00e4ll \u00e5t sidan.\n7. Koka nudlar al dente utan kryddp\u00e5se. Sk\u00f6lj nudlarna i kallt vatten f\u00f6r att f\u00e5 bort st\u00e4rkelse, doppa dem sedan i hett vatten igen precis innan servering.\n8. Strimla salladsl\u00f6ken.\n9. Koka upp vatten, mj\u00f6lk och kycklingbuljong. L\u00e5t sjuda tills buljongen l\u00f6sts upp. Tills\u00e4tt sm\u00f6r.\n10. SLURP!",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/ramen.png"
         },
         {
             "id": 11,
             "name": "Smoothie Bowl",
-            "ingredients": ["grekiskyoghurt", "banan", "hallon", "vaniljpulver", "havregryn", "draktfrukt", "mango"],
-
-            "renderIngredients": "grekiskyoghurt 3 dl\nBanan 1\nFrysta hallon 2 dl\nVaniljpulver 2 krm\nHavregryn ½ dl\nDrakfrukt 1\nMango ½\nHallon 1 dl ",
-
-            "howTo": "1. Mixa ihop yoghurt med banan, hallon och vanilj. Lägg upp i 2 skålar.\n2. Gör kulor av drakfrukten, skala och skär mangon i tunna skivor.\n3. Toppa din smoothiebowl med havregryn, frukt och bär. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/smoothiebowl.jpg"
+            "ingredients": [
+                "grekiskyoghurt",
+                "banan",
+                "hallon",
+                "vaniljpulver",
+                "havregryn",
+                "draktfrukt",
+                "mango"
+            ],
+            "renderIngredients": "grekiskyoghurt 3 dl\nBanan 1\nFrysta hallon 2 dl\nVaniljpulver 2 krm\nHavregryn \u00bd dl\nDrakfrukt 1\nMango \u00bd\nHallon 1 dl ",
+            "howTo": "1. Mixa ihop yoghurt med banan, hallon och vanilj. L\u00e4gg upp i 2 sk\u00e5lar.\n2. G\u00f6r kulor av drakfrukten, skala och sk\u00e4r mangon i tunna skivor.\n3. Toppa din smoothiebowl med havregryn, frukt och b\u00e4r. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/smoothiebowl.jpg"
         },
         {
             "id": 12,
-            "name": "Potatis och Purjolökssoppa",
-            "ingredients": ["purjolök", "potatis", "smör", "grönsaksbuljong", "matlagningsgrädde", "salt", "peppar", "persilja"],
-
-            "renderIngredients": "Potatis 500 g\nPurjolök 1\nSmör 1 msk\nGrönsaksbuljong 6 dl\nMatlagningsgrädde 3 dl\nSalt och peppar\nPersilja hackad 1 dl",
-
-            "howTo": "1. Skala potatisen och ansa purjolöken. Skär potatis och purjolök i bitar.\n2. Fräs purjolöken i rapsolja i en kastrull.\n3. Tillsätt potatis och hälften av buljongen.\n4. Låt koka på medelvärme ca 10 min. Mixa soppa slät.\n5. Häll i resterande buljong och syrad grädde. Koka upp. Smaka av med salt och peppar. Strö över persilja och servera med bröd. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/potatispurjolok.jpg"
+            "name": "Potatis och Purjol\u00f6kssoppa",
+            "ingredients": [
+                "purjol\u00f6k",
+                "potatis",
+                "sm\u00f6r",
+                "gr\u00f6nsaksbuljong",
+                "matlagningsgr\u00e4dde",
+                "salt",
+                "peppar",
+                "persilja"
+            ],
+            "renderIngredients": "Potatis 500 g\nPurjol\u00f6k 1\nSm\u00f6r 1 msk\nGr\u00f6nsaksbuljong 6 dl\nMatlagningsgr\u00e4dde 3 dl\nSalt och peppar\nPersilja hackad 1 dl",
+            "howTo": "1. Skala potatisen och ansa purjol\u00f6ken. Sk\u00e4r potatis och purjol\u00f6k i bitar.\n2. Fr\u00e4s purjol\u00f6ken i rapsolja i en kastrull.\n3. Tills\u00e4tt potatis och h\u00e4lften av buljongen.\n4. L\u00e5t koka p\u00e5 medelv\u00e4rme ca 10 min. Mixa soppa sl\u00e4t.\n5. H\u00e4ll i resterande buljong och syrad gr\u00e4dde. Koka upp. Smaka av med salt och peppar. Str\u00f6 \u00f6ver persilja och servera med br\u00f6d. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/potatispurjolok.jpg"
         },
         {
             "id": 13,
             "name": "Pasta Carbonara",
-            "ingredients": ["pasta", "fläsk", "smör", "vispgrädde", "salt", "vitlöksklyfta", "ost", "svartpeppar", "äggulor"],
-
-            "renderIngredients": "Pasta 300 g\nFläsk 150 g\nSmörn\nVispgrädde ½ dl\nSalt ½ tsk\nFinhackad vitlöksklyfta 1\nOst riven 3 dl\nSvartpeppar 2 krm\nÄggulor 4",
-
-            "howTo": "1. Koka spaghettin.\n2. Skär fläsket i små tärningar. Stek fläsket knaprigt i smör i en stekpanna.\n3. Vispa ihop grädde, salt, vitlök och hälften av osten.\n4. Rör ner fläsk och ostblandningen i den kokta spaghettin och rör kraftigt till en krämig konsistens. 5. Strö över resten av osten och peppar. Servera pasta carbonara med en äggula. ",
-
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/pasta_carbonara.jpg"
+            "ingredients": [
+                "pasta",
+                "fl\u00e4sk",
+                "sm\u00f6r",
+                "vispgr\u00e4dde",
+                "salt",
+                "vitl\u00f6ksklyfta",
+                "ost",
+                "svartpeppar",
+                "\u00e4ggulor"
+            ],
+            "renderIngredients": "Pasta 300 g\nFl\u00e4sk 150 g\nSm\u00f6rn\nVispgr\u00e4dde \u00bd dl\nSalt \u00bd tsk\nFinhackad vitl\u00f6ksklyfta 1\nOst riven 3 dl\nSvartpeppar 2 krm\n\u00c4ggulor 4",
+            "howTo": "1. Koka spaghettin.\n2. Sk\u00e4r fl\u00e4sket i sm\u00e5 t\u00e4rningar. Stek fl\u00e4sket knaprigt i sm\u00f6r i en stekpanna.\n3. Vispa ihop gr\u00e4dde, salt, vitl\u00f6k och h\u00e4lften av osten.\n4. R\u00f6r ner fl\u00e4sk och ostblandningen i den kokta spaghettin och r\u00f6r kraftigt till en kr\u00e4mig konsistens. 5. Str\u00f6 \u00f6ver resten av osten och peppar. Servera pasta carbonara med en \u00e4ggula. ",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/pasta_carbonara.jpg"
         },
         {
             "id": 14,
-            "name": "Kärleksmums",
-            "ingredients": ["tomat", "pasta"],
-            "renderIngredients": "smör 200 g\n standardmjölk 2 dl\n standardmjölk 2 dl\nÄgg 4\nStrösocker 4 dl\nVetemjöl 4 dl\nBakpulver 2½ tsk\nVaniljsocker 2 tsk\nKakao 1½ dl\nSalt 2 krm",
-            "howTo": "Sätt ugnen på 175°.\nSmörj och bröa en form med hög kant, 25x35 cm eller lägg i ett bakplåtspapper.\nSmält smöret, häll i mjölken och låt svalna.\nVispa ägg och socker riktigt pösigt med elvisp. Det tar ca 5 min.\nBlanda mjöl, vaniljsocker, kakao, bakpulver och salt. Sikta ner i smeten genom en sil. Tillsätt smör och mjölk och blanda allt till en jämn smet. Häll smeten i formen.\nGrädda i mitten av ugnen ca 25 min. Känn efter med en trästicka så kakan är helt genomgräddad. Låt kakan svalna",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/karleksmums.jpg"
+            "name": "K\u00e4rleksmums",
+            "ingredients": [
+                "tomat",
+                "pasta"
+            ],
+            "renderIngredients": "sm\u00f6r 200 g\n standardmj\u00f6lk 2 dl\n standardmj\u00f6lk 2 dl\n\u00c4gg 4\nStr\u00f6socker 4 dl\nVetemj\u00f6l 4 dl\nBakpulver 2\u00bd tsk\nVaniljsocker 2 tsk\nKakao 1\u00bd dl\nSalt 2 krm",
+            "howTo": "S\u00e4tt ugnen p\u00e5 175\u00b0.\nSm\u00f6rj och br\u00f6a en form med h\u00f6g kant, 25x35 cm eller l\u00e4gg i ett bakpl\u00e5tspapper.\nSm\u00e4lt sm\u00f6ret, h\u00e4ll i mj\u00f6lken och l\u00e5t svalna.\nVispa \u00e4gg och socker riktigt p\u00f6sigt med elvisp. Det tar ca 5 min.\nBlanda mj\u00f6l, vaniljsocker, kakao, bakpulver och salt. Sikta ner i smeten genom en sil. Tills\u00e4tt sm\u00f6r och mj\u00f6lk och blanda allt till en j\u00e4mn smet. H\u00e4ll smeten i formen.\nGr\u00e4dda i mitten av ugnen ca 25 min. K\u00e4nn efter med en tr\u00e4sticka s\u00e5 kakan \u00e4r helt genomgr\u00e4ddad. L\u00e5t kakan svalna",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/karleksmums.jpg"
         },
         {
             "id": 15,
             "name": "Chokladbollar",
-            "ingredients": ["smör", "strösocker", "kakao", "vaniljsocker", "vatten", "havregryn"],
-            "renderIngredients": "smör 100 g\nströsocker 1½ dl\nkakao ½ dl\nvaniljsocker 1 tsk\nvatten 2 msk\nhavregryn 5 dl",
-            "howTo": "Rör ihop smör och socker. Tillsätt kakao, vaniljsocker och vatten. Blanda i havregryn. Forma smeten till bollar och rulla i strössel eller kokosflingor. Förvara i kylen.",
+            "ingredients": [
+                "sm\u00f6r",
+                "str\u00f6socker",
+                "kakao",
+                "vaniljsocker",
+                "vatten",
+                "havregryn"
+            ],
+            "renderIngredients": "sm\u00f6r 100 g\nstr\u00f6socker 1\u00bd dl\nkakao \u00bd dl\nvaniljsocker 1 tsk\nvatten 2 msk\nhavregryn 5 dl",
+            "howTo": "R\u00f6r ihop sm\u00f6r och socker. Tills\u00e4tt kakao, vaniljsocker och vatten. Blanda i havregryn. Forma smeten till bollar och rulla i str\u00f6ssel eller kokosflingor. F\u00f6rvara i kylen.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/chokladbollar.jpg"
+            "image": ".\/media\/thumbnails\/chokladbollar.jpg"
         },
         {
             "id": 16,
-            "name": "Picklad rödlök",
-            "ingredients": ["ättiksprit", "strösocker", "vatten", "rödlökar"],
-            "renderIngredients": "ättiksprit 12% 1 dl\nströsocker 2 dl\nvatten 3 dl\nrödlökar 2 st",
-            "howTo": "Koka upp ättika, socker och vatten, låt svalna något. Skala och skiva löken tunt och lägg i en glasburk. Häll på den ljumna lagen och låt stå tills den kallnat. Löken är sedan klar att serveras men håller ytterligare 1-2 veckor i kyl.",
+            "name": "Picklad r\u00f6dl\u00f6k",
+            "ingredients": [
+                "\u00e4ttiksprit",
+                "str\u00f6socker",
+                "vatten",
+                "r\u00f6dl\u00f6kar"
+            ],
+            "renderIngredients": "\u00e4ttiksprit 12% 1 dl\nstr\u00f6socker 2 dl\nvatten 3 dl\nr\u00f6dl\u00f6kar 2 st",
+            "howTo": "Koka upp \u00e4ttika, socker och vatten, l\u00e5t svalna n\u00e5got. Skala och skiva l\u00f6ken tunt och l\u00e4gg i en glasburk. H\u00e4ll p\u00e5 den ljumna lagen och l\u00e5t st\u00e5 tills den kallnat. L\u00f6ken \u00e4r sedan klar att serveras men h\u00e5ller ytterligare 1-2 veckor i kyl.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/picklad_rodlok.jpg"
+            "image": ".\/media\/thumbnails\/picklad_rodlok.jpg"
         },
         {
             "id": 17,
             "name": "Grekisk sallad",
-            "ingredients": ["rödlök", "gurka", "tomater", "fetaost", "oregano", "kalamataoliver", "olivolja", "rödvinsvinäger", "svartpeppar"],
-            "renderIngredients": "rödlök 1 st\n gurka 1 st\ntomater 4 st\nfetaost 150 g\noregano ½ kruka\nKalamataoliver 1½ dl\nolivolja ½ dl\nrödvinsvinäger 1 msk\nsvartpeppar 1 krm",
-            "howTo": "Skala och skiva löken. Skär gurka och tomater i bitar. Bryt osten i bitar. Plocka bladen från oreganon. Rör ihop olja och vinäger till en dressing. Varva lök, gurka, tomat, oliver och ost på tallrikar. Ringla över dressingen. Strö över oregano och svartpeppar.",
+            "ingredients": [
+                "r\u00f6dl\u00f6k",
+                "gurka",
+                "tomater",
+                "fetaost",
+                "oregano",
+                "kalamataoliver",
+                "olivolja",
+                "r\u00f6dvinsvin\u00e4ger",
+                "svartpeppar"
+            ],
+            "renderIngredients": "r\u00f6dl\u00f6k 1 st\n gurka 1 st\ntomater 4 st\nfetaost 150 g\noregano \u00bd kruka\nKalamataoliver 1\u00bd dl\nolivolja \u00bd dl\nr\u00f6dvinsvin\u00e4ger 1 msk\nsvartpeppar 1 krm",
+            "howTo": "Skala och skiva l\u00f6ken. Sk\u00e4r gurka och tomater i bitar. Bryt osten i bitar. Plocka bladen fr\u00e5n oreganon. R\u00f6r ihop olja och vin\u00e4ger till en dressing. Varva l\u00f6k, gurka, tomat, oliver och ost p\u00e5 tallrikar. Ringla \u00f6ver dressingen. Str\u00f6 \u00f6ver oregano och svartpeppar.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/grekisk_sallad.jpg"
+            "image": ".\/media\/thumbnails\/grekisk_sallad.jpg"
         },
         {
             "id": 18,
             "name": "Kokt potatis",
-            "ingredients": ["potatis", "vatten", "salt", "smör", "flingsalt", "persilja"],
-            "renderIngredients": "potatis 900 g\nvatten tillräckligt för att täcka potatisen\nsalt 2 tsk\nsmör 2 msk\nflingsalt 1 tsk\npersilja 2 msk (valfritt)",
-            "howTo": "Tvätta eller skala potatisen och lägg i en kastrull. Täck med kallt vatten och salta. Koka under lock tills potatisen är genomkokt, ca 20 minuter. Häll av vattnet och låt potatisen ånga av. Servera med smör, flingsalt och hackad persilja.",
+            "ingredients": [
+                "potatis",
+                "vatten",
+                "salt",
+                "sm\u00f6r",
+                "flingsalt",
+                "persilja"
+            ],
+            "renderIngredients": "potatis 900 g\nvatten tillr\u00e4ckligt f\u00f6r att t\u00e4cka potatisen\nsalt 2 tsk\nsm\u00f6r 2 msk\nflingsalt 1 tsk\npersilja 2 msk (valfritt)",
+            "howTo": "Tv\u00e4tta eller skala potatisen och l\u00e4gg i en kastrull. T\u00e4ck med kallt vatten och salta. Koka under lock tills potatisen \u00e4r genomkokt, ca 20 minuter. H\u00e4ll av vattnet och l\u00e5t potatisen \u00e5nga av. Servera med sm\u00f6r, flingsalt och hackad persilja.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/kokt_potatis.jpg"
+            "image": ".\/media\/thumbnails\/kokt_potatis.jpg"
         },
         {
             "id": 19,
             "name": "Stuvad spenat",
-            "ingredients": ["spenat", "smör", "vetemjöl", "standardmjölk", "salt", "svartpeppar"],
-            "renderIngredients": "spenat 450 g\nsmör 3 msk\nvetemjöl 3 msk\nstandardmjölk 4 dl\nsalt ½ tsk\nsvartpeppar 1 krm",
-            "howTo": "Smält smöret i en kastrull, vispa ner mjölet. Späd med mjölken och låt koka ihop. Krama ur spenaten och rör ner i såsen. Smaka av med salt och peppar.",
+            "ingredients": [
+                "spenat",
+                "sm\u00f6r",
+                "vetemj\u00f6l",
+                "standardmj\u00f6lk",
+                "salt",
+                "svartpeppar"
+            ],
+            "renderIngredients": "spenat 450 g\nsm\u00f6r 3 msk\nvetemj\u00f6l 3 msk\nstandardmj\u00f6lk 4 dl\nsalt \u00bd tsk\nsvartpeppar 1 krm",
+            "howTo": "Sm\u00e4lt sm\u00f6ret i en kastrull, vispa ner mj\u00f6let. Sp\u00e4d med mj\u00f6lken och l\u00e5t koka ihop. Krama ur spenaten och r\u00f6r ner i s\u00e5sen. Smaka av med salt och peppar.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/stuvad_spenat.jpg"
+            "image": ".\/media\/thumbnails\/stuvad_spenat.jpg"
         },
         {
             "id": 20,
             "name": "Enkel kycklinggryta",
-            "ingredients": ["kycklingbröstfilé", "rapsolja", "svartpeppar", "soja", "hönsbuljong", "vetemjöl", "matlagningsgrädde"],
-            "renderIngredients": "kycklingbröstfilé 450 g\nrapsolja 1 msk\nsvartpeppar 1 krm\nsoja ½ msk\nhönsbuljong 1 tärning\nvetemjöl 1 msk\nmatlagningsgrädde 5 dl",
-            "howTo": "Skär kycklingen i strimlor, krydda med peppar och bryn i rapsolja. Tillsätt soja, buljongtärning och grädde. Vispa vetemjölet i lite vatten och rör ner i grytan. Låt allt koka ca 5 min. Servera med ris och sallad.",
+            "ingredients": [
+                "kycklingbr\u00f6stfil\u00e9",
+                "rapsolja",
+                "svartpeppar",
+                "soja",
+                "h\u00f6nsbuljong",
+                "vetemj\u00f6l",
+                "matlagningsgr\u00e4dde"
+            ],
+            "renderIngredients": "kycklingbr\u00f6stfil\u00e9 450 g\nrapsolja 1 msk\nsvartpeppar 1 krm\nsoja \u00bd msk\nh\u00f6nsbuljong 1 t\u00e4rning\nvetemj\u00f6l 1 msk\nmatlagningsgr\u00e4dde 5 dl",
+            "howTo": "Sk\u00e4r kycklingen i strimlor, krydda med peppar och bryn i rapsolja. Tills\u00e4tt soja, buljongt\u00e4rning och gr\u00e4dde. Vispa vetemj\u00f6let i lite vatten och r\u00f6r ner i grytan. L\u00e5t allt koka ca 5 min. Servera med ris och sallad.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/enkel_kycklinggryta.jpg"
+            "image": ".\/media\/thumbnails\/enkel_kycklinggryta.jpg"
         },
         {
             "id": 21,
             "name": "Smoothie med hallon",
-            "ingredients": ["hallon", "vaniljyoghurt", "standardmjölk"],
-            "renderIngredients": "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmjölk 1 dl",
-            "howTo": "Lägg hallon, yoghurt och mjölk i en mixer eller skål om du använder stavmixer. Mixa till en jämn smoothie. Servera direkt.",
+            "ingredients": [
+                "hallon",
+                "vaniljyoghurt",
+                "standardmj\u00f6lk"
+            ],
+            "renderIngredients": "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmj\u00f6lk 1 dl",
+            "howTo": "L\u00e4gg hallon, yoghurt och mj\u00f6lk i en mixer eller sk\u00e5l om du anv\u00e4nder stavmixer. Mixa till en j\u00e4mn smoothie. Servera direkt.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/smoothie_med_hallon.jpg"
+            "image": ".\/media\/thumbnails\/smoothie_med_hallon.jpg"
         },
         {
             "id": 22,
-            "name": "Kålsoppa",
-            "ingredients": ["potatis", "lök", "vitlöksklyftor", "rapsolja", "grönsaksbuljong", "vispgrädde", "grönkål", "äldelostkräm", "kantareller", "salt", "svartpeppar"],
-            "renderIngredients": "potatis 500 g\nlök 1 st\nvitlöksklyftor 2 st\nrapsolja 3 msk\ngrönsaksbuljong 9 dl\nvispgrädde 3 dl\ngrönkål 200 g\näldelostkräm 170 g\nkantareller 150 g\nsalt och svartpeppar",
-            "howTo": "Fräs hackad lök och vitlök i olja, tillsätt buljong och grädde och koka. Lägg i grönkål och äldelostkräm, koka vidare. Mixa soppan lite grovt, stek svamp och toppa soppan med den.",
+            "name": "K\u00e5lsoppa",
+            "ingredients": [
+                "potatis",
+                "l\u00f6k",
+                "vitl\u00f6ksklyftor",
+                "rapsolja",
+                "gr\u00f6nsaksbuljong",
+                "vispgr\u00e4dde",
+                "gr\u00f6nk\u00e5l",
+                "\u00e4ldelostkr\u00e4m",
+                "kantareller",
+                "salt",
+                "svartpeppar"
+            ],
+            "renderIngredients": "potatis 500 g\nl\u00f6k 1 st\nvitl\u00f6ksklyftor 2 st\nrapsolja 3 msk\ngr\u00f6nsaksbuljong 9 dl\nvispgr\u00e4dde 3 dl\ngr\u00f6nk\u00e5l 200 g\n\u00e4ldelostkr\u00e4m 170 g\nkantareller 150 g\nsalt och svartpeppar",
+            "howTo": "Fr\u00e4s hackad l\u00f6k och vitl\u00f6k i olja, tills\u00e4tt buljong och gr\u00e4dde och koka. L\u00e4gg i gr\u00f6nk\u00e5l och \u00e4ldelostkr\u00e4m, koka vidare. Mixa soppan lite grovt, stek svamp och toppa soppan med den.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/kalsoppa.jpg"
+            "image": ".\/media\/thumbnails\/kalsoppa.jpg"
         },
         {
             "id": 23,
-            "name": "Tryffelpasta med Gruyère",
-            "ingredients": ["pasta", "vitlöksklyftor", "smör", "vin", "vispgrädde", "tryffelolja", "salt", "svartpeppar", "gruyèreost"],
-            "renderIngredients": "pasta 4 portioner\nvitlöksklyftor 3 st\nsmör 25 g\nvin 1 dl\nvispgrädde 3 dl\ntryffelolja 2 tsk\nsalt och svartpeppar\ngruyèreost 150 g",
-            "howTo": "Koka pastan al dente och spara lite av kokvattnet. Fräs vitlöken i smör, tillsätt vin och grädde och låt sjuda. Krydda med tryffelolja, salt och peppar. Blanda pastan med såsen och toppa med finriven Gruyère.",
+            "name": "Tryffelpasta med Gruy\u00e8re",
+            "ingredients": [
+                "pasta",
+                "vitl\u00f6ksklyftor",
+                "sm\u00f6r",
+                "vin",
+                "vispgr\u00e4dde",
+                "tryffelolja",
+                "salt",
+                "svartpeppar",
+                "gruy\u00e8reost"
+            ],
+            "renderIngredients": "pasta 4 portioner\nvitl\u00f6ksklyftor 3 st\nsm\u00f6r 25 g\nvin 1 dl\nvispgr\u00e4dde 3 dl\ntryffelolja 2 tsk\nsalt och svartpeppar\ngruy\u00e8reost 150 g",
+            "howTo": "Koka pastan al dente och spara lite av kokvattnet. Fr\u00e4s vitl\u00f6ken i sm\u00f6r, tills\u00e4tt vin och gr\u00e4dde och l\u00e5t sjuda. Krydda med tryffelolja, salt och peppar. Blanda pastan med s\u00e5sen och toppa med finriven Gruy\u00e8re.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/tryffelpasta_med_gruyere.jpg"
+            "image": ".\/media\/thumbnails\/tryffelpasta_med_gruyere.jpg"
         },
         {
             "id": 24,
             "name": "Ayran",
-            "ingredients": ["yoghurt", "vatten", "salt", "mynta"],
+            "ingredients": [
+                "yoghurt",
+                "vatten",
+                "salt",
+                "mynta"
+            ],
             "renderIngredients": "yoghurt naturell 5 dl\nvatten 5 dl\nsalt 1-2 tsk\nmynta (valfritt)",
-            "howTo": "Vispa eller skaka ihop yoghurt och vatten tills det blir skummigt. Smaka av med salt och ställ i kylen för att bli riktigt kall. Servera iskall ayran i glas, eventuellt garnerad med mynta.",
+            "howTo": "Vispa eller skaka ihop yoghurt och vatten tills det blir skummigt. Smaka av med salt och st\u00e4ll i kylen f\u00f6r att bli riktigt kall. Servera iskall ayran i glas, eventuellt garnerad med mynta.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/ayran.jpg"
+            "image": ".\/media\/thumbnails\/ayran.jpg"
         },
         {
             "id": 25,
-            "name": "Pastasallad med ost och kronärtskocka",
-            "ingredients": ["pasta", "vitmögelost", "rödlök", "paprika", "kronärtskockshjärtan", "hackad basilika", "oregano", "dijonsenap", "rödvinsvinäger", "salt", "svartpeppar"],
-            "renderIngredients": "orecchiette pasta 300 g\nvitmögelost 150 g\nrödlök 1 st\npaprika 1 st\nkronärtskockshjärtan 300 g\nhackad basilika, salvia och oregano 1 dl\ndijonsenap 1 tsk\nrödvinsvinäger 2 tsk\nsalt 1 krm\nsvartpeppar 1 krm",
-            "howTo": "Koka pasta enligt anvisning. Blanda skuren ost, hackad lök, paprika och kronärtskockshjärtan med örter. Kombinera senap, vinäger och oljan från kronärtskockorna, salta och peppra, och blanda med pastan.",
+            "name": "Pastasallad med ost och kron\u00e4rtskocka",
+            "ingredients": [
+                "pasta",
+                "vitm\u00f6gelost",
+                "r\u00f6dl\u00f6k",
+                "paprika",
+                "kron\u00e4rtskockshj\u00e4rtan",
+                "hackad basilika",
+                "oregano",
+                "dijonsenap",
+                "r\u00f6dvinsvin\u00e4ger",
+                "salt",
+                "svartpeppar"
+            ],
+            "renderIngredients": "orecchiette pasta 300 g\nvitm\u00f6gelost 150 g\nr\u00f6dl\u00f6k 1 st\npaprika 1 st\nkron\u00e4rtskockshj\u00e4rtan 300 g\nhackad basilika, salvia och oregano 1 dl\ndijonsenap 1 tsk\nr\u00f6dvinsvin\u00e4ger 2 tsk\nsalt 1 krm\nsvartpeppar 1 krm",
+            "howTo": "Koka pasta enligt anvisning. Blanda skuren ost, hackad l\u00f6k, paprika och kron\u00e4rtskockshj\u00e4rtan med \u00f6rter. Kombinera senap, vin\u00e4ger och oljan fr\u00e5n kron\u00e4rtskockorna, salta och peppra, och blanda med pastan.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/pastasallad_med_ost_och_kronartsskocka.jpg"
+            "image": ".\/media\/thumbnails\/pastasallad_med_ost_och_kronartsskocka.jpg"
         },
         {
             "id": 26,
             "name": "Banankaka",
-            "ingredients": ["smör", "standardmjölk", "ägg", "strösocker", "bananer", "kanel", "vetemjöl", "bakpulver"],
-            "renderIngredients": "smör 75 g\nstandardmjölk ½ dl\nägg 2 st\nströsocker 2 dl\nbananer2 st\nkanel 1 tsk\nvetemjöl 3 dl\nbakpulver 1 tsk",
-            "howTo": "Sätt ugnen på 175°. Smörj och bröa en avlång form. Smält smöret och blanda med mjölken. Vispa ägg och socker pösigt och rör ner mosade bananer, kanel, mjöl och bakpulver. Blanda snabbt ihop med mjölkblandningen och häll i formen. Grädda i 55-60 min.",
+            "ingredients": [
+                "sm\u00f6r",
+                "standardmj\u00f6lk",
+                "\u00e4gg",
+                "str\u00f6socker",
+                "bananer",
+                "kanel",
+                "vetemj\u00f6l",
+                "bakpulver"
+            ],
+            "renderIngredients": "sm\u00f6r 75 g\nstandardmj\u00f6lk \u00bd dl\n\u00e4gg 2 st\nstr\u00f6socker 2 dl\nbananer2 st\nkanel 1 tsk\nvetemj\u00f6l 3 dl\nbakpulver 1 tsk",
+            "howTo": "S\u00e4tt ugnen p\u00e5 175\u00b0. Sm\u00f6rj och br\u00f6a en avl\u00e5ng form. Sm\u00e4lt sm\u00f6ret och blanda med mj\u00f6lken. Vispa \u00e4gg och socker p\u00f6sigt och r\u00f6r ner mosade bananer, kanel, mj\u00f6l och bakpulver. Blanda snabbt ihop med mj\u00f6lkblandningen och h\u00e4ll i formen. Gr\u00e4dda i 55-60 min.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/banankaka.jpg"
+            "image": ".\/media\/thumbnails\/banankaka.jpg"
         },
         {
             "id": 27,
             "name": "Fattiga Riddare",
-            "ingredients": ["ägg", "mjölk", "strösocker", "vaniljsocker", "kanel", "bröd", "smör"],
-            "renderIngredients": "ägg 2 st\nmjölk 3 dl\nströsocker 3 msk\nvaniljsocker 2 tsk\nkanel 1 tsk\nbröd 8 skivor\nsmör",
-            "howTo": "Vispa samman ägg, mjölk, socker, vaniljsocker och kanel. Doppa brödskivorna i blandningen. Stek dem gyllenbruna i smör. Servera med sylt eller socker.",
+            "ingredients": [
+                "\u00e4gg",
+                "mj\u00f6lk",
+                "str\u00f6socker",
+                "vaniljsocker",
+                "kanel",
+                "br\u00f6d",
+                "sm\u00f6r"
+            ],
+            "renderIngredients": "\u00e4gg 2 st\nmj\u00f6lk 3 dl\nstr\u00f6socker 3 msk\nvaniljsocker 2 tsk\nkanel 1 tsk\nbr\u00f6d 8 skivor\nsm\u00f6r",
+            "howTo": "Vispa samman \u00e4gg, mj\u00f6lk, socker, vaniljsocker och kanel. Doppa br\u00f6dskivorna i blandningen. Stek dem gyllenbruna i sm\u00f6r. Servera med sylt eller socker.",
             "like": [],
             "rating": [],
-            "image": "./media/thumbnails/fattiga_riddare.jpg"
+            "image": ".\/media\/thumbnails\/fattiga_riddare.jpg"
         },
         {
             "id": 28,
             "name": "Halloumigryta med ris",
-            "ingredients": ["ris", "blomkål", "halloumi", "olja", "curry", "kokosmjölk", "krossadetomater", "peppar", "rostadlök"],
-            "renderIngredients":"4 port ris\n1/2 blomkålshuvud (à ca 300 g)\n400 g halloumi eller grillost\n1 msk olja\n2 tsk curry\n200 ml kokosmjölk\n1 förp krossadetomater (à 390 g)\npeppar\n1/2 dl rostadlök",
-            "howTo": "Koka riset enligt anvisningen på förpackningen.\nAnsa och skär blomkålen i mindre bitar.\nSkär halloumin i tärningar och fräs dem och hälften av blomkålen i oljan i en stor stekpanna eller gryta.\nKrydda med curry och rör i kokosmjölken och krossadetomater. Sjud i ca 5 minuter eller tills blomkålen är mjuk. Smaka av med peppar.\nServera grytan med riset, resten av blomkålen och rostadlök."
-            ,
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/halloumigryta.jpg"
+            "ingredients": [
+                "ris",
+                "blomk\u00e5l",
+                "halloumi",
+                "olja",
+                "curry",
+                "kokosmj\u00f6lk",
+                "krossadetomater",
+                "peppar",
+                "rostadl\u00f6k"
+            ],
+            "renderIngredients": "4 port ris\n1\/2 blomk\u00e5lshuvud (\u00e0 ca 300 g)\n400 g halloumi eller grillost\n1 msk olja\n2 tsk curry\n200 ml kokosmj\u00f6lk\n1 f\u00f6rp krossadetomater (\u00e0 390 g)\npeppar\n1\/2 dl rostadl\u00f6k",
+            "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nAnsa och sk\u00e4r blomk\u00e5len i mindre bitar.\nSk\u00e4r halloumin i t\u00e4rningar och fr\u00e4s dem och h\u00e4lften av blomk\u00e5len i oljan i en stor stekpanna eller gryta.\nKrydda med curry och r\u00f6r i kokosmj\u00f6lken och krossadetomater. Sjud i ca 5 minuter eller tills blomk\u00e5len \u00e4r mjuk. Smaka av med peppar.\nServera grytan med riset, resten av blomk\u00e5len och rostadl\u00f6k.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/halloumigryta.jpg"
         },
         {
             "id": 29,
-            "name": "Bakad potatis med tonfiskröra",
+            "name": "Bakad potatis med tonfiskr\u00f6ra",
             "ingredients": [
                 "bakpotatisar",
-                "ägg",
+                "\u00e4gg",
                 "majs",
                 "tonfisk",
                 "matlagningsyoghurt",
-                "vitlöksklyftor",
+                "vitl\u00f6ksklyftor",
                 "kapris",
                 "salt",
                 "peppar"
             ],
-            "renderIngredients":"4 bakpotatisar (à ca 180 g)\n2 hårdkokta ägg\n1/2 majs (à 150 g)\n1 tonfisk (à 170 g)\n1 1/2 dl matlagningsyoghurt\n2 vitlöksklyftor\n2 msk kapris\n1/2 tsk salt\n1 tsk peppar",
-            "howTo": "Sätt ugnen på 225 °C.\nSkölj ev potatisen. Picka potatis­ar­­­na med en sticka och baka på ugnsgallret i mitten av ugnen 50–60 minuter tills de är mjuka eller tillaga i mikrovågs­ugnen, full effekt (max 800 W), 10–15 minuter.\nSkala och hacka äggen. Häll av majs och tonfisk. Blanda ägg, majs, tonfisk, gräddfil, vitlök, kapris, salt och peppar.\nSkär ett kryss i varje potatis och tryck till. Fyll med tonfiskröran och toppa gärna med extra kapris.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/bakadpotatis.jpg"
+            "renderIngredients": "4 bakpotatisar (\u00e0 ca 180 g)\n2 h\u00e5rdkokta \u00e4gg\n1\/2 majs (\u00e0 150 g)\n1 tonfisk (\u00e0 170 g)\n1 1\/2 dl matlagningsyoghurt\n2 vitl\u00f6ksklyftor\n2 msk kapris\n1\/2 tsk salt\n1 tsk peppar",
+            "howTo": "S\u00e4tt ugnen p\u00e5 225\u2009\u00b0C.\nSk\u00f6lj ev potatisen. Picka potatis\u00adar\u00ad\u00ad\u00adna med en sticka och baka p\u00e5 ugnsgallret i mitten av ugnen 50\u201360 minuter tills de \u00e4r mjuka eller tillaga i mikrov\u00e5gs\u00adugnen, full effekt (max 800\u2009W), 10\u201315 minuter.\nSkala och hacka \u00e4ggen. H\u00e4ll av majs och tonfisk. Blanda \u00e4gg, majs, tonfisk, gr\u00e4ddfil, vitl\u00f6k, kapris, salt och peppar.\nSk\u00e4r ett kryss i varje potatis och tryck till. Fyll med tonfiskr\u00f6ran och toppa g\u00e4rna med extra kapris.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/bakadpotatis.jpg"
         },
         {
             "id": 30,
@@ -348,163 +677,226 @@
                 "salt",
                 "noriark",
                 "laxfile",
-                "salladslök",
-                "majonnäs",
-                "sesamfrö"
+                "salladsl\u00f6k",
+                "majonn\u00e4s",
+                "sesamfr\u00f6"
             ],
-            "renderIngredients":"250 g sushiris (250 g motsvarar ca 3 dl)\n1/2 tsk salt\n1 noriark (ca 18x20 cm)\n150 g lax\n1 salladslök\n1 msk majonnäs\n1 tsk sesamfrö",
-            "howTo":"Koka riset enligt anvisningen på förpackningen med saltet. Låt riset svalna i rumstemperatur under lock.\nHacka laxen i små bitar och strimla salladslöken. Blanda lax och lök med majonnäs och sesamfrö.\nDela upp riset i 8 delar (för 8 st). Lägg en portion ris på en bit plastfolie och platta ut riset till en cirkel på ca 14 cm i diameter. Lägg på en klick av fyllningen i mitten och vik ihop till en risboll med hjälp av plastfolien. Forma en bred triangel av riset, tryck ihop det så att det blir kompakt och håller formen. Ta bort plasten.\nDela noriarket på mitten och därefter i fyra remsor (ca 4 cm breda). Vik noribladet runt riset i underkanten.\nDoppa kanterna i valfri topping.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/onigiri.jpg"
+            "renderIngredients": "250 g sushiris (250 g motsvarar ca 3 dl)\n1\/2 tsk salt\n1 noriark (ca 18x20 cm)\n150 g lax\n1 salladsl\u00f6k\n1 msk majonn\u00e4s\n1 tsk sesamfr\u00f6",
+            "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen med saltet. L\u00e5t riset svalna i rumstemperatur under lock.\nHacka laxen i sm\u00e5 bitar och strimla salladsl\u00f6ken. Blanda lax och l\u00f6k med majonn\u00e4s och sesamfr\u00f6.\nDela upp riset i 8 delar (f\u00f6r 8 st). L\u00e4gg en portion ris p\u00e5 en bit plastfolie och platta ut riset till en cirkel p\u00e5 ca 14 cm i diameter. L\u00e4gg p\u00e5 en klick av fyllningen i mitten och vik ihop till en risboll med hj\u00e4lp av plastfolien. Forma en bred triangel av riset, tryck ihop det s\u00e5 att det blir kompakt och h\u00e5ller formen. Ta bort plasten.\nDela noriarket p\u00e5 mitten och d\u00e4refter i fyra remsor (ca 4 cm breda). Vik noribladet runt riset i underkanten.\nDoppa kanterna i valfri topping.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/onigiri.jpg"
         },
         {
             "id": 31,
-            "name": "Pasta med makrill i tomatsås",
+            "name": "Pasta med makrill i tomats\u00e5s",
             "ingredients": [
-                "vitlöksklyftor",
+                "vitl\u00f6ksklyftor",
                 "olivolja",
                 "chiliflakes",
                 "citronskal",
                 "kapris",
-                "makrillfilé",
+                "makrillfil\u00e9",
                 "spaghetti",
                 "persilja",
                 "salt",
                 "svartpeppar"
             ],
-            "renderIngredients":"2 vitlöksklyftor\n3 msk olivolja\n1/2 tsk chiliflakes\n1 msk citronskal\n3 msk hackad kapris\n2 förp makrillfilé (à 125 g)\n400 g spaghetti\n1 dl persilja\nsalt\nsvartpeppar" ,
-            
-            "howTo":"Skala och hacka vitlöken. Fräs vitlöken i oljan några minuter i en stekpanna. Tillsätt chiliflakes, citronskal och kapris och fräs ytterligare några minuter.\nBryt makrillen i bitar och lägg ner tillsammans med tomatsåsen.\nKoka pastan enligt anvisning på förpackningen. Häll av och spar 1 dl av kokvattnet (för 4 port). Tillsätt pastan, kokvattnet och persiljan i stekpannan och blanda. Smaka av med salt och peppar.\nTill servering: Toppa med parmesan och servera med citronklyftor.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/pasta_makrilltomat.jpg"
+            "renderIngredients": "2 vitl\u00f6ksklyftor\n3 msk olivolja\n1\/2 tsk chiliflakes\n1 msk citronskal\n3 msk hackad kapris\n2 f\u00f6rp makrillfil\u00e9 (\u00e0 125 g)\n400 g spaghetti\n1 dl persilja\nsalt\nsvartpeppar",
+            "howTo": "Skala och hacka vitl\u00f6ken. Fr\u00e4s vitl\u00f6ken i oljan n\u00e5gra minuter i en stekpanna. Tills\u00e4tt chiliflakes, citronskal och kapris och fr\u00e4s ytterligare n\u00e5gra minuter.\nBryt makrillen i bitar och l\u00e4gg ner tillsammans med tomats\u00e5sen.\nKoka pastan enligt anvisning p\u00e5 f\u00f6rpackningen. H\u00e4ll av och spar 1 dl av kokvattnet (f\u00f6r 4 port). Tills\u00e4tt pastan, kokvattnet och persiljan i stekpannan och blanda. Smaka av med salt och peppar.\nTill servering: Toppa med parmesan och servera med citronklyftor.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/pasta_makrilltomat.jpg"
         },
         {
             "id": 32,
-            "name": "Laxfilé i ugn med citron",
+            "name": "Laxfil\u00e9 i ugn med citron",
             "ingredients": [
-                "laxfilé",
+                "laxfil\u00e9",
                 "olja",
                 "salt",
                 "svartpeppar",
                 "citronskal"
             ],
-            "renderIngredients":"ca 1 1/4 kg laxfilé\n2 msk olja\n1 1/2 tsk salt\n1 tsk svartpeppar\n1 msk citronskal" ,
-            "howTo":"Sätt ugnen på 175°C.\nLägg laxen i en smord ugnsform. Ringla över olja och strö över salt, peppar och citronskal.\nStäll in i mitten av ugnen ca 25 minuter eller tills laxen har en innertemperatur på 52-56°C.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/lax_ungsbakad.jpg"
+            "renderIngredients": "ca 1 1\/4 kg laxfil\u00e9\n2 msk olja\n1 1\/2 tsk salt\n1 tsk svartpeppar\n1 msk citronskal",
+            "howTo": "S\u00e4tt ugnen p\u00e5 175\u00b0C.\nL\u00e4gg laxen i en smord ugnsform. Ringla \u00f6ver olja och str\u00f6 \u00f6ver salt, peppar och citronskal.\nSt\u00e4ll in i mitten av ugnen ca 25 minuter eller tills laxen har en innertemperatur p\u00e5 52-56\u00b0C.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/lax_ungsbakad.jpg"
         },
         {
             "id": 33,
-            "name":"Fyllda paprikor med ris",
-            "ingredients":[
-                "lök",
-                "vitlöksklyftor",
-                "selleristjälkar",
+            "name": "Fyllda paprikor med ris",
+            "ingredients": [
+                "l\u00f6k",
+                "vitl\u00f6ksklyftor",
+                "selleristj\u00e4lkar",
                 "zucchini",
                 "olivolja",
                 "ris",
-                "tomatpuré",
+                "tomatpur\u00e9",
                 "chilipulver",
-                "örter",
+                "\u00f6rter",
                 "vatten",
-                "grönsaksbuljongtärning",
+                "gr\u00f6nsaksbuljongt\u00e4rning",
                 "oliver",
-                "valnötter",
+                "valn\u00f6tter",
                 "parmesan",
                 "salt",
                 "paprika"
             ],
-            "renderIngredients":"1 lök\n2 vitlöksklyftor\n3 selleristjälkar\n1 zucchini\n4 msk olivolja\n1 dl råris\n2 msk tomatpuré\n2 tsk chilipulver\n1 tsk örter\n2 1/2 dl vatten\n1 grönsaksbuljongtärning\n1 1/2 dl oliver\n1 1/2 dl valnötter\n1 1/2 dl parmesan\nsalt\n4 paprikor",
-            "howTo":"Skala och hacka lök och vitlök. Hacka selleri och zucchini. Stek lök, vitlök, selleri och zucchini i hälften av oljan ca 10 minuter tills allt mjuknar.\nTillsätt ris, tomatpuré, chilipulver och örter. Fräs ytterligare ca 5 minuter.\nTillsätt vatten och smulad buljongtärning. Sätt på lock och låt koka ca 10 minuter eller tills riset är mjukt. Rör ner oliver, nötter och ost. Smaka av med salt.\nSätt ugnen på 200°C.\nSkär bort toppen på paprikan som ett lock och gröp ur kärnorna. Lägg paprikorna i en ugnsform ca 20 x 25 cm (för 4 port). Fyll dem med risblandningen och lägg på toppen av paprikan. Ringla över resten av oljan och häll vatten i formen. Ställ in i nedre delen av ugnen 25–35 minuter eller tills paprikorna är mjuka.\nServeringsförslag: Servera med yoghurt eller crèmefraiche och ev bröd och en sallad.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/paprikor_fyllda.jpg"
+            "renderIngredients": "1 l\u00f6k\n2 vitl\u00f6ksklyftor\n3 selleristj\u00e4lkar\n1 zucchini\n4 msk olivolja\n1 dl r\u00e5ris\n2 msk tomatpur\u00e9\n2 tsk chilipulver\n1 tsk \u00f6rter\n2 1\/2 dl vatten\n1 gr\u00f6nsaksbuljongt\u00e4rning\n1 1\/2 dl oliver\n1 1\/2 dl valn\u00f6tter\n1 1\/2 dl parmesan\nsalt\n4 paprikor",
+            "howTo": "Skala och hacka l\u00f6k och vitl\u00f6k. Hacka selleri och zucchini. Stek l\u00f6k, vitl\u00f6k, selleri och zucchini i h\u00e4lften av oljan ca 10 minuter tills allt mjuknar.\nTills\u00e4tt ris, tomatpur\u00e9, chilipulver och \u00f6rter. Fr\u00e4s ytterligare ca 5 minuter.\nTills\u00e4tt vatten och smulad buljongt\u00e4rning. S\u00e4tt p\u00e5 lock och l\u00e5t koka ca 10 minuter eller tills riset \u00e4r mjukt. R\u00f6r ner oliver, n\u00f6tter och ost. Smaka av med salt.\nS\u00e4tt ugnen p\u00e5 200\u00b0C.\nSk\u00e4r bort toppen p\u00e5 paprikan som ett lock och gr\u00f6p ur k\u00e4rnorna. L\u00e4gg paprikorna i en ugnsform ca 20\u2009x\u200925 cm (f\u00f6r 4 port). Fyll dem med risblandningen och l\u00e4gg p\u00e5 toppen av paprikan. Ringla \u00f6ver resten av oljan och h\u00e4ll vatten i formen. St\u00e4ll in i nedre delen av ugnen 25\u201335 minuter eller tills paprikorna \u00e4r mjuka.\nServeringsf\u00f6rslag: Servera med yoghurt eller cr\u00e8mefraiche och ev br\u00f6d och en sallad.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/paprikor_fyllda.jpg"
         },
         {
             "id": 34,
-            "name":"Kycklingbuljong",
-            "ingredients":[
-                "lök",
-                "vitlöksklyftor",
+            "name": "Kycklingbuljong",
+            "ingredients": [
+                "l\u00f6k",
+                "vitl\u00f6ksklyftor",
                 "kyckling",
                 "vatten",
                 "salt"
             ],
-            "renderIngredients":"1 lök\n2 vitlöksklyftor\n1 kyckling (à ca 1 kg)\n2 1/2 l vatten\nev salt"            ,
-            "howTo":"Skala lök och vitlök och halvera. Lägg i en kastrull med kyckling och vatten och sjud under lock 1–3 timmar. Ju längre den sjuder desto mer smak och fett ger kycklingen ifrån sig och buljongen blir godare.\nTa upp kycklingen och plocka köttet. Köttet kan du använda till en soppa, sallad, pasta eller gryta.\nSila buljongen, smaka ev av med salt och låt ­svalna. Förvara i kylen, buljongen håller ca 5 dagar i kylen eller frys in den buljong du inte använder direkt.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/kycklingbuljong.jpg"
+            "renderIngredients": "1 l\u00f6k\n2 vitl\u00f6ksklyftor\n1 kyckling (\u00e0 ca 1 kg)\n2 1\/2 l vatten\nev salt",
+            "howTo": "Skala l\u00f6k och vitl\u00f6k och halvera. L\u00e4gg i en kastrull med kyckling och vatten och sjud under lock 1\u20133 timmar. Ju l\u00e4ngre den sjuder desto mer smak och fett ger kycklingen ifr\u00e5n sig och buljongen blir godare.\nTa upp kycklingen och plocka k\u00f6ttet. K\u00f6ttet kan du anv\u00e4nda till en soppa, sallad, pasta eller gryta.\nSila buljongen, smaka ev av med salt och l\u00e5t \u00adsvalna. F\u00f6rvara i kylen, buljongen h\u00e5ller ca 5 dagar i kylen eller frys in den buljong du inte anv\u00e4nder direkt.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/kycklingbuljong.jpg"
         },
         {
             "id": 35,
-            "name":"Citron-och smörpasta",
-            "ingredients":[
+            "name": "Citron-och sm\u00f6rpasta",
+            "ingredients": [
                 "pasta",
-                "smör",
-                "vitlöksklyftor",
+                "sm\u00f6r",
+                "vitl\u00f6ksklyftor",
                 "citronskal",
                 "parmesan",
                 "salt",
                 "svartpeppar"
             ],
-            "renderIngredients":"400 g pasta\n50 g smör\n2 vitlöksklyftor\n1 msk citronskal\n1 dl finparmesan (+ ev extra till servering)\n1/2 tsk salt\n1/2 tsk svartpeppar",
-            "howTo":"Koka pastan enligt anvisning på förpackningen. Häll av men spara 3 dl av kokvattnet (för 4 port).\nBryn smöret i en stekpanna.\nSänk värmen och riv ner vitlöken i smöret och låt fräsa lite.\nRör i pasta, citronskal, parmesan, salt, peppar och lite pastavatten i taget. Rör till en krämig pasta. Toppa gärna med extra parmesan.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/pasta_smorcitron.jpg"
+            "renderIngredients": "400 g pasta\n50 g sm\u00f6r\n2 vitl\u00f6ksklyftor\n1 msk citronskal\n1 dl finparmesan (+ ev extra till servering)\n1\/2 tsk salt\n1\/2 tsk svartpeppar",
+            "howTo": "Koka pastan enligt anvisning p\u00e5 f\u00f6rpackningen. H\u00e4ll av men spara 3 dl av kokvattnet (f\u00f6r 4 port).\nBryn sm\u00f6ret i en stekpanna.\nS\u00e4nk v\u00e4rmen och riv ner vitl\u00f6ken i sm\u00f6ret och l\u00e5t fr\u00e4sa lite.\nR\u00f6r i pasta, citronskal, parmesan, salt, peppar och lite pastavatten i taget. R\u00f6r till en kr\u00e4mig pasta. Toppa g\u00e4rna med extra parmesan.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/pasta_smorcitron.jpg"
         },
         {
             "id": 36,
-            "name":"Vårrullar med jordnötsdipp",
-            "ingredients":[
+            "name": "V\u00e5rrullar med jordn\u00f6tsdipp",
+            "ingredients": [
                 "vatten",
-                "jordnötssmör",
-                "sweetchilisås",
+                "jordn\u00f6tssm\u00f6r",
+                "sweetchilis\u00e5s",
                 "soja",
                 "tofu",
-                "morötter",
+                "mor\u00f6tter",
                 "avokador",
-                "salladslök",
-                "böngroddar",
+                "salladsl\u00f6k",
+                "b\u00f6ngroddar",
                 "koriander",
                 "rispapper",
-                "sesamfrön"
+                "sesamfr\u00f6n"
             ],
-            "renderIngredients":"1 dl vatten\n1/2 dl jordnötssmör\n1/2 dl sweetchilisås\n3 msk soja\n230 g tofu\n2 morötter\n2 avokador\n1/2 påse salladslök (à 125 g)\n180 g böngroddar\n20 g koriander\n12 ark rispapper\n1 msk sesamfrön",
-            "howTo":"Koka riset enligt anvisningen på förpackningen.\nDipp: Koka upp vattnet. Dra av kastrullen från värmen och blanda ner jordnötssmör, sweetchilisås och soja. Låt svalna.\nVårrullar: Skär tofun i stavar. Skala morötterna och skär i tunna strimlor. Dela, kärna ur och gröp ur avokadorna, skiva dem. Ansa och skiva salladslöken. Lägg upp alla grönsaker och koriander på ett serveringsfat.\nVid bordet: Sätt fram en stor skål med ljummet vatten på bordet. Var och en doppar sitt eget rispapper i vattnet ca 30 sekunder. Lyft upp, låt droppa av och lägg det på tallriken. Lägg på grönsaker och sesamfrö och vik ihop till en rulle.\nServera rullarna med dipp och ris.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/varrullar.jpg"
+            "renderIngredients": "1 dl vatten\n1\/2 dl jordn\u00f6tssm\u00f6r\n1\/2 dl sweetchilis\u00e5s\n3 msk soja\n230 g tofu\n2 mor\u00f6tter\n2 avokador\n1\/2 p\u00e5se salladsl\u00f6k (\u00e0 125 g)\n180 g b\u00f6ngroddar\n20 g koriander\n12 ark rispapper\n1 msk sesamfr\u00f6n",
+            "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nDipp: Koka upp vattnet. Dra av kastrullen fr\u00e5n v\u00e4rmen och blanda ner jordn\u00f6tssm\u00f6r, sweetchilis\u00e5s och soja. L\u00e5t svalna.\nV\u00e5rrullar: Sk\u00e4r tofun i stavar. Skala mor\u00f6tterna och sk\u00e4r i tunna strimlor. Dela, k\u00e4rna ur och gr\u00f6p ur avokadorna, skiva dem. Ansa och skiva salladsl\u00f6ken. L\u00e4gg upp alla gr\u00f6nsaker och koriander p\u00e5 ett serveringsfat.\nVid bordet: S\u00e4tt fram en stor sk\u00e5l med ljummet vatten p\u00e5 bordet. Var och en doppar sitt eget rispapper i vattnet ca 30 sekunder. Lyft upp, l\u00e5t droppa av och l\u00e4gg det p\u00e5 tallriken. L\u00e4gg p\u00e5 gr\u00f6nsaker och sesamfr\u00f6 och vik ihop till en rulle.\nServera rullarna med dipp och ris.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/varrullar.jpg"
         },
         {
             "id": 37,
-            "name":"Lax teriyaki",
-            "ingredients":[
+            "name": "Lax teriyaki",
+            "ingredients": [
                 "ris",
                 "pakchoi",
                 "lime",
                 "salt",
                 "peppar",
-                "laxfilé",
+                "laxfil\u00e9",
                 "olja",
                 "teriyakimarinad"
             ],
-            "renderIngredients":"4 port ris\n250 g pakchoi\n1 lime\nsalt\npeppar\n600 g laxfilé\n1 tsk olja\n150 ml teriyakimarinad",
-            "howTo":"Koka riset enligt anvisningen på förpackningen.\nAnsa, skölj och skiva pakchoi tunt. Pressa över saft från limen och krydda med salt och peppar.\nSkär bort skinnet på laxen och skär den i portionsbitar. Stek fisken i oljan i en stekpanna, ca 3 minuter på varje sida eller tills fisken har en innertemperatur på 56°C. Häll i teriyakimarinaden och låt sjuda någon minut.\nServera laxen med ris och pakchoi.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/lax_teriyaki.jpg"
+            "renderIngredients": "4 port ris\n250 g pakchoi\n1 lime\nsalt\npeppar\n600 g laxfil\u00e9\n1 tsk olja\n150 ml teriyakimarinad",
+            "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nAnsa, sk\u00f6lj och skiva pakchoi tunt. Pressa \u00f6ver saft fr\u00e5n limen och krydda med salt och peppar.\nSk\u00e4r bort skinnet p\u00e5 laxen och sk\u00e4r den i portionsbitar. Stek fisken i oljan i en stekpanna, ca 3 minuter p\u00e5 varje sida eller tills fisken har en innertemperatur p\u00e5 56\u00b0C. H\u00e4ll i teriyakimarinaden och l\u00e5t sjuda n\u00e5gon minut.\nServera laxen med ris och pakchoi.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/lax_teriyaki.jpg"
         },
         {
-            "id":38 ,
-            "name":"Tofu bowl",
-            "ingredients":[
+            "id": 38,
+            "name": "Tofu bowl",
+            "ingredients": [
                 "tahini",
-                "sesamfrön",
+                "sesamfr\u00f6n",
                 "vatten",
                 "mirin",
                 "soja",
@@ -514,95 +906,124 @@
                 "rapsolja",
                 "spenat",
                 "salt",
-                "rödkål",
+                "r\u00f6dk\u00e5l",
                 "svamp",
                 "tofu",
-                "majsstärkelse",
+                "majsst\u00e4rkelse",
                 "noriark",
-                "sesamfrön"
+                "sesamfr\u00f6n"
             ],
-            "renderIngredients":
-            "1 1/2 dl tahini\n1 1/2 dl sesamfrön\n3/4 dl vatten\n3 msk mirin\n4 1/2 msk soja\n3/4 dl citronjuice\n2 krm chilipulver\n200 g nudlar (t ex soba- eller glasnudlar)\n1 msk rapsolja\n200 g färsk spenat\nsalt\n100 g rödkål\n250 g svamp (t ex portabello, champinjon, ostronskivling)\n1 msk rapsolja (till stekning av svamp)\n1 förp tofu (à ca 270 g)\n1 dl majsstärkelse\n2 msk rapsolja (till stekning av tofu)\n2 noriark (torkade sjögräsark)\n2 msk rostade sesamfrön",
-            
-            "howTo":"Goma dare-sås: Vispa tahini och sesamfrönmed vatten slätt. Tillsätt resten av ingredienserna och rör ihop till en sås.\nKoka nudlarna enligt anvisning på förpackningen. Kyl i kallt vatten och blanda med olja.\nKoka upp en kastrull med saltat vatten. Tillsätt spenaten och koka några sekunder. Häll av och spola kallt. Krama ur vätskan.\nStrimla rödkålen fint.\nAnsa och bryt svampen i mindre bitar. Stek svampen krispig i lite olja.\nSkär tofun i mindre bitar och vänd i majsstärkelsen. Stek krispig och gyllene i olja.\nLägg nudlarna i portionsskålar. Toppa med svampen, rödkålen, spenaten och tofun. Ringla över såsen och strö över sesamfrönoch nori.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/tofu_bowl.jpg"
+            "renderIngredients": "1 1\/2 dl tahini\n1 1\/2 dl sesamfr\u00f6n\n3\/4 dl vatten\n3 msk mirin\n4 1\/2 msk soja\n3\/4 dl citronjuice\n2 krm chilipulver\n200 g nudlar (t ex soba- eller glasnudlar)\n1 msk rapsolja\n200 g f\u00e4rsk spenat\nsalt\n100 g r\u00f6dk\u00e5l\n250 g svamp (t ex portabello, champinjon, ostronskivling)\n1 msk rapsolja (till stekning av svamp)\n1 f\u00f6rp tofu (\u00e0 ca 270 g)\n1 dl majsst\u00e4rkelse\n2 msk rapsolja (till stekning av tofu)\n2 noriark (torkade sj\u00f6gr\u00e4sark)\n2 msk rostade sesamfr\u00f6n",
+            "howTo": "Goma dare-s\u00e5s: Vispa tahini och sesamfr\u00f6nmed vatten sl\u00e4tt. Tills\u00e4tt resten av ingredienserna och r\u00f6r ihop till en s\u00e5s.\nKoka nudlarna enligt anvisning p\u00e5 f\u00f6rpackningen. Kyl i kallt vatten och blanda med olja.\nKoka upp en kastrull med saltat vatten. Tills\u00e4tt spenaten och koka n\u00e5gra sekunder. H\u00e4ll av och spola kallt. Krama ur v\u00e4tskan.\nStrimla r\u00f6dk\u00e5len fint.\nAnsa och bryt svampen i mindre bitar. Stek svampen krispig i lite olja.\nSk\u00e4r tofun i mindre bitar och v\u00e4nd i majsst\u00e4rkelsen. Stek krispig och gyllene i olja.\nL\u00e4gg nudlarna i portionssk\u00e5lar. Toppa med svampen, r\u00f6dk\u00e5len, spenaten och tofun. Ringla \u00f6ver s\u00e5sen och str\u00f6 \u00f6ver sesamfr\u00f6noch nori.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/tofu_bowl.jpg"
         },
         {
             "id": 39,
             "name": "Ramen Miso",
-            "ingredients":[
+            "ingredients": [
                 "majskorn",
-                "smör",
+                "sm\u00f6r",
                 "vatten",
                 "snabbnudlar",
                 "misopasta",
-                "ingefära",
-                "rostadlök",
-                "sesamfrön",
+                "ingef\u00e4ra",
+                "rostadl\u00f6k",
+                "sesamfr\u00f6n",
                 "babyspenat",
-                "salladslökar"
+                "salladsl\u00f6kar"
             ],
-            "renderIngredients":"2 majskorn (à 150 g)\n100 g smör\n1 1/2 l vatten\n4 paket snabbnudlar (à ca 85 g)\n4 msk misopasta eller soja (4 msk misopasta motsvarar 4 tsk soja)\n2 msk ingefära\n4 msk rostadlök\n4 msk sesamfrön (sesamfröblandning)\nca 1/2 påse babyspenat (à 65 g)\n1 - 2 salladslökar",
-            "howTo":"Häll av vätskan från majsen och torka torr med hushållspapper. Stek i en torr stekpanna på medelvärme 5–10 minuter tills den fått färg. Höj värmen och tillsätt smöret och låt det bli lite karamelliserat. \nKoka upp vattnet med buljongpåsarna från nudelpaketen. Vispa ner miso och ingefära. Tillsätt nudlarna och koka dem enligt anvisning på förpackningen. \nTill servering: Fördela nudelsoppan i tallrikar och toppa med den smörstekta majsen, rostadlök och sesamfrön. Toppa gärna med salladslök och spenat.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/ramen_miso.jpg"
+            "renderIngredients": "2 majskorn (\u00e0 150 g)\n100 g sm\u00f6r\n1 1\/2 l vatten\n4 paket snabbnudlar (\u00e0 ca 85 g)\n4 msk misopasta eller soja (4 msk misopasta motsvarar 4 tsk soja)\n2 msk ingef\u00e4ra\n4 msk rostadl\u00f6k\n4 msk sesamfr\u00f6n (sesamfr\u00f6blandning)\nca 1\/2 p\u00e5se babyspenat (\u00e0 65 g)\n1 - 2 salladsl\u00f6kar",
+            "howTo": "H\u00e4ll av v\u00e4tskan fr\u00e5n majsen och torka torr med hush\u00e5llspapper. Stek i en torr stekpanna p\u00e5 medelv\u00e4rme 5\u201310 minuter tills den f\u00e5tt f\u00e4rg. H\u00f6j v\u00e4rmen och tills\u00e4tt sm\u00f6ret och l\u00e5t det bli lite karamelliserat. \nKoka upp vattnet med buljongp\u00e5sarna fr\u00e5n nudelpaketen. Vispa ner miso och ingef\u00e4ra. Tills\u00e4tt nudlarna och koka dem enligt anvisning p\u00e5 f\u00f6rpackningen. \nTill servering: F\u00f6rdela nudelsoppan i tallrikar och toppa med den sm\u00f6rstekta majsen, rostadl\u00f6k och sesamfr\u00f6n. Toppa g\u00e4rna med salladsl\u00f6k och spenat.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/ramen_miso.jpg"
         },
         {
-            "id":40 ,
-            "name" :"Biffwok",
-            "ingredients":[
+            "id": 40,
+            "name": "Biffwok",
+            "ingredients": [
                 "jasminris",
                 "ryggbiff",
-                "lök",
-                "vitlöksklyfta",
+                "l\u00f6k",
+                "vitl\u00f6ksklyfta",
                 "broccoli",
                 "paprika",
-                "ostronsås",
+                "ostrons\u00e5s",
                 "soja",
                 "oxfond",
-                "strösocker",
+                "str\u00f6socker",
                 "balsamico",
-                "majsstärkelse",
+                "majsst\u00e4rkelse",
                 "vatten",
                 "sesamolja",
                 "salt",
                 "svartpeppar",
                 "bambuskott",
-                "finskurna salladslökar"
+                "finskurna salladsl\u00f6kar"
             ],
-            "renderIngredients":"4 port jasminris\n 450 g ryggbiff\n1 lök\n1 vitlöksklyfta\n1/2 broccoli\n1/2 paprika\nSås\n1 dl ostronsås\n2 msk soja\n1 msk oxfond\n1 msk strösocker\n1 tsk balsamico\n1 tsk majsstärkelse\n1/2 dl vatten\n2 msk sesamolja\n2 krm salt\n1 krm svartpeppar\n1 burk bambuskott (à ca 200 g)\n2 finskurna salladslökar",
-            "howTo":"Koka riset enligt anvisning på förpackningen.\nSkär ryggbiffen i strimlor. Skala lök och vitlök. Skär löken i stora bitar och finhacka vitlöken. Skär broccolin i buketter och skiva stammen tunt. Dela, kärna ur och skär paprikan i bitar.\nSås: Blanda ostronsås, soja, fond, socker, balsamico, majsstärkelse och vatten.\nHetta upp en stekpanna med sesamolja och tillsätt biff, lök, vitlök, salt och peppar. Låt fräsa 3 minuter tills det får lite färg. Tillsätt såsen och låt koka 2–3 minuter.\nHäll av bambuskotten. Tillsätt broccoli, paprika, bambuskott och salladslök. Fräs ytterligare 2–3 minuter. Servera med ris.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/biffwok.jpg"
+            "renderIngredients": "4 port jasminris\n 450 g ryggbiff\n1 l\u00f6k\n1 vitl\u00f6ksklyfta\n1\/2 broccoli\n1\/2 paprika\nS\u00e5s\n1 dl ostrons\u00e5s\n2 msk soja\n1 msk oxfond\n1 msk str\u00f6socker\n1 tsk balsamico\n1 tsk majsst\u00e4rkelse\n1\/2 dl vatten\n2 msk sesamolja\n2 krm salt\n1 krm svartpeppar\n1 burk bambuskott (\u00e0 ca 200 g)\n2 finskurna salladsl\u00f6kar",
+            "howTo": "Koka riset enligt anvisning p\u00e5 f\u00f6rpackningen.\nSk\u00e4r ryggbiffen i strimlor. Skala l\u00f6k och vitl\u00f6k. Sk\u00e4r l\u00f6ken i stora bitar och finhacka vitl\u00f6ken. Sk\u00e4r broccolin i buketter och skiva stammen tunt. Dela, k\u00e4rna ur och sk\u00e4r paprikan i bitar.\nS\u00e5s: Blanda ostrons\u00e5s, soja, fond, socker, balsamico, majsst\u00e4rkelse och vatten.\nHetta upp en stekpanna med sesamolja och tills\u00e4tt biff, l\u00f6k, vitl\u00f6k, salt och peppar. L\u00e5t fr\u00e4sa 3 minuter tills det f\u00e5r lite f\u00e4rg. Tills\u00e4tt s\u00e5sen och l\u00e5t koka 2\u20133 minuter.\nH\u00e4ll av bambuskotten. Tills\u00e4tt broccoli, paprika, bambuskott och salladsl\u00f6k. Fr\u00e4s ytterligare 2\u20133 minuter. Servera med ris.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/biffwok.jpg"
         },
         {
             "id": 41,
-            "name":"Kycklingcurry med ris",
-            "ingredients":[
+            "name": "Kycklingcurry med ris",
+            "ingredients": [
                 "ris",
-                "gula lökar",
-                "morötter",
+                "gula l\u00f6kar",
+                "mor\u00f6tter",
                 "paprika",
-                "kycklingfilé",
+                "kycklingfil\u00e9",
                 "olja",
                 "curry",
-                "kokosmjölk",
-                "hönsbuljong",
+                "kokosmj\u00f6lk",
+                "h\u00f6nsbuljong",
                 "honung",
                 "salt",
                 "peppar",
                 "matyoghurt"
             ],
-            "renderIngredients":"4 port ris\n2 gula lökar\n2 morötter\n1 paprika\n500 g kycklingfilé\n2 msk olja\n2 tsk curry\n400 ml kokosmjölk\n2 dl hönsbuljong\n2 tsk honung\nsalt och peppar\n2 dl matyoghurt",
-            "howTo":"Koka riset enligt anvisningen på förpackningen.\nSkala lök och morötter, strimla löken och skiva morötterna. Dela, kärna ur och strimla paprikan.\nStrimla kycklingen. Stek den i oljan i en gryta tillsammans med curry och lök ca 3 min.\nTillsätt morötter, paprika, kokosmjölk och buljong. Låt sjuda under lock ca 10 minuter. Smaka av med honung, salt och peppar.\nTill servering: Servera kycklingcurryn med ris och en klick yoghurt.",
-            "like": [4, 7],
-            "rating": [{ "user_id": 7, "rating": 10 }],
-            "image": "./media/thumbnails/kycklingcurry.jpg"
+            "renderIngredients": "4 port ris\n2 gula l\u00f6kar\n2 mor\u00f6tter\n1 paprika\n500 g kycklingfil\u00e9\n2 msk olja\n2 tsk curry\n400 ml kokosmj\u00f6lk\n2 dl h\u00f6nsbuljong\n2 tsk honung\nsalt och peppar\n2 dl matyoghurt",
+            "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nSkala l\u00f6k och mor\u00f6tter, strimla l\u00f6ken och skiva mor\u00f6tterna. Dela, k\u00e4rna ur och strimla paprikan.\nStrimla kycklingen. Stek den i oljan i en gryta tillsammans med curry och l\u00f6k ca 3 min.\nTills\u00e4tt mor\u00f6tter, paprika, kokosmj\u00f6lk och buljong. L\u00e5t sjuda under lock ca 10 minuter. Smaka av med honung, salt och peppar.\nTill servering: Servera kycklingcurryn med ris och en klick yoghurt.",
+            "like": [
+                4,
+                7
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/kycklingcurry.jpg"
         }
     ]
-
 }

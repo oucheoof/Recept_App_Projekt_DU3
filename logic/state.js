@@ -1,7 +1,7 @@
 const _state = {
 };
 
-const token = "4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35";
+// const token = "4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35";
 
 
 
@@ -11,7 +11,7 @@ const STATE = {
 /*     Patch,
     Delete, */
     
-    // token: () => {return '4edf4d9e067b7cf8d70a86a1f6db21bfc2349d35';},
+    token: () => {return sessionStorage.getItem("token");},
 
     renderApp,
     /* renderLogin */
@@ -62,9 +62,9 @@ async function renderApp() {
     const ingredientsData = await fetcher(ingredientsRequest);
     _state.ingredients = ingredientsData.ingredients;
 
-    let userRequest = new Request(`./api/users.php`);
+    let userRequest = new Request(`./api/users.php?token=${STATE.token()}`);
     const userData = await fetcher(userRequest);
-    _state.users = userData.users;
+    _state.user = userData;
 
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop

@@ -131,12 +131,12 @@ function render_instance_recipe (instance_data) {
 
     // rank
 
-
-
+    const currentUser = STATE.get( 'user');
+    // instance_data.likes.includes( currentUser.id) 
     // LIKE knapp
     const like_btn = document.createElement('button'); 
     like_btn.classList.add ('like_btn');
-    like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';  
+    like_btn.innerText = instance_data.like.includes( currentUser.id)  ? 'Unlike' : 'Like';  
 
     // lägger till en eventlyssnare för att hantera LIKEknapp
     like_btn.addEventListener('click', function() {
@@ -145,7 +145,7 @@ function render_instance_recipe (instance_data) {
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                user_id: , 
+                /* user_id: ,  */
                 recipe_id: instance_data.id
             }),
         });

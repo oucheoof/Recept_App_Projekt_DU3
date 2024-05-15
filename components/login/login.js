@@ -79,13 +79,13 @@ async function renderRegisterForm(){
         <button class="register">Registrera konto</button>
      </form>`
 
-    parentDOM.querySelector( '.register').onclick = async( e ) => {
+    DOM.querySelector( '.register').onclick = async( e ) => {
         e.preventDefault();
 
-        const username = parentDOM.querySelector( '#username').value;
-        const email = parentDOM.querySelector( '#email').value;
-        const password = parentDOM.querySelector( '#password').value;
-        const rptpassword = parentDOM.querySelector( '#rptpassword').value;
+        const username = DOM.querySelector( '#username').value;
+        const email = DOM.querySelector( '#email').value;
+        const password = DOM.querySelector( '#password').value;
+        const rptpassword = DOM.querySelector( '#rptpassword').value;
 
         console.log(username, email, password, rptpassword);
 

@@ -24,9 +24,6 @@
         $json = file_get_contents('php://input');
         return json_decode($json, true);
     }
-
-    
-
 /*     function getDatabase($filename){
         
     $databaseContents = file_get_contents(`${$filename}.json`);
@@ -39,6 +36,4 @@
 
     return $databaseData;
     } */
-
-
 ?>

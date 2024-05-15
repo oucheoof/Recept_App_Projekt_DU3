@@ -1,17 +1,53 @@
-<!-- 
- users.php är för att:
-    registrera nya användare genom metoden 'POST'
-    radera användare genom metoden 'DELETE'
--->
-
 <?php
 
 require_once('functions.php'); //för att kunna få användning av funktioner i functions.php
 
 $requestMethod = $_SERVER['REQUEST_METHOD'];
-if($requestMethod !== 'POST' && $requestMethod !== 'DELETE'){
+if($requestMethod !== 'POST' && $requestMethod !== 'DELETE' && $requestMethod !== "GET"){
     $error = ["Error" => "Invalid request method"];
     sendJSON($error, 405);
+}
+
+
+if($requestMethod == "GET"){
+    if(!isset($_GET['token'])){
+        $error = ["Error" => "Token is empty"];
+
+        sendJSON($error, 400);
+    }
+    
+    $token = $_GET['token'];
+
+    $filename = "./database/users.json";
+
+    if(file_exists($filename)){ 
+        $json_encoded_data = file_get_contents($filename); 
+        $users = json_decode($json_encoded_data, true);
+
+    }
+
+    foreach($users as $user){
+        $username = $user["username"];
+        $password = $user["password"];
+
+        if(sha1("$username$password") == $token){
+            
+            // $users[] = $sortedUsers;
+            // $sortedUsers = $users; 
+            sendJSON($user);
+
+        }
+
+    }
+
+
+    $error = ["Error" => "User not found"];
+    sendJSON($error, 404);
+    //filegetcontents path:
+    //sedan parsa från json till kod
+    //loopa igenom alla användare for each
+    //if sats, om sha1 == $token
+    //skickar användaren som stämmer (sendJSON)
 }
 
 $contentType = $_SERVER["CONTENT_TYPE"];
@@ -119,14 +155,4 @@ if ($requestMethod == 'DELETE'){ //radera en användare
     
 }
 
-if($requestMethod == "GET"){
-
-    $token = $_GET['token'];
-
-    //filegetcontents path:
-    //sedan parsa från json till kod
-    //loopa igenom alla användare for each
-    //if sats, om sha1 == $token
-    //skickar användaren som stämmer (sendJSON)
-}
 ?>
