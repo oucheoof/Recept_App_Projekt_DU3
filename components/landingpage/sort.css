@@ -11,6 +11,11 @@ h3 {
 }
 
 #sortTitleDiv {
+
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 25px;
+
     display: flex;
     flex-direction: column; /* Changed from row to column */
     align-items: center; /* Centers all children horizontally */
