@@ -5,6 +5,9 @@
     require_once "functions.php";
 
     $filename = "./database/ingredients.json";
+    
+    $requestMethod = $_SERVER["REQUEST_METHOD"];
+    $requestData = getRequestData();
 
     $ingredients = [];
     if (file_exists($filename)) {
@@ -12,19 +15,12 @@
         $ingredients = json_decode($json_encoded_data, true);
     }
 
-    $method = $_SERVER["REQUEST_METHOD"];
-    $allowedMethods = ["GET"]; 
 
-    if (!in_array($method, $allowedMethods)) {
+    if ($requestMethod == "GET") {
+        sendJSON($ingredients);
+    }else{
         $error = ["Error" => "Method is invalid"];
         sendJSON($error, 405);
-    }
-
-    $method_request_JSON = file_get_contents("php://input");
-    $requestData = json_decode($method_request_JSON, true);
-    
-    if ($method == "GET") {
-        sendJSON($ingredients);
     }
 
 /*     if ($method == "POST") { //Hur ska post (filtreringen) fungera med de 2 boxarna?
