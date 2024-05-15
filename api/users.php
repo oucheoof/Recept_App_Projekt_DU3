@@ -23,7 +23,6 @@ if($requestMethod == "GET"){
     if(file_exists($filename)){ 
         $json_encoded_data = file_get_contents($filename); 
         $users = json_decode($json_encoded_data, true);
-
     }
 
     foreach($users as $user){
@@ -37,7 +36,6 @@ if($requestMethod == "GET"){
             sendJSON($user);
 
         }
-
     }
 
 

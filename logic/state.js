@@ -21,14 +21,7 @@ const STATE = {
 function renderLogReg(){
     renderLogRegContainer('wrapper');  
 }
-// async function Get(entity){
-//     let entityArray = _state[entity];
-//     let entityClone = JSON.parse(JSON.stringify(entityArray));
 
-//     return entityClone;
-// }
-
-// async function Post(entity, rqst){}
 
 // async function Patch(entity){}
 
@@ -76,7 +69,6 @@ async function renderApp() {
     renderBox1("sort");
     renderFooter();
 
-
 }
 
 
@@ -93,4 +85,20 @@ async function Post(){
     let entityArray = _state[entity];
     const data = await fetcher( rqst);
     entityArray.push(data);
+}
+
+async function Delete(rqst){
+
+    const response = await fetcher(rqst);
+    if(!response) return;
+
+    //funktionaliteten för att ta bort användaren
+}
+
+async function Patch(rqst){
+
+    const response = await fetcher(rqst);
+    if(!response) return;
+
+    //functionaliteten av att spara/avspara ett recept
 }
