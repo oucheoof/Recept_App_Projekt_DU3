@@ -49,12 +49,12 @@ async function renderLoginForm(){
 
         const data = await fetcher( registerRequest);
             console.log(data);
-            if (data.error) {
-                window.alert(data.error);
-            } else {
+            // if (data.error) {
+            //     window.alert(data.error);
+            // } else {
                 sessionStorage.setItem('token', data.token);
                 location.reload();
-            }
+            // }
     };
 
 

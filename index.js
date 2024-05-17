@@ -1,11 +1,10 @@
-//const wrapper_containers = render_wrapper_DOM ()
+async function START(){
 
-/*
-    renderApp || render logReg baserat på om localstorage är set
-*/
-
-if( !sessionStorage.getItem('token')) {
+    if( !sessionStorage.getItem('token')) {
     renderLogReg();
-} else {
-    renderApp()
+ } else {
+    renderApp();
+ }
 }
+
+START();

@@ -64,7 +64,12 @@ function renderUserHeader(parentID){
                 })
             })
             STATE.Delete(deleteRequest);
+            sessionStorage.removeItem('token');
+            START();
+            
         }
+
+
     });
 
     logoutButton.addEventListener('click', () => {
@@ -73,6 +78,7 @@ function renderUserHeader(parentID){
            sessionStorage.removeItem('token');
            renderLogReg();
            //location.reload();
+           START();
            console.log('utloggad')
        }
     })
