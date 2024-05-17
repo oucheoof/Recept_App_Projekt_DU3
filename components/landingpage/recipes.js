@@ -131,9 +131,11 @@ function render_instance_recipe (instance_data) {
 
     // rank
 
+    // LIKE knapp
+
     const currentUser = STATE.get('user');
     // instance_data.likes.includes( currentUser.id) 
-    // LIKE knapp
+
     const like_btn = document.createElement('button'); 
     like_btn.classList.add ('like_btn');
     like_btn.innerText = instance_data.like.includes( currentUser.id)  ? 'Unlike' : 'Like';  
@@ -229,40 +231,32 @@ function render_ALL_instance_recipe(instance_data) {
 
 
     // LIKE knapp
+     const currentUser = STATE.get('user');
+    // instance_data.likes.includes( currentUser.id) 
+
     const like_btn = document.createElement('button'); 
     like_btn.classList.add ('like_btn');
-    like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';  
+    like_btn.innerText = instance_data.like.includes( currentUser.id)  ? 'Unlike' : 'Like';  
 
     // lägger till en eventlyssnare för att hantera LIKEknapp
-    like_btn.addEventListener('click', function() {
+    like_btn.addEventListener('click', async function() {
 
-        // Togglar favorite status
-        instance_data.favorite = !instance_data.favorite;
+            const likeRequest = new Request('../api/like.php',{
+            method: 'PATCH',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                user_id: currentUser.id, //användarnamnet vi vill hämta från api:et 
+                recipe_id: instance_data.id
+            }),
 
-        // Uppdaterar knappen med text baserat på nya favorit status 
-        if (instance_data.favorite) {
-            like_btn.innerText = 'Unlike';
-        } else {
-            like_btn.innerText = 'Like';
-        }
 
-        // Kollar om favoriten är markerad eller inte + lägger till/tar bort CSS-klass
-        if (instance_data.favorite) {
-                like_btn.classList.add('favorited');
-        } else {
-            like_btn.classList.remove('favorited');
-        }
+        });
 
-        /*
-        ELLER:
-        instance_data.favorite = !instance_data.favorite;
-        like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';
-        like_btn.classList.toggle('favorited', instance_data.favorite);
+        await STATE.Patch(likeRequest, currentUser.id, instance_data);
 
-        */ 
-            //STATE.patch(..);
-
+        instance_data.like.includes(currentUser.id) ? like_btn.innerText = 'Unlike' : like_btn.innerText = 'Like';
     });
+
 
     container_recipe.appendChild(like_btn);
 
