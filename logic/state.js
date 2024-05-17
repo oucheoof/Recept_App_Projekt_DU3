@@ -8,8 +8,8 @@ const _state = {
 const STATE = {
     get,
     Post,
-/*     Patch,
-    Delete, */
+    Patch,
+    // Delete,
     
     token: () => sessionStorage.getItem( 'token'),
 
@@ -95,10 +95,13 @@ async function Delete(rqst){
     //funktionaliteten för att ta bort användaren
 }
 
-async function Patch(rqst){
+async function Patch(rqst, currentUserId, recipe){
+    const data = await fetcher(rqst);
+    console.log(data);
+/*     recipe.like.findIndex(e => e.id === data.id);
+    console.log(recipe.like.findIndex(e => e.id === data.id)); */
+    
 
-    const response = await fetcher(rqst);
-    if(!response) return;
 
     //functionaliteten av att spara/avspara ett recept
 }

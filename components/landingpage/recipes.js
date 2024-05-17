@@ -145,10 +145,12 @@ function render_instance_recipe (instance_data) {
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                /* user_id: ,  */
+                user_id: currentUser.id, //användarnamnet vi vill hämta från api:et 
                 recipe_id: instance_data.id
             }),
+
         });
+        STATE.Patch(likeRequest, currentUser.id, instance_data);
 
         // Togglar favorite status
         instance_data.favorite = !instance_data.favorite;
