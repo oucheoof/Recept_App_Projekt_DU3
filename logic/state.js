@@ -97,11 +97,18 @@ async function Delete(rqst){
 
 async function Patch(rqst, currentUserId, recipe){
     const data = await fetcher(rqst);
-    console.log(data); 
+    let arrayOfUsersId = recipe.like;
 
-    //kod för att uppdatera _state med api data?
-    
-
-
-    //functionaliteten av att spara/avspara ett recept
+    if (arrayOfUsersId.includes(currentUserId)) {
+        // Remove user from the liked array
+        const index = arrayOfUsersId.indexOf(currentUserId);
+        if (index !== -1) {
+            arrayOfUsersId.splice(index, 1);
+            console.log(arrayOfUsersId);
+        }
+    } else {
+        // Add user to the liked array
+        arrayOfUsersId.push(currentUserId);
+        console.log(arrayOfUsersId);
+    }
 }
