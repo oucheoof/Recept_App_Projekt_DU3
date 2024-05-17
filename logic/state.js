@@ -97,9 +97,9 @@ async function Delete(rqst){
 
 async function Patch(rqst, currentUserId, recipe){
     const data = await fetcher(rqst);
-    console.log(data);
-/*     recipe.like.findIndex(e => e.id === data.id);
-    console.log(recipe.like.findIndex(e => e.id === data.id)); */
+    console.log(data); 
+
+    //kod för att uppdatera _state med api data?
     
 
 

@@ -139,9 +139,9 @@ function render_instance_recipe (instance_data) {
     like_btn.innerText = instance_data.like.includes( currentUser.id)  ? 'Unlike' : 'Like';  
 
     // lägger till en eventlyssnare för att hantera LIKEknapp
-    like_btn.addEventListener('click', function() {
+    like_btn.addEventListener('click', async function() {
 
-            const likeRequest = new Request('../api/login.php',{
+            const likeRequest = new Request('../api/like.php',{
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -149,8 +149,13 @@ function render_instance_recipe (instance_data) {
                 recipe_id: instance_data.id
             }),
 
+
         });
-        STATE.Patch(likeRequest, currentUser.id, instance_data);
+            console.log(currentUser.id);
+            console.log(instance_data.id);
+        const data = await fetcher(likeRequest);
+        console.log(data, "PATCH");
+        // STATE.Patch(likeRequest, currentUser.id, instance_data);
 
         // Togglar favorite status
         instance_data.favorite = !instance_data.favorite;

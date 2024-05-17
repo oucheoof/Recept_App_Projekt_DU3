@@ -2,10 +2,11 @@
     require_once("functions.php");
 
     $requestMethod = $_SERVER['REQUEST_METHOD'];
+    
     if($requestMethod !== "PATCH"){
     $error = ["Error" => "Invalid request method"];
     sendJSON($error, 405);
-}
+    }
 
 if($requestMethod == "PATCH"){
     $rqst_data = getRequestData();
