@@ -11,28 +11,132 @@
     flex-direction: row;
 }
 
+/*  KITSCH LOGGA IN KNAPP & SKAPA KONTO KNAPP */
+
 #logRegContainer{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     background-color: white;
     padding: 50px;
+    height: 300px;
+    width: 320px;
+    margin-left: 5%;
 
     align-self: center;
 
     display: flex;
     flex-direction: column;
 }
+
+.title_login{
+    font-family: bigpixelShadow;
+    font-size: 50px;
+    margin-bottom: 10%;
+}
+
+#buttons {
+    margin-bottom: 15%;
+}
+
+.login_btn{
+    height: 40px;
+    width: 105px;
+    border: 1px solid black;
+    /*border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;*/
+
+    background-color: white;
+}
+
+.login_btn:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.skapakonto_btn {
+
+    border: 1px solid black;
+    /*border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;*/
+    height: 40px;
+    width: 105px;
+    background-color: white;
+ 
+}
+
+.skapakonto_btn:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.terms {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*  LOGGA IN RUTA  */
 
 #loginTitle{
     text-align: center;
     align-self: center;
 
+    font-family: bigpixelShadow;
+    font-size: 50px;
+    margin-bottom: 10%;
+
 }
 
-button{
-   background-color: white;
-}
 
 form{
     display: flex;
     flex-direction: column;
+}
+
+.name {
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 5%;
+   /*border-radius: 15px;*/
+}
+
+.passw {
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 10%;
+    /*border-radius: 15px;*/
+}
+
+#login_btn_two, .register{
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.register {
+    margin-bottom: 50px;
+}
+
+
+
+/*  SKAPA ANVÄNDARE RUTA registrerings formulär  */
+
+.email_mail, .newUser, .newpass, .repeatpass {
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 5%;
+}
+
+.loginTitle_reg{
+
+    text-align: center;
+    align-self: center;
+
+    font-family: bigpixelShadow;
+    font-size: 50px;
+    margin-bottom: 10%;
+    margin-top: 5%;
 }

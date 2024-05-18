@@ -3,12 +3,16 @@ function renderLogRegContainer(parentID) {
     DOM.id = 'logRegContainer';
 
     DOM.innerHTML = `
-    <h1>Kitsch</h1>
+  
+    <p class="title_login">Kitsch</p>
+
     <div id='buttons'>
-        <button type="button" onclick="renderLoginForm()">Logga in</button>
-        <button type="button" onclick="renderRegisterForm()">Skapa konto</button>
+        <button class="login_btn" type="button" onclick="renderLoginForm()"> Logga in </button>
+
+        <button class ="skapakonto_btn" type="button" onclick="renderRegisterForm()"> Skapa konto </button>
+        
     </div>
-    <p>Terms & Conditions</p>
+    <p class="terms">Terms & Conditions</p>
     `;
 
     document.getElementById(parentID).append(DOM);
@@ -18,17 +22,23 @@ function renderLogRegContainer(parentID) {
 
 
 async function renderLoginForm(){
+
     console.log('renderlogin');
+
     DOM = document.getElementById('logRegContainer');
     
     DOM.innerHTML = null;
     DOM.innerHTML = `
-    <h2 id="loginTitle">Kitsch</h2>
-    <form id="loginForm">
-    <input type="text" id="username" name="username" placeholder="Användarnamn">
-    <input type="password" id="password" name="password" placeholder="Lösenord">
     
-    <button class="login">Logga in</button>
+    <p id="loginTitle"> Kitsch </p>
+
+    <form id="loginForm">
+
+    <input class="name" type="text" id="username" name="username" placeholder="  Användarnamn">
+
+    <input class="passw" type="password" id="password" name="password" placeholder="  Lösenord">
+    
+    <button id="login_btn_two" class="login"> Logga in</button>
     </form>`
 
     DOM.querySelector('.login').onclick = async(e) => {
@@ -38,6 +48,7 @@ async function renderLoginForm(){
         const password = DOM.querySelector('#password').value;
 
         console.log(username, password);
+
         const registerRequest = new Request('../api/login.php',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -63,20 +74,27 @@ async function renderLoginForm(){
 
 
 async function renderRegisterForm(){
+
     console.log('renderRegister');
+    
     DOM = document.getElementById('logRegContainer');
     
     DOM.innerHTML = null;
     DOM.innerHTML = `
-    <h2>Kitsch</h2>
+
+    <p class="loginTitle_reg">Kitsch</p>
+
     <form id="RegisterForm">
 
-        <input type="text" id="email" name="email" placeholder="Email">
-        <input type="text" id="username" name="username" placeholder="Användarnamn">
-        <input type="password" id="password" name="password" placeholder="Lösenord">
-        <input type="password" id="rptpassword" name="rptpassword" placeholder="Upprepa lösenord">
+        <input class="email_mail" type="text" id="email" name="email" placeholder="  Email">
+
+        <input class="newUser" type="text" id="username" name="username" placeholder="  Användarnamn">
+
+        <input class="newpass" type="password" id="password" name="password" placeholder="  Lösenord">
+
+        <input class="repeatpass" type="password" id="rptpassword" name="rptpassword" placeholder="  Upprepa lösenord">
         
-        <button class="register">Registrera konto</button>
+        <button class="register"> Registrera konto </button>
      </form>`
 
     DOM.querySelector( '.register').onclick = async( e ) => {
@@ -87,7 +105,7 @@ async function renderRegisterForm(){
         const password = DOM.querySelector( '#password').value;
         const rptpassword = DOM.querySelector( '#rptpassword').value;
 
-        console.log(username, email, password, rptpassword);
+        console.log (username, email, password, rptpassword);
 
         const registerRequest = new Request( './api/users.php', {
             method: 'POST',
