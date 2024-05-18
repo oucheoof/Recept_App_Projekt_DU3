@@ -9,7 +9,7 @@ const STATE = {
     get,
     Post,
     Patch,
-    // Delete,
+    Delete,
     
     token: () => sessionStorage.getItem( 'token'),
 

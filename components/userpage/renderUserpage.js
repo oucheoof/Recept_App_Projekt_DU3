@@ -54,9 +54,11 @@ function renderUserHeader(parentID){
 
     //lägger till eventlisteners till knapparna
     removeUserButton.addEventListener('click', () => {
+        
         let ok = confirm('Jag vill ta bort min användare');
-        if(ok){
-            const deleteRequest = new Request('./api/users.php',{
+
+        if (ok) {
+            const deleteRequest = new Request('/api/users.php',{
                 method: 'DELETE',
                 headers: {'Content-Type':'application/json'},
                 body: JSON.stringify({
@@ -64,15 +66,18 @@ function renderUserHeader(parentID){
                 })
             })
             STATE.Delete(deleteRequest);
+
         }
     });
 
     logoutButton.addEventListener('click', () => {
-       let ok = confirm('Jag vill logga ut');
-       if(ok){
+       
+        let ok = confirm('Jag vill logga ut');
+       
+       if (ok){
            sessionStorage.removeItem('token');
-           renderLogReg();
-           //location.reload();
+           //renderLogReg();
+           location.href = "/"  // gör så att login sidan renderas när man loggar ut
            console.log('utloggad')
        }
     })
