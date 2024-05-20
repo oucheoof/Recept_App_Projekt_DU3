@@ -124,15 +124,29 @@ function render_instance_recipe (instance_data) {
     const recipe_name = document.createElement('div');
     recipe_name.classList.add("recipe_name"); 
     recipe_name.innerText = instance_data.name;
-
-    
     container_recipe.appendChild(recipe_name); 
 
+    // Tid för receptet:
+    const recipe_time = document.createElement('p');
+    recipe_time.classList.add("recipe_time"); 
+    recipe_time.innerText = instance_data.time;
+    container_recipe.appendChild(recipe_time); 
 
-    // rank
+
+    // Lägg till rankningsbilder (4 stjärnor)
+    const rank_div = document.createElement('div');
+
+    rank_div.classList.add("rank_div");
+    for (let i = 0; i < 5; i++) {
+        const rank_img = document.createElement('img');
+        rank_img.classList.add("rank_img");
+        rank_img.src = 'media/img/star.png'; // Ange sökvägen till bilden i img-mappen
+        rank_div.appendChild(rank_img);
+    }
+    container_recipe.appendChild(rank_div);
+
 
     // LIKE knapp
-
     const currentUser = STATE.get('user');
     // instance_data.likes.includes( currentUser.id) 
 
@@ -222,11 +236,27 @@ function render_ALL_instance_recipe(instance_data) {
     const recipe_name = document.createElement('div');
     recipe_name.classList.add("recipe_name"); 
     recipe_name.innerText = instance_data.name;
-    
     container_recipe.appendChild(recipe_name); 
 
 
-    // rank
+    // Tid för receptet:
+    const recipe_time = document.createElement('p');
+    recipe_time.classList.add("recipe_time"); 
+    recipe_time.innerText = instance_data.time;
+    container_recipe.appendChild(recipe_time); 
+   
+   
+       // Lägg till rankningsbilder (4 stjärnor)
+    const rank_div = document.createElement('div');
+   
+    rank_div.classList.add("rank_div");
+       for (let i = 0; i < 5; i++) {
+           const rank_img = document.createElement('img');
+           rank_img.classList.add("rank_img");
+           rank_img.src = 'media/img/star.png'; // Ange sökvägen till bilden i img-mappen
+           rank_div.appendChild(rank_img);
+       }
+    container_recipe.appendChild(rank_div);
 
 
 

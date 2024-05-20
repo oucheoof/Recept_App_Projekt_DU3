@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Amerikanska Pannkakor",
+            "time": "20 min",
             "ingredients": [
                 "vetemj\u00f6l",
                 "bakpulver",
@@ -29,6 +30,7 @@
         {
             "id": 2,
             "name": "L\u00f6vbiffspasta",
+            "time": "30 min",
             "ingredients": [
                 "l\u00f6vbiff",
                 "champinjoner",
@@ -214,7 +216,9 @@
             ],
             "renderIngredients": "Vetemj\u00f6l 3 dl\nStandardmj\u00f6lk 6 dl\n\u00c4gg 3\nSalt \u00bd tsk\nSm\u00f6r 2 msk ",
             "howTo": "1. Vispa ut mj\u00f6let i h\u00e4lften av mj\u00f6lken till en sl\u00e4t smet. Vispa i resterande mj\u00f6lk, \u00e4gg och salt.\n2. L\u00e5t smeten sv\u00e4lla ca 10 min.\n3. Sm\u00e4lt sm\u00f6r i en stekpanna och h\u00e4ll ner i smeten. Gr\u00e4dda tunna pannkakor. ",
-            "like": [],
+            "like": [
+                2
+            ],
             "rating": [
                 {
                     "user_id": 7,
@@ -242,7 +246,9 @@
             ],
             "renderIngredients": "Vitl\u00f6ksklyftor 4\nF\u00e4rsk ingef\u00e4ra 25 g\nSm\u00f6r 1 msk\nFl\u00e4skf\u00e4rs 200 g\nB\u00f6n och chilipasta 3 msk\nSake 4 msk\n\u00c4gg 2\nNudlar, snabbnudlar 4 f\u00f6rp\npakchoi 1\nB\u00f6ngroddar 4 dl\nSalladsl\u00f6kar 2\nOst 4 skivor ",
             "howTo": "1. Skala och finhacka vitl\u00f6k och ingef\u00e4ra.\n2. Hetta upp sm\u00f6r i en stekpanna. Fr\u00e4s vitl\u00f6k och ingef\u00e4ra p\u00e5 medelv\u00e4rme i ca 30 sek.\n3. Tills\u00e4tt f\u00e4rs och bryn tills den f\u00e5tt fin f\u00e4rg.\n4. Tills\u00e4tt doubanjiang och fr\u00e4s ytterligare 1 min. R\u00f6r ner shaoxingvin och l\u00e5t koka in. Smaka av med salt och svartpeppar. St\u00e4ll \u00e5t sidan.\n5. Koka upp vatten och koka \u00e4ggen i exakt 6 min och 45 sek. H\u00e4ll av och kyl ner \u00e4ggen. Skala och halvera \u00e4ggen. St\u00e4ll \u00e5t sidan.\n6. Koka upp vatten i en kastrull, Plocka bladen fr\u00e5n pakchoi. Koka f\u00f6rst pakchoi i 30 sek. Plocka upp med h\u00e5lslev. G\u00f6r sedan likadant med groddarna. Plocka upp med h\u00e5lslev. St\u00e4ll \u00e5t sidan.\n7. Koka nudlar al dente utan kryddp\u00e5se. Sk\u00f6lj nudlarna i kallt vatten f\u00f6r att f\u00e5 bort st\u00e4rkelse, doppa dem sedan i hett vatten igen precis innan servering.\n8. Strimla salladsl\u00f6ken.\n9. Koka upp vatten, mj\u00f6lk och kycklingbuljong. L\u00e5t sjuda tills buljongen l\u00f6sts upp. Tills\u00e4tt sm\u00f6r.\n10. SLURP!",
-            "like": [],
+            "like": [
+                2
+            ],
             "rating": [
                 {
                     "user_id": 7,
