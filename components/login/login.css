@@ -31,11 +31,17 @@
 .title_login{
     font-family: bigpixelShadow;
     font-size: 50px;
+    margin-left: 5%;
     margin-bottom: 10%;
 }
 
 #buttons {
+    margin-left: 5%;
     margin-bottom: 15%;
+}
+
+.terms {
+    margin-left: 5%;
 }
 
 .login_btn{
