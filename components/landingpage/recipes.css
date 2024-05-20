@@ -40,7 +40,7 @@
 /*  Container div för enskilt recept  */
 .container_recipe  {
     margin: 10px 30px;
-    height: 440px;
+    height: 450px;
     /*border: 1px solid rgb(157, 219, 156);*/
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -129,7 +129,7 @@ h4 {
     /*gap: 20px;*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 160vh;
+    height: 185vh;
     overflow: auto;
 
 }
