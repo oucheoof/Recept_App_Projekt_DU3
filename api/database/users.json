@@ -11,5 +11,12 @@
         "email": "miche@miche.se",
         "password": "michelle",
         "rptpassword": "michelle"
+    },
+    {
+        "id": 3,
+        "username": "wawa",
+        "email": "@2",
+        "password": "qwe",
+        "rptpassword": "qwe"
     }
 ]

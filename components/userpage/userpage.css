@@ -1,5 +1,25 @@
-/*  test att wrappern syns */
-#wrapper{
-    height: 100vh;
-    border: 7px solid rgb(106, 210, 106);
+.userHeader{
+    display: flex;
+    flex-direction: row;
+
 }
+
+    #userControl{
+        width: 40vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    }   
+        #userControl *{
+            width: 20vw;
+            display: flex;
+        }
+
+        #userControl img{
+            height: 20vw;
+        }
+
+    #userInfo{
+        width: 60vw;
+    }

@@ -41,7 +41,7 @@ function render_wrapper_DOM () {
 // Header funktion
 
 function render_header (header) {
-
+    header.classList.add('mainHeader')
     header.innerHTML = `
         
         <img src="./media/img/omslag1.png">
