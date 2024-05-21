@@ -1,11 +1,5 @@
 [
     {
-        "id": 1,
-        "username": "amanda",
-        "email": "amanda.cai@email.com",
-        "password": "panda"
-    },
-    {
         "id": 2,
         "username": "michelle",
         "email": "miche@miche.se",

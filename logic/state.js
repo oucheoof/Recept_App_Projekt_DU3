@@ -11,7 +11,7 @@ const STATE = {
     Patch,
     Delete,
     
-    token: () => sessionStorage.getItem( 'token'),
+    token: () => localStorage.getItem( 'token'),
 
     renderApp,
     /* renderLogin */
@@ -23,30 +23,23 @@ function renderLogReg(){
 }
 
 
-async function renderApp() {
+async function StartuserState() {
 
+    let recipeRequest = new Request(`../../api/recipes.php`);
+    const recipeData = await fetcher(recipeRequest);
+    _state.recipes = recipeData.recipes;
 
-    
-    //const response = await fetch ('./api/database/recepies.json');
-    //const data = await response.json();
-    
-    //_state.recipes = data.artists;
+    let ingredientsRequest = new Request(`../../api/ingredients.php`);
+    const ingredientsData = await fetcher(ingredientsRequest);
+    _state.ingredients = ingredientsData.ingredients;
 
-   /*
-    let recipeRequest = new Request(`./api/database/recepies.php`);
-    const recipeData = await fetch_function (recipeRequest);
-    _state.recipes = recipeData;
-*/
+    let userRequest = new Request(`../../api/users.php?token=${STATE.token()}`);
+    const userData = await fetcher(userRequest);
+    _state.user = userData;
 
-    /*
-// async function Patch(entity){}
+}
+async function startState() {
 
-// async function Delete(entity){}
-async function startState(){
-        /*
-        Hämtar alla recipes och ingredients och skapar 
-        entity nycklar i state som kan hämtas av komponenterna
-        */
 
     let recipeRequest = new Request(`./api/recipes.php`);
     const recipeData = await fetcher(recipeRequest);
@@ -64,17 +57,6 @@ async function startState(){
 async function renderApp() {
 
     await startState();
-    
-    //const response = await fetch ('./api/database/recepies.json');
-    //const data = await response.json();
-    
-    //_state.recipes = data.artists;
-
-   /*
-    let recipeRequest = new Request(`./api/database/recepies.php`);
-    const recipeData = await fetch_function (recipeRequest);
-    _state.recipes = recipeData;
-*/
 
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop
@@ -85,7 +67,12 @@ async function renderApp() {
     renderPopup();
     renderBox1("sort");
     renderFooter();
+}
 
+async function renderUserPage() {
+    await StartuserState();
+
+    renderUserpageContainer();
 }
 
 
@@ -93,7 +80,6 @@ async function renderApp() {
 
 function get(entity) {
 
-    // klonar
     return JSON.parse(JSON.stringify( _state[ entity ]));
 /* renderChosenIngredientsBox("wrapper"); */ 
 }
