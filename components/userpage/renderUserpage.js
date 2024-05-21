@@ -66,7 +66,6 @@ function renderUserHeader(parentID){
                 })
             })
             STATE.Delete(deleteRequest);
-            sessionStorage.removeItem('token');
 
         }
     });
