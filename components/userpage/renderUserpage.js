@@ -58,29 +58,44 @@ function renderUserHeader(parentID){
         let ok = confirm('Jag vill ta bort min användare');
 
         if (ok) {
-            const deleteRequest = new Request('/api/users.php',{
+            const deleteRequest = new Request('/api/users.php', {
                 method: 'DELETE',
-                headers: {'Content-Type':'application/json'},
+                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
                     token: STATE.token(),
                 })
-            })
-            STATE.Delete(deleteRequest);
+            });
 
+            fetch(deleteRequest)
+                .then(response => {
+                    if (!response.ok) {
+
+                        throw new Error('Något gick fel vid radering av användaren');
+                    }
+
+                    return response.json();
+                })
+                .then(data => {
+
+                    localStorage.removeItem('token');
+                    window.location.href = "/";  // Gör att man hamnar i login sidan
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
         }
     });
 
     logoutButton.addEventListener('click', () => {
-       
         let ok = confirm('Jag vill logga ut');
-       
-       if (ok){
-           localStorage.removeItem('token');
-           //renderLogReg();
-           location.href = "/"  // gör så att login sidan renderas när man loggar ut
-           console.log('utloggad')
-       }
-    })
+
+        if (ok){
+            localStorage.removeItem('token');
+            //renderLogReg();
+            location.href = "/"  // gör så att login sidan renderas när man loggar ut
+            console.log('utloggad')
+        }
+    });
 }
 
 //LOGIK skapar en array med users som gillat
