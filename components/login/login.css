@@ -57,7 +57,7 @@
 .login_btn:hover {
     background-color: black;
     color: white;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .skapakonto_btn {
@@ -74,7 +74,7 @@
 .skapakonto_btn:hover {
     background-color: black;
     color: white;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .terms {
