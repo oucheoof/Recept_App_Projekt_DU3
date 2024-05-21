@@ -12,9 +12,9 @@ header {
     position: relative;
 }
 
-.slogan_text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+.slogan_text p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }
 
 .nav_meny {
