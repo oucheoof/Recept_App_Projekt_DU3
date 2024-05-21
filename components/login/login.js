@@ -125,6 +125,7 @@ async function renderRegisterForm(){
             window.alert( `successful registration ${data.name}`)
         }
 
+        renderLoginForm();
         console.log( data);
 
         } 
