@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Amerikanska Pannkakor",
+            "time": "20 min",
             "ingredients": [
                 "vetemj\u00f6l",
                 "bakpulver",
@@ -15,9 +16,7 @@
             "renderIngredients": "Vetemj\u00f6l 3 dl\nBakpulver 2 tsk\nStr\u00f6socker 1 msk\nSalt \u00bd tsk\nMild yoghurt naturell, filmj\u00f6lk eller mj\u00f6lk 3\u00bd dl\n\u00c4gg 1\nSm\u00f6r ",
             "howTo": "1. Blanda de torra ingredienserna i en bunke.\n2. R\u00f6r ner yoghurt, \u00e4ggula och rapsolja. Vispa till en sl\u00e4t smet.\n3. Vispa \u00e4ggvitan till ett h\u00e5rt skum och v\u00e4nd ner i smeten.\n4. Hetta upp lite rapsolja i en stekpanna. Stek sm\u00e5 pannkakor p\u00e5 l\u00e5g medelv\u00e4rme i omg\u00e5ngar. N\u00e4r det bildas bubblor p\u00e5 ovansidan \u00e4r det dags att v\u00e4nda. 5. Servera amerikanska pannkakor med l\u00f6nnsirap och b\u00e4r. ",
             "like": [
-                4,
-                7,
-                3
+                1
             ],
             "rating": [
                 {
@@ -30,6 +29,7 @@
         {
             "id": 2,
             "name": "L\u00f6vbiffspasta",
+            "time": "30 min",
             "ingredients": [
                 "l\u00f6vbiff",
                 "champinjoner",
@@ -46,10 +46,7 @@
             ],
             "renderIngredients": "L\u00f6vbiff ca 400 g\nSalt och svartpeppar\nChampinjoner 250 g\nPurjol\u00f6k 1\/2\nSm\u00f6r\nVitl\u00f6ksklyftor, finrivna 2\ncr\u00e8mefraiche 2 dl\nMatlagningsgr\u00e4dde 2\u00bd dl\nDijonsenap 1 msk\nsambaloelek 1 msk\nH\u00f6nsbuljong ",
             "howTo": "1. S\u00e4tt p\u00e5 vatten till pastakoket.\n2. Strimla l\u00f6vbiffen grovt. Salta och peppra. St\u00e4ll \u00e5t sidan medan resten f\u00f6rbereds.\n3. Sk\u00e4r svampen i klyftor. Sk\u00f6lj och skiva purjol\u00f6ken grovt. Fr\u00e4s svampen i en stekpanna tills v\u00e4tskan kokat in. Tills\u00e4tt en klick sm\u00f6r, purjol\u00f6k och vitl\u00f6k. Fr\u00e4s 2\u20133 min. R\u00f6r ner cr\u00e8mefraiche, gr\u00e4dde, senap, sambaloelek och smulad buljong. L\u00e5t koka ihop 2\u20133 min. St\u00e4ll \u00e5t sidan.\n 4. Koka pastan enligt anvisning p\u00e5 f\u00f6rpackningen. Spara 1 dl av pastavattnet.\n5. Hetta upp en stekpanna med sm\u00f6r. Stek l\u00f6vbiffen hastigt i omg\u00e5ngar.\n6.Blanda ner i s\u00e5sen tillsammans med pastan. R\u00f6r ev ner det sparade pastavattenet till \u00f6nskad konsistens.Toppa med smulad ost och timjan. Servera direkt. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -71,10 +68,7 @@
             ],
             "renderIngredients": "Fl\u00e4derblomsklasar 35 - 40\nCitroner 3\nVatten 1\u00bd liter\nStr\u00f6socker 1\u00bd liter\nCitronsyra 50 g\nNatriumbensoat ev. 2 krm",
             "howTo": "1. Sk\u00f6lj blomklasarna i ljummet vatten, l\u00e5t rinna av. Ta bort grova skaft, de kan g\u00f6ra saften besk.\n2. Tv\u00e4tta citronerna noga i ljummet vatten. Sk\u00e4r citronerna i skivor.\n3. Varva blomklasar och citronskivor i en stor bunke.\n4. Koka upp vatten och socker. R\u00f6r om tills sockret l\u00f6st upp sig. Blanda ner citronsyran och natriumbensoat . H\u00e4ll den heta sockerlagen i bunken.\n5. L\u00e5t svalna i rumstemperatur. T\u00e4ck sedan \u00f6ver bunken och l\u00e5t st\u00e5 i kylsk\u00e5p 2-3 dygn.\n6. Sila saften genom silduk. H\u00e4ll fl\u00e4dersaften p\u00e5 rena flaskor, fyll \u00e4nda upp och s\u00e4tt p\u00e5 skruvkork.\n7. F\u00f6rvara fl\u00e4dersaften svalt. Sp\u00e4d till nskad smak med med kallt vatten, g\u00e4rna kolsyrat! Fyll p\u00e5 med isbitar och ev citronskivor. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -98,10 +92,7 @@
             ],
             "renderIngredients": "Pasta\nbasilika 2 krukor\nPinjen\u00f6tter 50 g\nVitl\u00f6ksklyfta 1\nsvecia 100 g\nKvarg 250 g\nSalt\nSvartpeppar ",
             "howTo": "1. Bryt av basilikabladen. Mixa ingredienserna till peston v\u00e4l. Spar lite ost, pinjen\u00f6tter och basilika till servering.Smaka av med salt och peppar.\n2. Koka spaghettin enligt anvisning p\u00e5 f\u00f6rpackningen. Blanda spaghetti och pesto. Toppa med extra basilika och ost. Servera genast.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -125,10 +116,7 @@
             ],
             "renderIngredients": "K\u00f6ttf\u00e4rs 500 g\nStr\u00f6br\u00f6d \u00bd dl\nStandardmj\u00f6lk 1 dl\nFinhackad l\u00f6k 2 msk\n\u00c4gg 1\nSalt 1 tsk\nSvartpeppar 1 krm\nSm\u00f6r & rapsolja 2 msk ",
             "howTo": "1. Blanda str\u00f6br\u00f6d och mj\u00f6lk. L\u00e5t sv\u00e4lla 10 min.\n2. L\u00e4gg i f\u00e4rs, l\u00f6k, \u00e4gg, salt och peppar. R\u00f6r till en j\u00e4mn smet.\n3. Forma smeten till j\u00e4mna k\u00f6ttbullar. Stek dem i rapsolja p\u00e5 medelv\u00e4rme ca 5 min. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -155,10 +143,7 @@
             ],
             "renderIngredients": "Torskfil\u00e9 600 g\nVatten 1 liter\nSalt \u00bd dl\nSm\u00f6r 75 g\nVitl\u00f6ksklyfta 1\nCitron, finrivet skal och saft 1 st\nDill 2 msk\nStr\u00f6br\u00f6d \u00bd dl\nSalt 2 krm\nCornflakes 2 dl\nPotatis 900 g ",
             "howTo": "1. V\u00e4rm ugnen till 200\u00b0.\n2. Sk\u00e4r fisken i portionsbitar. Vispa ihop vatten och salt i en bunke. L\u00e4gg ner fisken i vattnet och l\u00e5t ligga minst 10 min.\n3. Blanda alla ingredienser till gr\u00e4ddfilss\u00e5sen i en sk\u00e5l. St\u00e4ll kallt till servering.\n4. R\u00f6r ihop sm\u00f6r med finriven vitl\u00f6k, citron, dill och str\u00f6br\u00f6d. Smaka av med salt.\n5. Torka av fisken med hush\u00e5llspapper. L\u00e4gg den i en smord ugnsform och klicka sm\u00f6ret \u00f6ver fisken. Str\u00f6 \u00f6ver l\u00e4tt krossad cornflakes.\n6. Tillaga i mitten av ugnen ca 20 min.\n7. Skala och koka potatisen mjuk i saltat vatten.\n8. Servera cornflakesfisken med gr\u00e4ddfilss\u00e5s, kokt potatis och gr\u00f6nsallad. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -182,10 +167,7 @@
             ],
             "renderIngredients": "Jasminris 3 dl\nMorot 1\npaprika 1\nSocker\u00e4rter 150 g\nVitl\u00f6ksklyftor 3\nMatolja 2 msk\nChili flakes 1 tsk\n\u00c4gg 2",
             "howTo": "1. Koka riset enligt anvisning p\u00e5 f\u00f6rpackningen.\n2. Skala och sk\u00e4r tunna stavar av moroten. Strimla paprika och socker\u00e4rter. 3. Skala och finhacka vitl\u00f6ken.\n4. Bryn sm\u00f6ret till dressingen under omr\u00f6rning. H\u00e4ll \u00f6ver i en v\u00e4rmet\u00e5lig sk\u00e5l och r\u00f6r ner \u00f6vriga ingredienser.\n5. Hetta upp matoljan i en rymlig stekpanna. Stek alla gr\u00f6nsaker med vitl\u00f6k och chili flakes p\u00e5 h\u00f6g v\u00e4rme 2\u20133 min.\n6. Tills\u00e4tt riset och kn\u00e4ck ner \u00e4ggen. Stek under omr\u00f6rning tills \u00e4ggen stelnat. Blanda ner dressingen.\n7. Toppa stekt ris med koriander och rostadl\u00f6k. Servera direkt. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -210,10 +192,7 @@
             ],
             "renderIngredients": "J\u00e4st 25 g\nVatten 4 dl\nKvarg 1 dl\nFlytande honung 1 msk\nSalt 1 tsk\nVetemj\u00f6l 10 dl\nSolrosfr\u00f6n 2 dl\nsesamfr\u00f6n\u00bd dl\nFlingsalt ",
             "howTo": "1. Smula j\u00e4sten i en bunke.\n2. R\u00f6r ut j\u00e4sten med lite av vattnet. R\u00f6r ner resterande vatten, kesella, honung och salt.\n3. Arbeta in mj\u00f6let med en tr\u00e4gaffel. T\u00e4ck bunken med plastfolie och st\u00e4ll in i kylsk\u00e5pet \u00f6ver natten.\n4. N\u00e4sta dag:\n5. V\u00e4rm ugnen till 225\u00b0.\n6. Stj\u00e4lp ut degen p\u00e5 mj\u00f6lad arbetsb\u00e4nk. Forma degen f\u00f6rsiktigt till en rulle och dela i ca 12 bitar. L\u00e4gg p\u00e5 en pl\u00e5t med bakpl\u00e5tspapper och toppa bullarna med fr\u00f6n och lite flingsalt.\n7. Gr\u00e4dda mitt i ugnen 12-15 min.\n8. Servera de kallj\u00e4sta frallorna direkt. Frys in de som blir \u00f6ver!",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -235,8 +214,7 @@
             "renderIngredients": "Vetemj\u00f6l 3 dl\nStandardmj\u00f6lk 6 dl\n\u00c4gg 3\nSalt \u00bd tsk\nSm\u00f6r 2 msk ",
             "howTo": "1. Vispa ut mj\u00f6let i h\u00e4lften av mj\u00f6lken till en sl\u00e4t smet. Vispa i resterande mj\u00f6lk, \u00e4gg och salt.\n2. L\u00e5t smeten sv\u00e4lla ca 10 min.\n3. Sm\u00e4lt sm\u00f6r i en stekpanna och h\u00e4ll ner i smeten. Gr\u00e4dda tunna pannkakor. ",
             "like": [
-                4,
-                7
+                2
             ],
             "rating": [
                 {
@@ -266,8 +244,7 @@
             "renderIngredients": "Vitl\u00f6ksklyftor 4\nF\u00e4rsk ingef\u00e4ra 25 g\nSm\u00f6r 1 msk\nFl\u00e4skf\u00e4rs 200 g\nB\u00f6n och chilipasta 3 msk\nSake 4 msk\n\u00c4gg 2\nNudlar, snabbnudlar 4 f\u00f6rp\npakchoi 1\nB\u00f6ngroddar 4 dl\nSalladsl\u00f6kar 2\nOst 4 skivor ",
             "howTo": "1. Skala och finhacka vitl\u00f6k och ingef\u00e4ra.\n2. Hetta upp sm\u00f6r i en stekpanna. Fr\u00e4s vitl\u00f6k och ingef\u00e4ra p\u00e5 medelv\u00e4rme i ca 30 sek.\n3. Tills\u00e4tt f\u00e4rs och bryn tills den f\u00e5tt fin f\u00e4rg.\n4. Tills\u00e4tt doubanjiang och fr\u00e4s ytterligare 1 min. R\u00f6r ner shaoxingvin och l\u00e5t koka in. Smaka av med salt och svartpeppar. St\u00e4ll \u00e5t sidan.\n5. Koka upp vatten och koka \u00e4ggen i exakt 6 min och 45 sek. H\u00e4ll av och kyl ner \u00e4ggen. Skala och halvera \u00e4ggen. St\u00e4ll \u00e5t sidan.\n6. Koka upp vatten i en kastrull, Plocka bladen fr\u00e5n pakchoi. Koka f\u00f6rst pakchoi i 30 sek. Plocka upp med h\u00e5lslev. G\u00f6r sedan likadant med groddarna. Plocka upp med h\u00e5lslev. St\u00e4ll \u00e5t sidan.\n7. Koka nudlar al dente utan kryddp\u00e5se. Sk\u00f6lj nudlarna i kallt vatten f\u00f6r att f\u00e5 bort st\u00e4rkelse, doppa dem sedan i hett vatten igen precis innan servering.\n8. Strimla salladsl\u00f6ken.\n9. Koka upp vatten, mj\u00f6lk och kycklingbuljong. L\u00e5t sjuda tills buljongen l\u00f6sts upp. Tills\u00e4tt sm\u00f6r.\n10. SLURP!",
             "like": [
-                4,
-                7
+                2
             ],
             "rating": [
                 {
@@ -291,10 +268,7 @@
             ],
             "renderIngredients": "grekiskyoghurt 3 dl\nBanan 1\nFrysta hallon 2 dl\nVaniljpulver 2 krm\nHavregryn \u00bd dl\nDrakfrukt 1\nMango \u00bd\nHallon 1 dl ",
             "howTo": "1. Mixa ihop yoghurt med banan, hallon och vanilj. L\u00e4gg upp i 2 sk\u00e5lar.\n2. G\u00f6r kulor av drakfrukten, skala och sk\u00e4r mangon i tunna skivor.\n3. Toppa din smoothiebowl med havregryn, frukt och b\u00e4r. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -318,10 +292,7 @@
             ],
             "renderIngredients": "Potatis 500 g\nPurjol\u00f6k 1\nSm\u00f6r 1 msk\nGr\u00f6nsaksbuljong 6 dl\nMatlagningsgr\u00e4dde 3 dl\nSalt och peppar\nPersilja hackad 1 dl",
             "howTo": "1. Skala potatisen och ansa purjol\u00f6ken. Sk\u00e4r potatis och purjol\u00f6k i bitar.\n2. Fr\u00e4s purjol\u00f6ken i rapsolja i en kastrull.\n3. Tills\u00e4tt potatis och h\u00e4lften av buljongen.\n4. L\u00e5t koka p\u00e5 medelv\u00e4rme ca 10 min. Mixa soppa sl\u00e4t.\n5. H\u00e4ll i resterande buljong och syrad gr\u00e4dde. Koka upp. Smaka av med salt och peppar. Str\u00f6 \u00f6ver persilja och servera med br\u00f6d. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -346,10 +317,7 @@
             ],
             "renderIngredients": "Pasta 300 g\nFl\u00e4sk 150 g\nSm\u00f6rn\nVispgr\u00e4dde \u00bd dl\nSalt \u00bd tsk\nFinhackad vitl\u00f6ksklyfta 1\nOst riven 3 dl\nSvartpeppar 2 krm\n\u00c4ggulor 4",
             "howTo": "1. Koka spaghettin.\n2. Sk\u00e4r fl\u00e4sket i sm\u00e5 t\u00e4rningar. Stek fl\u00e4sket knaprigt i sm\u00f6r i en stekpanna.\n3. Vispa ihop gr\u00e4dde, salt, vitl\u00f6k och h\u00e4lften av osten.\n4. R\u00f6r ner fl\u00e4sk och ostblandningen i den kokta spaghettin och r\u00f6r kraftigt till en kr\u00e4mig konsistens. 5. Str\u00f6 \u00f6ver resten av osten och peppar. Servera pasta carbonara med en \u00e4ggula. ",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -367,10 +335,7 @@
             ],
             "renderIngredients": "sm\u00f6r 200 g\n standardmj\u00f6lk 2 dl\n standardmj\u00f6lk 2 dl\n\u00c4gg 4\nStr\u00f6socker 4 dl\nVetemj\u00f6l 4 dl\nBakpulver 2\u00bd tsk\nVaniljsocker 2 tsk\nKakao 1\u00bd dl\nSalt 2 krm",
             "howTo": "S\u00e4tt ugnen p\u00e5 175\u00b0.\nSm\u00f6rj och br\u00f6a en form med h\u00f6g kant, 25x35 cm eller l\u00e4gg i ett bakpl\u00e5tspapper.\nSm\u00e4lt sm\u00f6ret, h\u00e4ll i mj\u00f6lken och l\u00e5t svalna.\nVispa \u00e4gg och socker riktigt p\u00f6sigt med elvisp. Det tar ca 5 min.\nBlanda mj\u00f6l, vaniljsocker, kakao, bakpulver och salt. Sikta ner i smeten genom en sil. Tills\u00e4tt sm\u00f6r och mj\u00f6lk och blanda allt till en j\u00e4mn smet. H\u00e4ll smeten i formen.\nGr\u00e4dda i mitten av ugnen ca 25 min. K\u00e4nn efter med en tr\u00e4sticka s\u00e5 kakan \u00e4r helt genomgr\u00e4ddad. L\u00e5t kakan svalna",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -629,10 +594,7 @@
             ],
             "renderIngredients": "4 port ris\n1\/2 blomk\u00e5lshuvud (\u00e0 ca 300 g)\n400 g halloumi eller grillost\n1 msk olja\n2 tsk curry\n200 ml kokosmj\u00f6lk\n1 f\u00f6rp krossadetomater (\u00e0 390 g)\npeppar\n1\/2 dl rostadl\u00f6k",
             "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nAnsa och sk\u00e4r blomk\u00e5len i mindre bitar.\nSk\u00e4r halloumin i t\u00e4rningar och fr\u00e4s dem och h\u00e4lften av blomk\u00e5len i oljan i en stor stekpanna eller gryta.\nKrydda med curry och r\u00f6r i kokosmj\u00f6lken och krossadetomater. Sjud i ca 5 minuter eller tills blomk\u00e5len \u00e4r mjuk. Smaka av med peppar.\nServera grytan med riset, resten av blomk\u00e5len och rostadl\u00f6k.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -657,10 +619,7 @@
             ],
             "renderIngredients": "4 bakpotatisar (\u00e0 ca 180 g)\n2 h\u00e5rdkokta \u00e4gg\n1\/2 majs (\u00e0 150 g)\n1 tonfisk (\u00e0 170 g)\n1 1\/2 dl matlagningsyoghurt\n2 vitl\u00f6ksklyftor\n2 msk kapris\n1\/2 tsk salt\n1 tsk peppar",
             "howTo": "S\u00e4tt ugnen p\u00e5 225\u2009\u00b0C.\nSk\u00f6lj ev potatisen. Picka potatis\u00adar\u00ad\u00ad\u00adna med en sticka och baka p\u00e5 ugnsgallret i mitten av ugnen 50\u201360 minuter tills de \u00e4r mjuka eller tillaga i mikrov\u00e5gs\u00adugnen, full effekt (max 800\u2009W), 10\u201315 minuter.\nSkala och hacka \u00e4ggen. H\u00e4ll av majs och tonfisk. Blanda \u00e4gg, majs, tonfisk, gr\u00e4ddfil, vitl\u00f6k, kapris, salt och peppar.\nSk\u00e4r ett kryss i varje potatis och tryck till. Fyll med tonfiskr\u00f6ran och toppa g\u00e4rna med extra kapris.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -683,10 +642,7 @@
             ],
             "renderIngredients": "250 g sushiris (250 g motsvarar ca 3 dl)\n1\/2 tsk salt\n1 noriark (ca 18x20 cm)\n150 g lax\n1 salladsl\u00f6k\n1 msk majonn\u00e4s\n1 tsk sesamfr\u00f6",
             "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen med saltet. L\u00e5t riset svalna i rumstemperatur under lock.\nHacka laxen i sm\u00e5 bitar och strimla salladsl\u00f6ken. Blanda lax och l\u00f6k med majonn\u00e4s och sesamfr\u00f6.\nDela upp riset i 8 delar (f\u00f6r 8 st). L\u00e4gg en portion ris p\u00e5 en bit plastfolie och platta ut riset till en cirkel p\u00e5 ca 14 cm i diameter. L\u00e4gg p\u00e5 en klick av fyllningen i mitten och vik ihop till en risboll med hj\u00e4lp av plastfolien. Forma en bred triangel av riset, tryck ihop det s\u00e5 att det blir kompakt och h\u00e5ller formen. Ta bort plasten.\nDela noriarket p\u00e5 mitten och d\u00e4refter i fyra remsor (ca 4 cm breda). Vik noribladet runt riset i underkanten.\nDoppa kanterna i valfri topping.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -712,10 +668,7 @@
             ],
             "renderIngredients": "2 vitl\u00f6ksklyftor\n3 msk olivolja\n1\/2 tsk chiliflakes\n1 msk citronskal\n3 msk hackad kapris\n2 f\u00f6rp makrillfil\u00e9 (\u00e0 125 g)\n400 g spaghetti\n1 dl persilja\nsalt\nsvartpeppar",
             "howTo": "Skala och hacka vitl\u00f6ken. Fr\u00e4s vitl\u00f6ken i oljan n\u00e5gra minuter i en stekpanna. Tills\u00e4tt chiliflakes, citronskal och kapris och fr\u00e4s ytterligare n\u00e5gra minuter.\nBryt makrillen i bitar och l\u00e4gg ner tillsammans med tomats\u00e5sen.\nKoka pastan enligt anvisning p\u00e5 f\u00f6rpackningen. H\u00e4ll av och spar 1 dl av kokvattnet (f\u00f6r 4 port). Tills\u00e4tt pastan, kokvattnet och persiljan i stekpannan och blanda. Smaka av med salt och peppar.\nTill servering: Toppa med parmesan och servera med citronklyftor.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -736,10 +689,7 @@
             ],
             "renderIngredients": "ca 1 1\/4 kg laxfil\u00e9\n2 msk olja\n1 1\/2 tsk salt\n1 tsk svartpeppar\n1 msk citronskal",
             "howTo": "S\u00e4tt ugnen p\u00e5 175\u00b0C.\nL\u00e4gg laxen i en smord ugnsform. Ringla \u00f6ver olja och str\u00f6 \u00f6ver salt, peppar och citronskal.\nSt\u00e4ll in i mitten av ugnen ca 25 minuter eller tills laxen har en innertemperatur p\u00e5 52-56\u00b0C.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -771,10 +721,7 @@
             ],
             "renderIngredients": "1 l\u00f6k\n2 vitl\u00f6ksklyftor\n3 selleristj\u00e4lkar\n1 zucchini\n4 msk olivolja\n1 dl r\u00e5ris\n2 msk tomatpur\u00e9\n2 tsk chilipulver\n1 tsk \u00f6rter\n2 1\/2 dl vatten\n1 gr\u00f6nsaksbuljongt\u00e4rning\n1 1\/2 dl oliver\n1 1\/2 dl valn\u00f6tter\n1 1\/2 dl parmesan\nsalt\n4 paprikor",
             "howTo": "Skala och hacka l\u00f6k och vitl\u00f6k. Hacka selleri och zucchini. Stek l\u00f6k, vitl\u00f6k, selleri och zucchini i h\u00e4lften av oljan ca 10 minuter tills allt mjuknar.\nTills\u00e4tt ris, tomatpur\u00e9, chilipulver och \u00f6rter. Fr\u00e4s ytterligare ca 5 minuter.\nTills\u00e4tt vatten och smulad buljongt\u00e4rning. S\u00e4tt p\u00e5 lock och l\u00e5t koka ca 10 minuter eller tills riset \u00e4r mjukt. R\u00f6r ner oliver, n\u00f6tter och ost. Smaka av med salt.\nS\u00e4tt ugnen p\u00e5 200\u00b0C.\nSk\u00e4r bort toppen p\u00e5 paprikan som ett lock och gr\u00f6p ur k\u00e4rnorna. L\u00e4gg paprikorna i en ugnsform ca 20\u2009x\u200925 cm (f\u00f6r 4 port). Fyll dem med risblandningen och l\u00e4gg p\u00e5 toppen av paprikan. Ringla \u00f6ver resten av oljan och h\u00e4ll vatten i formen. St\u00e4ll in i nedre delen av ugnen 25\u201335 minuter eller tills paprikorna \u00e4r mjuka.\nServeringsf\u00f6rslag: Servera med yoghurt eller cr\u00e8mefraiche och ev br\u00f6d och en sallad.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -795,10 +742,7 @@
             ],
             "renderIngredients": "1 l\u00f6k\n2 vitl\u00f6ksklyftor\n1 kyckling (\u00e0 ca 1 kg)\n2 1\/2 l vatten\nev salt",
             "howTo": "Skala l\u00f6k och vitl\u00f6k och halvera. L\u00e4gg i en kastrull med kyckling och vatten och sjud under lock 1\u20133 timmar. Ju l\u00e4ngre den sjuder desto mer smak och fett ger kycklingen ifr\u00e5n sig och buljongen blir godare.\nTa upp kycklingen och plocka k\u00f6ttet. K\u00f6ttet kan du anv\u00e4nda till en soppa, sallad, pasta eller gryta.\nSila buljongen, smaka ev av med salt och l\u00e5t \u00adsvalna. F\u00f6rvara i kylen, buljongen h\u00e5ller ca 5 dagar i kylen eller frys in den buljong du inte anv\u00e4nder direkt.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -821,10 +765,7 @@
             ],
             "renderIngredients": "400 g pasta\n50 g sm\u00f6r\n2 vitl\u00f6ksklyftor\n1 msk citronskal\n1 dl finparmesan (+ ev extra till servering)\n1\/2 tsk salt\n1\/2 tsk svartpeppar",
             "howTo": "Koka pastan enligt anvisning p\u00e5 f\u00f6rpackningen. H\u00e4ll av men spara 3 dl av kokvattnet (f\u00f6r 4 port).\nBryn sm\u00f6ret i en stekpanna.\nS\u00e4nk v\u00e4rmen och riv ner vitl\u00f6ken i sm\u00f6ret och l\u00e5t fr\u00e4sa lite.\nR\u00f6r i pasta, citronskal, parmesan, salt, peppar och lite pastavatten i taget. R\u00f6r till en kr\u00e4mig pasta. Toppa g\u00e4rna med extra parmesan.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -852,10 +793,7 @@
             ],
             "renderIngredients": "1 dl vatten\n1\/2 dl jordn\u00f6tssm\u00f6r\n1\/2 dl sweetchilis\u00e5s\n3 msk soja\n230 g tofu\n2 mor\u00f6tter\n2 avokador\n1\/2 p\u00e5se salladsl\u00f6k (\u00e0 125 g)\n180 g b\u00f6ngroddar\n20 g koriander\n12 ark rispapper\n1 msk sesamfr\u00f6n",
             "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nDipp: Koka upp vattnet. Dra av kastrullen fr\u00e5n v\u00e4rmen och blanda ner jordn\u00f6tssm\u00f6r, sweetchilis\u00e5s och soja. L\u00e5t svalna.\nV\u00e5rrullar: Sk\u00e4r tofun i stavar. Skala mor\u00f6tterna och sk\u00e4r i tunna strimlor. Dela, k\u00e4rna ur och gr\u00f6p ur avokadorna, skiva dem. Ansa och skiva salladsl\u00f6ken. L\u00e4gg upp alla gr\u00f6nsaker och koriander p\u00e5 ett serveringsfat.\nVid bordet: S\u00e4tt fram en stor sk\u00e5l med ljummet vatten p\u00e5 bordet. Var och en doppar sitt eget rispapper i vattnet ca 30 sekunder. Lyft upp, l\u00e5t droppa av och l\u00e4gg det p\u00e5 tallriken. L\u00e4gg p\u00e5 gr\u00f6nsaker och sesamfr\u00f6 och vik ihop till en rulle.\nServera rullarna med dipp och ris.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -879,10 +817,7 @@
             ],
             "renderIngredients": "4 port ris\n250 g pakchoi\n1 lime\nsalt\npeppar\n600 g laxfil\u00e9\n1 tsk olja\n150 ml teriyakimarinad",
             "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nAnsa, sk\u00f6lj och skiva pakchoi tunt. Pressa \u00f6ver saft fr\u00e5n limen och krydda med salt och peppar.\nSk\u00e4r bort skinnet p\u00e5 laxen och sk\u00e4r den i portionsbitar. Stek fisken i oljan i en stekpanna, ca 3 minuter p\u00e5 varje sida eller tills fisken har en innertemperatur p\u00e5 56\u00b0C. H\u00e4ll i teriyakimarinaden och l\u00e5t sjuda n\u00e5gon minut.\nServera laxen med ris och pakchoi.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -915,10 +850,7 @@
             ],
             "renderIngredients": "1 1\/2 dl tahini\n1 1\/2 dl sesamfr\u00f6n\n3\/4 dl vatten\n3 msk mirin\n4 1\/2 msk soja\n3\/4 dl citronjuice\n2 krm chilipulver\n200 g nudlar (t ex soba- eller glasnudlar)\n1 msk rapsolja\n200 g f\u00e4rsk spenat\nsalt\n100 g r\u00f6dk\u00e5l\n250 g svamp (t ex portabello, champinjon, ostronskivling)\n1 msk rapsolja (till stekning av svamp)\n1 f\u00f6rp tofu (\u00e0 ca 270 g)\n1 dl majsst\u00e4rkelse\n2 msk rapsolja (till stekning av tofu)\n2 noriark (torkade sj\u00f6gr\u00e4sark)\n2 msk rostade sesamfr\u00f6n",
             "howTo": "Goma dare-s\u00e5s: Vispa tahini och sesamfr\u00f6nmed vatten sl\u00e4tt. Tills\u00e4tt resten av ingredienserna och r\u00f6r ihop till en s\u00e5s.\nKoka nudlarna enligt anvisning p\u00e5 f\u00f6rpackningen. Kyl i kallt vatten och blanda med olja.\nKoka upp en kastrull med saltat vatten. Tills\u00e4tt spenaten och koka n\u00e5gra sekunder. H\u00e4ll av och spola kallt. Krama ur v\u00e4tskan.\nStrimla r\u00f6dk\u00e5len fint.\nAnsa och bryt svampen i mindre bitar. Stek svampen krispig i lite olja.\nSk\u00e4r tofun i mindre bitar och v\u00e4nd i majsst\u00e4rkelsen. Stek krispig och gyllene i olja.\nL\u00e4gg nudlarna i portionssk\u00e5lar. Toppa med svampen, r\u00f6dk\u00e5len, spenaten och tofun. Ringla \u00f6ver s\u00e5sen och str\u00f6 \u00f6ver sesamfr\u00f6noch nori.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -944,10 +876,7 @@
             ],
             "renderIngredients": "2 majskorn (\u00e0 150 g)\n100 g sm\u00f6r\n1 1\/2 l vatten\n4 paket snabbnudlar (\u00e0 ca 85 g)\n4 msk misopasta eller soja (4 msk misopasta motsvarar 4 tsk soja)\n2 msk ingef\u00e4ra\n4 msk rostadl\u00f6k\n4 msk sesamfr\u00f6n (sesamfr\u00f6blandning)\nca 1\/2 p\u00e5se babyspenat (\u00e0 65 g)\n1 - 2 salladsl\u00f6kar",
             "howTo": "H\u00e4ll av v\u00e4tskan fr\u00e5n majsen och torka torr med hush\u00e5llspapper. Stek i en torr stekpanna p\u00e5 medelv\u00e4rme 5\u201310 minuter tills den f\u00e5tt f\u00e4rg. H\u00f6j v\u00e4rmen och tills\u00e4tt sm\u00f6ret och l\u00e5t det bli lite karamelliserat. \nKoka upp vattnet med buljongp\u00e5sarna fr\u00e5n nudelpaketen. Vispa ner miso och ingef\u00e4ra. Tills\u00e4tt nudlarna och koka dem enligt anvisning p\u00e5 f\u00f6rpackningen. \nTill servering: F\u00f6rdela nudelsoppan i tallrikar och toppa med den sm\u00f6rstekta majsen, rostadl\u00f6k och sesamfr\u00f6n. Toppa g\u00e4rna med salladsl\u00f6k och spenat.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -981,10 +910,7 @@
             ],
             "renderIngredients": "4 port jasminris\n 450 g ryggbiff\n1 l\u00f6k\n1 vitl\u00f6ksklyfta\n1\/2 broccoli\n1\/2 paprika\nS\u00e5s\n1 dl ostrons\u00e5s\n2 msk soja\n1 msk oxfond\n1 msk str\u00f6socker\n1 tsk balsamico\n1 tsk majsst\u00e4rkelse\n1\/2 dl vatten\n2 msk sesamolja\n2 krm salt\n1 krm svartpeppar\n1 burk bambuskott (\u00e0 ca 200 g)\n2 finskurna salladsl\u00f6kar",
             "howTo": "Koka riset enligt anvisning p\u00e5 f\u00f6rpackningen.\nSk\u00e4r ryggbiffen i strimlor. Skala l\u00f6k och vitl\u00f6k. Sk\u00e4r l\u00f6ken i stora bitar och finhacka vitl\u00f6ken. Sk\u00e4r broccolin i buketter och skiva stammen tunt. Dela, k\u00e4rna ur och sk\u00e4r paprikan i bitar.\nS\u00e5s: Blanda ostrons\u00e5s, soja, fond, socker, balsamico, majsst\u00e4rkelse och vatten.\nHetta upp en stekpanna med sesamolja och tills\u00e4tt biff, l\u00f6k, vitl\u00f6k, salt och peppar. L\u00e5t fr\u00e4sa 3 minuter tills det f\u00e5r lite f\u00e4rg. Tills\u00e4tt s\u00e5sen och l\u00e5t koka 2\u20133 minuter.\nH\u00e4ll av bambuskotten. Tills\u00e4tt broccoli, paprika, bambuskott och salladsl\u00f6k. Fr\u00e4s ytterligare 2\u20133 minuter. Servera med ris.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
@@ -1013,10 +939,7 @@
             ],
             "renderIngredients": "4 port ris\n2 gula l\u00f6kar\n2 mor\u00f6tter\n1 paprika\n500 g kycklingfil\u00e9\n2 msk olja\n2 tsk curry\n400 ml kokosmj\u00f6lk\n2 dl h\u00f6nsbuljong\n2 tsk honung\nsalt och peppar\n2 dl matyoghurt",
             "howTo": "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.\nSkala l\u00f6k och mor\u00f6tter, strimla l\u00f6ken och skiva mor\u00f6tterna. Dela, k\u00e4rna ur och strimla paprikan.\nStrimla kycklingen. Stek den i oljan i en gryta tillsammans med curry och l\u00f6k ca 3 min.\nTills\u00e4tt mor\u00f6tter, paprika, kokosmj\u00f6lk och buljong. L\u00e5t sjuda under lock ca 10 minuter. Smaka av med honung, salt och peppar.\nTill servering: Servera kycklingcurryn med ris och en klick yoghurt.",
-            "like": [
-                4,
-                7
-            ],
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,

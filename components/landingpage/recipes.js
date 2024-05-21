@@ -124,24 +124,40 @@ function render_instance_recipe (instance_data) {
     const recipe_name = document.createElement('div');
     recipe_name.classList.add("recipe_name"); 
     recipe_name.innerText = instance_data.name;
-
-    
     container_recipe.appendChild(recipe_name); 
 
+    // Tid för receptet:
+    const recipe_time = document.createElement('p');
+    recipe_time.classList.add("recipe_time"); 
+    recipe_time.innerText = instance_data.time;
+    container_recipe.appendChild(recipe_time); 
 
-    // rank
 
+    // Lägg till rankningsbilder (4 stjärnor)
+    const rank_div = document.createElement('div');
+
+    rank_div.classList.add("rank_div");
+    for (let i = 0; i < 5; i++) {
+        const rank_img = document.createElement('img');
+        rank_img.classList.add("rank_img");
+        rank_img.src = 'media/img/star.png'; // Ange sökvägen till bilden i img-mappen
+        rank_div.appendChild(rank_img);
+    }
+    container_recipe.appendChild(rank_div);
+
+
+    // LIKE knapp
     const currentUser = STATE.get('user');
     // instance_data.likes.includes( currentUser.id) 
-    // LIKE knapp
+
     const like_btn = document.createElement('button'); 
     like_btn.classList.add ('like_btn');
     like_btn.innerText = instance_data.like.includes( currentUser.id)  ? 'Unlike' : 'Like';  
 
     // lägger till en eventlyssnare för att hantera LIKEknapp
-    like_btn.addEventListener('click', function() {
+    like_btn.addEventListener('click', async function() {
 
-            const likeRequest = new Request('../api/login.php',{
+            const likeRequest = new Request('../api/like.php',{
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -149,77 +165,13 @@ function render_instance_recipe (instance_data) {
                 recipe_id: instance_data.id
             }),
 
+
         });
-        STATE.Patch(likeRequest, currentUser.id, instance_data);
 
-        // Togglar favorite status
-        instance_data.favorite = !instance_data.favorite;
+        await STATE.Patch(likeRequest, currentUser.id, instance_data);
 
-        // Uppdaterar knappen med text baserat på nya favorit status 
-        if (instance_data.favorite) {
-            like_btn.innerText = 'Unlike';
-        } else {
-            like_btn.innerText = 'Like';
-        }
-
-        // Kollar om favoriten är markerad eller inte + lägger till/tar bort CSS-klass
-        if (instance_data.favorite) {
-                like_btn.classList.add('favorited');
-        } else {
-            like_btn.classList.remove('favorited');
-        }
-
-        /*
-        ELLER:
-        instance_data.favorite = !instance_data.favorite;
-        like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';
-        like_btn.classList.toggle('favorited', instance_data.favorite);
-
-        */ 
-            //STATE.patch(..);
-
+        instance_data.like.includes(currentUser.id) ? like_btn.innerText = 'Unlike' : like_btn.innerText = 'Like';
     });
-
-
-    // TEST 2 med LIKE btn 
-
-    /*
-    like_btn.addEventListener('click', async function() {
-        
-        const userId = getUserId(); // getUserId() behöver skapas för att hämta användarens ID?? 
-
-        const recipeId = instance_data.id;
-    
-        const likeRequest = new Request('../api/like.php', {
-
-            method: 'PATCH', 
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                user_id: userId,
-                recipe_id: recipeId
-            }),
-        });
-    
-        try {
-            const response = await fetcher(likeRequest); // fetcher för att skicka förfrågan
-
-            // Om like sparades, uppdatera knappens text 
-            if (response.ok) {
-
-                instance_data.like.push(userId); // lägger till user-ID i "like" arrayen för specifika recept
-
-                like_btn.innerText = 'Unlike';
-                like_btn.classList.add('favorited');
-
-            } else {
-                console.error(response); // ev. felmeddelanden
-            }
-
-        } catch (error) {
-
-            console.error(error);
-        }
-    }); */
 
     container_recipe.appendChild(like_btn);
 
@@ -228,14 +180,6 @@ function render_instance_recipe (instance_data) {
     let recipe_container = document.getElementById("sorted_recipes_DOM");
 
     recipe_container.append(container_recipe);
-
-
-    /*
-    // för alla recepten:
-    let all_recipes_container = document.getElementById("all_recipes_container");
-
-    all_recipes_container.append(container_recipe);*/
-
 }
 
 
@@ -292,49 +236,57 @@ function render_ALL_instance_recipe(instance_data) {
     const recipe_name = document.createElement('div');
     recipe_name.classList.add("recipe_name"); 
     recipe_name.innerText = instance_data.name;
-    
     container_recipe.appendChild(recipe_name); 
 
 
-    // rank
+    // Tid för receptet:
+    const recipe_time = document.createElement('p');
+    recipe_time.classList.add("recipe_time"); 
+    recipe_time.innerText = instance_data.time;
+    container_recipe.appendChild(recipe_time); 
+   
+   
+       // Lägg till rankningsbilder (4 stjärnor)
+    const rank_div = document.createElement('div');
+   
+    rank_div.classList.add("rank_div");
+       for (let i = 0; i < 5; i++) {
+           const rank_img = document.createElement('img');
+           rank_img.classList.add("rank_img");
+           rank_img.src = 'media/img/star.png'; // Ange sökvägen till bilden i img-mappen
+           rank_div.appendChild(rank_img);
+       }
+    container_recipe.appendChild(rank_div);
 
 
 
     // LIKE knapp
+     const currentUser = STATE.get('user');
+    // instance_data.likes.includes( currentUser.id) 
+
     const like_btn = document.createElement('button'); 
     like_btn.classList.add ('like_btn');
-    like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';  
+    like_btn.innerText = instance_data.like.includes( currentUser.id)  ? 'Unlike' : 'Like';  
 
     // lägger till en eventlyssnare för att hantera LIKEknapp
-    like_btn.addEventListener('click', function() {
+    like_btn.addEventListener('click', async function() {
 
-        // Togglar favorite status
-        instance_data.favorite = !instance_data.favorite;
+            const likeRequest = new Request('../api/like.php',{
+            method: 'PATCH',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                user_id: currentUser.id, //användarnamnet vi vill hämta från api:et 
+                recipe_id: instance_data.id
+            }),
 
-        // Uppdaterar knappen med text baserat på nya favorit status 
-        if (instance_data.favorite) {
-            like_btn.innerText = 'Unlike';
-        } else {
-            like_btn.innerText = 'Like';
-        }
 
-        // Kollar om favoriten är markerad eller inte + lägger till/tar bort CSS-klass
-        if (instance_data.favorite) {
-                like_btn.classList.add('favorited');
-        } else {
-            like_btn.classList.remove('favorited');
-        }
+        });
 
-        /*
-        ELLER:
-        instance_data.favorite = !instance_data.favorite;
-        like_btn.innerText = instance_data.favorite ? 'Unlike' : 'Like';
-        like_btn.classList.toggle('favorited', instance_data.favorite);
+        await STATE.Patch(likeRequest, currentUser.id, instance_data);
 
-        */ 
-            //STATE.patch(..);
-
+        instance_data.like.includes(currentUser.id) ? like_btn.innerText = 'Unlike' : like_btn.innerText = 'Like';
     });
+
 
     container_recipe.appendChild(like_btn);
 

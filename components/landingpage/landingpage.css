@@ -6,10 +6,15 @@ body {
 
 
 /*    HEADER och NAV   */
-header {
+header .mainHeader {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.slogan_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 .nav_meny {
@@ -42,8 +47,8 @@ header {
     position: absolute;
     bottom: 700px;  /*  konstigt?? */
     right: 10px;
-    width: 20px; 
-    height: 20px;
+    width: 10px; 
+    height: 10px;
     cursor: pointer; 
 
     background-image: url(/media/img/usericon.png);
@@ -57,7 +62,7 @@ header {
 }
 
 
-header img:first-of-type {
+header .mainHeader img:first-of-type {
     position: relative;
     height: 350px;
     object-fit: cover;
@@ -75,20 +80,20 @@ h1{
     font-family: bigpixelShadow;
 }
 
-header div:nth-of-type(1) {
+header .mainHeader div:nth-of-type(1) {
     text-align: center;
     padding: 30px;
     font-size: 20px;
 }
 
-header .img_bottom {
+header .mainHeader .img_bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-header .img_bottom img {
+header .mainHeader .img_bottom img {
     height: 356px;
 }
 

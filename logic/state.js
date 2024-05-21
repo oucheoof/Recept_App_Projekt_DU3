@@ -9,7 +9,7 @@ const STATE = {
     get,
     Post,
     Patch,
-    // Delete,
+    Delete,
     
     token: () => sessionStorage.getItem( 'token'),
 
@@ -97,11 +97,18 @@ async function Delete(rqst){
 
 async function Patch(rqst, currentUserId, recipe){
     const data = await fetcher(rqst);
-    console.log(data);
-/*     recipe.like.findIndex(e => e.id === data.id);
-    console.log(recipe.like.findIndex(e => e.id === data.id)); */
-    
+    let arrayOfUsersId = recipe.like;
 
-
-    //functionaliteten av att spara/avspara ett recept
+    if (arrayOfUsersId.includes(currentUserId)) {
+        // Remove user from the liked array
+        const index = arrayOfUsersId.indexOf(currentUserId);
+        if (index !== -1) {
+            arrayOfUsersId.splice(index, 1);
+            console.log(arrayOfUsersId);
+        }
+    } else {
+        // Add user to the liked array
+        arrayOfUsersId.push(currentUserId);
+        console.log(arrayOfUsersId);
+    }
 }

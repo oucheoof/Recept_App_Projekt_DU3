@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 #matched_recipes_title {
@@ -39,8 +39,8 @@
 
 /*  Container div för enskilt recept  */
 .container_recipe  {
-    margin: 7px 30px;
-    height: 400px;
+    margin: 10px 30px;
+    height: 450px;
     /*border: 1px solid rgb(157, 219, 156);*/
     transition: transform 0.3s ease;
     overflow: hidden;
@@ -70,20 +70,45 @@
 
 .recipe_name {
     font-family: bigpixelShadow;
-    margin: 1rem 0;
+    margin: 1.3rem 0 0.8rem 0;
     font-size: 1.1rem;
     text-align: left;
 }
 
+.recipe_time {
+    margin-bottom: 0.8rem ;
+    display: flex;
+    align-self: flex-start;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rank_div {
+    display: flex;
+    flex-direction: row;
+}
+
+.rank_img {
+    height: 15px; 
+    width: 15px;
+    margin-bottom: 10px; /* Mellanrum under stjärnan */
+}
 
 /*  like knapp  */
 
 .like_btn {
+    
     background-color: white;
     border: 1px solid rgb(103, 103, 103);
-    height: 35px;
+    height: 30px;
     width: 60px;
-    border-radius: 10px;
+    border-radius: 8px;
+}
+
+.like_btn:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
 }
 
 
@@ -104,7 +129,7 @@ h4 {
     /*gap: 20px;*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 160vh;
+    height: 185vh;
     overflow: auto;
 
 }
