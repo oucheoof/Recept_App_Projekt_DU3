@@ -95,6 +95,10 @@ dialog::backdrop {
     flex-grow: 1; 
 }
 
+#recipeTime {
+    font-size: 20px;
+}
+
 /*  rank stjärnor i popup */
 .rank_img_popup {
     height: 20px;

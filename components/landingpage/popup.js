@@ -66,6 +66,12 @@ function updatePopup(recipe_instance){
     popUpTitle.textContent = recipe_instance.name;
     divInPopUp.appendChild(popUpTitle);
 
+    // Recept tid
+    let recipeTime = document.createElement("p");
+    recipeTime.id = "recipeTime";
+    recipeTime.textContent = `${recipe_instance.time}`;
+    divInPopUp.appendChild(recipeTime);
+
 
     // rank stjärnor
     let rank_div_popup = document.createElement('div');
