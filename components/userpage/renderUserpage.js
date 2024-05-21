@@ -120,7 +120,7 @@ function renderLikedRecipes(parentID){
     let arrayOfLikes = likedRecipesArray(); //LOGIK för gillade recept
 
 
-    renderLikedInstance( arrayOfLikes);
+    renderLikedInstance(arrayOfLikes);
 }
 
 function renderLikedInstance(instance_data){
@@ -130,8 +130,8 @@ function renderLikedInstance(instance_data){
         const likedRecipesContainer = document.createElement("div");
         likedRecipesContainer.classList.add("likedRecipesContainer"); // Lägger till en CSS-klass
         likedRecipesContainer.id = instance_data[i].name;
-        document.getElementById('wrapper').appendChild(likedRecipesContainer);
-        
+        document.getElementById('likedRecipesContainer').appendChild(likedRecipesContainer);
+
         // Recept bild
         const recipe_img = document.createElement('img');
         recipe_img.classList.add("recipe_image");
