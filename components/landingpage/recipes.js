@@ -29,7 +29,6 @@ function render_sorted_recipes_DOM(parent) { // matched_recepies är parent
         // anrop med parent och instance datan -> datan i recipes
         render_instance_recipe(recipesArray[i]);
     }
-     
 
 }
 
@@ -124,6 +123,7 @@ function render_instance_recipe (instance_data) {
     const recipe_name = document.createElement('div');
     recipe_name.classList.add("recipe_name"); 
     recipe_name.innerText = instance_data.name;
+
     container_recipe.appendChild(recipe_name); 
 
     // Tid för receptet:

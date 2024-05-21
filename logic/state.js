@@ -23,10 +23,6 @@ function renderLogReg(){
 }
 
 
-// async function Patch(entity){}
-
-// async function Delete(entity){}
-
 async function renderApp() {
 
 
