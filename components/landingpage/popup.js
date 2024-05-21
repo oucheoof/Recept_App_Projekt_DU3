@@ -66,6 +66,45 @@ function updatePopup(recipe_instance){
     popUpTitle.textContent = recipe_instance.name;
     divInPopUp.appendChild(popUpTitle);
 
+
+    // rank stjärnor
+    let rank_div_popup = document.createElement('div');
+    rank_div_popup.classList.add("rank_div_popup");
+    
+    for (let i = 0; i < 5; i++) {
+        const rank_img_popup = document.createElement('img');
+        rank_img_popup.classList.add("rank_img_popup");
+        rank_img_popup.src = 'media/img/star.png'; // Ange sökvägen till bilden i img-mappen
+        rank_div_popup.appendChild(rank_img_popup);
+    }
+    divInPopUp.appendChild(rank_div_popup);
+
+    
+    // Lägg till LIKE knapp
+    const currentUser = STATE.get('user');
+
+    const like_btn = document.createElement('button');
+    like_btn.classList.add('like_btn_popup');
+    like_btn.innerText = recipe_instance.like.includes(currentUser.id) ? 'Unlike' : 'Like';
+    
+    
+    like_btn.addEventListener('click', async function() {
+        const likeRequest = new Request('../api/like.php', {
+                method: 'PATCH',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    user_id: currentUser.id, //användarnamnet vi vill hämta från api:et 
+                    recipe_id: recipe_instance.id
+                }),
+        });
+    
+        await STATE.Patch(likeRequest, currentUser.id, recipe_instance);
+    
+        recipe_instance.like.includes(currentUser.id) ? like_btn.innerText = 'Unlike' : like_btn.innerText = 'Like';
+    });
+    
+    divInPopUp.appendChild(like_btn);
+
     // eventuellt en kortre beskrivning av recept?
     
     /*let popUpBeskrivning = document.createElement("p");
