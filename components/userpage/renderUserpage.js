@@ -7,7 +7,6 @@ function renderUserHeader(parentID){
     }
 
     const userHeader = document.createElement('header');
-    userHeader.classList.add('userHeader');
 
     // Create userControl div
     const userControlDiv = document.createElement('div');
