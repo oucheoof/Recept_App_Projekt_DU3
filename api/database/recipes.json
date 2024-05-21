@@ -58,6 +58,7 @@
         {
             "id": 3,
             "name": "Fl\u00e4derdryck",
+            "time": "60 min",
             "ingredients": [
                 "fl\u00e4derblomsklasar",
                 "citron",
@@ -80,6 +81,7 @@
         {
             "id": 4,
             "name": "Spagetti med kr\u00e4mig pesto",
+            "time": "30 min",
             "ingredients": [
                 "basilika",
                 "pinjen\u00f6tter",
@@ -104,6 +106,7 @@
         {
             "id": 5,
             "name": "K\u00f6ttbullar",
+            "time": "45 min",
             "ingredients": [
                 "k\u00f6ttf\u00e4rs",
                 "str\u00f6br\u00f6d",
@@ -116,7 +119,9 @@
             ],
             "renderIngredients": "K\u00f6ttf\u00e4rs 500 g\nStr\u00f6br\u00f6d \u00bd dl\nStandardmj\u00f6lk 1 dl\nFinhackad l\u00f6k 2 msk\n\u00c4gg 1\nSalt 1 tsk\nSvartpeppar 1 krm\nSm\u00f6r & rapsolja 2 msk ",
             "howTo": "1. Blanda str\u00f6br\u00f6d och mj\u00f6lk. L\u00e5t sv\u00e4lla 10 min.\n2. L\u00e4gg i f\u00e4rs, l\u00f6k, \u00e4gg, salt och peppar. R\u00f6r till en j\u00e4mn smet.\n3. Forma smeten till j\u00e4mna k\u00f6ttbullar. Stek dem i rapsolja p\u00e5 medelv\u00e4rme ca 5 min. ",
-            "like": [],
+            "like": [
+                2
+            ],
             "rating": [
                 {
                     "user_id": 7,
@@ -128,6 +133,7 @@
         {
             "id": 6,
             "name": "Cornflakes Fisk",
+            "time": "30 min",
             "ingredients": [
                 "torskfil\u00e9",
                 "vatten",
@@ -155,6 +161,7 @@
         {
             "id": 7,
             "name": "Stekt ris",
+            "time": "20 min",
             "ingredients": [
                 "jasminris",
                 "morot",
@@ -179,6 +186,7 @@
         {
             "id": 8,
             "name": "Frallor",
+            "time": "60 min",
             "ingredients": [
                 "j\u00e4st",
                 "vatten",
@@ -204,6 +212,7 @@
         {
             "id": 9,
             "name": "Pannkakor",
+            "time": "15 min",
             "ingredients": [
                 "vetemj\u00f6l",
                 "standardmj\u00f6lk",
@@ -227,6 +236,7 @@
         {
             "id": 10,
             "name": "Ramen",
+            "time": "40 min",
             "ingredients": [
                 "vitl\u00f6ksklyftor",
                 "f\u00e4rsk ingef\u00e4ra",
@@ -257,6 +267,7 @@
         {
             "id": 11,
             "name": "Smoothie Bowl",
+            "time": "10 min",
             "ingredients": [
                 "grekiskyoghurt",
                 "banan",
@@ -280,6 +291,7 @@
         {
             "id": 12,
             "name": "Potatis och Purjol\u00f6kssoppa",
+            "time": "40 min",
             "ingredients": [
                 "purjol\u00f6k",
                 "potatis",
@@ -304,6 +316,7 @@
         {
             "id": 13,
             "name": "Pasta Carbonara",
+            "time": "20 min",
             "ingredients": [
                 "pasta",
                 "fl\u00e4sk",
@@ -329,6 +342,7 @@
         {
             "id": 14,
             "name": "K\u00e4rleksmums",
+            "time": "45 min",
             "ingredients": [
                 "tomat",
                 "pasta"
@@ -347,6 +361,7 @@
         {
             "id": 15,
             "name": "Chokladbollar",
+            "time": "10 min",
             "ingredients": [
                 "sm\u00f6r",
                 "str\u00f6socker",
@@ -364,6 +379,7 @@
         {
             "id": 16,
             "name": "Picklad r\u00f6dl\u00f6k",
+            "time": "60 min",
             "ingredients": [
                 "\u00e4ttiksprit",
                 "str\u00f6socker",
@@ -379,6 +395,7 @@
         {
             "id": 17,
             "name": "Grekisk sallad",
+            "time": "5 min",
             "ingredients": [
                 "r\u00f6dl\u00f6k",
                 "gurka",
@@ -399,6 +416,7 @@
         {
             "id": 18,
             "name": "Kokt potatis",
+            "time": "20 min",
             "ingredients": [
                 "potatis",
                 "vatten",
@@ -416,6 +434,7 @@
         {
             "id": 19,
             "name": "Stuvad spenat",
+            "time": "10 min",
             "ingredients": [
                 "spenat",
                 "sm\u00f6r",
@@ -433,6 +452,7 @@
         {
             "id": 20,
             "name": "Enkel kycklinggryta",
+            "time": "30 min",
             "ingredients": [
                 "kycklingbr\u00f6stfil\u00e9",
                 "rapsolja",
@@ -451,6 +471,7 @@
         {
             "id": 21,
             "name": "Smoothie med hallon",
+            "time": "5 min",
             "ingredients": [
                 "hallon",
                 "vaniljyoghurt",
@@ -465,6 +486,7 @@
         {
             "id": 22,
             "name": "K\u00e5lsoppa",
+            "time": "20 min",
             "ingredients": [
                 "potatis",
                 "l\u00f6k",
@@ -487,6 +509,7 @@
         {
             "id": 23,
             "name": "Tryffelpasta med Gruy\u00e8re",
+            "time": "30 min",
             "ingredients": [
                 "pasta",
                 "vitl\u00f6ksklyftor",
@@ -507,6 +530,7 @@
         {
             "id": 24,
             "name": "Ayran",
+            "time": "10 min",
             "ingredients": [
                 "yoghurt",
                 "vatten",
@@ -522,6 +546,7 @@
         {
             "id": 25,
             "name": "Pastasallad med ost och kron\u00e4rtskocka",
+            "time": "20 min",
             "ingredients": [
                 "pasta",
                 "vitm\u00f6gelost",
@@ -544,6 +569,7 @@
         {
             "id": 26,
             "name": "Banankaka",
+            "time": "40 min",
             "ingredients": [
                 "sm\u00f6r",
                 "standardmj\u00f6lk",
@@ -563,6 +589,7 @@
         {
             "id": 27,
             "name": "Fattiga Riddare",
+            "time": "30 min",
             "ingredients": [
                 "\u00e4gg",
                 "mj\u00f6lk",
@@ -581,6 +608,7 @@
         {
             "id": 28,
             "name": "Halloumigryta med ris",
+            "time": "40 min",
             "ingredients": [
                 "ris",
                 "blomk\u00e5l",
@@ -606,6 +634,7 @@
         {
             "id": 29,
             "name": "Bakad potatis med tonfiskr\u00f6ra",
+            "time": "40 min",
             "ingredients": [
                 "bakpotatisar",
                 "\u00e4gg",
@@ -631,6 +660,7 @@
         {
             "id": 30,
             "name": "Onigiri",
+            "time": "45 min",
             "ingredients": [
                 "sushiris",
                 "salt",
@@ -654,6 +684,7 @@
         {
             "id": 31,
             "name": "Pasta med makrill i tomats\u00e5s",
+            "time": "20 min",
             "ingredients": [
                 "vitl\u00f6ksklyftor",
                 "olivolja",
@@ -680,6 +711,7 @@
         {
             "id": 32,
             "name": "Laxfil\u00e9 i ugn med citron",
+            "time": "30 min",
             "ingredients": [
                 "laxfil\u00e9",
                 "olja",
@@ -701,6 +733,7 @@
         {
             "id": 33,
             "name": "Fyllda paprikor med ris",
+            "time": "40 min",
             "ingredients": [
                 "l\u00f6k",
                 "vitl\u00f6ksklyftor",
@@ -733,6 +766,7 @@
         {
             "id": 34,
             "name": "Kycklingbuljong",
+            "time": "20 min",
             "ingredients": [
                 "l\u00f6k",
                 "vitl\u00f6ksklyftor",
@@ -754,6 +788,7 @@
         {
             "id": 35,
             "name": "Citron-och sm\u00f6rpasta",
+            "time": "30 min",
             "ingredients": [
                 "pasta",
                 "sm\u00f6r",
@@ -777,6 +812,7 @@
         {
             "id": 36,
             "name": "V\u00e5rrullar med jordn\u00f6tsdipp",
+            "time": "40 min",
             "ingredients": [
                 "vatten",
                 "jordn\u00f6tssm\u00f6r",
@@ -805,6 +841,7 @@
         {
             "id": 37,
             "name": "Lax teriyaki",
+            "time": "30 min",
             "ingredients": [
                 "ris",
                 "pakchoi",
@@ -829,6 +866,7 @@
         {
             "id": 38,
             "name": "Tofu bowl",
+            "time": "20 min",
             "ingredients": [
                 "tahini",
                 "sesamfr\u00f6n",
@@ -862,6 +900,7 @@
         {
             "id": 39,
             "name": "Ramen Miso",
+            "time": "15 min",
             "ingredients": [
                 "majskorn",
                 "sm\u00f6r",
@@ -888,6 +927,7 @@
         {
             "id": 40,
             "name": "Biffwok",
+            "time": "20 min",
             "ingredients": [
                 "jasminris",
                 "ryggbiff",
@@ -922,6 +962,7 @@
         {
             "id": 41,
             "name": "Kycklingcurry med ris",
+            "time": "40 min",
             "ingredients": [
                 "ris",
                 "gula l\u00f6kar",
