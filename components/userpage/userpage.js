@@ -1,4 +1,2 @@
-// renderUserpageContainer();
 renderUserPage();
 
-// renderApp();
