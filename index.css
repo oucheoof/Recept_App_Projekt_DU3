@@ -8,3 +8,8 @@ body {
     font-family: bigpixelShadow;
     src: url(./fonts/big_pixel_shadow_demo.otf);
 }
+
+@font-face {
+    font-family: RubikM;
+    src: url(./fonts/Rubik-Medium.ttf);
+}

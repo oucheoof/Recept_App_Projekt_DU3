@@ -47,7 +47,7 @@ function render_header (header) {
         <img src="./media/img/omslag1.png">
         <h1 class="title"> Kitsch </h1>
         
-        <div class="slogan_text"> <p>Hitta recept baserat på ingredienser du har hemma???</p></div>
+        <div class="slogan_text"> <p>Skapa smakupplevelser med dina ingredienser</p></div>
         
         <div class="img_bottom">
 

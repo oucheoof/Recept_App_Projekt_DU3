@@ -13,7 +13,8 @@ header {
 }
 
 .slogan_text p{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: RubikM;
+    color: rgb(34, 34, 34);
     font-size: 17px;
 }
 
