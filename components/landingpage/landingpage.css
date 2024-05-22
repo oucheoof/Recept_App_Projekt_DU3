@@ -107,7 +107,7 @@ header .img_bottom img {
     display: flex;
     flex-direction: column;
     
-    margin: 0px 0 100px 0;   /*   MAIN HAR MARGIN   ->  vitt space  */
+    margin: 0;   /*   MAIN HAR MARGIN   ->  vitt space  */
 }
 
 #sort {
@@ -133,7 +133,7 @@ header .img_bottom img {
 #recipes_all {
 
     padding-top: 1%;
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     height: 1600px;
     border: 1px solid rgb(159, 205, 177);
 
@@ -143,7 +143,13 @@ header .img_bottom img {
 
 footer {
     height: auto;
-    background-color: white;
+    background-color: rgb(169, 213, 187);
+    background-image: url(/media/img/omslag3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
+    padding-top: 7%;
+    padding-bottom: 3%;
 }
