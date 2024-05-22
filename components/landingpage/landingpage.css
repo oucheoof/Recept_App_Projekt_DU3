@@ -121,6 +121,8 @@ header .img_bottom img {
 
 /*  sektionen med matchade recept */
 #matched_recepies {
+    padding-bottom: 4%;
+    padding-top: 3%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -142,7 +144,6 @@ header .img_bottom img {
 footer {
     height: auto;
     background-color: white;
-
     display: flex;
     flex-direction: column;
 }
