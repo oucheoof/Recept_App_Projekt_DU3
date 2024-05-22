@@ -1,11 +1,11 @@
 
-function renderUserHeader(parentID){
-
-    const user = {
-        username: 'usernametest',
-        email: 'emailtest',
-        counter: 7
-    }
+async function renderUserHeader(parentID){
+    
+    const user = await getCurrentUser();
+    let likedRecipes = likedRecipesArray();
+    let count = likedRecipes.length;
+   
+    
 
     const userHeader = document.createElement('header');
     userHeader.classList.add('userHeader');
@@ -52,7 +52,7 @@ function renderUserHeader(parentID){
     userInfoDiv.appendChild(heading3);
 
     const heading4 = document.createElement('h4');
-    heading4.textContent = `${user.counter} saved recipes`;
+    heading4.textContent = `${count} stycken sparade recept`;
     userInfoDiv.appendChild(heading4);
 
 
