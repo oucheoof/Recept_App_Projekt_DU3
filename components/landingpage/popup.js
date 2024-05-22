@@ -61,21 +61,30 @@ function updatePopup(recipe_instance){
     popupImg.src = recipe_instance.image;
     divInPopUp.appendChild(popupImg);
 
+    let popupTitleContainer = document.createElement("div")
+    popupTitleContainer.id = "popupTitleContainer";
+    divInPopUp.appendChild(popupTitleContainer);
+
     let popUpTitle = document.createElement("h2");
     popUpTitle.id = "popUpTitle";
     popUpTitle.textContent = recipe_instance.name;
-    divInPopUp.appendChild(popUpTitle);
+    popupTitleContainer.appendChild(popUpTitle);
+
+    let popupButtonStarContainer = document.createElement("div");
+    popupButtonStarContainer.id = "popupButtonStarContainer";
+    popupTitleContainer.appendChild(popupButtonStarContainer);
 
     // Recept tid
     let recipeTime = document.createElement("p");
     recipeTime.id = "recipeTime";
     recipeTime.textContent = `${recipe_instance.time}`;
-    divInPopUp.appendChild(recipeTime);
+    popupButtonStarContainer.appendChild(recipeTime);
 
 
     // rank stjärnor
     let rank_div_popup = document.createElement('div');
     rank_div_popup.classList.add("rank_div_popup");
+    popupButtonStarContainer.appendChild(rank_div_popup);
     
     for (let i = 0; i < 5; i++) {
         const rank_img_popup = document.createElement('img');
@@ -83,7 +92,6 @@ function updatePopup(recipe_instance){
         rank_img_popup.src = 'media/img/star.png'; // Ange sökvägen till bilden i img-mappen
         rank_div_popup.appendChild(rank_img_popup);
     }
-    divInPopUp.appendChild(rank_div_popup);
 
     
     // Lägg till LIKE knapp
@@ -109,7 +117,7 @@ function updatePopup(recipe_instance){
         recipe_instance.like.includes(currentUser.id) ? like_btn.innerText = 'Unlike' : like_btn.innerText = 'Like';
     });
     
-    divInPopUp.appendChild(like_btn);
+    popupTitleContainer.appendChild(like_btn);
 
     // eventuellt en kortre beskrivning av recept?
     

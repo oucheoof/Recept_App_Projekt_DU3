@@ -97,8 +97,18 @@ dialog::backdrop {
 
 #recipeTime {
     font-size: 20px;
+    padding-left: 5%;
+    padding-right: 3%;    
 }
 
+#popupButtonStarContainer{
+    padding-top: 3%;
+}
+#popupTitleContainer{
+    margin-left: 2%;
+    margin-top: 0%;
+    width: inherit;
+}
 /*  rank stjärnor i popup */
 .rank_img_popup {
     height: 20px;
@@ -115,6 +125,8 @@ dialog::backdrop {
     height: 40px;
     width: 80px;
     border-radius: 8px;
+    margin-left: 4%;
+    margin-top: 5%;
 }
 
 .like_btn_popup:hover {
@@ -189,4 +201,9 @@ dialog::backdrop {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10%;   
+}
+
+#popupButtonStarContainer{
+    display: flex;
+    
 }

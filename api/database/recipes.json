@@ -97,7 +97,9 @@
             ],
             "renderIngredients": "Pasta\nbasilika 2 krukor\nPinjen\u00f6tter 50 g\nVitl\u00f6ksklyfta 1\nsvecia 100 g\nKvarg 250 g\nSalt\nSvartpeppar ",
             "howTo": "1. Bryt av basilikabladen. Mixa ingredienserna till peston v\u00e4l. Spar lite ost, pinjen\u00f6tter och basilika till servering.Smaka av med salt och peppar.\n2. Koka spaghettin enligt anvisning p\u00e5 f\u00f6rpackningen. Blanda spaghetti och pesto. Toppa med extra basilika och ost. Servera genast.",
-            "like": [],
+            "like": [
+                2
+            ],
             "rating": [
                 {
                     "user_id": 7,

@@ -214,21 +214,26 @@ function renderUpdatePopup(recipe_instance, imageOfRecipe, renderIngredients, ho
     popupImg.src = `../../${imageOfRecipe}`; 
     divInPopUp.appendChild(popupImg);
 
+    let popupTitleContainer = document.createElement("div")
+    popupTitleContainer.id = "popupTitleContainer";
+    divInPopUp.appendChild(popupTitleContainer);
+
     let popUpTitle = document.createElement("h2");
     popUpTitle.id = "popUpTitle";
     popUpTitle.textContent = title;
-    divInPopUp.appendChild(popUpTitle);
+    popupTitleContainer.appendChild(popUpTitle);
 
     // Recept tid
     let recipeTime = document.createElement("p");
     recipeTime.id = "recipeTime";
     recipeTime.textContent = recipe_instance.time;
-    divInPopUp.appendChild(recipeTime);
+    popupTitleContainer.appendChild(recipeTime);
 
 
     // rank stjärnor
     let rank_div_popup = document.createElement('div');
     rank_div_popup.classList.add("rank_div_popup");
+    popupTitleContainer.appendChild(rank_div_popup);
     
     for (let i = 0; i < 5; i++) {
         const rank_img_popup = document.createElement('img');
@@ -236,7 +241,7 @@ function renderUpdatePopup(recipe_instance, imageOfRecipe, renderIngredients, ho
         rank_img_popup.src = '../../media/img/star.png'; // Ange sökvägen till bilden i img-mappen
         rank_div_popup.appendChild(rank_img_popup);
     }
-    divInPopUp.appendChild(rank_div_popup);
+    /* divInPopUp.appendChild(rank_div_popup); */
 
     let divInPopUpTwo = document.createElement("div");
     divInPopUpTwo.id = "divInPopUpTwo";
