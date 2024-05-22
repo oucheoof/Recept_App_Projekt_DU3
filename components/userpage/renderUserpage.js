@@ -153,7 +153,7 @@ function renderLikedInstance(instance_data){
         recipe_img.src = `../../${instance_data[i].image}`;
         likedRecipesContainer.appendChild(recipe_img); 
 
-        recipe_img.addEventListener("click", () => updatePopup(instance_data))
+        recipe_img.addEventListener("click", () => renderUpdatePopup(instance_data, instance_data[i].image, instance_data[i].renderIngredients, instance_data[i].howTo, instance_data[i].name))
 
         // Recept titel
         const recipe_name = document.createElement('div');
@@ -168,7 +168,117 @@ function renderLikedInstance(instance_data){
         recipe_time.innerText = instance_data[i].time;
         likedRecipesContainer.appendChild(recipe_time); 
     }
+}
+
+function renderUpdatePopup(recipe_instance, imageOfRecipe, renderIngredients, howToFromState, title){
+
+    let popupWrapper = document.createElement("div");
+    popupWrapper.id = "popupWrapper";
+    dialogDOM.appendChild(popupWrapper);
+
+    let exitImg = document.createElement('img');
+    exitImg.id = "exitImg";
+    exitImg.src = "../../media/img/exit.svg"
+    popupWrapper.appendChild(exitImg);
+
+    // Close modal on Escape key
+    document.addEventListener('keyup', function(event) {
+        if (event.key === "Escape") {
+            closeAndClearModal();
+        }
+    });
+
+    // Close modal on exit button click
+    exitImg.addEventListener("click", closeAndClearModal);
+
+    // Close modal when clicking outside the modal content
+    dialogDOM.addEventListener("click", function(event) {
+        if (event.target === dialogDOM) {
+            closeAndClearModal();
+        }
+    });
 
 
+    let headerImg = document.createElement("img")
+    headerImg.id = "headerImg";
+    headerImg.src = "../../media/img/popupHeader.jpg";
+    popupWrapper.appendChild(headerImg);
 
+
+    let divInPopUp = document.createElement("div");
+    divInPopUp.id = "divInPopUp";
+    popupWrapper.appendChild(divInPopUp);
+
+    let popupImg = document.createElement("img");
+    popupImg.id = "popupImg";
+    popupImg.src = `../../${imageOfRecipe}`; 
+    divInPopUp.appendChild(popupImg);
+
+    let popUpTitle = document.createElement("h2");
+    popUpTitle.id = "popUpTitle";
+    popUpTitle.textContent = title;
+    divInPopUp.appendChild(popUpTitle);
+
+    // Recept tid
+    let recipeTime = document.createElement("p");
+    recipeTime.id = "recipeTime";
+    recipeTime.textContent = recipe_instance.time;
+    divInPopUp.appendChild(recipeTime);
+
+
+    // rank stjärnor
+    let rank_div_popup = document.createElement('div');
+    rank_div_popup.classList.add("rank_div_popup");
+    
+    for (let i = 0; i < 5; i++) {
+        const rank_img_popup = document.createElement('img');
+        rank_img_popup.classList.add("rank_img_popup");
+        rank_img_popup.src = '../../media/img/star.png'; // Ange sökvägen till bilden i img-mappen
+        rank_div_popup.appendChild(rank_img_popup);
+    }
+    divInPopUp.appendChild(rank_div_popup);
+
+    let divInPopUpTwo = document.createElement("div");
+    divInPopUpTwo.id = "divInPopUpTwo";
+    popupWrapper.appendChild(divInPopUpTwo);
+
+    // Div för h3 + ingredienser
+    let ingredientDiv = document.createElement("div");
+    ingredientDiv.id = "ingredientDiv";
+    divInPopUpTwo.appendChild(ingredientDiv);
+    
+    let ingredientListTitle = document.createElement("h3")
+    ingredientListTitle.id = "ingredientListTitle";
+    ingredientListTitle.textContent = "Ingredienser";
+    ingredientDiv.appendChild(ingredientListTitle)
+
+    let ingredientList = document.createElement("p")
+    ingredientList.id = "ingredientList";
+    ingredientList.textContent = renderIngredients;
+    ingredientDiv.appendChild(ingredientList)
+
+    // Div för h3 + gör så här
+    let howToDiv = document.createElement("div");
+    howToDiv.id = "howToDiv";
+    divInPopUpTwo.appendChild(howToDiv);
+
+    let hoWToTitel = document.createElement("h3")
+    hoWToTitel.id = "hoWToTitel";
+    hoWToTitel.textContent = "Gör så här";
+    howToDiv.appendChild(hoWToTitel)
+
+    let howTo = document.createElement("p")
+    howTo.id = "howTo";
+    howTo.textContent = howToFromState;
+    howToDiv.appendChild(howTo)
+
+
+    dialogDOM.showModal();
+
+    // Function to close the modal and clear its content
+    function closeAndClearModal() {
+        dialogDOM.close();
+        dialogDOM.innerHTML = "";
+    }
+    
 }

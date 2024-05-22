@@ -1,0 +1,197 @@
+@font-face {
+    font-family: bigpixelShadow;
+    src: url(../../fonts/big_pixel_shadow_demo.otf);
+}
+
+/* Dialog element */
+dialog {
+    width: 90.5vw; 
+    /*max-width: 1500px;  Maximum width of the dialog */
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    background: #ffffff; 
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centrera */
+    z-index: 1000; 
+    padding: 0px;
+    overflow: auto;
+}
+
+dialog:focus {
+    outline: none; /* Tar bort den blåa border när dialog är aktiv */
+}
+
+dialog::backdrop {
+    background-color: rgba(61, 59, 59, 0.729);
+}
+
+/*  wrapper i dialog */
+#popupWrapper {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
+   
+}
+
+/* Styling for the exit image (close button) */
+#exitImg {
+    
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: absolute; /* Positionera stängknappen */
+    top: 10px; 
+    right: 10px; 
+    z-index: 99;
+} 
+
+/* Header bilden ( statiska bild ) */
+#headerImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    z-index: 0; 
+}
+
+
+/*  DIV för popupbild + titel */
+#divInPopUp {
+    margin-bottom: 0;
+    display: flex; 
+    flex-direction: row;
+    width: 1000px;
+    
+    /*margin-top: -12%*/
+}
+
+
+/*  Varje recept bild  */
+#popupImg {
+  
+    height: 400px;
+     
+    z-index: 1;
+    top: -150px;
+
+    /*bottom: 100px;*/
+
+    position: relative;
+
+    border-radius: 10px;
+}
+
+
+/* Recept title */
+#popUpTitle {
+   
+    color: #333333; 
+    font-family: bigpixelShadow;
+    font-size: 37px; 
+    margin: 0;
+    padding: 7% 5% 0% 5%;
+    
+    margin-bottom: 0;
+    flex-grow: 1; 
+}
+
+#recipeTime {
+    font-size: 20px;
+}
+
+/*  rank stjärnor i popup */
+.rank_img_popup {
+    height: 20px;
+    width: 20px;
+}
+
+
+/*  like knapp i popUP*/
+
+.like_btn_popup {
+    
+    background-color: white;
+    border: 1px solid rgb(103, 103, 103);
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+}
+
+.like_btn_popup:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.like_btn_popup:focus {
+    outline: none;
+}
+
+
+/*   DIV 2 i popUp  -> wrapper för ingredienser och gör så här  */
+#divInPopUpTwo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+/*  Div för Ingredienser */
+#ingredientDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10% 0 10%; 
+}
+
+
+/*  Ingredienser titel  */
+#ingredientListTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 8%;
+}
+
+
+/* Ingredients lista = p */
+#ingredientList {
+    line-height: 1.9;
+    text-align: left;
+    color: #666666;
+    font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50%;
+
+}
+
+/*  Div för gör så här -> titel + p */
+#howToDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+}
+
+/*  rubrik */
+#hoWToTitel {
+    margin-bottom: 3%;
+    margin-top: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+
+/* p text  */
+#howTo {
+    margin: 0;
+    text-align: left;
+    line-height: 1.5;
+    color: #666666;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10%;   
+}

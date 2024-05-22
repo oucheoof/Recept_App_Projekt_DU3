@@ -72,6 +72,7 @@ async function renderApp() {
 async function renderUserPage() {
     await StartuserState();
 
+    renderPopup();
     renderUserpageContainer();
 }
 
