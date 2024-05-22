@@ -9,7 +9,6 @@ function renderFooter(){
     aboutUsDiv.appendChild(aboutUsH2);
 
     aboutUsImage = document.createElement("img")
-    aboutUsImage.textContent = "aboutUsImage";
     aboutUsImage.id = "aboutUsImage";
     aboutUsDiv.appendChild(aboutUsImage);
 
@@ -33,7 +32,7 @@ function renderFooter(){
 
 
     contactUsP = document.createElement("p");
-    contactUsP.textContent = "Mon - Fri - 10 AM to 8 PM \r\nSat - Sun - 12 AM to 10 PM";
+    contactUsP.textContent = "Mån - Fre - 10 AM to 8 PM \r\nLör - Sön - 12 AM to 10 PM";
     contactUsP.id = "contactUsP";
     contactHeadersDiv.appendChild(contactUsP);
 

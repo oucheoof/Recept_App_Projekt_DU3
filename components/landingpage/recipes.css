@@ -8,7 +8,7 @@
 }
 
 #matched_recipes_title {
-    margin-top: 5%;
+    margin-top: 6%;
     text-align: center;
     font-family: bigpixelShadow;
     font-size: 40px;
@@ -16,15 +16,15 @@
 
 #number_recipes_matched {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size: 17px;
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 /*  förälder till container_recipe */
 #sorted_recipes_DOM {
-    margin: 4% 4% 0% 4%;
+    margin: 4% 4% 4% 4%;
     /*gap: 5px;*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
