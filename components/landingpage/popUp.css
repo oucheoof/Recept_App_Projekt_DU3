@@ -105,8 +105,9 @@ dialog::backdrop {
 }
 
 #popupButtonStarContainer{
-    padding-top: 3%;
+    padding-top: 5%;
 }
+
 #popupTitleContainer{
     margin-left: 2%;
     margin-top: 0%;

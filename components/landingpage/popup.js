@@ -95,7 +95,7 @@ function updatePopup(recipe_instance){
 
     
     // Lägg till LIKE knapp
-    const currentUser = STATE.get('user');
+    /*const currentUser = STATE.get('user');
 
     const like_btn = document.createElement('button');
     like_btn.classList.add('like_btn_popup');
@@ -115,9 +115,11 @@ function updatePopup(recipe_instance){
         await STATE.Patch(likeRequest, currentUser.id, recipe_instance);
     
         recipe_instance.like.includes(currentUser.id) ? like_btn.innerText = 'Unlike' : like_btn.innerText = 'Like';
-    });
+
+        
+    });*/
     
-    popupTitleContainer.appendChild(like_btn);
+    /*popupTitleContainer.appendChild(like_btn);*/
 
     // eventuellt en kortre beskrivning av recept?
     
