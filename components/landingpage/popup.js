@@ -143,6 +143,7 @@ function updatePopup(recipe_instance){
 
     let ingredientList = document.createElement("p")
     ingredientList.id = "ingredientList";
+    ingredientList.classList.add("formatted-text");
     ingredientList.textContent = recipe_instance.renderIngredients;
     ingredientDiv.appendChild(ingredientList)
 
@@ -159,9 +160,9 @@ function updatePopup(recipe_instance){
 
     let howTo = document.createElement("p")
     howTo.id = "howTo";
+    howTo.classList.add("formatted-text");
     howTo.textContent = recipe_instance.howTo;
     howToDiv.appendChild(howTo)
-
 
     dialogDOM.showModal();
 

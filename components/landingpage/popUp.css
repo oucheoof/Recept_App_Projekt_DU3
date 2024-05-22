@@ -204,6 +204,9 @@ dialog::backdrop {
 }
 
 #popupButtonStarContainer{
-    display: flex;
-    
+   display: flex;
+}    
+
+.formatted-text {
+    white-space: pre;
 }
