@@ -122,7 +122,7 @@ async function renderRegisterForm(){
         const data = await fetcher( registerRequest);
 
         if( !data.error ) {
-            window.alert( `successful registration ${data.name}`)
+            window.alert( `successful registration ${data.username}`)
         }
 
         renderLoginForm();
