@@ -8,7 +8,7 @@
 }
 
 #matched_recipes_title {
-    margin-top: 4%;
+    margin-top: 5%;
     text-align: center;
     font-family: bigpixelShadow;
     font-size: 40px;
@@ -19,6 +19,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 /*  förälder till container_recipe */

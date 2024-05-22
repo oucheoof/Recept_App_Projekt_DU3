@@ -11,7 +11,7 @@ const STATE = {
     Patch,
     Delete,
     
-    token: () => sessionStorage.getItem( 'token'),
+    token: () => localStorage.getItem( 'token'),
 
     renderApp,
     /* renderLogin */
@@ -23,29 +23,23 @@ function renderLogReg(){
 }
 
 
-// async function Patch(entity){}
+async function StartuserState() {
 
-// async function Delete(entity){}
+    let recipeRequest = new Request(`../../api/recipes.php`);
+    const recipeData = await fetcher(recipeRequest);
+    _state.recipes = recipeData.recipes;
 
-async function renderApp() {
+    let ingredientsRequest = new Request(`../../api/ingredients.php`);
+    const ingredientsData = await fetcher(ingredientsRequest);
+    _state.ingredients = ingredientsData.ingredients;
 
+    let userRequest = new Request(`../../api/users.php?token=${STATE.token()}`);
+    const userData = await fetcher(userRequest);
+    _state.user = userData;
 
-    
-    //const response = await fetch ('./api/database/recepies.json');
-    //const data = await response.json();
-    
-    //_state.recipes = data.artists;
+}
+async function startState() {
 
-   /*
-    let recipeRequest = new Request(`./api/database/recepies.php`);
-    const recipeData = await fetch_function (recipeRequest);
-    _state.recipes = recipeData;
-*/
-
-    /*
-        Hämtar alla recipes och ingredients och skapar 
-        entity nycklar i state som kan hämtas av komponenterna
-    */
 
     let recipeRequest = new Request(`./api/recipes.php`);
     const recipeData = await fetcher(recipeRequest);
@@ -59,6 +53,11 @@ async function renderApp() {
     const userData = await fetcher(userRequest);
     _state.user = userData;
 
+}
+async function renderApp() {
+
+    await startState();
+
     // Startsidan
     render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
@@ -68,7 +67,12 @@ async function renderApp() {
     renderPopup();
     renderBox1("sort");
     renderFooter();
+}
 
+async function renderUserPage() {
+    await StartuserState();
+
+    renderUserpageContainer();
 }
 
 
@@ -76,7 +80,6 @@ async function renderApp() {
 
 function get(entity) {
 
-    // klonar
     return JSON.parse(JSON.stringify( _state[ entity ]));
 /* renderChosenIngredientsBox("wrapper"); */ 
 }
