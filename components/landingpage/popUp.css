@@ -54,6 +54,9 @@ dialog::backdrop {
     z-index: 0; 
 }
 
+#divInPopUpTwo{
+    white-space: pre-wrap;
+}
 
 /*  DIV för popupbild + titel */
 #divInPopUp {
@@ -145,13 +148,15 @@ dialog::backdrop {
     display: flex;
     flex-direction: row;
     margin-top: 0;
+    width: -moz-available;
 }
 
 /*  Div för Ingredienser */
 #ingredientDiv {
     display: flex;
     flex-direction: column;
-    padding: 0 10% 0 10%; 
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
@@ -172,7 +177,7 @@ dialog::backdrop {
     font-size: 20px; 
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 50%;
-
+    width: max-content;
 }
 
 /*  Div för gör så här -> titel + p */
