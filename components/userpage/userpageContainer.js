@@ -1,7 +1,7 @@
-function renderUserpageContainer(){
+async function renderUserpageContainer(){
 
     const DOM = document.getElementById('wrapper');
-    renderUserHeader(DOM.id);
+    await renderUserHeader(DOM.id);
     renderLikedRecipes(DOM.id);
     // Hämta alla recept som innehåller ens user id baserat på (användarnamn, token)
 

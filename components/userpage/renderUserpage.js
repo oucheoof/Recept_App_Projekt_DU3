@@ -1,12 +1,23 @@
 
-function renderUserHeader(parentID){
-    const user = {
-        username: 'usernametest',
-        email: 'emailtest',
-        counter: 7
-    }
+async function renderUserHeader(parentID){
+    
+    const user = await getCurrentUser();
+    let likedRecipes = likedRecipesArray();
+    let count = likedRecipes.length;
+   
+    
 
     const userHeader = document.createElement('header');
+    userHeader.classList.add('userHeader');
+   
+    //Logo that goes to landing page
+    const linkLogo = document.createElement("a");
+    linkLogo.id = 'linkLogo';
+    linkLogo.href = '../../../../index.html';
+    const logo = document.createElement("div");
+    logo.classList.add("logo");
+    linkLogo.appendChild(logo);
+    userHeader.append(linkLogo);
 
     // Create userControl div
     const userControlDiv = document.createElement('div');
@@ -41,15 +52,18 @@ function renderUserHeader(parentID){
     userInfoDiv.appendChild(heading3);
 
     const heading4 = document.createElement('h4');
-    heading4.textContent = `${user.counter} saved recipes`;
+    heading4.textContent = `${count} stycken sparade recept`;
     userInfoDiv.appendChild(heading4);
 
 
-    // lägger userControlDiv och userInfoDiv i userHeader
-    userHeader.appendChild(userControlDiv);
-    userHeader.appendChild(userInfoDiv);
+    // lägger userControlDiv och userInfoDiv i userComponents
+    const userComponents = document.createElement('div');
+    userComponents.id = 'userComponents';
+    userComponents.appendChild(userControlDiv);
+    userComponents.appendChild(userInfoDiv);
 
     //lägger in i wrapper
+    userHeader.appendChild(userComponents);
     document.getElementById(parentID).append(userHeader);
 
     //lägger till eventlisteners till knapparna
@@ -126,15 +140,17 @@ function likedRecipesArray() {
 
 //renderar liked receipes
 function renderLikedRecipes(parentID){
-    const likedRecipesContainer = document.createElement('section');
-
-    document.getElementById(parentID).append(likedRecipesContainer);
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.id = 'sectionTitle';
+    sectionTitle.textContent = 'Dina sparade recept';
+    document.getElementById(parentID).append(sectionTitle);
     
-    likedRecipesContainer.id = 'likedRecipesContainer';
+    const likedRecipesSection = document.createElement('section');
+    likedRecipesSection.id = 'likedRecipesSection';
+    document.getElementById(parentID).append(likedRecipesSection);
+
 
     let arrayOfLikes = likedRecipesArray(); //LOGIK för gillade recept
-
-
     renderLikedInstance(arrayOfLikes);
 }
 
@@ -145,7 +161,7 @@ function renderLikedInstance(instance_data){
         const likedRecipesContainer = document.createElement("div");
         likedRecipesContainer.classList.add("likedRecipesContainer"); // Lägger till en CSS-klass
         likedRecipesContainer.id = instance_data[i].name;
-        document.getElementById('likedRecipesContainer').appendChild(likedRecipesContainer);
+        document.getElementById('likedRecipesSection').appendChild(likedRecipesContainer);
 
         // Recept bild
         const recipe_img = document.createElement('img');
