@@ -84,22 +84,28 @@
         },
         {
             "id": 4,
-            "name": "Spagetti med kr\u00e4mig pesto",
-            "time": "30 min",
+            "name": "Ramen",
+            "time": "40 min",
             "ingredients": [
-                "basilika",
-                "pinjen\u00f6tter",
-                "pasta",
-                "vitl\u00f6ksklyfta",
-                "svecia",
-                "kvarg",
-                "salt",
-                "svartpeppar"
+                "vitl\u00f6ksklyftor",
+                "f\u00e4rsk ingef\u00e4ra",
+                "sm\u00f6r",
+                "fl\u00e4skf\u00e4rs",
+                "chillipasta",
+                "sake",
+                "\u00e4gg",
+                "nudlar",
+                "pakchoi",
+                "b\u00f6ngroddar",
+                "salladsl\u00f6kar",
+                "ost"
             ],
-            "renderIngredients": "Pasta\nbasilika 2 krukor\nPinjen\u00f6tter 50 g\nVitl\u00f6ksklyfta 1\nsvecia 100 g\nKvarg 250 g\nSalt\nSvartpeppar ",
-            "howTo": "1. Bryt av basilikabladen. Mixa ingredienserna till peston v\u00e4l. Spar lite ost, pinjen\u00f6tter och basilika till servering.Smaka av med salt och peppar.\n2. Koka spaghettin enligt anvisning p\u00e5 f\u00f6rpackningen. Blanda spaghetti och pesto. Toppa med extra basilika och ost. Servera genast.",
+            "renderIngredients": "Vitl\u00f6ksklyftor 4\nF\u00e4rsk ingef\u00e4ra 25 g\nSm\u00f6r 1 msk\nFl\u00e4skf\u00e4rs 200 g\nB\u00f6n och chilipasta 3 msk\nSake 4 msk\n\u00c4gg 2\nNudlar, snabbnudlar 4 f\u00f6rp\npakchoi 1\nB\u00f6ngroddar 4 dl\nSalladsl\u00f6kar 2\nOst 4 skivor ",
+            "howTo": "1. Skala och finhacka vitl\u00f6k och ingef\u00e4ra.\n2. Hetta upp sm\u00f6r i en stekpanna. Fr\u00e4s vitl\u00f6k och ingef\u00e4ra p\u00e5 medelv\u00e4rme i ca 30 sek.\n3. Tills\u00e4tt f\u00e4rs och bryn tills den f\u00e5tt fin f\u00e4rg.\n4. Tills\u00e4tt doubanjiang och fr\u00e4s ytterligare 1 min. R\u00f6r ner shaoxingvin och l\u00e5t koka in. Smaka av med salt och svartpeppar. St\u00e4ll \u00e5t sidan.\n5. Koka upp vatten och koka \u00e4ggen i exakt 6 min och 45 sek. H\u00e4ll av och kyl ner \u00e4ggen. Skala och halvera \u00e4ggen. St\u00e4ll \u00e5t sidan.\n6. Koka upp vatten i en kastrull, Plocka bladen fr\u00e5n pakchoi. Koka f\u00f6rst pakchoi i 30 sek. Plocka upp med h\u00e5lslev. G\u00f6r sedan likadant med groddarna. Plocka upp med h\u00e5lslev. St\u00e4ll \u00e5t sidan.\n7. Koka nudlar al dente utan kryddp\u00e5se. Sk\u00f6lj nudlarna i kallt vatten f\u00f6r att f\u00e5 bort st\u00e4rkelse, doppa dem sedan i hett vatten igen precis innan servering.\n8. Strimla salladsl\u00f6ken.\n9. Koka upp vatten, mj\u00f6lk och kycklingbuljong. L\u00e5t sjuda tills buljongen l\u00f6sts upp. Tills\u00e4tt sm\u00f6r.\n10. SLURP!",
             "like": [
-                2
+                2,
+                4,
+                5
             ],
             "rating": [
                 {
@@ -107,7 +113,7 @@
                     "rating": 10
                 }
             ],
-            "image": ".\/media\/thumbnails\/spagetti_pesto.jpg"
+            "image": ".\/media\/thumbnails\/ramen.png"
         },
         {
             "id": 5,
@@ -249,36 +255,29 @@
         },
         {
             "id": 10,
-            "name": "Ramen",
-            "time": "40 min",
+            "name": "Pasta Carbonara",
+            "time": "20 min",
             "ingredients": [
-                "vitl\u00f6ksklyftor",
-                "f\u00e4rsk ingef\u00e4ra",
+                "pasta",
+                "fl\u00e4sk",
                 "sm\u00f6r",
-                "fl\u00e4skf\u00e4rs",
-                "chillipasta",
-                "sake",
-                "\u00e4gg",
-                "nudlar",
-                "pakchoi",
-                "b\u00f6ngroddar",
-                "salladsl\u00f6kar",
-                "ost"
+                "vispgr\u00e4dde",
+                "salt",
+                "vitl\u00f6ksklyfta",
+                "ost",
+                "svartpeppar",
+                "\u00e4ggulor"
             ],
-            "renderIngredients": "Vitl\u00f6ksklyftor 4\nF\u00e4rsk ingef\u00e4ra 25 g\nSm\u00f6r 1 msk\nFl\u00e4skf\u00e4rs 200 g\nB\u00f6n och chilipasta 3 msk\nSake 4 msk\n\u00c4gg 2\nNudlar, snabbnudlar 4 f\u00f6rp\npakchoi 1\nB\u00f6ngroddar 4 dl\nSalladsl\u00f6kar 2\nOst 4 skivor ",
-            "howTo": "1. Skala och finhacka vitl\u00f6k och ingef\u00e4ra.\n2. Hetta upp sm\u00f6r i en stekpanna. Fr\u00e4s vitl\u00f6k och ingef\u00e4ra p\u00e5 medelv\u00e4rme i ca 30 sek.\n3. Tills\u00e4tt f\u00e4rs och bryn tills den f\u00e5tt fin f\u00e4rg.\n4. Tills\u00e4tt doubanjiang och fr\u00e4s ytterligare 1 min. R\u00f6r ner shaoxingvin och l\u00e5t koka in. Smaka av med salt och svartpeppar. St\u00e4ll \u00e5t sidan.\n5. Koka upp vatten och koka \u00e4ggen i exakt 6 min och 45 sek. H\u00e4ll av och kyl ner \u00e4ggen. Skala och halvera \u00e4ggen. St\u00e4ll \u00e5t sidan.\n6. Koka upp vatten i en kastrull, Plocka bladen fr\u00e5n pakchoi. Koka f\u00f6rst pakchoi i 30 sek. Plocka upp med h\u00e5lslev. G\u00f6r sedan likadant med groddarna. Plocka upp med h\u00e5lslev. St\u00e4ll \u00e5t sidan.\n7. Koka nudlar al dente utan kryddp\u00e5se. Sk\u00f6lj nudlarna i kallt vatten f\u00f6r att f\u00e5 bort st\u00e4rkelse, doppa dem sedan i hett vatten igen precis innan servering.\n8. Strimla salladsl\u00f6ken.\n9. Koka upp vatten, mj\u00f6lk och kycklingbuljong. L\u00e5t sjuda tills buljongen l\u00f6sts upp. Tills\u00e4tt sm\u00f6r.\n10. SLURP!",
-            "like": [
-                2,
-                4,
-                5
-            ],
+            "renderIngredients": "Pasta 300 g\nFl\u00e4sk 150 g\nSm\u00f6rn\nVispgr\u00e4dde \u00bd dl\nSalt \u00bd tsk\nFinhackad vitl\u00f6ksklyfta 1\nOst riven 3 dl\nSvartpeppar 2 krm\n\u00c4ggulor 4",
+            "howTo": "1. Koka spaghettin.\n2. Sk\u00e4r fl\u00e4sket i sm\u00e5 t\u00e4rningar. Stek fl\u00e4sket knaprigt i sm\u00f6r i en stekpanna.\n3. Vispa ihop gr\u00e4dde, salt, vitl\u00f6k och h\u00e4lften av osten.\n4. R\u00f6r ner fl\u00e4sk och ostblandningen i den kokta spaghettin och r\u00f6r kraftigt till en kr\u00e4mig konsistens. 5. Str\u00f6 \u00f6ver resten av osten och peppar. Servera pasta carbonara med en \u00e4ggula. ",
+            "like": [],
             "rating": [
                 {
                     "user_id": 7,
                     "rating": 10
                 }
             ],
-            "image": ".\/media\/thumbnails\/ramen.png"
+            "image": ".\/media\/thumbnails\/pasta_carbonara.jpg"
         },
         {
             "id": 11,
@@ -308,56 +307,34 @@
         },
         {
             "id": 12,
-            "name": "Potatis och Purjol\u00f6kssoppa",
-            "time": "40 min",
+            "name": "Smoothie med hallon",
+            "time": "5 min",
             "ingredients": [
-                "purjol\u00f6k",
-                "potatis",
-                "sm\u00f6r",
-                "gr\u00f6nsaksbuljong",
-                "matlagningsgr\u00e4dde",
-                "salt",
-                "peppar",
-                "persilja"
+                "hallon",
+                "vaniljyoghurt",
+                "standardmj\u00f6lk"
             ],
-            "renderIngredients": "Potatis 500 g\nPurjol\u00f6k 1\nSm\u00f6r 1 msk\nGr\u00f6nsaksbuljong 6 dl\nMatlagningsgr\u00e4dde 3 dl\nSalt och peppar\nPersilja hackad 1 dl",
-            "howTo": "1. Skala potatisen och ansa purjol\u00f6ken. Sk\u00e4r potatis och purjol\u00f6k i bitar.\n2. Fr\u00e4s purjol\u00f6ken i rapsolja i en kastrull.\n3. Tills\u00e4tt potatis och h\u00e4lften av buljongen.\n4. L\u00e5t koka p\u00e5 medelv\u00e4rme ca 10 min. Mixa soppa sl\u00e4t.\n5. H\u00e4ll i resterande buljong och syrad gr\u00e4dde. Koka upp. Smaka av med salt och peppar. Str\u00f6 \u00f6ver persilja och servera med br\u00f6d. ",
-            "like": [
-                4
-            ],
-            "rating": [
-                {
-                    "user_id": 7,
-                    "rating": 10
-                }
-            ],
-            "image": ".\/media\/thumbnails\/potatispurjolok.jpg"
+            "renderIngredients": "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmj\u00f6lk 1 dl",
+            "howTo": "L\u00e4gg hallon, yoghurt och mj\u00f6lk i en mixer eller sk\u00e5l om du anv\u00e4nder stavmixer. Mixa till en j\u00e4mn smoothie. Servera direkt.",
+            "like": [],
+            "rating": [],
+            "image": ".\/media\/thumbnails\/smoothie_med_hallon.jpg"
         },
         {
             "id": 13,
-            "name": "Pasta Carbonara",
-            "time": "20 min",
+            "name": "Picklad r\u00f6dl\u00f6k",
+            "time": "60 min",
             "ingredients": [
-                "pasta",
-                "fl\u00e4sk",
-                "sm\u00f6r",
-                "vispgr\u00e4dde",
-                "salt",
-                "vitl\u00f6ksklyfta",
-                "ost",
-                "svartpeppar",
-                "\u00e4ggulor"
+                "\u00e4ttiksprit",
+                "str\u00f6socker",
+                "vatten",
+                "r\u00f6dl\u00f6kar"
             ],
-            "renderIngredients": "Pasta 300 g\nFl\u00e4sk 150 g\nSm\u00f6rn\nVispgr\u00e4dde \u00bd dl\nSalt \u00bd tsk\nFinhackad vitl\u00f6ksklyfta 1\nOst riven 3 dl\nSvartpeppar 2 krm\n\u00c4ggulor 4",
-            "howTo": "1. Koka spaghettin.\n2. Sk\u00e4r fl\u00e4sket i sm\u00e5 t\u00e4rningar. Stek fl\u00e4sket knaprigt i sm\u00f6r i en stekpanna.\n3. Vispa ihop gr\u00e4dde, salt, vitl\u00f6k och h\u00e4lften av osten.\n4. R\u00f6r ner fl\u00e4sk och ostblandningen i den kokta spaghettin och r\u00f6r kraftigt till en kr\u00e4mig konsistens. 5. Str\u00f6 \u00f6ver resten av osten och peppar. Servera pasta carbonara med en \u00e4ggula. ",
+            "renderIngredients": "\u00e4ttiksprit 12% 1 dl\nstr\u00f6socker 2 dl\nvatten 3 dl\nr\u00f6dl\u00f6kar 2 st",
+            "howTo": "Koka upp \u00e4ttika, socker och vatten, l\u00e5t svalna n\u00e5got. Skala och skiva l\u00f6ken tunt och l\u00e4gg i en glasburk. H\u00e4ll p\u00e5 den ljumna lagen och l\u00e5t st\u00e5 tills den kallnat. L\u00f6ken \u00e4r sedan klar att serveras men h\u00e5ller ytterligare 1-2 veckor i kyl.",
             "like": [],
-            "rating": [
-                {
-                    "user_id": 7,
-                    "rating": 10
-                }
-            ],
-            "image": ".\/media\/thumbnails\/pasta_carbonara.jpg"
+            "rating": [],
+            "image": ".\/media\/thumbnails\/picklad_rodlok.jpg"
         },
         {
             "id": 14,
@@ -402,19 +379,30 @@
         },
         {
             "id": 16,
-            "name": "Picklad r\u00f6dl\u00f6k",
-            "time": "60 min",
+            "name": "Spagetti med pesto",
+            "time": "30 min",
             "ingredients": [
-                "\u00e4ttiksprit",
-                "str\u00f6socker",
-                "vatten",
-                "r\u00f6dl\u00f6kar"
+                "basilika",
+                "pinjen\u00f6tter",
+                "pasta",
+                "vitl\u00f6ksklyfta",
+                "svecia",
+                "kvarg",
+                "salt",
+                "svartpeppar"
             ],
-            "renderIngredients": "\u00e4ttiksprit 12% 1 dl\nstr\u00f6socker 2 dl\nvatten 3 dl\nr\u00f6dl\u00f6kar 2 st",
-            "howTo": "Koka upp \u00e4ttika, socker och vatten, l\u00e5t svalna n\u00e5got. Skala och skiva l\u00f6ken tunt och l\u00e4gg i en glasburk. H\u00e4ll p\u00e5 den ljumna lagen och l\u00e5t st\u00e5 tills den kallnat. L\u00f6ken \u00e4r sedan klar att serveras men h\u00e5ller ytterligare 1-2 veckor i kyl.",
-            "like": [],
-            "rating": [],
-            "image": ".\/media\/thumbnails\/picklad_rodlok.jpg"
+            "renderIngredients": "Pasta\nbasilika 2 krukor\nPinjen\u00f6tter 50 g\nVitl\u00f6ksklyfta 1\nsvecia 100 g\nKvarg 250 g\nSalt\nSvartpeppar ",
+            "howTo": "1. Bryt av basilikabladen. Mixa ingredienserna till peston v\u00e4l. Spar lite ost, pinjen\u00f6tter och basilika till servering.Smaka av med salt och peppar.\n2. Koka spaghettin enligt anvisning p\u00e5 f\u00f6rpackningen. Blanda spaghetti och pesto. Toppa med extra basilika och ost. Servera genast.",
+            "like": [
+                2
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/spagetti_pesto.jpg"
         },
         {
             "id": 17,
@@ -496,18 +484,30 @@
         },
         {
             "id": 21,
-            "name": "Smoothie med hallon",
-            "time": "5 min",
+            "name": "Potatis och Purjol\u00f6kssoppa",
+            "time": "40 min",
             "ingredients": [
-                "hallon",
-                "vaniljyoghurt",
-                "standardmj\u00f6lk"
+                "purjol\u00f6k",
+                "potatis",
+                "sm\u00f6r",
+                "gr\u00f6nsaksbuljong",
+                "matlagningsgr\u00e4dde",
+                "salt",
+                "peppar",
+                "persilja"
             ],
-            "renderIngredients": "frysta hallon 1 dl\nvaniljyoghurt 1 dl\nstandardmj\u00f6lk 1 dl",
-            "howTo": "L\u00e4gg hallon, yoghurt och mj\u00f6lk i en mixer eller sk\u00e5l om du anv\u00e4nder stavmixer. Mixa till en j\u00e4mn smoothie. Servera direkt.",
-            "like": [],
-            "rating": [],
-            "image": ".\/media\/thumbnails\/smoothie_med_hallon.jpg"
+            "renderIngredients": "Potatis 500 g\nPurjol\u00f6k 1\nSm\u00f6r 1 msk\nGr\u00f6nsaksbuljong 6 dl\nMatlagningsgr\u00e4dde 3 dl\nSalt och peppar\nPersilja hackad 1 dl",
+            "howTo": "1. Skala potatisen och ansa purjol\u00f6ken. Sk\u00e4r potatis och purjol\u00f6k i bitar.\n2. Fr\u00e4s purjol\u00f6ken i rapsolja i en kastrull.\n3. Tills\u00e4tt potatis och h\u00e4lften av buljongen.\n4. L\u00e5t koka p\u00e5 medelv\u00e4rme ca 10 min. Mixa soppa sl\u00e4t.\n5. H\u00e4ll i resterande buljong och syrad gr\u00e4dde. Koka upp. Smaka av med salt och peppar. Str\u00f6 \u00f6ver persilja och servera med br\u00f6d. ",
+            "like": [
+                4
+            ],
+            "rating": [
+                {
+                    "user_id": 7,
+                    "rating": 10
+                }
+            ],
+            "image": ".\/media\/thumbnails\/potatispurjolok.jpg"
         },
         {
             "id": 22,
