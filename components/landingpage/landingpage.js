@@ -69,7 +69,7 @@ function render_navigation(parent){
     // parent är header i startsidan
 
     const nav = document.createElement("nav");
-    nav.classList.add = "nav_meny"; 
+    nav.classList.add = ("nav_meny"); 
 
     // länk för logo
     const linkLogo = document.createElement("a");
