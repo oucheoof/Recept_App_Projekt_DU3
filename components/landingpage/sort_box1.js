@@ -75,7 +75,13 @@ function renderBox1(parentID) { // Parent är <section id = "sort">
 }  
 
 function createIngredientBtnsBox1() {
-    let ingredientsBox1 = STATE.get("ingredients"); 
+    let array = STATE.get("ingredients");
+
+    let ingredientsBox1 = array.filter((ingredient, index) => {
+        return array.indexOf(ingredient) === index; 
+    })
+    ingredientsBox1.sort();
+    console.log(ingredientsBox1);
 
     // Create and append buttons for each ingredient
     ingredientsBox1.forEach(ingredient => {

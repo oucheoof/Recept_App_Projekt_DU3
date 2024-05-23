@@ -77,7 +77,7 @@ function update_sorted_recipes( ingredientsArray ) {
 
     // Uppdaterar text med antalet matchade recept
     const numRecipesMatchedElement = document.getElementById("number_recipes_matched");
-    numRecipesMatchedElement.innerText = `${filteredRecipes.length} recept matchade din sökning! Yummi!`;
+    numRecipesMatchedElement.innerText = `${filteredRecipes.length} recept matchade din sökning! Gott!`;
 
     // loopar genom recept databas
     for (let recipe of filteredRecipes) { // loopar igenom den sorterade/ filtrerade arrayen och renderar varje recept

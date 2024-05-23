@@ -33,6 +33,7 @@ function addIngredientToBox2(ingredient, ingredientsBox1){
         removeChosenIngredientBox2(ingredient);
 
         ingredientsBox1.push(ingredient); //Lägger tillbaka till Box 1 ingredientsBox1 array
+        ingredientsBox1.sort();
         const button = document.createElement('button'); 
         button.textContent = ingredient;
         button.id = ingredient
