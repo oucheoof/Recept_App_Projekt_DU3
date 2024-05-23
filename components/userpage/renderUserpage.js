@@ -32,10 +32,12 @@ async function renderUserHeader(parentID){
     // Create buttons
     const removeUserButton = document.createElement('button');
     removeUserButton.textContent = 'Ta bort användare';
+    removeUserButton.id = "removeUserButton";
     userControlDiv.appendChild(removeUserButton);
 
     const logoutButton = document.createElement('button');
     logoutButton.textContent = 'Logga ut';
+    logoutButton.id = "logoutButton";
     userControlDiv.appendChild(logoutButton);
 
     // Create userInfo div

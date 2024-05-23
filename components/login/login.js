@@ -119,7 +119,7 @@ async function renderRegisterForm(){
         
 
         if( !data.error ) {
-            window.alert( `successful registration ${data.name}`)
+            window.alert( `successful registration ${data.username}`)
         }
         renderLoginForm();
 
