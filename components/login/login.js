@@ -39,7 +39,7 @@ async function renderLoginForm(){
     
     <button id="login_btn_two" class="login"> Logga in</button>
 
-    <button class="goBack" onclick="goBack()">Ny användare? Registrera ditt konto istället</button>
+    <button class="goBack" onclick="goBack()">Ny användare?<br> Registrera ditt konto istället</button>
 
     
     </form>`
