@@ -125,7 +125,7 @@ async function renderRegisterForm(){
                 console.log(data);
                 renderLogRegError(data);
             }else{
-                window.alert( `successful registration ${data.username}`);
+                window.alert( `Successful registration ${data.username}`);
                 renderLoginForm();
             }
         } 
