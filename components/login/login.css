@@ -6,7 +6,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     display: flex;
     flex-direction: row;
 }
@@ -18,7 +17,8 @@
     justify-content: center;
     background-color: white;
     padding: 50px;
-    height: 250px;
+    min-height: 250px;
+    height: fit-content;
     width: 250px;
     margin-left: 5%;
 
@@ -28,20 +28,31 @@
     flex-direction: column;
 }
 
+
 .title_login{
     font-family: bigpixelShadow;
     font-size: 50px;
     margin-left: 5%;
     margin-bottom: 10%;
 }
-
+button{
+    cursor: pointer;
+}
 #buttons {
     margin-left: 5%;
     margin-bottom: 15%;
 }
 
-.terms {
-    margin-left: 5%;
+#terms {
+    color: rgb(52, 53, 54);
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    position: relative;
+    left: -5px;
+}
+#terms:hover{
+    color: rgb(140, 157, 163);
 }
 
 .login_btn{
@@ -63,8 +74,6 @@
 .skapakonto_btn {
 
     border: 1px solid black;
-    /*border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;*/
     height: 40px;
     width: 105px;
     background-color: white;
@@ -79,6 +88,17 @@
 
 .terms {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.goBack{
+    margin: 15px;
+    color: rgb(52, 53, 54);
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+
 }
 
 
@@ -121,11 +141,6 @@ form{
     color: white;
     border: 1px solid black;
 }
-
-.register {
-    margin-bottom: 50px;
-}
-
 
 
 /*  SKAPA ANVÄNDARE RUTA registrerings formulär  */

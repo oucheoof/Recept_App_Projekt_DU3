@@ -58,7 +58,7 @@ async function renderApp() {
 
     await startState();
 
-    // Startsidan
+    // Landing Page
     render_wrapper_DOM (); // startsidans wrapper anrop
     render_header(head); // header anrop
     render_sorted_recipes_DOM(matched_recipes); // anropar på container för alla sorterade/filtrerade recept

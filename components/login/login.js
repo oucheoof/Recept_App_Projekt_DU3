@@ -1,3 +1,4 @@
+
 function renderLogRegContainer(parentID) {
     const DOM = document.createElement('div');
     DOM.id = 'logRegContainer';
@@ -12,18 +13,14 @@ function renderLogRegContainer(parentID) {
         <button class ="skapakonto_btn" type="button" onclick="renderRegisterForm()"> Skapa konto </button>
         
     </div>
-    <p class="terms">Terms & Conditions</p>
+    <button id="terms" type="button" onclick="terms()">Integritet och användarvillkor</button>
+
     `;
 
     document.getElementById(parentID).append(DOM);
 }
 
-
-
-
 async function renderLoginForm(){
-
-    console.log('renderlogin');
 
     DOM = document.getElementById('logRegContainer');
     
@@ -39,6 +36,10 @@ async function renderLoginForm(){
     <input class="passw" type="password" id="password" name="password" placeholder="  Lösenord">
     
     <button id="login_btn_two" class="login"> Logga in</button>
+
+    <button class="goBack" onclick="goBack()">Ny användare? Registrera ditt konto istället</button>
+
+    
     </form>`
 
     DOM.querySelector('.login').onclick = async(e) => {
@@ -46,8 +47,6 @@ async function renderLoginForm(){
 
         const username = DOM.querySelector('#username').value;
         const password = DOM.querySelector('#password').value;
-
-        console.log(username, password);
 
         const registerRequest = new Request('../api/login.php',{
             method: 'POST',
@@ -59,7 +58,6 @@ async function renderLoginForm(){
         });
 
         const data = await fetcher( registerRequest);
-            console.log(data);
             if (data.error) {
                 window.alert(data.error);
             } else {
@@ -68,10 +66,7 @@ async function renderLoginForm(){
             }
     };
 
-
 }
-
-
 
 async function renderRegisterForm(){
 
@@ -95,17 +90,19 @@ async function renderRegisterForm(){
         <input class="repeatpass" type="password" id="rptpassword" name="rptpassword" placeholder="  Upprepa lösenord">
         
         <button class="register"> Registrera konto </button>
+
+         <button class="goBack" onclick="goBack()">Redan registrerad? Logga in </button>
+
      </form>`
 
     DOM.querySelector( '.register').onclick = async( e ) => {
         e.preventDefault();
+        
 
         const username = DOM.querySelector( '#username').value;
         const email = DOM.querySelector( '#email').value;
         const password = DOM.querySelector( '#password').value;
         const rptpassword = DOM.querySelector( '#rptpassword').value;
-
-        console.log (username, email, password, rptpassword);
 
         const registerRequest = new Request( './api/users.php', {
             method: 'POST',
@@ -118,15 +115,24 @@ async function renderRegisterForm(){
             }),
         });
 
-
         const data = await fetcher( registerRequest);
+        
 
         if( !data.error ) {
             window.alert( `successful registration ${data.name}`)
         }
-
         renderLoginForm();
-        console.log( data);
 
         } 
+}
+
+function terms(){
+    window.alert('Man måste vara snäll med bedömningen av detta projekt.');
+}
+
+function goBack(){
+    DOM = document.getElementById('wrapper');
+    DOM.innerHTML = null;
+
+    renderLogRegContainer('wrapper');
 }
