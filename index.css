@@ -6,10 +6,10 @@ body {
 
 @font-face {
     font-family: bigpixelShadow;
-    src: url(./fonts/big_pixel_shadow_demo.otf);
+    src: url(./media/fonts/big_pixel/Big_Pixel_demo.otf);
 }
 
 @font-face {
     font-family: RubikM;
-    src: url(./fonts/Rubik-Medium.ttf);
+    src: url(./media/fonts/Rubik-Medium.ttf);
 }
