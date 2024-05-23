@@ -55,6 +55,15 @@ button{
     color: rgb(140, 157, 163);
 }
 
+#shownErrorMessage{
+    font-family: arial;
+    color: rgb(189, 15, 15);
+    text-align: center;
+    position:relative;
+    top: -18px;
+
+}
+
 .login_btn{
     height: 40px;
     width: 105px;
@@ -155,7 +164,6 @@ form{
 
     text-align: center;
     align-self: center;
-    padding-top: 30px;
     font-family: bigpixelShadow;
     font-size: 50px;
     margin-bottom: 10%;

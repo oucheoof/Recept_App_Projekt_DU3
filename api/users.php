@@ -67,24 +67,29 @@ if ($requestMethod == 'POST'){ //registrera en ny användare
         sendJSON($error, 400);
     }
 
+    if (anyEmpty($requiredKeys)){
+        $error = ["Error" => "Bad request: One or some fields are empty."];
+        sendJSON($error, 400);
+    }
+    
     //kollar om det redan finns användare (med samma namn)
     $username = $requestData['username'];
     $usernames = array_column($users, 'username');
     if(in_array($username, $usernames)){
         $error = ["Error" => "Bad request: This user already exists."];
-        sendJSON($error, 400);
+        sendJSON($error, 473);
     }
     //kollar om det finns ett snabel a i emailen
     $email = $requestData['email'];
     if(strpos($email, '@') === false){
         $error = ["Error" => "Bad request: Not an email adress, missing '@'."];
-        sendJSON($error, 400);
+        sendJSON($error, 472);
     }
 
     //kollar om det upprepade lösenordet är samma
     if($requestData['password'] !== $requestData['rptpassword']){
-        $error = ["Error" => "Passwords do not match"];
-        sendJSON($error, 400);
+        $error = ["Error" => "Bad request: Passwords do not match"];
+        sendJSON($error, 471);
     }
     
     //ger användaren ett id

@@ -6,7 +6,8 @@ async function fetcher(rqst){
         if(!response.ok){
             console.log("!response.ok")
             console.log("Response not OK:", response.status, response.statusText);
-            return
+            console.log(response)
+            return response.status
         }
 
         const data = await response.json(); 

@@ -29,6 +29,8 @@ async function renderLoginForm(){
     
     <p id="loginTitle"> Kitsch </p>
 
+    <div id="errorContainer"></div>
+
     <form id="loginForm">
 
     <input class="name" type="text" id="username" name="username" placeholder="  Användarnamn">
@@ -58,8 +60,8 @@ async function renderLoginForm(){
         });
 
         const data = await fetcher( registerRequest);
-            if (data.error) {
-                window.alert(data.error);
+            if (!isNaN(data)) {
+                renderLogRegError(data);
             } else {
                 localStorage.setItem('token', data.token);
                 location.reload();
@@ -78,6 +80,8 @@ async function renderRegisterForm(){
     DOM.innerHTML = `
 
     <p class="loginTitle_reg">Kitsch</p>
+
+    <div id="errorContainer"></div>
 
     <form id="RegisterForm">
 
@@ -115,19 +119,20 @@ async function renderRegisterForm(){
             }),
         });
 
-        const data = await fetcher( registerRequest);
+            const data = await fetcher( registerRequest);
         
-
-        if( !data.error ) {
-            window.alert( `successful registration ${data.username}`)
-        }
-        renderLoginForm();
-
+            if(!isNaN(data)) {
+                console.log(data);
+                renderLogRegError(data);
+            }else{
+                window.alert( `successful registration ${data.username}`);
+                renderLoginForm();
+            }
         } 
 }
 
 function terms(){
-    window.alert('Man måste vara snäll med bedömningen av detta projekt.');
+    window.alert('Man måste vara snäll med bedömningen av detta projekt.\n\n mvh, \n Michelle Klemendz, Stephen Doan och Amanda Cai');
 }
 
 function goBack(){
@@ -135,4 +140,34 @@ function goBack(){
     DOM.innerHTML = null;
 
     renderLogRegContainer('wrapper');
+}
+
+function renderLogRegError(statusCode){
+    DOM = document.getElementById('errorContainer');
+    let errorMessage;
+
+    switch (statusCode){
+        case 400:
+            errorMessage = 'Alla fälten måste fyllas i';
+            break; 
+        case 404:
+            errorMessage = 'Fel användarnam';
+            break;
+        case 470:
+            errorMessage = 'Fel lösenord'
+            break;
+        case 471:
+            errorMessage = 'Lösenorden matchar inte'
+            break;
+        case 472:
+            errorMessage = 'Inte en emejl adress, måste innehålla "@"'
+            break;
+        case 473:
+            errorMessage = 'Användarnamnet är upptaget'
+            break;
+        default:
+            errorMessage = 'Någonting gick fel, testa igen senare'      
+    }
+
+    DOM.innerHTML = `<p id="shownErrorMessage">${errorMessage}</p>`
 }

@@ -52,7 +52,7 @@
 
         if ($userExists && $user['password'] != $password){
             $error = ["Error" => "Incorrect password."];
-            sendJSON($error, 400);
+            sendJSON($error, 470);
         }
 
         $token = ["token" => sha1("$username$password")];

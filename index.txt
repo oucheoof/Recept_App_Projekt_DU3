@@ -1,0 +1,6 @@
+Custom HTTP statuscodes used in this project
+
+470 Incorrect Password
+471 Passwords do not match
+472 Not an email, must contain an '@'
+473 User already exists

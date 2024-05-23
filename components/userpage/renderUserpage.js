@@ -25,7 +25,7 @@ async function renderUserHeader(parentID){
 
     // Create image element
     const profileImg = document.createElement('img');
-    profileImg.src = 'defaultPfp.jpg';
+    profileImg.src = '../../media/img/defaultPfp.jpg';
     profileImg.alt = 'default profile picture';
     userControlDiv.appendChild(profileImg);
 

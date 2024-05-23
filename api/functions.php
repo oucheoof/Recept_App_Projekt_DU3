@@ -15,7 +15,6 @@
                 return false;
             }
         }
-
         return true;
     }
 
@@ -24,16 +23,13 @@
         $json = file_get_contents('php://input');
         return json_decode($json, true);
     }
-/*     function getDatabase($filename){
-        
-    $databaseContents = file_get_contents(`${$filename}.json`);
-    $databaseData = json_decode($databaseContents, true);
     
-    if (is_array($databaseData) == false) {
-       $error = ["Error" => "Internal server error, invalid database"];
-       sendJSON($error, 500);
+    function anyEmpty($array) {
+        foreach ($array as $element) {
+            if ($element === "") {
+                return true; // If any element is an empty string, return true
+            }
+        }
+        return false; // If no element is an empty string, return false
     }
-
-    return $databaseData;
-    } */
 ?>
