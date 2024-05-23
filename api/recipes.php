@@ -54,7 +54,7 @@
 
         foreach ($recipes as $index => $recpie) {
             if ($recpie["id"] == $id) {
-                $recpie["name"] = $newName; //Hjälp med hela patch för like nyckeln
+                $recpie["name"] = $newName; //Hjälper med hela patch för like nyckeln
                 $recipes[$index] = $recpie;
 
                 $json = json_encode($recipes, JSON_PRETTY_PRINT);

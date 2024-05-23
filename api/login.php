@@ -1,10 +1,6 @@
 <?php
     require_once('functions.php');
 
-    // BUGG MED LOGIN PGA WHITESPACE I BÖRJAN AV PHP, 
-    // ledde till att "headers" och "content-type" redan lästes som satta och 
-    // det blev internal error? mycket konstigt
-    
     $requestMethod = $_SERVER['REQUEST_METHOD'];
     if($requestMethod !== 'POST'){
         $error = ["Error" => "Invalid request method"];

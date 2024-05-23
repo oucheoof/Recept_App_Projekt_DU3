@@ -30,9 +30,7 @@ if($requestMethod == "GET"){
         $password = $user["password"];
 
         if(sha1("$username$password") == $token){
-            
-            // $users[] = $sortedUsers;
-            // $sortedUsers = $users; 
+        
             sendJSON($user);
 
         }
@@ -41,11 +39,7 @@ if($requestMethod == "GET"){
 
     $error = ["Error" => "User not found"];
     sendJSON($error, 404);
-    //filegetcontents path:
-    //sedan parsa från json till kod
-    //loopa igenom alla användare for each
-    //if sats, om sha1 == $token
-    //skickar användaren som stämmer (sendJSON)
+   
 }
 
 $contentType = $_SERVER["CONTENT_TYPE"];

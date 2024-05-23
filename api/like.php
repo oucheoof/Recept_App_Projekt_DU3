@@ -48,8 +48,6 @@ if($requestMethod == "PATCH"){
       
             sendJSON( $recipe);
         }
-
     }
-
 }
 ?>

@@ -23,13 +23,14 @@
         $json = file_get_contents('php://input');
         return json_decode($json, true);
     }
-    
+
+    //kollar om det finns några tomma fält i requesten
     function anyEmpty($array) {
         foreach ($array as $element) {
             if ($element === "") {
-                return true; // If any element is an empty string, return true
+                return true; 
             }
         }
-        return false; // If no element is an empty string, return false
+        return false; 
     }
 ?>
