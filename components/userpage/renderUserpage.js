@@ -74,7 +74,7 @@ async function renderUserHeader(parentID){
         let ok = confirm('Jag vill ta bort min användare');
 
         if (ok) {
-            const deleteRequest = new Request('/api/users.php', {
+            const deleteRequest = new Request('../../api/users.php', {
                 method: 'DELETE',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
