@@ -45,11 +45,9 @@ function render_header (header) {
     header.innerHTML = `
 
         <nav class="nav_meny">
-            <a href="../index.html"> 
                 <div class="logo"> 
                     <img src="./media/img/logo1.png"> 
                 </div>
-            </a>
 
             <a href="./components/userpage/userpage.html"> 
                 <div class="user_logo">
