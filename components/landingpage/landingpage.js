@@ -73,7 +73,7 @@ function render_navigation(parent){
 
     // länk för logo
     const linkLogo = document.createElement("a");
-    linkLogo.href = "../index.html";
+    linkLogo.href = "./index.html";
 
     // logo appendar till <a>
     const logo = document.createElement("div");

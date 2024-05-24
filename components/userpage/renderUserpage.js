@@ -13,7 +13,7 @@ async function renderUserHeader(parentID){
     //Logo that goes to landing page
     const linkLogo = document.createElement("a");
     linkLogo.id = 'linkLogo';
-    linkLogo.href = '../../../../index.html';
+    linkLogo.href = '../../index.html';
     const logo = document.createElement("div");
     logo.classList.add("logo");
     linkLogo.appendChild(logo);
@@ -94,7 +94,7 @@ async function renderUserHeader(parentID){
                 .then(data => {
 
                     localStorage.removeItem('token');
-                    window.location.href = "/";  // Gör att man hamnar i login sidan
+                    window.location.href = "../../index.html";  // Gör att man hamnar i login sidan
                 })
                 .catch(error => {
                     console.error('Error:', error);
@@ -108,7 +108,7 @@ async function renderUserHeader(parentID){
         if (ok){
             localStorage.removeItem('token');
             //renderLogReg();
-            location.href = "/"  // gör så att login sidan renderas när man loggar ut
+            location.href = "../../index.html"  // gör så att login sidan renderas när man loggar ut
             console.log('utloggad')
         }
     });

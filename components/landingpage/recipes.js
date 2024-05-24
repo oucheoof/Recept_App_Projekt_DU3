@@ -157,7 +157,7 @@ function render_instance_recipe (instance_data) {
     // lägger till en eventlyssnare för att hantera LIKEknapp
     like_btn.addEventListener('click', async function() {
 
-            const likeRequest = new Request('../api/like.php',{
+            const likeRequest = new Request('/KitchTestTwo/api/like.php',{
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -271,7 +271,7 @@ function render_ALL_instance_recipe(instance_data) {
     // lägger till en eventlyssnare för att hantera LIKEknapp
     like_btn.addEventListener('click', async function() {
 
-            const likeRequest = new Request('../api/like.php',{
+            const likeRequest = new Request('/KitchTestTwo/api/like.php',{
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
