@@ -43,11 +43,26 @@ function render_wrapper_DOM () {
 function render_header (header) {
 
     header.innerHTML = `
+
+        <nav class="nav_meny">
+            <a href="../index.html"> 
+                <div class="logo"> 
+                    <img src="./media/img/logo1.png"> 
+                </div>
+            </a>
+
+            <a href="./components/userpage/userpage.html"> 
+                <div class="user_logo">
+                    <img src="./media/img/usericon.png"> 
+                </div> 
+            </a>
         
+        </nav>     
+
         <img src="./media/img/omslag1.png">
         <h1 class="title"> Kitsch </h1>
         
-        <div class="slogan_text"> <p>Skapa smakupplevelser med dina ingredienser</p></div>
+        <div class="slogan_text"> <p>Middag på ett ögonblick med det du har</p></div>
         
         <div class="img_bottom">
 
@@ -59,17 +74,17 @@ function render_header (header) {
         </div>
     `;
 
-    render_navigation(header); // Anropar på navigation funktion
+    //render_navigation(header); // Anropar på navigation funktion
     
 }
 
 
 // Nav funktion
-function render_navigation(parent){  
+/*function render_navigation(parent){  
     // parent är header i startsidan
 
     const nav = document.createElement("nav");
-    nav.classList.add = "nav_meny"; 
+    nav.classList.add = ("nav_meny"); 
 
     // länk för logo
     const linkLogo = document.createElement("a");
@@ -97,4 +112,4 @@ function render_navigation(parent){
     // lägger till i parent
     parent.appendChild(nav);
 
-}
+}*/

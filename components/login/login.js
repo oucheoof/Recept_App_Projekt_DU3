@@ -39,7 +39,7 @@ async function renderLoginForm(){
     
     <button id="login_btn_two" class="login"> Logga in</button>
 
-    <button class="goBack" onclick="goBack()">Ny användare? Registrera ditt konto istället</button>
+    <button class="goBack" onclick="goBack()">Ny användare?<br> Registrera ditt konto istället</button>
 
     
     </form>`
@@ -50,7 +50,7 @@ async function renderLoginForm(){
         const username = DOM.querySelector('#username').value;
         const password = DOM.querySelector('#password').value;
 
-        const registerRequest = new Request('../api/login.php',{
+        const registerRequest = new Request('./api/login.php',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -125,7 +125,7 @@ async function renderRegisterForm(){
                 console.log(data);
                 renderLogRegError(data);
             }else{
-                window.alert( `successful registration ${data.username}`);
+                window.alert( `Successful registration ${data.username}`);
                 renderLoginForm();
             }
         } 

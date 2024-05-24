@@ -28,41 +28,38 @@ header {
     z-index: 99;
 }
 
-.logo {
+.logo img {
     z-index: 99;
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 85px; 
+    width: 125px; 
+    height: 50px;
     cursor: pointer;   
 
-    background-image: url(/media/img/logo1.png);
+    /*background-image: url(./media/img/logo1.png);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.user_logo {
+.user_logo img {
     z-index: 99;
     position: absolute;
-    bottom: 700px;  /*  konstigt?? */
     right: 10px;
-    width: 10px; 
-    height: 10px;
+    bottom: 20px;
+    width: 60px; 
+    height: 60px;
     cursor: pointer; 
 
-    background-image: url(/media/img/usericon.png);
+    /*background-image: url(./media/img/usericon.png);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.landing_picture {
-    background-image: url(./media/img/omslag1.png);
-}
 
-
-header img:first-of-type {
+header img {
     position: relative;
     height: 350px;
     object-fit: cover;
@@ -144,7 +141,7 @@ header .img_bottom img {
 footer {
     height: auto;
     background-color: rgb(169, 213, 187);
-    background-image: url(/media/img/omslag3.png);
+    background-image: url(./media/img/omslag3.png);
     background-size: cover;
     background-repeat: no-repeat;
 
