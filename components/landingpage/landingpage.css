@@ -28,12 +28,13 @@ header {
     z-index: 99;
 }
 
-.logo {
+.logo img {
     z-index: 99;
     position: absolute;
     top: 20px;
     left: 20px;
     width: 85px; 
+    height: 50px;
     cursor: pointer;   
 
     /*background-image: url(./media/img/logo1.png);*/
@@ -42,7 +43,7 @@ header {
     background-position: center;
 }
 
-.user_logo {
+.user_logo img {
     z-index: 99;
     position: absolute;
     right: 10px;
@@ -56,12 +57,8 @@ header {
     background-position: center;
 }
 
-.landing_picture {
-    background-image: url(./media/img/omslag1.png);
-}
 
-
-header img:first-of-type {
+header img {
     position: relative;
     height: 350px;
     object-fit: cover;
